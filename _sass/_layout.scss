@@ -1,3 +1,10 @@
+.on-top {
+    width: 100%;
+    background-color: $menu-background-color;
+    position: fixed;
+    margin: auto;
+}
+
 /**
  * Site header
  */
@@ -162,7 +169,7 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    padding: $spacing-unit*3 0;
 }
 
 .page-heading {
