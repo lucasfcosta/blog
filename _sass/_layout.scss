@@ -241,3 +241,50 @@
         }
     }
 }
+
+.pagination {
+    text-align: center;
+    margin-top: 5em;
+
+    a {
+        padding-left: 1em;
+        padding-right: 1em;
+
+        @include media-query($on-phone) {
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+        }
+    }
+
+    .pagination-button {
+        border-width: 1px;
+        border-style: solid;
+        border-color: #DCDCDC;
+        border-radius: 5px;
+        color: #000000;
+        font-size: 12px;
+        background: #edeff0;
+        padding: 7px 10px 7px 10px;
+        text-decoration: none;
+            
+        @include media-query($on-phone) {
+            font-size: 12px;
+            padding: 3px 5px 3px 5px;
+        }
+    }
+
+    .pagination-button:hover {
+        background: #dedede;
+        text-decoration: none;
+    }
+
+    .active {
+        background: #C6E0F3;
+        border-color: #53AADC;
+    }
+
+    .fixed-width {
+        display: inline-block;
+        width: 4em;
+    }
+}

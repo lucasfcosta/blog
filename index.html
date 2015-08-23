@@ -7,7 +7,7 @@ layout: default
   <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
@@ -18,6 +18,30 @@ layout: default
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="pagination-button fixed-width">Previous</a>
+    {% endif %}
+    
+    {% for count in (1..paginator.total_pages) %}
+      {% if count == 1 %}
+        {% if count == paginator.page %}
+          <a href="/" class="pagination-button active">{{ count }}</a>
+        {% else %}
+          <a href="/" class="pagination-button">{{ count }}</a>
+        {% endif %}
+      {% else %}
+        {% if count == paginator.page %}
+          <a href="#" class="pagination-button active">{{ count }}</a>
+        {% else %}
+          <a href="/posts/page{{ count }}" class="pagination-button">{{ count }}</a>
+        {% endif %}
+      {% endif %}
+    {% endfor %}  
+    
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="pagination-button fixed-width">Next</a>
+    {% endif %}
+  </div>
+  
 </div>

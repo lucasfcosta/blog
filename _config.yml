@@ -10,6 +10,8 @@ url: "http://github.io/lucasfcosta" # the base hostname & protocol for your site
 github_username:  lucasfcosta
 linkedin_username: lucasfdacosta
 twitter_username: lfernandescosta
+paginate: 5
+paginate_path: "/posts/page:num/"
 
 # Build settings
 markdown: kramdown
