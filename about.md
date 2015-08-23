@@ -1,11 +1,11 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+I'm an Information Systems student at [UFSC - Universidade Federal de Santa Catarina](http://ufsc.br) and I'm currently working as a development intern at [Portable Slots](http://portableslots.com).
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+Currently I am, and I will ever be, in love with open software and the web. If you need any help pushing the web forward you can bet I will be willing work.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+If you're interested in any subject I've ever written on this website or even if you just want to talk feel free to contact me on any of the social network profiles below.
