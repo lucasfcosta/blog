@@ -9,11 +9,15 @@ layout: default
   <ul class="post-list">
     {% for post in paginator.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</div>
 
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
+        
+        <a class=" comment-count" href="{{ post.url | prepend: site.baseurl }}#disqus_thread"> Comments</a>
+        
       </li>
     {% endfor %}
   </ul>
@@ -45,3 +49,14 @@ layout: default
   </div>
   
 </div>
+
+<script type="text/javascript">
+    var disqus_shortname = 'lucasfcosta';
+    
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>

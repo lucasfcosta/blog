@@ -181,7 +181,7 @@
     list-style: none;
 
     > li {
-        margin-bottom: $spacing-unit;
+        margin-bottom: $spacing-unit*1.5;
     }
 }
 
@@ -189,12 +189,20 @@
     font-size: $small-font-size;
     color: $grey-color;
 }
+    
+.comment-count {
+    display: block;
+    margin-top: -1em;
+    &,
+    &:visited {
+        color: $grey-color;
+    }
+}
 
 .post-link {
     display: block;
     font-size: 24px;
 }
-
 
 
 /**
