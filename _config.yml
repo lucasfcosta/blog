@@ -6,7 +6,7 @@ description: > #
   Coding, culture and life in general.
   Yes, it's that wide.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://github.io/lucasfcosta" # the base hostname & protocol for your site
+url: "http://lucasfcosta.com" # the base hostname & protocol for your site
 github_username:  lucasfcosta
 linkedin_username: lucasfdacosta
 twitter_username: lfernandescosta
