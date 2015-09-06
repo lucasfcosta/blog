@@ -188,14 +188,9 @@
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
-}
-    
-.comment-count {
-    display: block;
-    margin-top: -1em;
-    &,
-    &:visited {
-        color: $grey-color;
+
+    @include media-query($on-laptop) {
+        margin-top: 1em;
     }
 }
 
@@ -213,6 +208,7 @@
 }
 
 .post-title {
+    display: inline;
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
@@ -220,6 +216,11 @@
     @include media-query($on-laptop) {
         font-size: 36px;
     }
+}
+
+.title-line {
+    display: block;
+    margin-bottom: 1em;
 }
 
 .post-content {
@@ -287,7 +288,7 @@
     }
 
     .active {
-        background: #C6E0F3;
+        background: #C6.1E0F3;
         border-color: #53AADC;
     }
 
@@ -303,4 +304,20 @@ strong {
 
 .comments {
     margin-top: 5em;
+}
+
+.share-buttons {
+    letter-spacing: 0.05em;
+    display: inline-block;
+    float: right;
+    font-size: 2em;
+
+    @include media-query($on-laptop) {
+        float: none;
+        display: block;
+        text-align: center;
+        font-size: 1.3em;
+        margin-top: 0.8em;
+        margin-bottom: 0.5em;
+    }
 }
