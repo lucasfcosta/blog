@@ -16,8 +16,8 @@ layout: default
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
         
-        <a class=" comment-count" href="{{ post.url | prepend: site.baseurl }}#disqus_thread"> Comments</a>
-        
+        <a class="disqus-comment-count" href="{{ post.url | prepend: site.baseurl }}#disqus_thread" data-disqus-url="{{ post.url | prepend: site.baseurl }}"> Comments</a>
+
       </li>
     {% endfor %}
   </ul>

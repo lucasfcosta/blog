@@ -193,6 +193,15 @@
         margin-top: 1em;
     }
 }
+    
+.disqus-comment-count {
+    display: block;
+    margin-top: -1em;
+    &,
+    &:visited {
+        color: $grey-color;
+    }
+}
 
 .post-link {
     display: block;
