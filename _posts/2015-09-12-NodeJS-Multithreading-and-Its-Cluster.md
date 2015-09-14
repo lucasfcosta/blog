@@ -249,5 +249,5 @@ Here they go:
 
 - What "non-blocking I/O" means
 - The pros and cons of using non-blocking I/O technologies
-- When to use multiple threads on Node.js
-- How to create and manage multiple threads on Node.js
+- When to use multiple threads in Node.js
+- How to create and manage multiple threads in Node.js
