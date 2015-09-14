@@ -234,6 +234,7 @@ if (cluster.isMaster) {
 # ***Okay, can you give some tips, please?***
 
 Here they go:
+
 * Use `require('os').cpus().length` to get the number of cores you have, creating one thread for each one of them will improve performance
 * Read [the cluster docs](https://nodejs.org/api/cluster.html) to learn about every event and how they're triggered
 * To deal with the current thread (either on a worker or a master thread) you can use the [process object](https://nodejs.org/api/process.html)
