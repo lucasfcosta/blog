@@ -29,7 +29,7 @@ Of course I can, fellow sailor of the internet sea.
 
 * Pros:
   - Code gets simpler both to write and to read
-  - It eliminates [race conditions](http://stackoverflow.com/questions/34510/what-is-a-race-condition) (we will talk about this later)
+  - It eliminates [race conditions](http://stackoverflow.com/questions/34510/what-is-a-race-condition)
   - I/O operations (which are expensive) do not block the thread's execution
 
 * Cons:
