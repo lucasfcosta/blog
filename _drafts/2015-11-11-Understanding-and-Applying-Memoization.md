@@ -33,7 +33,21 @@ Enough talking, it's time we get to code. Open your favorite text editor and fol
 
 Let's have a humble start and use a common and easy to understand example, the **[Fibonacci's sequence](https://en.wikipedia.org/wiki/Fibonacci_number)**.
 
-Our function will to calculate the Nth Fibonnacci number recursively. Considering the starting numbers of the sequence as 0 and 1, this is the code we're going to use:
+Our function will to calculate the Nth Fibonnacci number recursively. Considering the starting numbers of the sequence as 0 and 1, this is the function we're going to use:
+
+{% highlight javascript %}
+// This calculates the Nth number of the fibonacci sequence (the index starts at 0)
+function fibonacci(n) {
+  timesCalled++;
+
+  if (n < 2)
+    return n;
+  else
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}
+{% endhighlight %}
+
+Now that you've seen our raw function, let me show you the whole code we will execute so that you can see every meaningful data printed to the console:
 
 {% highlight javascript %}
 // Change the value below multiple times and test this code
@@ -52,6 +66,7 @@ function fibonacci(n) {
     return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
+// Here we are just printing the results to the console
 var startTime = Date.now();
 console.log('Result: ' + fibonacci(fIndex));
 var endTime = Date.now();
@@ -70,6 +85,40 @@ When calling our `fibonacci` function with `5` as an argument, for example, this
 **If you're having trouble understanding this recursion I highly recommend you read the answers to [this question in StackOverflow](http://stackoverflow.com/questions/8845154/how-does-the-the-fibonacci-recursive-function-work).**
 
 Give it a chance and **run the code above** (preferrably on Node.js so that your browser won't get stuck). You will notice that the bigger the Fibonacci's number index gets the most times the `fibonacci` function gets called. You will also notice a meaningful increase in the elapsed time.
+
+**Running the code above to get the 20th fibonacci number you will notice that `fibonacci(n)` gets called 21891 times.** This is an example where memoization shines.
+
+We are now going to store the results for the operations happening inside our function on an outer function, which also contains our main `fibonacci` calculation algorithm. They key for each result will be the input number that was provided. Take a look at our new code:
+
+// TODO needs fixing and review, this is a draft
+{% highlight javascript %}
+function fibonacci(n) {
+  // We will store our results here
+  var resultsCache = {};
+
+  // This is the inner function containing our fibonacci algorithm
+  function fibonacciAlgorithm(n) {
+    var result;
+    
+    // If the result for the input `n` is already on the resultsCache
+    // we will use it instead of executing the whole algorithm
+    if (!resultsCache[n]) {
+      result = resultsCache[n];
+    } else {
+      if (n < 2)
+        result = n;
+      else
+        result = fibonacci(n - 1) + fibonacci(n - 2);
+
+      resultsCache[n] = result;
+    }
+
+    return result;
+  }
+
+  return fibonacciAlgorithm(n);
+}
+{% endhighlight %}
 
 <br>
 
