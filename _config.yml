@@ -19,3 +19,4 @@ kramdown:
   input: GFM
 highlighter: pygments
 timezone: America/Sao_Paulo
+gems: [jekyll-paginate]
