@@ -17,6 +17,6 @@ paginate_path: "/posts/page:num/"
 markdown: kramdown
 kramdown:
   input: GFM
-highlighter: pygments
+  syntax_highlighter: rouge
 timezone: America/Sao_Paulo
 gems: [jekyll-paginate]
