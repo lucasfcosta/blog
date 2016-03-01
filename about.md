@@ -4,7 +4,7 @@ title: About Me
 permalink: /about/
 ---
 
-I'm an Information Systems student at [UFSC - Universidade Federal de Santa Catarina](http://ufsc.br) and I'm currently working as a development intern at [Portable Slots](http://portableslots.com).
+I'm an Information Systems student at [UFSC - Universidade Federal de Santa Catarina](http://ufsc.br) and I'm currently working as a development intern at [Hydra Systems (formerly known as Portable Slots)](http://hydrasystems.com.br/).
 
 Currently I am, and I will ever be, in love with open software and the web. If you need any help pushing the web forward you can bet I will be willing work.
 
