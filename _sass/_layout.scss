@@ -186,6 +186,7 @@
 }
 
 .post-meta {
+    display: inline-block;
     font-size: $small-font-size;
     color: $grey-color;
 
@@ -321,15 +322,13 @@ strong {
 
 .share-buttons {
     letter-spacing: 0.05em;
-    display: inline-block;
+    font-size: $small-font-size;
     float: right;
-    font-size: 2em;
 
     @include media-query($on-laptop) {
         float: none;
         display: block;
         text-align: center;
-        font-size: 1.3em;
         margin-top: 0.8em;
         margin-bottom: 0.5em;
     }
