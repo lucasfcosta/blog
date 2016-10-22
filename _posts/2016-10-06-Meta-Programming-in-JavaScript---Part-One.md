@@ -322,7 +322,7 @@ Also, feel free to contribute!
 
 ## Coming up soon...
 
-In this post we talket about enumerating properties, about property descriptors and how to take advantage of them. In the next one I'll talk about `freezing`, `sealing` and about inheritance.
+In this post we talked about enumerating properties, about property descriptors and how to take advantage of them. In the next one I'll talk about `freezing`, `sealing` and about inheritance.
 
 You better be prepared!
 
