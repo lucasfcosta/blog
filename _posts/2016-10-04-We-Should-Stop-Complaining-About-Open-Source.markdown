@@ -28,7 +28,7 @@ Yes, that is okay.
 
 If anyone has a problem with your software or wants a feature they are not obliged to implement it, **and neither are you**, but please don't just go ahead and tell them to code it themselves. Instead, tell them how to do it and write complete instructions on a comment in order for other people to be able to solve that.
 
-Also, maybe the one who opened an issue doesn't have technical skills or knowledge of the codebase enough to implement it, thus, even though he wants it, it's impossible for him to get it done.
+Also, maybe the one who opened an issue doesn't have technical skills or knowledge of the codebase enough to implement it, thus, even though someone wants it, it might be impossible for that person to get it done.
 
 The whole point of doing open source and free software is helping people and democratizing access to tools, so any input should be valued, even if it's not accepted.
 
