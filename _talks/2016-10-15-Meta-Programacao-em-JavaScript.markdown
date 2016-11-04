@@ -8,7 +8,7 @@ tags: talks metaprogramming pt-br
 
 <div class="video">
     <figure>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/LTN-SYz3yLo?start=2744" frameborder="0" allowfullscreen></iframe> 
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/W4202MwhwFs" frameborder="0" allowfullscreen></iframe>
     </figure>
 </div>
 
