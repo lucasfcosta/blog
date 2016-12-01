@@ -1,6 +1,6 @@
 ---
 layout: post
-title : "Meta Programming In Javascript - Part Three: Proxies and Reflection"
+title : "Meta Programming In JavaScript - Part Three: Proxies and Reflection"
 author: Lucas Fernandes da Costa
 tags: nodejs meta programming javascript coding proxies reflect
 ---
