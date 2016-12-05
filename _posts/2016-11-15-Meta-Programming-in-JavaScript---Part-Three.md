@@ -253,6 +253,6 @@ The same applies for any other trap, if you have a trap called `x` and its callb
 
 In this post we talked about proxies and about the new `Reflect` global object, I think this blog post was pretty straight forward but it is filled with ideas and other great references. I hope you like it.
 
-In the next and last post of this series we will talk about the **Meta Object Protocol** and we will understand the theory behind all the meta programming we have done. We will go deep into the language's inner workings and show you what is behind the curtains!
+In the next and last post of this series we will talk about **Symbols**. We will study their properties, how they're used to "guide" the language's internal operations and see how to use them to effectively solve real world problems.
 
 **If you have any doubts or thoughts, please share them with me on the comments below or reach me at [@lfernandescosta on twitter](https://twitter.com/lfernandescosta)!**
