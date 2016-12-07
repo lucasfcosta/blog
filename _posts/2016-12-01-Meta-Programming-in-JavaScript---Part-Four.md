@@ -328,7 +328,7 @@ console.log(numbers.concat(fakeArray)); // [1, 2, 3, 'first', 'second', 'third' 
 
 <br>
 
-#### Symbol.iterator - `for of`
+#### Symbol.iterator - `for..of`
 
 This might be one of the most famous symbols we've got in ES6. It allows us to iterate through objects using the `for of` syntax.
 
@@ -340,7 +340,7 @@ Since this depends on some previous knowledge about [generator functions](http:/
 
 <br>
 
-#### Symbol.match - `match`
+#### Symbol.match - `String.prototype.match`
 
 This symbol allows you to create your own "version" of Regular Expressions since it allows you to redefine what should be the default behavior for `String.prototype.match`.
 
@@ -372,7 +372,7 @@ Please notice that I defined the `Symbol.match` property on the constructor's pr
 
 <br>
 
-#### Symbol.replace - `replace`
+#### Symbol.replace - `String.prototype.replace`
 
 The `Symbol.replace` property is used whenever `String.prototype.replace` is called. It receives a target `String` and the content that should be used whenever a match is found according to the first argument passed to `replace` method.
 
@@ -405,7 +405,7 @@ In this case we also need to assign `RandomNumberReplacer.prototype[Symbol.repla
 
 <br>
 
-#### Symbol.search - `search`
+#### Symbol.search - `String.prototype.search`
 
 This symbol allows you to implement a function which will be called by `String.prototype.search`.
 
@@ -486,7 +486,7 @@ console.log(mappedArr instanceof Array); // true
 
 <br>
 
-#### Symbol.split - `split`
+#### Symbol.split - `String.prototype.split`
 
 The `Symbol.split` symbols is another `String` related symbol. It holds a function which is called whenever invoking `String.prototype.split` and it takes a target `String` as argument,
 
@@ -565,7 +565,7 @@ console.log('I am a ' + dangerousHacker); // 'haxxor'
 
 <br>
 
-#### Symbol.toStringTag - `toString`
+#### Symbol.toStringTag - `Object.prototype.toString`
 
 Whenever you use `toString` on an Object you might see something like this: `[object Object]`, `[object Array]`, `[object String]` and many others. This symbol allows you to to define which word will be used in that tag.
 
