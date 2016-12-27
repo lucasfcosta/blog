@@ -65,7 +65,7 @@ const phrase = 'Maria was sad, but her mom was not sad too.';
 // Now we'll add `g` after our regular expression in order for it to match every occurrence
 const newPhrase = phrase.replace(/sad/g, 'happy');
 
-console.log(newPhrase); // Maria was happy, but her mom was not sad too.
+console.log(newPhrase); // Maria was happy, but her mom was not happy too.
 ```
 
 The "`g`" flag is not the only one we've got in JavaScript, so here goes the list of every available flag:
