@@ -80,10 +80,10 @@ function Dinosaur(name) {
 
 const fred = new Dinosaur('fred');
 
-console.log(fred.prototype === Dinosaur); // true
+console.log(Object.getPrototypeOf(fred) === Dinosaur.prototype); // true
 
 // Now notice that Fred's __proto__ is Dinosaur too
-console.log(fred.__proto__ === Dinosaur); // true
+console.log(fred.__proto__ === Dinosaur.prototype); // true
 ```
 
 Did you notice how the `prototype` property has been set as the `Dinosaur` function? Now let's create an object which inherits from another object by using `Object.create`:
