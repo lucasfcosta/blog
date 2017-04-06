@@ -451,7 +451,7 @@ describe('This will not run', () => {
 });
 ```
 
-Some people argue that Mongo is just too heavy for us to rely on it on our testing environments, but in my opinion (and something I talked about with a few friends, including [@vieiraiucas](https://twitter.com/vieiraIucas)) your tests should try to simulate your real environment as good as they can. In order to make it easier for you and your team to test in different environments you could use Docker to make sure everybody gets the same build environment in a faster and more reliable way. If you want to read more about how to dockerize MongoDB, take a look at [this link](https://docs.docker.com/engine/examples/mongodb/).
+Some people argue that Mongo is just too heavy for us to rely on it on our testing environments, but in my opinion (and something I talked about with a few friends, including [@vieiraIucas](https://twitter.com/vieiraIucas)) your tests should try to simulate your real environment as good as they can. In order to make it easier for you and your team to test in different environments you could use Docker to make sure everybody gets the same build environment in a faster and more reliable way. If you want to read more about how to dockerize MongoDB, take a look at [this link](https://docs.docker.com/engine/examples/mongodb/).
 
 If you still want to mock Mongo you can also use [Mockgoose](https://github.com/mockgoose/mockgoose) and make yourself happy with your new in memory storage.
 
@@ -816,4 +816,4 @@ Finally, you can look for Chai Plugins in [our official website](http://chaijs.c
 
 **If you have any doubts, thoughts or if you disagree with anything I've written, please share it with me in the comments below or reach me at [@lfernandescosta on twitter](https://twitter.com/lfernandescosta)**. I'd love to hear what you have to say.
 
-**Thanks for reading!**
+**Thanks for reading and thanks [@vieiraIucas](https://twitter.com/vieiraIucas) for reviewing this post and sharing your valuable opinion!**
