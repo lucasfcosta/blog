@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How To Write Good Tests for NodeJS APIs"
+title: "Writing Good Tests for NodeJS APIs"
 author: Lucas Fernandes da Costa
 tags : testing node nodejs javascript api integration tdd
 ---
