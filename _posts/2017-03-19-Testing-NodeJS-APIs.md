@@ -367,7 +367,7 @@ describe('Person', () => {
 });
 ```
 
-Now let's focus on a couple new things we've got here, one of then is the `send` method we're using. This method allows us to fill the body of the request we're sending. Then we also started using `then` and `catch` instead of using a `callback` associated with the old `end` method. We can do this because the `send` method returns a `Promise` so we can deal with it the same way we would with any other `Promise`.
+Now let's focus on a couple new things we've got here, one of them is the `send` method we're using. This method allows us to fill the body of the request we're sending. Then we also started using `then` and `catch` instead of using a `callback` associated with the old `end` method. We can do this because the `send` method returns a `Promise` so we can deal with it the same way we would with any other `Promise`.
 
 Now you might have noticed that we only checked the response we've got back from the server, but what if this person has not been saved to our database but the server still returns a 200 HTTP status? If we want to ensure that is happening correctly we must check our database after that request. Inside your `describe` block for the person creation tests, let's add a new test that does this:
 
