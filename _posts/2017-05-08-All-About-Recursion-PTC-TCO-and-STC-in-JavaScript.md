@@ -25,11 +25,11 @@ This means the factorial of a number can be defined in terms of itself:
 
 ```
 factorial(5) = factorial(4) * 5
-factorial(4) = factorial(3) * 4 * 5
-factorial(3) = factorial(2) * 3 * 4 * 5
-factorial(2) = factorial(1) * 2 * 3 * 4 * 5
-factorial(1) = factorial(0) * 1 * 2 * 3 * 4 * 5
-factorial(0) = 1
+factorial(5) = factorial(3) * 4 * 5
+factorial(5) = factorial(2) * 3 * 4 * 5
+factorial(5) = factorial(1) * 2 * 3 * 4 * 5
+factorial(5) = factorial(0) * 1 * 2 * 3 * 4 * 5
+factorial(5) = 1 * 1 * 2 * 3 * 4 * 5
 ```
 
 In a nutshell, **when a function calls itself we can say we have recursion**.
