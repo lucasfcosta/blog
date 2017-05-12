@@ -85,7 +85,7 @@ Now let's get to what really matters here, which is sharing memory between two t
 
 This image demonstrates an example of how a `TypedArray` works on top of a `SharedArrayBuffer`:
 
-![A Typed Array is a view on top of a shared memory area](/shared-memory-typed-array.png)
+![A Typed Array is a view on top of a shared memory area](/assets/shared-memory-typed-array.png)
 
 In the example below, we create an array with even numbers and share it with our worker. After five seconds we do a change in that shared array and after ten seconds we print that array in our worker to make sure it changed.
 
