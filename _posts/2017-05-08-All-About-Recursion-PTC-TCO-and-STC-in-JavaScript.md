@@ -345,7 +345,7 @@ Let's run it with:
 $ node --harmony_tailcalls factorial.js
 ```
 
-Wwhen running that code again, these are the stack traces we get back:
+When running that code again, these are the stack traces we get back:
 
 ```js
 Trace
