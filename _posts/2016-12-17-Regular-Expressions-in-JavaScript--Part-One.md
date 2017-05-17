@@ -259,7 +259,7 @@ Next to each task is the link to its solution at [RegEx101.com](https://regex101
     * `"One small step for man, one giant leap for mankind" // MATCH!`
     * `'Not all those who wander are lost' // NO MATCH!`
     * `Then he said: "Not all those who wander are lost" // NO MATCH!`
-* Create a Regular Expression which matches money amounts written in the format `${DOLLARS}.{CENTS}` - [SOLUTION](https://regex101.com/r/J9hs1q/1)
+* Create a Regular Expression which matches money amounts written in the format `${DOLLARS}.{CENTS}` - [SOLUTION](https://regex101.com/r/b9p6PJ/1/)
     * `$50.99 // MATCH!`
     * `$01.30 // MATCH!`
     * `$10000.00 // MATCH!`
