@@ -34,7 +34,7 @@ Basically, by using Regular Expressions we are able to describe character patter
 
 Regular expressions can be use for a wide variety of applications, from a simple `vIM`/`sed` String find/replace command to building complex compilers. **In the excellent book called [Mastering Regular Expressions](https://www.amazon.com/dp/0596528124/ref=olp_product_details?_encoding=UTF8&me=) the autor, Jeffrey E. F. Friedl, uses regular expressions to define a pattern which will be used to identify doubled words and then highlight and correct them**. Personally I think this is a great first example and I also highly recommend you to buy that book.
 
-**Regular expressions, of course, aren't a JavaScript feature, although there may be different engines interpreting the regular expressions you write depending on the language you are using, the basic rules and the correct way of thinking about regular expressionss can be applied to virtually every language**.
+**Regular expressions, of course, aren't an exclusive JavaScript feature, although there may be different engines interpreting the regular expressions you write depending on the language you are using, the basic rules and the correct way of thinking about regular expressionss can be applied to virtually every language**.
 
 To craft regular expressions there are specific syntax rules and characters we will explore later, for now just keep in mind what a RegEx is.
 
