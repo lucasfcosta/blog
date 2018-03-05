@@ -24,4 +24,4 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 timezone: America/Sao_Paulo
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
