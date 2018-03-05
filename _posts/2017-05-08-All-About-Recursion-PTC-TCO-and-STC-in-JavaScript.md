@@ -15,6 +15,18 @@ I'll also be talking a lot about the call stack and stack traces, but I'll not g
 
 <br>
 
+**Update - March, 5th - 2018**
+
+Please notice that [Node does not support TCO/Proper Tail Calls anymore since 8.x, even behind especial flags](https://stackoverflow.com/questions/23260390/node-js-tail-call-optimization-possible-or-not).
+
+However, I think this post is still very useful for learning how to thinking about recursion, visualizing it and developing mental tools to understand algorithms that involve it, so I highly recommend you to try this code using Node versions between 6.5 and 7.10.
+
+I also recommend you to use NVM for installing and managing Node.js versions. It will make your life a lot easier.
+
+Now, let's proceed.
+
+<br>
+
 ## **Recursion in a Nutshell**
 
 Recursion happens when the solution of a problem depends on the applying this same solution to other instances of it.
