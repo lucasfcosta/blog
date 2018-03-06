@@ -590,7 +590,7 @@ Because:
     <cite>Unknown</cite>
 </blockquote>
 
-Even if you planned and solved the problem first, it is likely that your estimative will be wrong many times. When estimating, keep Hofstadter's Law in mind:
+Even if you planned and solved the problem first, it is likely that your estimate will be wrong many times. When estimating, keep Hofstadter's Law in mind:
 
 <blockquote>
     Hofstadter’s Law: It always takes longer than you expect, even when you take into account Hofstadter’s Law.
