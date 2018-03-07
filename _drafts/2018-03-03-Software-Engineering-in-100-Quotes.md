@@ -694,3 +694,24 @@ And now, after 100 quotes about software engineering, I'll allow myself to add a
 </blockquote>
 
 **Yes, Sam, what we are doing __is__, indeed, very complicated**.
+
+<br>
+
+## **Get in touch!**
+
+If you disagree with anything I said or if you have anything you'd like to add or comment, feel free to use the space below or send me a tweet [@lfernandescosta](https://twitter.com/lfernandescosta).
+
+If you feel like submitting a PR to fix any possible typos or fix my grammar mistakes, you can also find me [on GitHub @lucasfcosta](https://github.com/lucasfcosta).
+
+<br>
+
+## **More Amazing Quotes**
+
+The quotes in this post come from many different places. I can't link all of them because I usually just add them to my Evernote when I find one that I like, but you can find lots of them at:
+
+* [@CodeWisdom](https://twitter.com/codewisdom) on Twitter - Highly recommended, amazing quotes every day!
+* [58 Quotes from Sam Altman on Startup Ideas](https://medium.com/how-to-start-a-startup/58-quotes-from-sam-altman-on-startup-ideas-e3582361cd4f)
+* [50 Quotes from Paul Graham on Counterintuitive Parts of Startups, and How to Have Ideas](https://medium.com/how-to-start-a-startup/50-quotes-from-paul-graham-on-counterintuitive-parts-of-startups-and-how-to-have-ideas-4209154ff319)
+* [http://www.linfo.org/q_programming.html](http://www.linfo.org/q_programming.html)
+
+Thanks for reading!
