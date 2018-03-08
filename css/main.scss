@@ -48,6 +48,7 @@ $on-phone:         320px;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
+        "posts",
         "layout",
         "syntax-highlighting"
 ;

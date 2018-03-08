@@ -672,18 +672,18 @@ Listen to everyone. Always seek consensus.
     <cite>8th of Akin's Laws of Spacecraft Design</cite>
 </blockquote>
 
-And please:
-
-<blockquote>
-    Be humble, communicate clearly, and respect others. It costs nothing to be kind, but the impact is priceless.
-    <cite>Addy Osmani</cite>
-</blockquote>
-
 If you were not able to convince your team, learn when it's the right time to intervene.
 
 <blockquote>
     Think about teaching a child to ride a bike. You can't ride it for them. You watch them wobble, but if you stepped in every time it looked like they might fall off, then they would never learn, and, in any case, they fall off far less than you think they will! But if you see them about to veer into traffic, or into a nearby duck pond, then you have to step in.
     <cite>Sam Newman</cite>
+</blockquote>
+
+People matter.
+
+<blockquote>
+    Be humble, communicate clearly, and respect others. It costs nothing to be kind, but the impact is priceless.
+    <cite>Addy Osmani</cite>
 </blockquote>
 
 And now, after 100 quotes about software engineering, I'll allow myself to add an extra one, that pretty much sums it all up.
@@ -693,7 +693,9 @@ And now, after 100 quotes about software engineering, I'll allow myself to add a
     <cite>Sam Altman</cite>
 </blockquote>
 
-**Yes, Sam, what we are doing __is__, indeed, very complicated**.
+<p style="text-align: center; font-size: 1.5em; font-weight: bold;">
+    Yes, Sam, what we are doing is very complicated.
+</p>
 
 <br>
 
