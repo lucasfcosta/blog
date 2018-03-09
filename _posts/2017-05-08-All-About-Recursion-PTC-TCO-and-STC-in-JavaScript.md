@@ -7,9 +7,9 @@ tags : javascript tailcall tail call optimization recursion
 
 <br>
 
-Recently everyone seems to be really excited with functional programming and its concepts. However, many people don't talk about recursion and, especially, about proper tail calls, which is really important when it comes to writing clean and concise code without exploding the stack.
+Recently everyone seems to be really excited about functional programming and its concepts. However, many people don't talk about recursion and, especially, about proper tail calls, which is really important when it comes to writing clean and concise code without exploding the stack.
 
-In this post I'll give you **tips to better visualize and think about recursion** and **explain what are proper tail calls, tail call optimization, syntactic tail calls and how to differentiate them**, **how they work** and **talk about their implementation in major JavaScript engines**.
+In this post, I'll give you **tips to better visualize and think about recursion** and **explain what are proper tail calls, tail call optimization, syntactic tail calls and how to differentiate them**, **how they work** and **talk about their implementation in major JavaScript engines**.
 
 I'll also be talking a lot about the call stack and stack traces, but I'll not get into too much detail, thus if you want to read more about it take a look at [this blog post I've made (which, by the way, is the most popular post in this website until now)](http://lucasfcosta.com/2017/02/17/JavaScript-Errors-and-Stack-Traces.html).
 
@@ -220,7 +220,7 @@ Trace
     at bound (domain.js:280:14)
 ```
 
-As I've said in the beginning of this section, the first call to `factorial(3)` needed to call `factorial(2)`, `factorial(1)` and `factorial(0)`. This is why we have four entries for the factorial function in our stack.
+As I've said at the beginning of this section, the first call to `factorial(3)` needed to call `factorial(2)`, `factorial(1)` and `factorial(0)`. This is why we have four entries for the factorial function in our stack.
 
 Now you're probably seeing the problem we might face when having too much recursion: the call stack gets too big and we end up having a [Stack Buffer Overflow](https://en.wikipedia.org/wiki/Stack_buffer_overflow). This happens when we try to add another entry to the call stack after it has reached its limit.
 
@@ -265,11 +265,11 @@ This is what happens when we call `factorial(4)`:
 
 1. A call to `factorial` is added to the top of the stack
 2. Since `4` is not 0 (the base case) we determine the next number we need to calculate (`3`) and the current accumulated value (`4 * total (which is one by default)`)
-3. Now when calling `factorial` again it will receive every piece of data it needs to do its processing: the next factorial to calculate and the accumulated total. Due to this we don't need the previous stack frame anymore, so we can just pop that frame out of our stack and add the new `factorial(3, 4)` call.
+3. Now when calling `factorial` again it will receive every piece of data it needs to do its processing: the next factorial to calculate and the accumulated total. Due to this, we don't need the previous stack frame anymore, so we can just pop that frame out of our stack and add the new `factorial(3, 4)` call.
 4. This call is again bigger than 0, so we get the next factorial and multiply the accumulated value (`4`) by the current value (`3`).
 5. The previous call is not needed anymore (again) so we can pop that frame and call `factorial` again, passing it `2` and `12`. One more time we will update the total value to `24` and get the factorial of `1`.
 6. The previous frame gets removed from the stack and we multiply `24` (the total) by `1` and try to get the factorial of `0`.
-7. Finally the factorial of `0` returns the accumulated total, which is `24` (which is the factorial of 4)
+7. Finally, the factorial of `0` returns the accumulated total, which is `24` (which is the factorial of 4)
 
 In a nutshell, this is what happens:
 
@@ -468,9 +468,9 @@ A Shadow Stack works just like a "second stack". While the normal stack does not
 
 However, as you might imagine, there's a lack of consolidated and easy-to-use tools for this and it also requires more memory to store all these frames in another place (which might not be a problem in a development environment).
 
-Finally, using a shadow stack still does not solve the problem of the `Error.stack` property if we have Tail Call Optimization, because when that happens we start using `goto` statements and not adding any frames to the stack trace. This means that when an error is created it might not have the function it was inside in the stack, because we got to that statement by jumping to a label and not by calling that function as we would normally do.
+Finally, using a shadow stack still does not solve the problem of the `Error.stack` property if we have Tail Call Optimization because when that happens we start using `goto` statements and not adding any frames to the stack trace. This means that when an error is created it might not have the function it was inside in the stack because we got to that statement by jumping to a label and not by calling that function as we would normally do.
 
-If you're curious about that, take a loot at [this excellent blog post by Michael Saboff](https://webkit.org/blog/6240/ecmascript-6-proper-tail-calls-in-webkit/) about how WebKit handles tail calls.
+If you're curious about that, take a look at [this excellent blog post by Michael Saboff](https://webkit.org/blog/6240/ecmascript-6-proper-tail-calls-in-webkit/) about how WebKit handles tail calls.
 
 <br>
 
@@ -501,6 +501,6 @@ Right now this is an [stage 0 proposal](https://github.com/tc39/proposals/blob/m
 
 ## **Get in touch!**
 
-**If you have any doubts, thoughts or if you disagree with anything I've written, please share it with me in the comments below or reach me at [@lfernandescosta on twitter](https://twitter.com/lfernandescosta)**. I'd love to hear what you have to say.
+**If you have any doubts, thoughts or if you disagree with anything I've written, please share it with me in the comments below or reach me at [@lfernandescosta on Twitter](https://twitter.com/lfernandescosta)**. I'd love to hear what you have to say.
 
 Thanks for reading!
