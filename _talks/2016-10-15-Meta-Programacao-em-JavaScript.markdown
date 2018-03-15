@@ -22,4 +22,4 @@ The video quality may not be so good because the only recording we have got is t
 
 Also, if you're not from Brazil you probably won't understand those gifs of amateur bodybuilders because they're part of a very popular Brazilian meme video. Just so you know why they're there.
 
-I hope you guys like it!
+I hope you like it!
