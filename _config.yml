@@ -23,5 +23,5 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-timezone: America/Sao_Paulo
+timezone: Europe/London
 plugins: [jekyll-paginate]
