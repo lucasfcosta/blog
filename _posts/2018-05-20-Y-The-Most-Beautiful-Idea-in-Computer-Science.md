@@ -53,7 +53,7 @@ Let's look at some more examples:
 1. `x => x` - `x` is a bound variable, because it's bound to the function's parameters
 2. `x => x + y` - `x` is a bound variable because it's bound to the function's parameters and `y` is a free variable because it refers to a value outside of the function's scope
 3. `x => y + z` - `y` and `z` are both free variables because they refer to values outside of the function's context
-4. `(x, y) => x + y` - Both `x` and `y` are free variables because they are bound to the function's parameters
+4. `(x, y) => x + y` - Both `x` and `y` are bound variables because they are bound to the function's parameters
 
 Getting back to combinators, we can now say that the following functions are all combinators:
 
