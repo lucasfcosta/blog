@@ -506,6 +506,12 @@ This may seem a bit complicated, so let's review what happens inside Chai we wan
 
 <br>
 
+## **Translations**
+
+If you want to translate this text into your own language that would be awesome! Feel free to do it and if you need me to link it here I will definitely do so.
+
+* [Russian - by Stanislav from GetColorings.com](http://getcolorings.com/ru-javascript-and-stack-traces)
+
 ## Get in touch!
 
 **If you have any doubts, thoughts or if you disagree with anything I've written, please share it with me in the comments below or reach me at [@lfernandescosta on twitter](https://twitter.com/lfernandescosta)**. I'd love to hear what you have to say and do any corrections if I made any mistakes.
