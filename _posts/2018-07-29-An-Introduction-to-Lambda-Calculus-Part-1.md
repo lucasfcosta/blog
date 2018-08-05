@@ -31,7 +31,7 @@ As I've mentioned in the introduction to this post, I could write an entire blog
 <br>
 
 
-## Lambda Calculus Syntax'
+## Lambda Calculus' Syntax
 
 Everything in Lambda Calculus is an [expression](https://www.quora.com/Whats-the-difference-between-a-statement-and-an-expression-in-Python-Why-is-print-%E2%80%98hi%E2%80%99-a-statement-while-other-functions-are-expressions), which means that everything must evaluate to a value.
 
