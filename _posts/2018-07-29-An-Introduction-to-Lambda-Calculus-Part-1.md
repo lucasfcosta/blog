@@ -2,7 +2,7 @@
 layout: post
 title: "A Gentle Introduction to Lambda Calculus - Part 1: Syntax"
 author: Lucas Fernandes da Costa
-tags: feedback software-engineering
+tags: lambda-calculus functional-programming computability
 ---
 
 Even though lots of people nowadays advocate for applying functional programming principles to JavaScript, not many of them know the principles of Lambda Calculus and how it all started.

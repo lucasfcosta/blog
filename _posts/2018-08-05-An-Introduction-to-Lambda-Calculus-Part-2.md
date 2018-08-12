@@ -2,7 +2,7 @@
 layout: post
 title: "A Gentle Introduction to Lambda Calculus - Part 2: Execution"
 author: Lucas Fernandes da Costa
-tags: feedback software-engineering
+tags: lambda-calculus functional-programming computability
 ---
 
 This is the second blog post in my series about Lambda Calculus. To make sure you'll have the necessary knowledge about Lambda Calculus' syntax you will probably want to read [the first post in this series](/2018/07/29/An-Introduction-to-Lambda-Calculus-Part-1.html) before coming back to this one.
