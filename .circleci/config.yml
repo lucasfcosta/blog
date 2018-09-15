@@ -1,6 +1,7 @@
 version: 2
 jobs:
   build:
+    context: bundle
     docker:
        - image: circleci/ruby:2.4.1-node-browsers
     working_directory: ~/lucasfcosta.github.io
@@ -22,6 +23,7 @@ jobs:
             - ./vendor/bundle
           key: v1-dependencies-{{ checksum "Gemfile.lock" }}
   deploy:
+    context: bundle
     docker:
       - image: circleci/python:2.7-jessie
     working_directory: ~/lucasfcosta.github.io
