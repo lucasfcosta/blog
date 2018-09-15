@@ -1,0 +1,46 @@
+version: 2
+jobs:
+  build:
+    docker:
+       - image: circleci/ruby:2.4.1-node-browsers
+    working_directory: ~/lucasfcosta.github.io
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "Gemfile.lock" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-dependencies-
+      - run:
+          name: install dependencies
+          command: bundle install --jobs=4 --retry=3 --path vendor/bundle
+      - run:
+          name: build _site
+          command: jekyll build
+      - save_cache:
+          paths:
+            - ./vendor/bundle
+          key: v1-dependencies-{{ checksum "Gemfile.lock" }}
+  deploy:
+    docker:
+      - image: circleci/python:2.7-jessie
+    working_directory: ~/lucasfcosta.github.io
+    steps:
+      - run:
+          name: install awscli
+          command: sudo pip install awscli
+      - run:
+          name: deploy to S3
+          command: aws s3 sync --delete _site s3://lucasfcosta.com/
+
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
