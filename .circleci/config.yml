@@ -22,6 +22,11 @@ jobs:
           paths:
             - ./vendor/bundle
           key: v1-dependencies-{{ checksum "Gemfile.lock" }}
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - _site
+
   deploy:
     context: bundle
     docker:
@@ -31,6 +36,8 @@ jobs:
       - run:
           name: install awscli
           command: sudo pip install awscli
+      - attach_workspace:
+          at: _site
       - run:
           name: deploy to S3
           command: aws s3 sync --delete _site s3://lucasfcosta.com/
