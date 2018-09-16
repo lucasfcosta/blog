@@ -40,7 +40,7 @@ jobs:
           at: _site
       - run:
           name: deploy to S3
-          command: aws s3 sync --delete _site s3://lucasfcosta.com/
+          command: aws s3 sync --delete _site/* s3://lucasfcosta.com/
 
 workflows:
   version: 2
