@@ -2,6 +2,8 @@
 layout: post
 title : "Quick vIM Tips That Will Save Your Life"
 author: Lucas Fernandes da Costa
+place: Florianópolis, Brazil
+flag: 🇧🇷
 tags : vim vi
 ---
 

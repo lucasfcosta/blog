@@ -1,8 +1,9 @@
 ---
-layout: talk
-title: "[EN-US] What can we learn with JavaScript fatigue?"
+layout: post
+title: "What can we learn with JavaScript fatigue?"
 event: TheConf São Paulo 2017
 author: Lucas Fernandes da Costa
+flag: 🇧🇷
 tags: talks javascript javascriptfatigue fatigue
 ---
 

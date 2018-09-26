@@ -2,6 +2,8 @@
 layout: post
 title : "JavaScript Errors and Stack Traces in Depth"
 author: Lucas Fernandes da Costa
+place: Florianópolis, Brazil
+flag: 🇧🇷
 tags : javascript errors stack traces
 ---
 

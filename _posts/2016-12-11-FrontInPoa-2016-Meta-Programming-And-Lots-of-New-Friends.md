@@ -2,6 +2,8 @@
 layout: post
 title : "FrontInPOA 2016: Meta Programming and Lots of New Friends"
 author: Lucas Fernandes da Costa
+place: Porto Alegre, Brazil
+flag: 🇧🇷
 tags : meta programming talk frontinpoa travel
 ---
 

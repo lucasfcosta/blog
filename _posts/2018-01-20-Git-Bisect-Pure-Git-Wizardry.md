@@ -2,6 +2,8 @@
 layout: post
 title : Git Bisect A.K.A. Pure Git Wizardry
 author: Lucas Fernandes da Costa
+place: London, United Kingdom
+flag: 🇬🇧
 tags : git wizardry bisect scm
 ---
 

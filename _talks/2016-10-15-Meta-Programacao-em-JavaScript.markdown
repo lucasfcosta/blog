@@ -1,8 +1,9 @@
 ---
-layout: talk
-title: "[PT-BR] Meta Programação em JavaScript"
+layout: post
+title: "Meta Programação em JavaScript"
 event: 13th FloripaJS
 author: Lucas Fernandes da Costa
+flag: 🇧🇷
 tags: talks metaprogramming pt-br
 ---
 

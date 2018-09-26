@@ -2,6 +2,8 @@
 layout: post
 title: "Y: The Most Beautiful Idea in Computer Science explained in JavaScript"
 author: Lucas Fernandes da Costa
+place: London, United Kingdom
+flag: 🇬🇧
 tags: functional-programming combinators javascript y-combinator
 ---
 

@@ -2,6 +2,8 @@
 layout: post
 title : "Meta Programming In JavaScript - Part Two: Freeze, Seal, Prevent Extensions and Inheritance"
 author: Lucas Fernandes da Costa
+place: Florianópolis, Brazil
+flag: 🇧🇷
 tags : nodejs meta programming javascript coding
 ---
 

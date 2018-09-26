@@ -2,6 +2,8 @@
 layout: post
 title : "Open Source Contributions Made Easy"
 author: Lucas Fernandes da Costa
+place: Florianópolis, Brazil
+flag: 🇧🇷
 tags : opensource OSS GitHub contributing
 ---
 

@@ -1,8 +1,9 @@
 ---
-layout: talk
-title: "[PT-BR] (Lightning Version) Meta Programação em JavaScript"
+layout: post
+title: "(Lightning Version) Meta Programação em JavaScript"
 event: PagarMe Talks
 author: Lucas Fernandes da Costa
+flag: 🇧🇷
 tags: talks metaprogramming pt-br pagarme lightning
 ---
 

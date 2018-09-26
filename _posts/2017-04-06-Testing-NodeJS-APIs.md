@@ -2,6 +2,8 @@
 layout: post
 title: "Writing Good Tests for NodeJS APIs"
 author: Lucas Fernandes da Costa
+place: Florianópolis, Brazil
+flag: 🇧🇷
 tags : testing node nodejs javascript api integration tdd
 ---
 

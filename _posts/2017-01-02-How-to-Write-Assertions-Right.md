@@ -2,6 +2,8 @@
 layout: post
 title : "How to Write Assertions Right"
 author: Lucas Fernandes da Costa
+place: Florianópolis, Brazil
+flag: 🇧🇷
 tags : assertions chai testing tdd
 ---
 

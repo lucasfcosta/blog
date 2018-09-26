@@ -2,6 +2,8 @@
 layout: post
 title : "Meta Programming In JavaScript - Part Four: Symbols"
 author: Lucas Fernandes da Costa
+place: Florianópolis, Brazil
+flag: 🇧🇷
 tags: nodejs meta programming javascript coding metaobject protocol mop
 ---
 

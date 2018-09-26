@@ -2,6 +2,8 @@
 layout: post
 title : "Everything You Need to Know About Regular Expressions In JavaScript - Part One: Basic Concepts"
 author: Lucas Fernandes da Costa
+place: Florianópolis, Brazil
+flag: 🇧🇷
 tags : regex regular expressions
 ---
 

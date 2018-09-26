@@ -2,6 +2,8 @@
 layout: post
 title : "All About Recursion, PTC, TCO and STC in JavaScript"
 author: Lucas Fernandes da Costa
+place: Florianópolis, Brazil
+flag: 🇧🇷
 tags : javascript tailcall tail call optimization recursion
 ---
 
@@ -490,12 +492,12 @@ Right now this is an [stage 0 proposal](https://github.com/tc39/proposals/blob/m
 
 ## **Related Material**
 
-* V8 Team blog post which also talks about tail calls - https://v8project.blogspot.com.br/2016/04/es6-es7-and-beyond.html
-* Checking whether a function is in a tail position by Dr. Axel Rauschmayer - http://2ality.com/2015/06/tail-call-optimization.html#checking_whether_a_function_call_is_in_a_tail_position
-* ECMAScript 6 Proper Tail Calls in WebKit by Michael Saboff - https://webkit.org/blog/6240/ecmascript-6-proper-tail-calls-in-webkit/
-* The Syntactic Tail Calls Proposal by Brian Terlson - https://github.com/tc39/proposal-ptc-syntax#syntactic-tail-calls-stc
-* Issue about Tail call Optimization (TCO) in ES6 & Node.js by Mr. Rod Vagg
-* ES6 tail calls controversy issue by Juriy Zaytsev - https://github.com/kangax/compat-table/issues/819
+* [V8 Team blog post which also talks about tail calls](https://v8project.blogspot.com.br/2016/04/es6-es7-and-beyond.html)
+* [Checking whether a function is in a tail position by Dr. Axel Rauschmayer](http://2ality.com/2015/06/tail-call-optimization.html#checking_whether_a_function_call_is_in_a_tail_position)
+* [ECMAScript 6 Proper Tail Calls in WebKit by Michael Saboff](https://webkit.org/blog/6240/ecmascript-6-proper-tail-calls-in-webkit/)
+* [The Syntactic Tail Calls Proposal by Brian Terlson](https://github.com/tc39/proposal-ptc-syntax#syntactic-tail-calls-stc)
+* [Issue about Tail call Optimization (TCO) in ES6 & Node.js by Mr. Rod Vagg](https://github.com/nodejs/CTC/issues/3)
+* [ES6 tail calls controversy issue by Juriy Zaytsev](https://github.com/kangax/compat-table/issues/819)
 
 <br>
 
