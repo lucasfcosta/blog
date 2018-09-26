@@ -2,6 +2,8 @@
 layout: post
 title : Currying in JavaScript
 author: Lucas Fernandes da Costa
+place: Florianópolis, Brazil
+flag: 🇧🇷
 tags : coding javascript currying
 ---
 

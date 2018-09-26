@@ -2,6 +2,8 @@
 layout: post
 title: Software Engineering in 100 Quotes
 author: Lucas Fernandes da Costa
+place: London, United Kingdom
+flag: 🇬🇧
 tags: software engineering quotes 100 management industry
 ---
 

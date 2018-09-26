@@ -1,8 +1,9 @@
 ---
-layout: talk
-title: "[PT-BR] Testes em JS como você nunca viu antes"
+layout: post
+title: "Testes em JS como você nunca viu antes"
 event: JSDay Recife 2016
 author: Lucas Fernandes da Costa
+flag: 🇧🇷
 tags: talks tests javascript pt-br
 ---
 

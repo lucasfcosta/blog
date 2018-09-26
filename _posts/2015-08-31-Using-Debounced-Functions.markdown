@@ -2,6 +2,8 @@
 layout: post
 title : Using Debounced Functions
 author: Lucas Fernandes da Costa
+place: Florianópolis, Brazil
+flag: 🇧🇷
 tags : coding javascript debounce
 ---
 

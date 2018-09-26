@@ -2,6 +2,8 @@
 layout: post
 title : We Should Stop Complaining About Open Source
 author: Lucas Fernandes da Costa
+place: Florianópolis, Brazil
+flag: 🇧🇷
 tags : opensource github
 ---
 

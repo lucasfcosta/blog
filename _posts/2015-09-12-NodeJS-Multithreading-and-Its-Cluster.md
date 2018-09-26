@@ -2,6 +2,8 @@
 layout: post
 title : Multithreading in Node.js</Node>
 author: Lucas Fernandes da Costa
+place: Florianópolis, Brazil
+flag: 🇧🇷
 tags : nodejs multithread javascript coding
 ---
 

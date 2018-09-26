@@ -2,61 +2,29 @@
 layout: default
 ---
 
-<div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-
+<div class="blog">
   <ul class="post-list">
-    {% for post in paginator.posts %}
-      <li>
+    {% for post in site.posts %}
+      <li class="post-item">
 
-        <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</div>
+        <span class="post-date">
+            {% assign d = post.date | date: "%-d" %}
+            {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %}
+            of
+            {{ post.date | date: "%B" }},
+            {{ post.date | date: "%Y" }}
+        </span>
 
-        <h2>
+        <h2 class="post-title">
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
-        
-        <a class="disqus-comment-count" href="{{ post.url | prepend: site.baseurl }}#disqus_thread" data-disqus-url="{{ post.url | prepend: site.baseurl }}"> Comments</a>
 
+        <span class="post-author">
+            {{ post.author }} at {{ post.place }} 
+        </span>
+        <span class="post-flag">{{ post.flag }}</span>
       </li>
     {% endfor %}
   </ul>
-
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}" class="pagination-button fixed-width">Previous</a>
-    {% endif %}
-    
-    {% for count in (1..paginator.total_pages) %}
-      {% if count == 1 %}
-        {% if count == paginator.page %}
-          <a href="/" class="pagination-button active">{{ count }}</a>
-        {% else %}
-          <a href="/" class="pagination-button">{{ count }}</a>
-        {% endif %}
-      {% else %}
-        {% if count == paginator.page %}
-          <a href="#" class="pagination-button active">{{ count }}</a>
-        {% else %}
-          <a href="/posts/page{{ count }}" class="pagination-button">{{ count }}</a>
-        {% endif %}
-      {% endif %}
-    {% endfor %}  
-    
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="pagination-button fixed-width">Next</a>
-    {% endif %}
-  </div>
-  
 </div>
-
-<script type="text/javascript">
-    var disqus_shortname = 'lucasfcosta';
-    
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>

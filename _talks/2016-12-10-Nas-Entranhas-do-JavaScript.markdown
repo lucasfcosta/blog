@@ -1,14 +1,15 @@
 ---
-layout: talk
-title: "[PT-BR] Nas Entranhas do JavaScript: Meta Programação"
+layout: post
+title: "Nas Entranhas do JavaScript: Meta Programação"
 event: FrontInPoa 2016
 author: Lucas Fernandes da Costa
+flag: 🇧🇷
 tags: talks tests javascript pt-br
 ---
 
 <div class="video">
     <figure>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/xE1udBlLJ1w" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/xE1udBlLJ1w" frameborder="0" allowfullscreen></iframe>
     </figure>
 </div>
 

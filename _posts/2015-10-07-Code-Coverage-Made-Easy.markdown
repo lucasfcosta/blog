@@ -2,6 +2,8 @@
 layout: post
 title : Code Coverage Made Easy
 author: Lucas Fernandes da Costa
+place: Florianópolis, Brazil
+flag: 🇧🇷
 tags : coverage tests javascript
 ---
 

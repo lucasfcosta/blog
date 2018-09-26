@@ -2,6 +2,8 @@
 layout: post
 title: "A Gentle Introduction to Lambda Calculus - Part 1: Syntax"
 author: Lucas Fernandes da Costa
+place: London, United Kingdom
+flag: 🇬🇧
 tags: lambda-calculus functional-programming computability
 ---
 

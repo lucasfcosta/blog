@@ -2,6 +2,8 @@
 layout: post
 title : How I Learned to Stop Worrying and Love vIM
 author: Lucas Fernandes da Costa
+place: Florianópolis, Brazil
+flag: 🇧🇷
 tags : vIM text editor terminal
 ---
 

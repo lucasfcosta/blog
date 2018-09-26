@@ -2,6 +2,8 @@
 layout: post
 title : "Getting Started With Testing in Go"
 author: Lucas Fernandes da Costa
+place: Florianópolis, Brazil
+flag: 🇧🇷
 tags : tdd testing golang go
 ---
 

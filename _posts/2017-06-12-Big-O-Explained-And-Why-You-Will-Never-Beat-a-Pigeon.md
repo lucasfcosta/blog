@@ -2,6 +2,8 @@
 layout: post
 title : "Big-O Explained and Why You Will Never Beat a Pigeon"
 author: Lucas Fernandes da Costa
+place: Florianópolis, Brazil
+flag: 🇧🇷
 tags : computer-science big-o algorithms
 ---
 

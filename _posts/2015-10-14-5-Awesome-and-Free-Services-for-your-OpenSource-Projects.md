@@ -2,6 +2,8 @@
 layout: post
 title : 5 Awesome and Free Services for your Open Source Projects
 author: Lucas Fernandes da Costa
+place: Florianópolis, Brazil
+flag: 🇧🇷
 tags : github opensource services software engineering
 ---
 

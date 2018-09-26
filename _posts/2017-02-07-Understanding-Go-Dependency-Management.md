@@ -2,6 +2,8 @@
 layout: post
 title : "Understanding Dependency Management in Go"
 author: Lucas Fernandes da Costa
+place: Florianópolis, Brazil
+flag: 🇧🇷
 tags : go golang dependency godep
 ---
 

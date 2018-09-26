@@ -1,17 +1,15 @@
 # Site settings
-title: lucasfcosta
-full_name: Lucas Fernandes da Costa
+title: Lucas F. Costa
+full_name: Lucas F. Costa
 email: lucas@lucasfcosta.com
-description: > # 
-  Coding, culture and life in general.
-  Yes, it's that wide.
+description: Software engineering, culture and life in general.
+subtitle: Coding, culture and life in general
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://lucasfcosta.com" # the base hostname & protocol for your site
+email: lucas@lucasfcosta.com
 github_username:  lucasfcosta
 linkedin_username: lucasfdacosta
 twitter_username: thewizardlucas
-paginate: 5
-paginate_path: "/posts/page:num/"
 
 # Collections
 collections:

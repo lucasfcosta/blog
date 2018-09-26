@@ -2,6 +2,8 @@
 layout: post
 title: "A Gentle Introduction to Lambda Calculus - Part 2: Execution"
 author: Lucas Fernandes da Costa
+place: London, United Kingdom
+flag: 🇬🇧
 tags: lambda-calculus functional-programming computability
 ---
 

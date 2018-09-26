@@ -1,54 +1,101 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+
 @charset "utf-8";
 
+@font-face {
+    font-family: 'Bodoni';
+    src: url("/assets/bodoni.ttf") format("truetype");
+}
 
+@font-face {
+    font-family: 'Baskerville Bold';
+    src: url("/assets/baskerville-bold.ttf") format("truetype");
+}
 
-// Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+@font-face {
+    font-family: 'Baskerville Italic';
+    src: url("/assets/baskerville-italic.ttf") format("truetype");
+}
 
-$spacing-unit:     30px;
+@font-face {
+    font-family: 'Lato';
+    src: url("/assets/lato.ttf") format("truetype");
+}
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$menu-background-color: #E9E9E9;
-$brand-color:      #2a7ae2;
+$title-font-family:             "Bodoni", "Times Header", serif;
+$subtitle-font-family:          "Baskerville Italic", "Times New Roman", serif;
+$menu-item-font-family:         "Baskerville Bold",  serif;
+$post-title-font-family:        "Baskerville Bold",  serif;
+$copyleft-font-family:          "Baskerville Italic", "Times New Roman", sans-serif;
+$base-font-family:              "Lato", "Helvetica", sans-serif;
+$title-font-size:               36px;
+$title-font-size-mobile:        28px;
+$post-title-font-size:          36px;
+$post-title-font-size-mobile:   24px;
+$menu-item-font-size:           10px;
+$menu-item-font-size-tablet:    20px;
+$menu-item-font-size-mobile:    14px;
+$drawer-item-font-size:         36px;
+$drawer-item-font-size-small:   24px;
+$drawer-item-font-size-tablet:  44px;
+$subtitle-font-size:            13px;
+$subtitle-font-size-mobile:     10px;
+$metadata-font-size:            12px;
+$metadata-font-size-small:      11px;
+$footer-font-size:              14px;
+$text-font-size:                16px;
+$greeting-font-size:            36px;
+$greeting-font-size-mobile:     32px;
+$greeting-font-size-small:      24px;
+$base-line-height:              1.5;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$spacing-unit: 8px;
+
+$text-color:            #111;
+$background-color:      #fdfdfd;
+$menu-background-color: #E4DDDE;
 
 // Width of the content area
-$content-width:    1000px;
-$on-palm:          600px;
-$on-laptop:        800px;
-$on-phone:         320px;
+$content-width:     1152px;
+$on-phone:          690px;
+$on-small-phone:    320px;
+$on-tablet:         995px;
 
-
-
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
         @content;
     }
 }
 
+.non-scrollable {
+    position: fixed;
+}
 
+body {
+    box-sizing: border-box;
+    padding: 48px 15% 36px 15%;
+    width: 100%;
+}
+
+@include media-query($on-tablet) {
+    body {
+        padding: 48px 5% 48px 5%;
+    }
+}
+
+@include media-query($on-phone) {
+    body {
+        padding: 28px 5% 28px 5%;
+    }
+}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "posts",
-        "layout",
-        "syntax-highlighting"
+    "base",
+    "layout",
+    "post-list",
+    "post",
+    "about"
 ;

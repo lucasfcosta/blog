@@ -2,6 +2,8 @@
 layout: post
 title: "The Ultimate Guide to JavaScript Fatigue: Realities of our industry"
 author: Lucas Fernandes da Costa
+place: Florianópolis, Brazil
+flag: 🇧🇷
 tags: jsfatigue fatigue javascript software-engineering
 ---
 

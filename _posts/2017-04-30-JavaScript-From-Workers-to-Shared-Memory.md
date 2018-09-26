@@ -2,6 +2,8 @@
 layout: post
 title : "JavaScript: From Workers to Shared Memory"
 author: Lucas Fernandes da Costa
+place: Florianópolis, Brazil
+flag: 🇧🇷
 tags : javascript parallelism concurrency code workers shared memory
 ---
 

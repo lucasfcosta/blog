@@ -1,5 +1,8 @@
 ---
-layout: page
+layout: about
+profile-picture: /assets/authors/lucasfcosta.png
+greeting: "Hello, I'm Lucas"
+greeting-emoji: 👋
 title: About Me
 permalink: /about/
 ---

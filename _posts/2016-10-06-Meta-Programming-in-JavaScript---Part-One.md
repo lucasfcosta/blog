@@ -2,6 +2,8 @@
 layout: post
 title : "Meta Programming In JavaScript - Part One: Properties and Property Descriptors"
 author: Lucas Fernandes da Costa
+place: Florianópolis, Brazil
+flag: 🇧🇷
 tags : nodejs meta programming javascript coding
 ---
 
