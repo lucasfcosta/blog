@@ -77,6 +77,8 @@ body {
     box-sizing: border-box;
     padding: 48px 15% 36px 15%;
     width: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 @include media-query($on-tablet) {
