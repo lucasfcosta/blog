@@ -1,5 +1,7 @@
 .post {
-    padding: 132px 10% 72px 10%;
+    padding: 132px 0 72px 0;
+    width: 50em;
+    margin: 0 auto;
 
     .post-headline {
         display: flex;
@@ -44,8 +46,7 @@
     .post-content {
         overflow-wrap: break-word;
         word-wrap: break-word;
-        width: 100%;
-        margin-top: 72px;
+        margin: 72px auto 0 auto;
     }
 
     .share-buttons {
@@ -118,6 +119,28 @@
         left: 0;
     }
 
+    blockquote {
+        margin: 0.2em auto;
+        padding: 0.2em 1em;
+        border-left: 5px solid #999;
+        font-style: italic;
+
+        &:before {
+            display: none;
+        }
+
+        &:not(:first-of-type) {
+            margin-top: .5em;
+        }
+
+        p:first-of-type {
+            color: #555;
+            font-size: 12pt;
+            line-height: 1.4;
+            margin: 0;
+        }
+    }
+
     @include media-query($on-phone) {
         .post-content {
             margin-top: 36px;
@@ -129,7 +152,7 @@
         }
 
         .post-separator {
-            display: none;
+            display: table-column;
         }
 
         .post-date, .post-author {
@@ -156,5 +179,6 @@
 @include media-query($on-phone) {
     .post {
         padding: 64px 0 72px 0;
+        width: auto;
     }
 }
