@@ -32,7 +32,7 @@ GUIs tend to be better for performing actions one or very few times because you 
 
 In the meanwhile, the terminal allows less exploration. You have to read manuals and figure out which are the "magic words" you need to use to make something happen.
 
-However, due to the fact that we use few tools very frequently, it pays off to learn these textual commands. [As time goes by these commands become easier to remember them than to click around on graphical interfaces](https://brandur.org/interfaces). This is why **the efficiency of graphical interfaces is inversely proportional to the frequency you use them**.
+However, due to the fact that we use few tools very frequently, it pays off to learn these textual commands. [As time goes by these commands become easier to remember than clicking around on graphical interfaces](https://brandur.org/interfaces). This is why **the efficiency of graphical interfaces is inversely proportional to the frequency you use them**.
 
 **Graphical interfaces are more costly to develop** for a variety of reasons:
 
