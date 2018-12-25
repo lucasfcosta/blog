@@ -322,4 +322,4 @@ As you can see, `Object.freeze` is the most restrictive one and also includes th
 
 In this post we talked about inheritance and prototypes and about `freezing`, `sealing` and `preventing extensions`. The next post of this series will be about Proxies, Reflection and other kinds of intercessions. It will be the most dense post until now, so you better be prepared!
 
-**If you have any doubts or thoughts, please share them with me on the comments below or reach me at [@lfernandescosta on twitter](https://twitter.com/lfernandescosta)!**
+**If you have any doubts or thoughts, please share them with me on the comments below or reach me at [@thewizardlucas on twitter](https://twitter.com/thewizardlucas)!**

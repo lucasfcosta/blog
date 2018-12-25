@@ -162,6 +162,6 @@ This is a real experiment made by a South African company called "The Unlimited"
 
 ## **Get in touch!**
 
-**If you have any doubts, thoughts or if you disagree with anything I've written, please share it with me in the comments below or reach me at [@lfernandescosta on twitter](https://twitter.com/lfernandescosta)**. I'd love to hear what you have to say.
+**If you have any doubts, thoughts or if you disagree with anything I've written, please share it with me in the comments below or reach me at [@thewizardlucas on twitter](https://twitter.com/thewizardlucas)**. I'd love to hear what you have to say.
 
 Thanks for reading!

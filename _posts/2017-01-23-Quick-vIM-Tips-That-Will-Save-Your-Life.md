@@ -114,4 +114,4 @@ This is really simple, but it is a lot useful. To repeat the very same command y
 
 ## Let me know if you have any other useful tips!
 
-**If you have any useful tips, doubts or thoughts, please share them with me in the comments below or reach me at [@lfernandescosta on twitter](https://twitter.com/lfernandescosta)**
+**If you have any useful tips, doubts or thoughts, please share them with me in the comments below or reach me at [@thewizardlucas on twitter](https://twitter.com/thewizardlucas)**

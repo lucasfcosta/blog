@@ -652,5 +652,5 @@ This post is pretty long, but it is filled with lots of examples and details, I 
 
 I also highly recommend you to read [this blog post](https://www.keithcirkel.co.uk/metaprogramming-in-es6-symbols/), written by my great friend [@keithamus](https://twitter.com/keithamus), if you want some extra material about `Symbols`. His post is very detailed and it's also filled with some more ideas and awesome examples .
 
-**If you have any doubts or thoughts, please share them with me on the comments below or reach me at [@lfernandescosta on twitter](https://twitter.com/lfernandescosta)!**
+**If you have any doubts or thoughts, please share them with me on the comments below or reach me at [@thewizardlucas on twitter](https://twitter.com/thewizardlucas)!**
 

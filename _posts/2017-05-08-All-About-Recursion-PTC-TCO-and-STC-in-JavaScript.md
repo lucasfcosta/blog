@@ -503,6 +503,6 @@ Right now this is an [stage 0 proposal](https://github.com/tc39/proposals/blob/m
 
 ## **Get in touch!**
 
-**If you have any doubts, thoughts or if you disagree with anything I've written, please share it with me in the comments below or reach me at [@lfernandescosta on Twitter](https://twitter.com/lfernandescosta)**. I'd love to hear what you have to say.
+**If you have any doubts, thoughts or if you disagree with anything I've written, please share it with me in the comments below or reach me at [@thewizardlucas on Twitter](https://twitter.com/thewizardlucas)**. I'd love to hear what you have to say.
 
 Thanks for reading!

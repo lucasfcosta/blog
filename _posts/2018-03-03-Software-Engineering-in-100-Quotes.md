@@ -703,7 +703,7 @@ And now, after 100 quotes about software engineering, I'll allow myself to add a
 
 ## **Get in touch!**
 
-If you disagree with anything I said or if you have anything you'd like to add or comment, feel free to use the space below or send me a tweet [@lfernandescosta](https://twitter.com/lfernandescosta).
+If you disagree with anything I said or if you have anything you'd like to add or comment, feel free to use the space below or send me a tweet [@thewizardlucas](https://twitter.com/thewizardlucas).
 
 If you feel like submitting a PR to fix any possible typos or fix my grammar mistakes, you can also find me [on GitHub @lucasfcosta](https://github.com/lucasfcosta).
 

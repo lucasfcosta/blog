@@ -257,4 +257,4 @@ In this post we talked about proxies and about the new `Reflect` global object, 
 
 In the next and last post of this series we will talk about **Symbols**. We will study their properties, how they're used to "guide" the language's internal operations and see how to use them to effectively solve real world problems.
 
-**If you have any doubts or thoughts, please share them with me on the comments below or reach me at [@lfernandescosta on twitter](https://twitter.com/lfernandescosta)!**
+**If you have any doubts or thoughts, please share them with me on the comments below or reach me at [@thewizardlucas on twitter](https://twitter.com/thewizardlucas)!**

@@ -276,5 +276,5 @@ In this post we have learned the very basics about regular expressions: what is 
 
 In the next post we will talk about grouping and some other RegEx related methods in JavaScript. You better be prepared!
 
-**If you have any doubts or thoughts, please share them with me on the comments below or reach me at [@lfernandescosta on twitter](https://twitter.com/lfernandescosta)**
+**If you have any doubts or thoughts, please share them with me on the comments below or reach me at [@thewizardlucas on twitter](https://twitter.com/thewizardlucas)**
 

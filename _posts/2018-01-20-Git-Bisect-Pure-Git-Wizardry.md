@@ -205,5 +205,5 @@ This post is just an attempt to make `git bisect` more popular and accessible fo
 
 ## ***Wanna talk to me?***
 
-If you have any doubts, corrections or anything else you'd like to share with me you can [reach me on twitter at @lfernandescosta](https://twitter.com/lfernandescosta) or in the comments below :)
+If you have any doubts, corrections or anything else you'd like to share with me you can [reach me on twitter at @thewizardlucas](https://twitter.com/thewizardlucas) or in the comments below :)
 

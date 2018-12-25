@@ -328,4 +328,4 @@ In this post we talked about enumerating properties, about property descriptors 
 
 You better be prepared!
 
-**If you have any doubts or thoughts, please share them with me on the comments below or reach me at [@lfernandescosta on twitter](https://twitter.com/lfernandescosta)**
+**If you have any doubts or thoughts, please share them with me on the comments below or reach me at [@thewizardlucas on twitter](https://twitter.com/thewizardlucas)**

@@ -319,4 +319,4 @@ We have also explored the JavaScript `RegExp` API in order for us to use it on t
 
 In the next chapter we will talk about the history of Regular Expressions in order to know how the current engines were born and understand the whole regular expression ecosystem.
 
-**If you have any doubts or thoughts, please share them with me on the comments below or reach me at [@lfernandescosta on twitter](https://twitter.com/lfernandescosta)**
+**If you have any doubts or thoughts, please share them with me on the comments below or reach me at [@thewizardlucas on twitter](https://twitter.com/thewizardlucas)**

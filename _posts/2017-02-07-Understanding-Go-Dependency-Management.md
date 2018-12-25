@@ -225,7 +225,7 @@ Of course, a few improvements could be made, such as using git tags to fetch spe
 
 ## Get in touch!
 
-**If you have any doubts, thoughts or if you disagree with anything I've written, please share it with me in the comments below or reach me at [@lfernandescosta on twitter](https://twitter.com/lfernandescosta)**. I'd love to hear what you have to say and do any corrections if I made any mistakes.
+**If you have any doubts, thoughts or if you disagree with anything I've written, please share it with me in the comments below or reach me at [@thewizardlucas on twitter](https://twitter.com/thewizardlucas)**. I'd love to hear what you have to say and do any corrections if I made any mistakes.
 
 At last, but not least, make sure you take a look at [this awesome talk by Wisdom Omuya on GopherCon 2016](https://www.youtube.com/watch?v=6gdVhHMxNTo) in which he explains how Go Vendoring works and also points out some details about its inner workings.
 

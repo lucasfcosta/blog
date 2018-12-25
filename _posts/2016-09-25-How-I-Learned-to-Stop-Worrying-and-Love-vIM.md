@@ -412,4 +412,4 @@ Also, whenever you're doing nothing (or scrolling Facebook's newsfeed), read the
 
 ## **Thank your for reading this!**
 
-If you have any doubts, corrections or new tips to share [reach me on twitter at @lfernandescosta](https://twitter.com/lfernandescosta) or at the comments of this post!
+If you have any doubts, corrections or new tips to share [reach me on twitter at @thewizardlucas](https://twitter.com/thewizardlucas) or at the comments of this post!
