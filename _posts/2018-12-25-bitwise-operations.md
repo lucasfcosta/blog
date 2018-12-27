@@ -216,11 +216,11 @@ const leftmostOne = 0b11111111111111111111111111110000;
 const leftmostZero = 0b01111111111111111111111111110000;
 
 // This will fill-in 0's in the left
-leftmostOne >> 2
+leftmostOne >>> 2
 // 0b00111111111111111111111111111100
 
 // This will also fill-in 0's in the left
-leftmostZero >> 2
+leftmostZero >>> 2
 // 0b00011111111111111111111111111100
 ```
 
