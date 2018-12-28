@@ -129,9 +129,9 @@ result.toString(2); // '10111'
 
 #### XOR → `^`
 
-Also known as `exclusive or`, **it will return `1` whenever both of the corresponding bits of the operands are not `1`**.
+Also known as `exclusive or`, **it will return `1` whenever the two corresponding bits are different from each other**.
 
-This means that any combination of zeros and ones will result in `1`, except `1` and `1`.
+This means that any combination of zeros and ones will result in `1`, except `1` and `1`, and `0` and `0`.
 
 ```js
 const foo = 0b10101; // 21
