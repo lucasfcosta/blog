@@ -29,8 +29,6 @@ In the same way that you represent the number 15 in decimals, you could represen
 
 ![Base 16 representation example](/assets/hexadecimal-numbers-representation.png)
 
-*Errata: every place to the left is 16 times greater than the previous one and therefore the third place here is actually 16² bigger than the first one. I will properly fix this image once I'm back in front of my desktop computer.*
-
 **Binary numbers are nothing but numbers represented on base-2** and they have the exact same properties of any other base-x systems. Every time a place in a binary number exceeds `2 - 1` it will then carry one over to the next place.
 
 ![Base 2 representation example](/assets/binary-numbers-representation.png)
