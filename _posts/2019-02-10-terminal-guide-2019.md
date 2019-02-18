@@ -2,8 +2,8 @@
 layout: post
 title: "How I'm still not using GUIs in 2019: A guide to the terminal"
 author: Lucas Fernandes da Costa
-place: Paris, France
-flag: 🇫🇷
+place: London, United Kingdom
+flag: 🇬🇧
 tags: terminal graphical-interfaces dotfiles tooling workflow
 ---
 
@@ -13,7 +13,7 @@ GUIs are bloatware. [I've said it before](/2018-08-05-In-Praise-of-Plaintext.htm
 
 *IDE* stands for Integrated Development Environment. This might be an accurate term, but when it comes to a *real integrated* development environment, the terminal is a lot better.
 
-In this post, I'll walk you through everything you need to start making your terminal an IDE: editing text efficiently, configuring its appearance, running a myriad of programs, and dynamically creating, resizing and closing tabs and windows.
+In this post, I'll walk you through everything you need to start making your terminal a complete development environment: how to edit text efficiently, configure its appearance, run and combine a myriad of programs, and dynamically create, resize and close tabs and windows.
 
 ![An image from my terminal showing three panes. My text editor (vIM), htop and a blank pane.](/assets/terminal-demo.png)
 
