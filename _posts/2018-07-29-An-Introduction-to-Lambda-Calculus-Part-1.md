@@ -87,7 +87,7 @@ Let's use an example in JavaScript to make it easier to understand:
 ```js
 const num = 13;
 
-const sumPlusThirteen = (a, b) => a + b + first
+const sumPlusThirteen = (a, b) => a + b + num
 ```
 
 In the snippet above, our function `sumPlusThirteen` uses the variables `a`, `b` and `num`. **The variables `a` and `b` are bound variables because they are bound to the function's parameters**: when we refer to their names we are referring to values that were passed to the `sumPlusThirteen` function. However, **the variable `num` refers to a value outside of the function's scope, which means it is a free variable**.
