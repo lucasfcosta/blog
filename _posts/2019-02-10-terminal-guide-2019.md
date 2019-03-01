@@ -15,7 +15,7 @@ GUIs are bloatware. [I've said it before](/2018/08/05/In-Praise-of-Plaintext.htm
 
 In this post, I'll walk you through everything you need to start making your terminal a complete development environment: how to edit text efficiently, configure its appearance, run and combine a myriad of programs, and dynamically create, resize and close tabs and windows.
 
-![An image from my terminal showing three panes. My text editor (vIM), htop and a blank pane.](/assets/terminal-demo.png)
+![An image from my terminal showing three panes. My text editor (`vim`), htop and a blank pane.](/assets/terminal-demo.png)
 
 <br>
 
@@ -59,11 +59,11 @@ At the end of this post you can find a list of other useful programs.
 
 # `neovim`
 
-`vIM` is my text-editor of choice and has a special place in my heart [and my ankle](https://pbs.twimg.com/media/DY65vJAW0AEfF-h.jpg).
+`vim` is my text-editor of choice and has a special place in my heart [and my ankle](https://pbs.twimg.com/media/DY65vJAW0AEfF-h.jpg).
 
-**`neovim` is another version of `vIM`**. It has all of `vIM`'s standard keybindings, the same features, and is fully compatible with `vIM` configuration options.
+**`neovim` is another version of `vim`**. It has all of `vim`'s standard keybindings, the same features, and is fully compatible with `vim` configuration options.
 
-To avoid the annoying seconds in which `vIM` would freeze during tasks like syntax-checks, `neovim` lets you run jobs asynchronously.
+To avoid the annoying seconds in which `vim` would freeze during tasks like syntax-checks, `neovim` lets you run jobs asynchronously.
 
 It also supports scripts not only written in VimL — not my favourite language, let's put it like that — but also scripts written in [LUA](https://www.lua.org/home.html).
 
@@ -77,11 +77,11 @@ alias vimdiff="nvim -d"
 
 <br>
 
-## Learning `vIM`
+## Learning `vim`
 
-Even though many people fear `vIM` and ["how to quit `vIM` is the most popular question on StackOverflow](), vIM is better mainly because it is different.
+Even though many people fear `vim` and ["how to quit `vim` is the most popular question on StackOverflow](), vim is better mainly because it is different.
 
-**For learning to use `vIM` effectively I'd highly recommend starting with [`vimtutor`](https://superuser.com/questions/246487/how-to-use-vimtutor)**. It will seem boring in the beginning, but it is the most effective way of learning vIM properly.
+**For learning to use `vim` effectively I'd highly recommend starting with [`vimtutor`](https://superuser.com/questions/246487/how-to-use-vimtutor)**. It will seem boring in the beginning, but it is the most effective way of learning vim properly.
 
 **Resist the urge to quit**. If you don't know how to accomplish a particular task, duck-duck-go it. In the first few days or weeks, you will have to remember which keys and commands do which things actively, but as time goes they will become deeply ingrained into your brain and editing text will be just like muscle memory.
 
@@ -101,7 +101,7 @@ inoremap <Left>  <NOP>
 inoremap <Right> <NOP>
 ```
 
-**I usually advise already proficient `vIM` users to not put anything they don't understand into their `init.vim` file**. Searching for a commands' meaning will lead you to a better understanding of `vIM` and will give you the knowledge necessary to configure your tools so that they match your editing style and workflow.
+**I usually advise already proficient `vim` users to not put anything they don't understand into their `init.vim` file**. Searching for a commands' meaning will lead you to a better understanding of `vim` and will give you the knowledge necessary to configure your tools so that they match your editing style and workflow.
 
 Now you can go ahead and duck-duck-go the `noremap` and `inoremap` commands above if you're feeling adventurous.
 
@@ -109,13 +109,13 @@ Once you have gotten comfortable editing text, **start noticing [anti-patterns s
 
 **You should always be asking yourself if there is a better way of doing something**. Most of the time the answer will be "yes".
 
-**Avoid plugins unless you definitely need them**. Most of the time, `vIM` already has the feature you are looking for and it's better to not depend on any third-parties in this case. Using few plugins keeps your environment fast, free of bloat and will make it easier for you to use `vIM` in any machine.
+**Avoid plugins unless you definitely need them**. Most of the time, `vim` already has the feature you are looking for and it's better to not depend on any third-parties in this case. Using few plugins keeps your environment fast, free of bloat and will make it easier for you to use `vim` in any machine.
 
 As a beginner, you don't exactly know what you need, so go ahead and add anything that you think might improve your workflow. **I usually recommend beginners to start with [`NERDTree`](https://github.com/scrooloose/nerdtree) and [`fzf`](https://github.com/junegunn/fzf.vim)**. In the future, you will eventually want to trim your configs and remove the clutter.
 
-Ultimately, the best tip I can give to anyone using `vIM` is to adopt an incremental learning approach. Try to improve a little bit every day and avoid trying to learn too many techniques in a short period. You will use your text-editor of choice — hopefully `vIM` — every single day, thus it is better to take a few days to assimilate a single command and use it for the rest of your life than to learn many tricks quickly and use them only once.
+Ultimately, the best tip I can give to anyone using `vim` is to adopt an incremental learning approach. Try to improve a little bit every day and avoid trying to learn too many techniques in a short period. You will use your text-editor of choice — hopefully `vim` — every single day, thus it is better to take a few days to assimilate a single command and use it for the rest of your life than to learn many tricks quickly and use them only once.
 
-Dig deep, learn things properly and at a moderate pace. For that, I highly recommend [`vIM Wikia`](http://vim.wikia.com).
+Dig deep, learn things properly and at a moderate pace. For that, I highly recommend [`vim Wikia`](http://vim.wikia.com).
 
 
 <br>
@@ -124,7 +124,7 @@ Dig deep, learn things properly and at a moderate pace. For that, I highly recom
 
 To install and manage plugins you will probably want to use [`vim-plug`](https://github.com/junegunn/vim-plug). It's minimalist, [easy to install](https://github.com/junegunn/vim-plug#neovim), [easy to use](https://github.com/junegunn/vim-plug#usage) and has many nice features such as [on-demand loading of plugins](https://github.com/junegunn/vim-plug#on-demand-loading-of-plugins) and [post-update hooks](https://github.com/junegunn/vim-plug#post-update-hooks) which allow you to configure instructions for extra installation steps.
 
-[`neomake`](https://github.com/neomake/neomake) was `neovim`'s main selling point for me. It allows you to run programs asynchronously and therefore avoid blocking the main thread. This feature is especially useful for running syntax-checks or any other CPU intensive actions that would have previously caused `vIM` to freeze for a few seconds.
+[`neomake`](https://github.com/neomake/neomake) was `neovim`'s main selling point for me. It allows you to run programs asynchronously and therefore avoid blocking the main thread. This feature is especially useful for running syntax-checks or any other CPU intensive actions that would have previously caused `vim` to freeze for a few seconds.
 
 [`NERDTree`](https://github.com/scrooloose/nerdtree) is an easy way of visualising and managing file trees. Even though all of its features have straightforward native alternatives, they are simply not as practical. I use the following lines to open it using `Ctrl+n` and show hidden files:
 
@@ -214,7 +214,7 @@ If the command above is malfunctioning make sure to [check if your `neovim` supp
 
 Needless to say — or maybe not so needless as I'm saying it already — it will be more useful for strongly typed languages. I have tested it mostly with `rust` and `TypeScript` and it's been fantastic.
 
-I also use the following lines to bind its suggestions to `vIM`'s default shortcut and popup for completion:
+I also use the following lines to bind its suggestions to `vim`'s default shortcut and popup for completion:
 
 ```
 " disable auto_triggering ycm suggestions pane and instead
@@ -253,7 +253,7 @@ Working with many different tabs is also beneficial if you quickly need to switc
 
 I find `tmux`'s default key-bindings to be a bit annoying, so I did some changes.
 
-I currently use `C-a` as a prefix, `h`, `j`, `k`, `l` — the same direction keys as in `vIM` — to switch between panes, and `-` and `|` to do horizontal and vertical splits.
+I currently use `C-a` as a prefix, `h`, `j`, `k`, `l` — the same direction keys as in `vim` — to switch between panes, and `-` and `|` to do horizontal and vertical splits.
 
 ```
 # Free the original `Ctrl-b` prefix keybinding.
@@ -294,7 +294,7 @@ First, I had to allow `tmux` to access the `OSX` pasteboard:
 set-option -g default-command "reattach-to-user-namespace -l zsh"
 ```
 
-Then I started using the same keys as I use in `vIM` to select and copy text:
+Then I started using the same keys as I use in `vim` to select and copy text:
 
 ```
 # Vi copypaste
