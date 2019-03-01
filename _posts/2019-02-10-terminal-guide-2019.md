@@ -79,7 +79,7 @@ alias vimdiff="nvim -d"
 
 ## Learning `vim`
 
-Even though many people fear `vim` and ["how to quit `vim` is the most popular question on StackOverflow](), vim is better mainly because it is different.
+Even though many people fear `vim` and ["how to quit `vim`" is one of the most popular questions on StackOverflow](https://stackoverflow.blog/2017/05/23/stack-overflow-helping-one-million-developers-exit-vim/), `vim` is better mainly because it is different.
 
 **For learning to use `vim` effectively I'd highly recommend starting with [`vimtutor`](https://superuser.com/questions/246487/how-to-use-vimtutor)**. It will seem boring in the beginning, but it is the most effective way of learning vim properly.
 
