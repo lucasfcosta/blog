@@ -9,7 +9,7 @@ tags: terminal graphical-interfaces dotfiles tooling workflow
 
 > *TL;DR: [Here are my dotfiles](https://github.com/lucasfcosta/dotfiles). Use them and have fun.*
 
-GUIs are bloatware. [I've said it before](/2018-08-05-In-Praise-of-Plaintext.html). However, rather than just complaining about IDEs I'd like to provide an understandable guide to a much better alternative: the terminal.
+GUIs are bloatware. [I've said it before](/2018/08/05/In-Praise-of-Plaintext.html). However, rather than just complaining about IDEs I'd like to provide an understandable guide to a much better alternative: the terminal.
 
 *IDE* stands for Integrated Development Environment. This might be an accurate term, but when it comes to a *real integrated* development environment, the terminal is a lot better.
 
