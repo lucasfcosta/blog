@@ -22,7 +22,7 @@ To mitigate this problem **GUIs tend to contain features that many of their user
 
 Smaller programs combined allow you to perform a wider range of tasks than a single big program.
 
-[Text streams are the universal interface which enables this](https://en.wikiquote.org/wiki/Doug_McIlroy). Text streams are simple and elegant. Even if you cannot find a program that does not do what you want, it becomes easy for you to write one.
+[Text streams are the universal interface which enables this](https://en.wikiquote.org/wiki/Doug_McIlroy). Text streams are simple and elegant. Even if you cannot find a program that does what you want, it becomes easy for you to write one.
 
 Due to this, you are virtually able to do anything as long as you know which programs to combine.
 
