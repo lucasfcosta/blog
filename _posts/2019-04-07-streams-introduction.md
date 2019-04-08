@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "An introduction to UNIX streams and why your terminal is not a terminal"
+title: "Your terminal is not a terminal: An Introduction to Streams"
 author: Lucas Fernandes da Costa
 place: London, United Kingdom
 flag: 🇬🇧
