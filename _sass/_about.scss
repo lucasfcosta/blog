@@ -18,6 +18,8 @@
     }
 
     .profile-content {
+        max-width: 50em;
+        margin: 0 auto;
         padding: 48px 10% 72px 10%;
         text-align: justify;
         font-family: $base-font-family;
