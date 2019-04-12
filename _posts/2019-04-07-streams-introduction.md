@@ -159,16 +159,16 @@ In the image above, the `/dev/ttys/005` is just an example. It could've been any
 
 To write the output of a program to a file instead of the `tty`, you can direct the `stdout` stream somewhere else.
 
-In the example below, we write the contents of the `/` directory to the file `root_content.txt` in the `/tmp` folder. We do this by using the `>` operator, which allows us to redirect the `stdout` stream by default.
+In the example below, we write the contents of the `/` directory to the file `content_list.txt` in the `/tmp` folder. We do this by using the `>` operator, which allows us to redirect the `stdout` stream by default.
 
 ```console
-$ ls / 1> /tmp/root_content.txt
+$ ls / 1> /tmp/content_list.txt
 ```
 
-To check what is inside `/tmp/root_content.txt` you can now use `cat`:
+To check what is inside `/tmp/content_list.txt` you can now use `cat`:
 
 ```console
-$ cat /tmp/root_content.txt
+$ cat /tmp/content_list.txt
 Applications
 Library
 Network
@@ -191,12 +191,12 @@ var
 
 Differently from what it would usually do if you had just used `ls /`, the `ls` command didn't write anything to your terminal. Instead of writing to the `/dev/tty` file that your terminal emulator reads from, it has written to `/tmp/content_list.txt`.
 
-![A drawing showing the before and after states of the streams when using `cat`. Initially the `stdout` would point to `/dev/tty` but after we do a redirection it points to the file path.](/assets/stream-redirecting-stdout-to-file.png)
+![A drawing showing the before and after states of the streams when using `ls`. Initially the `stdout` would point to `/dev/tty` but after we do a redirection it points to the file path.](/assets/stream-redirecting-stdout-to-file.png)
 
 We can achieve the same redirection effect by using `>` instead of `1>`.
 
 ```console
-$ ls / > /tmp/root_content.txt
+$ ls / > /tmp/content_list.txt
 ```
 
 Omitting the prefixed number works because the `1` in front of `>` indicates which stream we want to redirect. In this case, `1` is the [file descriptor](https://www.computerhope.com/jargon/f/file-descriptor.htm) for `stdout`.
@@ -223,7 +223,7 @@ cat: /this/path/does/not/exist: No such file or directory
 For redirecting both `stdin` and `stderr` we can use `&>`.
 
 ```console
-$ cat /does/not/exist /tmp/root_content.txt &> /tmp/two_streams.txt
+$ cat /does/not/exist /tmp/content_list.txt &> /tmp/two_streams.txt
 ```
 
 Now `/tmp/two_streams` will contain what has been written to both `stdout` and `stderr`.
