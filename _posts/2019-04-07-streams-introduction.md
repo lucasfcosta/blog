@@ -162,7 +162,7 @@ To write the output of a program to a file instead of the `tty`, you can direct 
 In the example below, we write the contents of the `/` directory to the file `root_content.txt` in the `/tmp` folder. We do this by using the `>` operator, which allows us to redirect the `stdout` stream by default.
 
 ```console
-$ ls / > /tmp/root_content.txt
+$ ls / 1> /tmp/root_content.txt
 ```
 
 To check what is inside `/tmp/root_content.txt` you can now use `cat`:
