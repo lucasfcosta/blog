@@ -22,13 +22,16 @@
     }
 
     .post-title {
-        margin: 6px 0;
+        margin: 0;
         opacity: 0.9;
         line-height: 41px;
         font-family: $post-title-font-family;
-        font-size: $post-title-font-size;
-        font-style: italic;
+        font-size: $post-title-list-font-size;
         font-width: bold;
+    }
+
+    .post-title:hover {
+        opacity: 0.5;
     }
 
     .post-link {
@@ -65,7 +68,8 @@
         }
 
         .post-title {
-            font-size: $post-title-font-size-mobile;
+            margin: 6px 0;
+            font-size: $post-title-list-font-size-mobile;
             line-height: 27px;
         }
     }
