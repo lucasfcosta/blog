@@ -6,7 +6,7 @@ permalink: /talks/
 
 <div class="blog">
   <ul class="post-list">
-    {% assign sortedTalks = (site.talks | sort: 'date') | reverse %}
+    {% assign sortedTalks = site.talks | sort: 'date' | reverse %}
     {% for talk in sortedTalks %}
       <li class="post-item">
 
