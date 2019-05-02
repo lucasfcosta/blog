@@ -56,7 +56,7 @@ The whole reason why Design and Requirements exist is that they define what prob
 
 This same principle also applies to the tools we've got available in the JavaScript ecosystem. Babel, webpack, react, Redux, Mocha, Chai, Typescript, all of them exist to solve a problem and we gotta understand which problem they are trying to solve, we need to think carefully about when most of them are needed, otherwise, we will end up having JS Fatigue because:
 
-<p style="font-size: 2.6em; text-align: center;">JS Fatigue happens when people use tools they don't need to solve problems they don't have.</p>
+<p style="line-height: 1.2; font-size: 2.6em; text-align: center;">JS Fatigue happens when people use tools they don't need to solve problems they don't have.</p>
 
 As Donald Knuth once said: "Premature optimization is the root of all evil". Remember that software only exists to solve business problems and most software out there is just boring, it does not have any high scalability or high-performance constraints. Focus on solving business problems, focus on decreasing cost and generating revenue because this is all that matters. Optimize when you need, otherwise you will probably be adding unnecessary complexity to your software, which increases cost, and not generating enough revenue to justify that.
 
@@ -148,23 +148,11 @@ In order to explain this, I'll use an example I love.
 
 This is the beautiful and awesome city of Barcelona:
 
-<br>
-
-<center>
-    <img src="/assets/barcelona-city.jpeg" alt="The City of Barcelona" />
-</center>
-
-<br>
+<img src="/assets/barcelona-city.jpeg" alt="The City of Barcelona" />
 
 When we look at it this way and from this distance, it just looks like any other city in the world, but when we look at it from above, this is how Barcelona looks:
 
-<br>
-
-<center>
-    <img src="/assets/barcelona-above.jpeg" alt="Barcelona from above" />
-</center>
-
-<br>
+<img src="/assets/barcelona-above.jpeg" alt="Barcelona from above" />
 
 As you can see, every block has the same size and all of them are very organized. If you've ever been to Barcelona you will also know how good it is to move through the city and how well it works.
 

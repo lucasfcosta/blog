@@ -126,7 +126,7 @@ Let's say you have flagged the commit on the top of your branch as `good` and th
 
 <br>
 
-<center><img src="/assets/bisect-tree-1.png" alt="The first step Git bisect will do"/></center>
+<img src="/assets/bisect-tree-1.png" alt="The first step Git bisect will do"/>
 
 <br>
 
@@ -136,23 +136,23 @@ In this case, let's say that the 8th commit is already broken. This means that i
 
 <br>
 
-<center><img src="/assets/bisect-tree-2.png" alt="The first step Git bisect will do"/></center>
+<img src="/assets/bisect-tree-2.png" alt="The first step Git bisect will do"/>
 
 <br>
 
 Now, telling git that the 4th commit is `good` is the same as telling it that the bug must have happened sometime in the future since all commits until this point in history will be considered `good` too. Git will then checkout the commit in the middle of the range between this `good` commit and the next `bad` one.
 
-<center><img src="/assets/bisect-tree-3.png" alt="The first step Git bisect will do"/></center>
+<img src="/assets/bisect-tree-3.png" alt="The first step Git bisect will do"/>
 
 By flagging the 6th commit as `bad` we also tell Git that this might not be the first `bad` commit and therefore we must go back to the middle of the range between this `bad` commit and the last `good` one. In this case, we only have one commit left to check (the 5th one).
 
 If the 5th commit is `good` it means that the revision just after it is guilty, if it's `bad` it will be considered the first commit to present the faulty behavior due to the fact that the revision just before it has been considered `good`.
 
-<center><img src="/assets/bisect-tree-4.png" alt="The first step Git bisect will do"/></center>
+<img src="/assets/bisect-tree-4.png" alt="The first step Git bisect will do"/>
 
 This will be the final state of the bisection we've just run. As you can see, by doing a binary search `bisect` is able to find the last `good` commit and the first `bad` one by assuming that as soon as you mark a commit as `good`, all the ones before it are considered `good` as well and as soon as you mark a commit as bad, it assumes that all the ones after it are bad too.
 
-<center><img src="/assets/bisect-tree-5.png" alt="The first step Git bisect will do"/></center>
+<img src="/assets/bisect-tree-5.png" alt="The first step Git bisect will do"/>
 
 <br>
 
