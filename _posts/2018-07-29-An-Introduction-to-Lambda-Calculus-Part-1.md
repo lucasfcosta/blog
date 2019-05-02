@@ -52,7 +52,7 @@ x // Identifier equivalent
 ```
 
 
-**Abstractions** are perhaps the most iconic kind of lambda expression, they **define what we call functions** or, more adequately, lambdas: which are just anonymous functions. The `ID` is an abstraction is called the metavariable, which is the variable in that abstraction which is going to be used in the function's body (which in this case is `E`), for example.
+**Abstractions** are perhaps the most iconic kind of lambda expression, they **define what we call functions** or, more adequately, lambdas: which are just anonymous functions. The `ID` in the beginning of that abstraction is called the metavariable. The metavaraible is the variable that is going to be used in the function's body (which in this case is `E`), for example:
 
 ```js
 (x) => x * x // Abstraction equivalent
