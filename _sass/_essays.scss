@@ -1,0 +1,21 @@
+.essays {
+    margin-top: 56px
+}
+
+.essays-warning {
+    font-family: 'Lato';
+    line-height: 1;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    flex-align: left;
+    align-items: center;
+    background-color: rgba(224,224,224, 0.5);
+    box-sizing: border-box;
+    padding: 16px 12px;
+    border-radius: 3px;
+    margin-bottom: 48px;
+}
+
+.essays-warning > p {
+}
