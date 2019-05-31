@@ -1,6 +1,6 @@
 ---
 layout: post
-title : "How to Write Assertions Right"
+title : "How to Write Assertions Correctly"
 author: Lucas Fernandes da Costa
 place: Florianópolis, Brazil
 flag: 🇧🇷
