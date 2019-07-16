@@ -347,7 +347,7 @@ In this example, I'm gonna set the third bit (index `2`) in `10110001` to `1`.
 
     ```
         10110001
-    AND 00000100
+    OR  00000100
         10110101
     ```
 
