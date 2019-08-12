@@ -59,7 +59,7 @@ At the end of this post you can find a list of other useful programs.
 
 # `neovim`
 
-`vim` is my text-editor of choice and has a special place in my heart [and my ankle](https://pbs.twimg.com/media/DY65vJAW0AEfF-h.jpg).
+`vim` is my text-editor of choice and has a special place in my heart [and my ankle](/assets/vimtattoo.jpg).
 
 **`neovim` is another version of `vim`**. It has all of `vim`'s standard keybindings, the same features, and is fully compatible with `vim` configuration options.
 
