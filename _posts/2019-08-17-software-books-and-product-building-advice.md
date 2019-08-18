@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Don't write software like you write books and other product building advice
+title: Don't write software like you write books, and other product building advice
 author: Lucas Fernandes da Costa
 place: London, United Kingdom
 flag: 🇬🇧
@@ -29,10 +29,14 @@ When creating the right product, the only certainty you have is that, [eventuall
 
 Embracing failure is a concept which is already present in many other areas of software development. Netflix knows it's not possible to write bug-free systems, so [they build fault-tolerant systems instead](https://www.youtube.com/watch?v=vu4Xkb1q8Tc). They also know that it's impossible to have perfect deploy processes, so [they deploy more often and in smaller increments](https://www.youtube.com/watch?v=7oEvlcUMqpE). Even if it were possible to write bug-free code, and have the ideal deploy process, maybe it would just be less costly to tolerate failure than to it would be to eliminate it.
 
+Even in the publishing industry, the cost of failure is factored into the pricing of each title. When distributing the cost of failure among many books, the ones that sell more can subsidize the ones that sell less. The problem is that producing a book takes longer, requires more upfront work, and higher initial investment. The bigger each step is, the riskier an endeavour becomes.
+
 **You cannot build the perfect product, but you can make the process of creating a fantastic product cheaper and faster**.
 
 In the realm of software engineering, there is one major practice which impacts your ability to deliver the right product in a reasonable amount of time: delivering early and delivering often. Enterprises call it Continous Delivery. I don't wear suits, so I call it *"ship it"*.
 
+
+<br>
 
 ## Delivering often de-risks projects
 
@@ -47,6 +51,8 @@ It may be the case that you only got about half of your decisions wrong, but eve
 Delivering early decreases risk because it allows you to make fewer assumptions at a time. When you build a product in small steps, you take less time to find out whether you were wrong. [When you fail, it happens faster and costs less](https://www.bloomberg.com/news/articles/2007-06-24/fail-fast-fail-cheap).
 
 
+<br>
+
 ## Delivering often generates more value
 
 Code that sits in your VCS produces absolutely zero value until it's in production.
@@ -60,16 +66,20 @@ By delivering earlier, your code provides value for more time. Delivered code pr
 Anyone who thinks passive income is a great idea should also believe that delivering early is a great idea. Allowing your code to rot in a VCS is the same as letting your money [lose its value](https://www.independent.co.uk/news/business/news/pound-v-euro-dollar-live-sterling-low-brexit-a9053586.html) in your bank account. Your money can work for you while you sleep in the same way that your code can deliver value to your customers without you having to do anything other than deploying it.
 
 
+<br>
+
 ## Delivering often makes planning easier and better
 
 When having code in production is your standard for completeness, you are forced to focus on delivering value instead of writing code.
 
-**If you don't have to put a product in the hands of customers, any specification makes sense**. Shifting your goal towards having your work deployed rather than towards having it merged forces you to spend more time debugging requirements. More time spent debugging requirements means fewer bugs [[1]](https://dl.acm.org/citation.cfm?id=808430)[[2]](https://ieeexplore.ieee.org/document/1702333) and less time spent writing code.
+**If you don't have to put a product in the hands of customers, any specification makes sense**. Shifting your goal towards having your work deployed rather than towards having it merged forces you to spend more time debugging requirements. More time spent debugging requirements means fewer bugs [[1]](https://dl.acm.org/citation.cfm?id=808430) [[2]](https://ieeexplore.ieee.org/document/1702333) and less time spent writing code.
 
 Because you need to ensure tasks will be shippable when they're done, you are forced to break tasks down more carefully. When programmers have small and precise tasks, it's easier to foresee obstacles and do estimations.
 
 Smaller tasks have fewer hidden requirements, which makes programmers have to revisit work less often. When work is more streamlined, programmers become happier, and having happy programmers is important too. Happy programmers don't quit, so you won't have to spend money on hiring and training someone to replace them.
 
+
+<br>
 
 ## Delivering often makes deploys less risky
 
@@ -84,6 +94,8 @@ Smaller deliveries also reduce the context needed for deployments, which also re
 **Humans are not good at remembering things; humans are good at solving problems. Optimise for humans. Machines can't code yet.**
 
 
+<br>
+
 ## Delivering often makes you focus on what matters
 
 **Features don't matter, happy customers do.**
@@ -95,6 +107,8 @@ Building less helps you prove that what you have made is valuable before spendin
 Don't be concerned about not having time to optimise or change a feature later. **If you didn't go back to it, it's because it didn't matter**. Every time you don't go back to improve something, you win. It's evidence that it would have been a waste of time to have it done in the first place.
 
 
-## If you are in the book publishing business
+<br>
 
-[Send me an email, I'd like to write one](mailto:lucas@lucasfcosta.com).
+## If you are in the publishing business
+
+[Send me an email](mailto:lucas@lucasfcosta.com), I'd love to chat.
