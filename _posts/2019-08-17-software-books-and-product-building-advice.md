@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Don't write software like you write books: the value of delivering early and frequently
+title: "Don't write software like you write books: the value of delivering early and frequently"
 author: Lucas Fernandes da Costa
 place: London, United Kingdom
 flag: 🇬🇧
