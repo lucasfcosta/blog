@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Don't write software like you write books, and other product building advice
+title: Don't write software like you write books: the value of delivering early and frequently
 author: Lucas Fernandes da Costa
 place: London, United Kingdom
 flag: 🇬🇧
 tags: software-engineering continuous-delivery cd process
 ---
 
-If you are not delivering early and delivering often, you might as well start a book publishing business.
+Not delivering early and frequently makes writing software as difficult as writing books.
 
 Publishing books is hard because the feedback loop is long and slow. You can't validate a book unless you have already written it. When a publisher signs an author, they are taking an enormous risk because they have to get the entire book written, edited, printed, and distributed before they can profit. All of these steps take a long time and have very high costs, which can't be broken down. The book publisher only discovers whether their assumptions were right once the book is already at bookstores.
 
