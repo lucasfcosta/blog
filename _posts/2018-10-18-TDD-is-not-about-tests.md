@@ -13,7 +13,7 @@ Contrary what the name might make most people think, **test-driven development i
 
 By tackling work in smaller increments we reduce the size of the problems we have to solve and thus reduces the scope of the decisions we need to take. Decreasing the size and quantity of problems then helps us think more about what is the best solution for each one of them.
 
-We can apply this methodology to many other areas of software engineering and, in fact, it is. If you take a look at what we do with stories on agile methodologies by breaking them down into multiple tasks you will see that in fact, we're just reducing the size and the scope of the problems we're trying to solve so that we can solve them better.
+We can apply this methodology to many other areas of software engineering and, in fact, it already has been. If you take a look at what we do with stories on agile methodologies by breaking them down into multiple tasks you will see that in fact, we're just reducing the size and the scope of the problems we're trying to solve so that we can solve them better.
 
 **Test-driven development is about making writing code an iterative process**.
 
@@ -29,7 +29,7 @@ Many people don't understand this because they think that TDD is about writing t
 
 Proper TDD consists of writing the smallest viable unit of a test, seeing it fail and then solving that small failure in the easiest way possible, even if that consists of returning a hard-coded value. Once you have done that, then it's time to make it fail again by adding another check which makes that hard-coded value not adequate anymore. The more confident you feel, the bigger your steps can be.
 
-In this post I'll use as an example [the popular "fizz-buzz" program](http://wiki.c2.com/?FizzBuzzTest), which iterates through all the numbers from `1` to `100` and prints "fizz" for for multiples of `3`, "buzz" for multiples of `5`, and "FizzBuzz" for multiples of both.
+In this post, as an example, I'll use [the popular "fizz-buzz" program](http://wiki.c2.com/?FizzBuzzTest), which iterates through all the numbers from `1` to `100` and prints "fizz" for for multiples of `3`, "buzz" for multiples of `5`, and "FizzBuzz" for multiples of both.
 
 If you were to write that piece of code, this is the test you would start with:
 
@@ -376,7 +376,7 @@ It's always good to remember that unit tests are more of a tool to help you impl
 4. Writing tests is really easy, the hard thing is knowing which tests to write and when.
 5. When doing TDD properly, mistakes become a lot easier to spot once they appear because by doing the least possible effort to make tests pass you end up adding less code at each iteration. Fewer lines changed means bugs have fewer places to hide.
 6. It is impossible to prove your code has no bugs.
-7. Passing tests do not mean your code works, it just means it works for the inputs you have tested. 
+7. Passing tests do not mean your code works, it just means it works for the inputs you have tested.
 8. Your goal with tests should never be proving your code works, your goal should be proving it does not.
 9. Having 100% code coverage does not mean you have tested all possible inputs, all possible combination of inputs and made the right assertions
 10. Don't write only unit tests. Make sure you have good integration and end-to-end tests. They take more time to write but deliver great value.
