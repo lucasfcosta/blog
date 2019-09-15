@@ -210,3 +210,37 @@
         margin-bottom: 24px;
     }
 }
+
+.page-lead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 20px;
+    padding: 32px 32px;
+    border-top:1px solid #E4DDDE;
+    border-bottom:1px solid #E4DDDE;
+    font-family: $base-font-family;
+
+    a {
+        color: #000;
+        text-decoration: none;
+        border-bottom: 2px solid #E4DDDE;
+
+        &:hover {
+            color: #888;
+            border-bottom: 2px solid #EEE7E8;
+        }
+    }
+
+    p {
+        font-style: italic;
+        opacity: 0.8;
+        margin: 0;
+    }
+}
+
+@include media-query($on-phone) {
+    .page-lead {
+        padding: 16px 8px;
+    }
+}
