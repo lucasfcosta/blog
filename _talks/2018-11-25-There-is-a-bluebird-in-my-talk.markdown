@@ -3,7 +3,7 @@ layout: post
 title: "There is a bluebird in my talk that wants to get out"
 event: HolyJS Moscow 2018
 author: Lucas Fernandes da Costa
-flag: 🇷🇺🇴
+flag: 🇷🇺
 tags: talks javascript functional-programming combinators lambda-calculus
 ---
 
