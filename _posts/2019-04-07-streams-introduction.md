@@ -439,3 +439,9 @@ You can find a much more complete and in-depth explanation of all the components
 * [The Illustrated Redirection Tutorial on the Bash Hackers Wiki](https://wiki.bash-hackers.org/howto/redirection_tutorial)
 * [The `man page` for the standard streams](https://linux.die.net/man/3/stdin)
 * [An explanation on duplicating file descriptors](https://unix.stackexchange.com/a/120535)
+
+<br>
+
+# Translations
+
+* 🇫🇷 [French Translation, by Xavier Coadic](https://xavcc.frama.io/introduction-stream/)
