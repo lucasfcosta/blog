@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How I'm still not using GUIs in 2019: A guide to the terminal"
+title: "How I'm still not using GUIs: A guide to the terminal"
 author: Lucas Fernandes da Costa
 place: London, United Kingdom
 flag: 🇬🇧
