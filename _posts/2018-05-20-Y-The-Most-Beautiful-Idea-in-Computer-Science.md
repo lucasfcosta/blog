@@ -717,3 +717,10 @@ Well done, Mr. Graham. I'm a huge fan.
 ## Special Thanks
 
 * I'd also like to thank my friend [Morgan Roderick](https://twitter.com/mrgnrdrck) for reviewing this blog post and for all the amazing work he's been doing on Sinon.js. Thanks, buddy :)
+
+
+<br>
+
+# Translations
+
+* 🇷🇺 [Russian Translation, by Vadim Gorbachev](https://bmsdave.github.io/blog/y-combinator)
