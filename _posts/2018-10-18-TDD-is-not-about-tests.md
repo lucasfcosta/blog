@@ -7,7 +7,7 @@ flag: 🇫🇷
 tags: tdd software-engineering
 ---
 
-Contrary what the name might make most people think, **test-driven development is not about tests**.
+Counterintuitively, **test-driven development is not about tests**.
 
 **Test-driven development is about being able to take gradual and small steps towards a solution**. Taking small steps allows you to solve one problem at a time and this is where the benefits of doing TDD come from.
 
