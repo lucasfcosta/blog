@@ -9,10 +9,6 @@ tags: programming story personal life ragnarok-online mmorpg accidental-programm
 
 > *If you have played Ragnarok Online before, you might want to listen to [this song](https://www.youtube.com/watch?v=SvJ6rlvDLm4) while reading.*
 
-The more professional the internet gets, the less fun it becomes.
-
-Take Fortnite, for example. Unless you work at Epic Games, there's not much you can do to enhance your experience as a player. There's no place for invention. There's no place for accidental programming.
-
 I got into programming at the age of 14. My friends and I used to play an online MMORPG called [Ragnarok Online](https://en.wikipedia.org/wiki/Ragnarok_Online), which was extremely popular in Brazil at that time. While they were more interested in killing monsters and levelling up, I was more interested in programming my bot farm and managing our multi-billion Zeny operation. "Automate repetitive tasks", isn't this what they say in our industry?
 
 <div class="video video-post">
