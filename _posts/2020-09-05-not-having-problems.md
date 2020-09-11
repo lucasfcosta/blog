@@ -9,7 +9,7 @@ tags: problem-solving
 
 It's Monday. The first of the seven alarms you've set on your phone soars louder than the Big Ben. It sends chills down your spine announcing the impending doom: your 8 AM commute. You put on that white shirt you're sick of, and head to the most crowded place on earth: the [northern line](https://www.cityam.com/londons-most-crowded-tube-lines-revealed/).
 
-Your commute is a problem, and you want to solve it. **The problem with _solving_ problems is that it's usually harder to find a solution than it is _not_ to have that particular issue in the first place**.
+Your commute is a problem, and you want to solve it. **The challenge with _solving_ problems is that it's usually harder to find a solution than it is _not_ to have that particular issue in the first place**.
 
 "Why didn't I buy that used Toyota Prius for half the price?". "It's time to start cycling; perhaps it will get me in shape too". "Does Tim Ferris _really_ wake up at five? I bet no one takes the tube at that time".
 
@@ -23,7 +23,7 @@ When faced with a problem, instead of immediately trying to patch it, I'd recomm
 
 Just because you _hate_ commuting, it doesn't mean you should look for ways to make it more pleasant. The most efficient way to solve the commute problem is _not_ to commute at all.
 
-If you work from home, you won't need to spend any money in a car, put any effort in cycling, or mess your circadian rhythm by waking up too early.
+If you work from home, you won't need to spend any money in a car, put any effort in cycling, or ruin your circadian rhythm by waking up too early.
 
 Now think about managing a website which depends on a particular RESTful API, for example. Every time you make changes to the underlying API, you'll have to update your client. These updates are time-consuming, and they need to happen immediately. Otherwise, you won't be able to deploy either your back-end or front-end.
 
@@ -33,11 +33,11 @@ If you version your API by prefixing each of its routes, you won't break the cli
 
 Instead of _patching_ the problem, you eliminated it.
 
-Yet, you can't completely eliminate all obstacles. There is a third kind of solution, which is a mix of the previous two. Even though it involves a patch, its patch entirely eliminates the problem.
+Yet, you can't _always_ completely eliminate all obstacles. There is a third kind of solution, which is a mix of the previous two. Even though it involves a patch, its patch entirely eliminates the problem.
 
-You can't, for example, solve every problem with software by _not_ creating any software. Even though software creates issues, it makes our lives significantly better most of the time.
+You can't, for example, solve every software problem by _not_ creating any software. Even though software creates issues, it makes our lives significantly better most of the time.
 
-Therefore, instead of either trying to eliminate software altogether, you should find ways to write _less_ software.
+Instead of trying to eliminate software altogether, you should find ways to write _less_ software.
 
 UNIX streams are an excellent example of this kind of solution. Because streams allow programs to communicate with each other, they enable you to combine existing programs instead of creating new ones.
 
