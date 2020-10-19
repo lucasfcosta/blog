@@ -182,7 +182,23 @@ In other words, having `npm install` makes it easier to get the "best" versions 
 
 Essentially, `npm install` and `npm ci` exist for slightly different purposes. While the former installs the latest possible versions of your dependencies, the latter installs the exact same versions you had when you last used `npm install`.
 
+An additional advantage of using `npm ci` is its quicker execution. The `npm ci` command runs faster than `npm install` because it doesn't need to check what's the latest compatible version of a package. Instead, it knows exactly which version to fetch thanks to the exhaustive dependency list in `package-lock.json`. [In some cases, dependency installations can happen twice as fast](https://blog.npmjs.org/post/171556855892/introducing-npm-ci-for-faster-more-reliable).
+
 The fact that `install` doesn't by default use `package-lock.json`, is somewhat controversial, though. Some people would advocate that updating dependencies by default is significantly dangerous and that one should be very explicit when doing it.
+
+<br>
+
+# Should I use `npm install` or `npm ci`?
+
+Personally, I like to use `npm install` whenever I'm installing dependencies myself, and `npm ci` in all my scripts.
+
+I use `npm install` when installing dependencies myself because, in that case, I can vet which versions I get and make sure that I'll be using the latest versions of packages, which can include bug fixes, performance improvements, and new features.
+
+On the other hand, I don't want any of my scripts to update dependencies because machines running automated builds can't vet the packages they get. Instead, I want these scripts to reproduce the dependencies I had during development time.
+
+Additionally, I want machines' builds to be deterministic. Given the same commit hash, I want today's build to yield the same results as next month's build.
+
+In regards to pinning dependencies, I only pin those dependencies whose `minor` or `patch` version bumps cause my application not to work as it should. On other cases, I'm okay to get automatic updates and vet them myself.
 
 <br>
 
