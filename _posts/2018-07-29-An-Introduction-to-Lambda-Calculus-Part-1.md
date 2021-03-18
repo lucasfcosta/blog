@@ -97,7 +97,7 @@ Let's look at some more examples:
 1. `x => x` - `x` is a bound variable, because it's bound to the function's parameters
 2. `x => x(y)` - `x` is a bound variable because it's bound to the function's parameters and `y` is a free variable because it refers to a value outside of the function's scope
 3. `x => y(z)` - `y` and `z` are both free variables because they refer to values outside of the function's context
-4. `(x, y) => x(y)` - Both `x` and `y` are free variables because they are bound to the function's parameters
+4. `(x, y) => x(y)` - Both `x` and `y` are bound variables because they are bound to the function's parameters
 
 
 Now, the same examples above, but in using Lambda Calculus' syntax:
@@ -193,3 +193,6 @@ For `λx. λy. x` we could write `λx. (λy. x)`: which means that the outermost
 In the next few posts of this series, you will also notice that I simplified a few things in this first post to make it easier to follow, such as using the `+` and `*` operators inside lambdas or even numbers, which is something I'll talk about in the future.
 
 For now, focus on understanding what lambda calculus itself is and its syntax constructs.
+
+
+> _Reviewed by: [Alex Dawkins 🇬🇧](https://github.com/ouked)_
