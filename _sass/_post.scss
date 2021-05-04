@@ -154,6 +154,20 @@
         }
     }
 
+    table {
+      margin: 1em auto;
+      display: block;
+      overflow: scroll;
+    }
+
+    td, th {
+      padding: 1em 2em;
+    }
+
+    td {
+      text-align: center;
+    }
+
     @include media-query($on-phone) {
         .post-content {
             margin-top: 36px;

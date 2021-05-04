@@ -17,6 +17,8 @@ You look at the calendar on the wall, and it's February the 2nd, just like last 
 
 In this post, I'll explain the two main problems with the "code faster" approach. Then, I'll present a much healthier and logical alternative.
 
+<br />
+
 
 # The problems with the "code faster" approach
 
@@ -29,6 +31,8 @@ This first problem, the failure to quantify economics, is directly linked to the
 Because "code faster" managers can't quantify the value of each piece of work in their pipeline, they'll erroneously focus on shipping _more_ features instead of maximising the **profit** their team can generate with its current resources.
 
 These two problems, failing to quantify economics and thus neglecting the team's capacity, lie at the root of most inefficient management.
+
+<br />
 
 
 ## Failing to quantify economics
@@ -46,6 +50,8 @@ Similarly, engineering teams have limited resources. Thus, to maximise revenue w
 When managers lack a financial framework, every story in their infinitely long backlog will be equally important. Consequently, the manager won't be able to determine on which items their team should work, hence why the manager asks their team to ship all items as quickly as possible despite it being an unattainable goal.
 
 In general, the scarcer the resources, the more critical it is to have a robust financial framework to drive prioritisation. Such a framework enables the team to use its finite capacity to produce the most positive net outcome.
+
+<br />
 
 
 ## Neglecting the team's capacity
@@ -69,6 +75,8 @@ In his book "Out of the Crisis", the American engineer and management consultant
 > Any substantial improvement must come from action on the system, the responsibility of management. Wishing and pleading and begging the workers to do better was totally futile.
 >
 > — Deming, W. Edwards. Out of the Crisis, reissue (p. 6). MIT Press.
+
+<br />
 
 
 # An alternative to the "code faster" approach
@@ -139,6 +147,9 @@ Third, it informs managers how much money they can invest in expediting an indiv
 Consider, for example, that you've decided to work on feature two as per our previous explanation. In that case, delivering that feature ten days earlier represents a $4.000 saving. Therefore, if you spend $3.000 to hire a contractor, you're making $1.000. Suddenly, you have created a budget for adding resources to the system instead of asking engineers to "code faster".
 
 Now, look at the calendar again. You still can't play the piano, but it's February the 3rd.
+
+<br />
+
 
 # Postscriptum
 
