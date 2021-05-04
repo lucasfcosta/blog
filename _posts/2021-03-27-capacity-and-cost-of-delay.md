@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The root of inefficient management
+title: "Make haste slowly: quantify economics"
 author: Lucas Fernandes da Costa
 place: London, United Kingdom
 flag: 🇬🇧
@@ -154,3 +154,5 @@ Now, look at the calendar again. You still can't play the piano, but it's Februa
 # Postscriptum
 
 [1] Not _all_ organisations exist to make a profit. But even non-profit organisations, whose raison d'être is to deliver _value_, accrue costs. Therefore, they still look to increase their value to cost ratio.
+
+As Donald Reinertsen references in _"Principles of Product Development Flow"_, the title of this blog post is inspired by [the Latin adage "Festina Lente", about which you can read in Wikipedia](https://en.wikipedia.org/wiki/Festina_lente).
