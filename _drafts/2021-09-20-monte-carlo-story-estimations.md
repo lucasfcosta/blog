@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to replace story points with a Monte Carlo method"
+title: "How to replace story points with a Markov Chain Monte Carlo algorithm"
 author: Lucas Fernandes da Costa
 place: London, United Kingdom
 flag: 🇬🇧
@@ -67,15 +67,20 @@ Congratulations, you just did your first Monte Carlo simulation.
 
 # Simulating when a project will be done
 
+
 Now that you've done a Monte Carlo simulation, I'll teach you how to apply the same principles to a software project so that you can estimate when you'll complete it.
 
 Let's imagine you've read a [Tim Ferris](https://en.wikipedia.org/wiki/Tim_Ferriss) blog post saying that optimal number of blog posts a year is 60 or more posts. Because it's Tim Ferriss, you're convinced he's right, and you'd like to follow his advice.
 
-However, before you commit to this time-consuming endeavor, you want to know how likely you are to be able to write 60 or more posts in 365 days. What should you do?
+However, before you commit to this time-consuming endeavor, you want to know how likely you are to be able to write 60 or more posts in 365 days, and, if not, what changes you could do to hit that mark. How can we do that?
+
+<br>
+
+## A naive approach: uniformly distributed cycle-times
 
 First, we'll take a naive approach: we'll assume you know how long it took to write each of the blog posts you published in the past three months. For the sake of this example, let's say that the shortest post took two days to complete, and the longest took ten.
 
-Then, we'll _pretend_ that you're equally likely to complete posts in any number of days between two and ten. In other words, **we'll consider your posts' cycle-time distribution to be [uniform](https://www.itl.nist.gov/div898/handbook/eda/section3/eda3662.htm)** (just like a die).
+Then, we'll _pretend_ that you're equally likely to complete posts in any number of days between two and ten. To put it another way, **we'll consider your posts' cycle-time distribution to be [uniform](https://www.itl.nist.gov/div898/handbook/eda/section3/eda3662.htm)** (just like a die).
 
 Considering these assumptions would hould true, you could write a program to repeatedly simulate how long it would take to write 60 blog posts.
 
@@ -126,11 +131,17 @@ Successes: 608671
 Probability of succeeding: 60.87%
 ```
 
-That's a great first attempt, but let's say it doesn't feel quite right to you. After all, even though the shortest story took two days and the longest ten, you remember that the time for _most_ posts skews towards the ten-day mark. In other words, you don't think that the posts cycle times are uniformly distributed: most of them take a long time, and only a few take two or three days.
+That's a great first attempt, but let's say it doesn't feel quite right to you. What could you do to make your simulation more accurate?
+
+<br>
+
+## An okay approach: weighted probabilities
+
+After all, even though the shortest story took two days and the longest ten, you remember that the time for _most_ posts skews towards the ten-day mark. In other words, you don't think that the posts cycle times are uniformly distributed: most of them take a long time, and only a few take two or three days.
 
 In an attempt to make the model more accurate and get a more realistic forecast, you go and gather the start and end date of each post, and calculate the each post's cycle time.
 
-|    | Title                                                | Start Date | End Date   | Time Taken |
+| N  | Title                                                | Start Date | End Date   | Time Taken |
 |----|------------------------------------------------------|------------|------------|------------|
 | 1  | Why Your Software Never Works Out the Way You Plan   | 12/01/2022 | 19/01/2022 | 8          |
 | 2  | Ways Your Mother Lied to You About Software          | 21/01/2022 | 29/01/2022 | 9          |
@@ -143,7 +154,92 @@ In an attempt to make the model more accurate and get a more realistic forecast,
 | 9  | What Your Parents Never Told You About Software      | 23/03/2022 | 28/03/2022 | 6          |
 | 10 | How To Create The Worst Blog Post Titles             | 28/03/2022 | 31/03/2022 | 4          |
 
-With this data you can now calculate how often
+With this data you can now calculate the probability of each duration occurring, and build a table like the one below.
+
+| Duration | Frequency | Probability |
+|----------|-----------|-------------|
+| 10       | 1         | 10%         |
+| 9        | 1         | 10%         |
+| 8        | 2         | 20%         |
+| 6        | 3         | 30%         |
+| 4        | 1         | 10%         |
+| 3        | 1         | 10%         |
+| 2        | 1         | 10%         |
+
+Knowing the how likely each duration is to occur will make your simulation much more accurate.
+
+In the naive approach you've just seen, an issue was equaly likely to last two, six, or eight days, which doesn't reflect reality. By looking at the table above, you can easily see that tasks are three times more likely to take six days than two days. In fact, only 30% of stories take 4 days or fewer.
+
+Now, let's update our simulation so that it will obey to the probability of each duration occurring.
+
+```rust
+extern crate rand;
+
+use rand::distributions::{Distribution, Uniform};
+use rand::thread_rng;
+
+const TOTAL_RUNS: i32 = 1_000_000;
+const TOTAL_BLOG_POSTS: i32 = 60;
+
+const DURATIONS: [i32; 10] = [2, 3, 4, 6, 6, 6, 8, 8, 9, 10];
+
+fn main() {
+    let mut rng = thread_rng();
+    let time_to_completion = Uniform::from(0..DURATIONS.len());
+
+    let mut successes = 0;
+
+    for _ in 0..TOTAL_RUNS {
+        let mut current_duration = 0;
+
+        for _ in 0..TOTAL_BLOG_POSTS {
+            let random_index = time_to_completion.sample(&mut rng);
+            current_duration += DURATIONS[random_index];
+        }
+
+        if current_duration <= 365 {
+            successes += 1
+        }
+    }
+
+    let p = f64::from(successes) / f64::from(TOTAL_RUNS) * f64::from(100);
+
+    println!("Total Simulations: {}", TOTAL_RUNS);
+    println!("Successes: {}", successes);
+    println!("Probability of succeeding: {:.2}%", p);
+}
+```
+
+After running this simulation, which is much more accurate, it'll tell you that you're actually 36.69% likely to succeed. That's almost half of the previous estimation!
+
+```
+Total Simulations: 1000000
+Successes: 366944
+Probability of succeeding: 36.69%
+```
+
+Now, there are two concerning facts about this simulation. First, it aggregates each post's cycle time and compares the sum it to 365, therefore, the simulation considers you will _not_ take any breaks. Additionally, using cycle-times, you can't simulate what it would be like to have a larger team because the simulation considers you can only start writing a new post once you have finished another. In other words, this program assumes you will write posts in series, therefore the maximum daily throughput would be one.
+
+How can you solve these two problems?
+
+<br>
+
+## Expanding the team and working in parallel: a Markov Chain Monte Carlo method
+
+First, you need to consider that you _will_ take breaks. Therefore, instead of simply aggregating each post's simulated cycle-time, you need to simulate throughput. Simulating throughput means that for each day you'd have to simulate whether you have finished a blog post that day.
+
+The problem with this approach is that it considers each day as a separate event. In each day you'd have the same probability of finishing a blog post than the next. In reality, however, you're more likely to publish a blog post for each day that you have gone without publishing one. Just think about all the days you were ideating or drafting content before actually hitting "publish". Furthermore, our sample data-set shows that you've never been able to finish a post in a single day.
+
+// TODO histogram showing how sparse the data is
+
+Considering that the likelihood of publishing a blog post on a given day is influenced by the previous day's events (or rather "non-events), for each day in our simulation, we can use a [Markov Chain](https://setosa.io/ev/markov-chains/) when sampling.
+
+
+
+
+
+
+
 
 
 
