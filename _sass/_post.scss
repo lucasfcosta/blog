@@ -201,6 +201,34 @@
             font-size: 14px;
         }
     }
+
+    .post-callout {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0 20px;
+        padding: 24px 24px;
+        border: 1px solid #E4DDDE;
+        font-family: $base-font-family;
+        background-color: rgba(228,221,222,0.29);
+
+        a {
+            color: #000;
+            text-decoration: none;
+            border-bottom: 2px solid #E4DDDE;
+
+            &:hover {
+                color: #888;
+                border-bottom: 2px solid #EEE7E8;
+            }
+        }
+
+        p {
+            font-style: italic;
+            opacity: 0.8;
+            margin: 0;
+        }
+    }
 }
 
 @include media-query($on-phone) {
