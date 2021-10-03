@@ -442,7 +442,7 @@ Remember: we want to understand how likely each delivery date is to come true so
 After this change, we’ll write a function that uses [the `plotters` crate](https://crates.io/crates/plotters) to generate a histogram and save it to disk. This histogram will display possible delivery dates on its X-axis and the number of times each delivery date came out in the simulations.
 
 <div class="post-callout">
-  <p>The plotting function is reasonably long, and not really interesting for what we're doing here, so I'll omit it from this post. If you still wanna see it, have a look at <a href="">this post's related GitHub repository</a>.</p>
+  <p>The plotting function is reasonably long, and not really interesting for what we're doing here, so I'll omit it from this post. If you still wanna see it, have a look at <a href="https://github.com/lucasfcosta/agile-monte-carlo-demo">this post's related GitHub repository</a>.</p>
 </div>
 
 After running the simulation, your program should yield a histogram similar to the one below.
