@@ -7,23 +7,35 @@ flag: 🇬🇧
 tags: product-development deterministic management
 ---
 
+There are many ways of estimating how long a software project will take. All of them are a waste of time.
+
+Some prefer to spend days analysing and planning their changes so that they can estimate more accurately — others [choose to multiply by N whatever estimations they make](https://news.ycombinator.com/item?id=28667174). I wouldn't recommend any of these approaches.
+
+The problem with the first approach is that it considers software development to be a deterministic process when, in fact, it's [stochastic](https://en.wikipedia.org/wiki/Stochastic_process). In other words, you can't accurately determine how long it will take to write a particular piece of code unless you have already written it.
+
+The problem with multiplying estimations by N is that you're simply exchanging cycle time for predictability. Instead of actually trying to be accurate, you're merely adding a buffer to your estimations. That buffer wouldn't be a problem if it weren't for the fact that engineers determine it by licking the tip of their finger and putting it up in the air.
+
+Unfortunately, **the only way to win at the estimation game is not to play it.**
+
+<div class="post-callout">
+<p>To learn more these types of problems, see <a href="https://en.wikipedia.org/wiki/Gordian_Knot">Gordian Knot</a> and <a href="https://lucasfcosta.com/2020/09/05/not-having-problems.html">The most efficient way to solve problems</a>.</p>
+</div>
+
 > “Estimation is a waste of time. Don’t do it.”
 >
 > — VACANTI, Daniel.
 
-Without a statistical approach, estimating a project’s turnaround hardly ever yields an accurate outcome. Even the most informed guess won’t work because writing software is _not_ a mechanical activity, and, consequently, it’s _not_ deterministic.
+Instead of making "informed" guesses or multiplying estimations by N, we can embrace the randomness and variability involved in writing software and use more suitable statical methods, in this case, stochastic modeling techniques, to devise better forecasts. One of these techniques is the [Monte Carlo method](https://en.wikipedia.org/wiki/Monte_Carlo_method), which I’ll use to make projections in the rest of this post.
 
-[Software development is a stochastic process](https://en.wikipedia.org/wiki/Stochastic_process). You can’t accurately guess how long it will take to write a particular piece of code unless you have already written it.
-
-Instead of making informed guesses, we can embrace the randomness and variability involved in writing software and use more suitable statical methods, in this case, stochastic modeling techniques, to devise better forecasts. One of these techniques is the [Monte Carlo method](https://en.wikipedia.org/wiki/Monte_Carlo_method), which I’ll use to make projections in the rest of this post.
+**This post will teach you how to replace estimations and guesses with a Monte Carlo simulation**.
 
 First, I’ll explain what is the Monte Carlo method and show how it works. Then, I will demonstrate how you could use it to forecast when a project is likely to be finished.
 
-After those two first sections, I’ll explain a few caveats and factors to which you should pay attention when running your Monte Carlo simulations to generate projections.
+In the third section of this blog post, I’ll show you how to attach a probability value to your projections, turning them into actual forecasts¹. In this section, you’ll understand how to generate more or less optimistic forecasts depending on your risk appetite.
 
-In the fourth section of this blog post, I’ll show you how to attach probability value to your projections, turning them into actual forecasts¹. In this section, you’ll understand how to generate more or less optimistic forecasts depending on your risk appetite.
+After those first three sections, I’ll explain a few caveats and factors to which you should pay attention when running your Monte Carlo simulations to generate projections.
 
-At last, I’ll summarise the benefits Monte Carlo approach with a simple example and explain where we’ll go in the next blog posts.
+At last, explain where we’ll go in the next blog posts and recommend further reading material.
 
 <br>
 
