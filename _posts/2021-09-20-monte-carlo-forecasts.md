@@ -524,6 +524,22 @@ As an exercise, I’d also recommend the reader to plot these percentiles in the
 
 <br>
 
+## On forecasting based on your risk appetite
+
+**Once you know how likely it is for an event to happen, you can gauge or risk appetite and decide how precise your forecast needs to be**.
+
+Imagine, Alice, your best friend, wants to make a bet. She's got two dice to roll, and she's eager to bet $10 you won't get a sum of seven in a single roll.
+
+Furthermore, she's willing to allow you more rolls in exchange for part of her bet. If you roll twice, she'll bet $5 instead of $10. If you want to roll four times, she'll bet $2.50.
+
+With some quick statistics, you figure out your chance of rolling a seven in a single throw is about 17%. In two throws, it goes up to 34%. In four throws, you'll have a 68% chance of winning.
+
+Now, because you know the possible payouts and the likelihood of the desired outcome, you can gauge how many rolls you're willing to pay for.
+
+If, for example, you desperately need an extra $2.50 to get the bus back home, you will probably want to bet $2.50 and roll four times so that you have a higher likelihood of winning. On the other hand, if you think it could be nice to make $10 and spoil yourself with great pizza, you may want to roll only once.
+
+<br>
+
 # Where do we go from here?
 
 I did my best to keep this blog post simple and give actionable advice. I intentionally and avoided too much classical statistics, but, in a further blog post, I do intend to answer questions like:
