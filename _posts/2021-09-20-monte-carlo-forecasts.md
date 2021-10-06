@@ -416,18 +416,23 @@ fn main() {
     let mut rng = thread_rng();
     let throughput = Uniform::from(0..TEN_DAY_THROUGHPUTS.len());
 
-    let mut outcomes: HashMap<i32, i32> = HashMap::new();
+    let mut outcomes: HashMap<i64, i32> = HashMap::new();
+
+    let one_day = Duration::days(1);
+
+    let start_date: DateTime<Local> = Local::now();
 
     for _ in 0..TOTAL_RUNS {
+        let mut current_date = start_date;
         let mut stories_completed = 0;
-        let mut current_date =
 
-        while stories_completed < 50 {
+        while stories_completed < STORIES_TARGET {
             let random_index = throughput.sample(&mut rng);
             stories_completed += TEN_DAY_THROUGHPUTS[random_index];
+            current_date = current_date + one_day;
         }
 
-        let count = outcomes.entry(stories_completed).or_insert(0);
+        let count = outcomes.entry(current_date.timestamp()).or_insert(0);
         *count += 1;
     }
 
