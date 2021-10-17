@@ -204,8 +204,10 @@
 
     .post-callout {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-align: center;
         margin: 20px 0 20px;
         padding: 24px 24px;
         border: 1px solid #E4DDDE;
@@ -227,6 +229,10 @@
             font-style: italic;
             opacity: 0.8;
             margin: 0;
+        }
+
+        p:not(:first-child) {
+            margin-top: 1em;
         }
     }
 }
