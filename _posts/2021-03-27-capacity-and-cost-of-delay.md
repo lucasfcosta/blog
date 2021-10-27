@@ -113,8 +113,8 @@ With this financial information, you'll then calculate each feature's daily cost
 |               | Time | Expected Monthly Revenue | Daily Cost-of-Delay |
 |---------------|------|--------------------------|---------------------|
 | Feature One   | 1    | $3.000                   | $100                |
-| Feature Two   | 3    | $9.000                   | $200                |
-| Feature Three | 10   | $15.000                  | $500                |
+| Feature Two   | 3    | $12.000                  | $400                |
+| Feature Three | 12   | $18.000                  | $600                |
 
 Now, to decide which features to tackle first, you'll divide each feature's cost-of-delay by the expected time it would take to complete them. Such a calculation reveals the feature's weight: its ratio of revenue to cost, allowing you to prioritise the ones that are the most profitable.
 
