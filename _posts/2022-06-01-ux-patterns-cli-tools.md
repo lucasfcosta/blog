@@ -291,3 +291,11 @@ Logs, for example, are not a "first-class resource" like `pods` or `configmaps`.
 The `get` is not the command I want to use because I don't want to _get_ a "log" resource with a particular name. I actually want to use the `log` command for a specific pod. Consequently, I use `kubectl logs my-pod`.
 
 Like having an interactive shell, having consistent sub-commands is excellent for discoverability. When you have a consistent command tree, users can _guess_ how to do things.
+
+<br>
+
+# Get in touch
+
+If you liked this blog post, I'd highly appreciate it if you could [share it on Twitter](https://twitter.com/intent/tweet?text=UX%20patterns%20for%20CLI%20tools&url=http://lucasfcosta.com/2022/06/01/ux-patterns-cli-tools.html&via=thewizardlucas&related=thewizardlucas) and follow me [@thewizardlucas](https://twitter.com/thewizardlucas).
+
+I'd love to know your thoughts and what other CLI-related topics you'd like me to write about.
