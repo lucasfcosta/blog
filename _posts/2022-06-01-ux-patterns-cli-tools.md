@@ -9,6 +9,8 @@ tags: ux cli plain-text vim terminal
 
 Most technical people choose GUIs not because GUIs are the best tool for the job. People choose GUIs because the CLI alternatives usually suck.
 
+That's my hunch.
+
 In this blog post, I'll cover good UX patterns for CLI applications.
 
 Furthermore, when applicable, I'll compare how these UX patterns help developers replicate the valuable characteristics of most good GUIs.
@@ -29,8 +31,11 @@ Imagine, for example, that you're building a tool to scaffold and manage NPM pac
 Instead of showing a complex manual page with lots of options, start with an example. Show users what's the command they're most likely to use first.
 
 <img style="margin-bottom: -18px; max-height: 500px;" src="/assets/cli-ux/getting-started.gif" alt="a gif of a good getting started screenn">
-<center><i>That's what an intuitive onboarding experience looks like.</i></center>
+<center><i>That's what an instructive onboarding experience looks like.</i></center>
 
+Not all "getting started" sections need to be as big as this one I've made. You could highlight useful first commands in many other ways. I'm _not_ making a point about a particular look here.
+
+This section's takeaway is that you should use the CLI itself to deliver a smooth onboarding experience: one that doesn't involve ten pages of documentation.
 
 <br>
 
@@ -59,6 +64,8 @@ Interactive usage modes will prompt the user for the necessary input instead of 
 <center><i>Implementing an interactive mode for a NPM package management tool.</i></center>
 
 When combined with a good "getting started" experience, implementing an interactive mode for your CLI tools will help diminish your time to value.
+
+> ⚠ An interactive command does not replace a non-interactive one. Once people learn to use your tool, they'll probably prefer non-interactive commands. Furthermore, non-interactive commands are still crucial for automation.
 
 Additionally, by using an interactive mode, you're putting "guardrails" for your user's interactions. You're preventing people from making mistakes because you're constraining their choices.
 
@@ -142,12 +149,19 @@ Most people these days use terminals which support a significant number of colou
 
 Yarn, for example, does a brilliant job at highlighting the different parts of its output according to their semantics.
 
-<img style="margin-bottom: -18px; max-height: 500px;" src="/assets/cli-ux/git-recovery.png" alt="Yarn's output, showing info, warnings, success, and progress messages with different colours and emojis.">
+<img style="margin-bottom: -18px; max-height: 500px;" src="/assets/cli-ux/colours-and-emojis.gif" alt="Yarn's output, showing info, warnings, success, and progress messages with different colours and emojis.">
 <center><i>Yarn's output when initiating a project.</i></center>
 
 When the output is displayed this way, users can absorb much more information at a glance. If they look at the top and see a yellow message saying "warning", they immediately understand something unexpected is going on. On the other hand, when they look at the bottom, and there's a green message followed by a "sparkles" emoji, it's pretty clear everything went okay despite the warning.
 
 Furthermore, beautiful output is pleasant and makes users come back.
+
+There are, however, a few important guidelines to follow when using colours and emojis:
+
+1. Check whether the user's terminal supports them. Otherwise, people will see a bunch of weird characters in their terminals.
+2. Do _not_ overuse them. These resources should be used sparingly and should highlight important pieces of information.
+    Remember: if everything is a highlight, nothing is a highlight.
+3. Ensure your tool's output is still "`grep`able". Do not use emojis to replace words for which users may want to search.
 
 Besides colours and emojis, another great way to display information is to have a beautiful and organised layout and use tables when the context demands them.
 
@@ -158,7 +172,6 @@ In 2022, you can even have beautiful animated charts if you use libraries like G
 <img style="margin-bottom: -18px; max-height: 500px;" src="/assets/cli-ux/termui-go.gif" alt="Go's termui library showing a bunch of animated charts, and a beautiful organised layout.">
 <center><i>A few of <code>termui</code>'s capabilities in display: animated charts and widgets in an organised layout.</i></center>
 
-> ⚠ When using colours and emojis, you must ensure the user's terminal supports them. Otherwise, users will see a bunch of weird characters in their terminals.
 
 <br>
 
@@ -244,7 +257,7 @@ To explain why Streams are important, I'll do something terribly egocentric and 
 
 As I mentioned in the above passage, streams benefit both you _and_ your users. First, they help your users integrate your tool with other tools, allowing for more flexible use-cases. Consequently, because people can integrate your tools with others, you don't need to write as much software, and, with less software, you'll have fewer issues to solve yourself.
 
-Now, using output streams is reasonably straightforward. You just need to follow these two golden rules:
+Using output streams is reasonably straightforward. You just need to follow these two golden rules:
 
 1. All errors go into [`stderr (2)`](https://linux.die.net/man/3/stderr).
 2. All other output goes into [`stdout (1)`](https://linux.die.net/man/3/stdout)
@@ -296,6 +309,6 @@ Like having an interactive shell, having consistent sub-commands is excellent fo
 
 # Get in touch
 
-If you liked this blog post, I'd highly appreciate it if you could [share it on Twitter](https://twitter.com/intent/tweet?text=UX%20patterns%20for%20CLI%20tools&url=http://lucasfcosta.com/2022/06/01/ux-patterns-cli-tools.html&via=thewizardlucas&related=thewizardlucas) and follow me [@thewizardlucas](https://twitter.com/thewizardlucas).
+If you liked this blog post, [share it on Twitter](https://twitter.com/intent/tweet?text=UX%20patterns%20for%20CLI%20tools&url=http://lucasfcosta.com/2022/06/01/ux-patterns-cli-tools.html&via=thewizardlucas&related=thewizardlucas) and follow me [@thewizardlucas](https://twitter.com/thewizardlucas).
 
-I'd love to know your thoughts and what other CLI-related topics you'd like me to write about.
+Disagree, want to ask questions, or have a conversation? Email me at lucas@lucasfcosta.com.
