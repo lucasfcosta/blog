@@ -41,14 +41,14 @@ This section's takeaway is that you should use the CLI itself to deliver a smoot
 
 # Interactive mode
 
-How do you figure out how to cut a video in QuickTime? You either open the help menu and type "cut", look for helpful icons, or click through menus and read the options.
+To discover _all_ the actions you can perform using a particular GUI, you merely need to open menus and read the available options.
+
+To figure out how to cut a video in QuickTime, for example, you either click "help" and type "cut", look for helpful icons, or click through menus and read the options.
 
 <img style="margin-bottom: -18px; max-height: 500px;" src="/assets/cli-ux/discoverability-gui.png" alt="how to cut a video in quicktime">
 <center><i>Good GUIs help you discover where features are.</i></center>
 
-Furthermore, to discover _all_ the actions you can perform using a particular GUI, you merely need to open menus and read the available options.
-
-Once you've selected what you'd like to do, GUIs then make the path to success look obvious by telling you precisely the next steps to get to a result.
+Once you've selected what you'd like to do, most GUIs make the path to success look obvious by telling you precisely the next steps to get to a result.
 
 CLIs, on the other hand, rely on written documentation which is usually long and cryptic. Try typing `man ssh`, for example, and see if you can quickly figure out which options to use with each command.
 
@@ -58,7 +58,7 @@ To summarise: GUIs almost always win at discoverability and error prevention.
 
 You can, however, replicate these same characteristics in CLIs by implementing interactive usage modes.
 
-Interactive usage modes will prompt the user for the necessary input instead of expecting people to provide them all once through a bunch of flags.
+Interactive usage modes will prompt the user for the necessary input instead of expecting people to provide them all at once through a bunch of flags.
 
 <img style="margin-bottom: -18px; max-height: 500px;" src="/assets/cli-ux/interactive-mode.gif" alt="Implementing an interactive mode for a NPM package management tool">
 <center><i>Implementing an interactive mode for a NPM package management tool.</i></center>
@@ -192,7 +192,7 @@ One of my favourite progress indicators is Docker's.
 <img style="margin-bottom: -18px; max-height: 500px;" src="/assets/cli-ux/loading-indicators.gif" alt="Docker's loading indicator when pulling an image. It shows which layers it's pulling, extracting, and how far along the process it is.">
 <center><i>Docker's loading indicator when pulling an image. It shows which layers it's pulling, extracting, and how far along the process it is.</i></center>
 
-It tells me exactly what it's doing at a granular level. I know which layers it's downloading and how far from completion each download process is. Because downloading images is usually a long process, even when users have fast internet connections, these loading indicators make them more likely to keep waiting.
+It tells me exactly what it's doing at a granular level. I know which layers it's downloading and how far from completion each download process is. Because downloading images is usually a long process, even when users have fast internet connections, these loading indicators make people more likely to keep waiting.
 
 Had Docker had no loading indicators, I'd be left wondering whether it's doing anything, and I'd probably cancel the `pull` process before it finishes, even though it'd be making progress at a decent speed.
 
