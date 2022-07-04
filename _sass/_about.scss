@@ -17,6 +17,32 @@
         font-style: italic;
     }
 
+    .greeting-text > span {
+        font-style: normal;
+    }
+
+    .call-to-action {
+        a {
+            color: #000;
+            text-decoration: none;
+            border-bottom: 4px solid #E4DDDE;
+
+            &:hover {
+                color: #888;
+                border-bottom: 4px solid #EEE7E8;
+            }
+        }
+        text-align: center;
+        display: block;
+        font-family: "Baskerville Italic", "Times New Roman", serif;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: italic;
+        margin-top: 12px;
+        line-height: 12px;
+        opacity: 0.7;
+    }
+
     .profile-content {
         max-width: 50em;
         margin: 0 auto;
