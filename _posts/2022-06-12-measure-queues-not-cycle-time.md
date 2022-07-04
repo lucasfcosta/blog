@@ -141,7 +141,7 @@ Consequently, customers are less likely to find all servers busy and thus less l
 
 Now, let's simulate the second option. This time employees won't be as quick, but there will be twice as many employees working.
 
-<img style="margin-bottom: -18px;" src="/assets/queue-behaviour/beigels-vs-arrivals-more-quickly.png" alt="An area graph of beigels served versus arrivals when there are twice as many servers. In this case, queues are also smaller, as demonstrated by the small distance between arrivals and departures.">
+<img style="margin-bottom: -18px;" src="/assets/queue-behaviour/beigels-vs-arrivals-more-servers.png" alt="An area graph of beigels served versus arrivals when there are twice as many servers. In this case, queues are also smaller, as demonstrated by the small distance between arrivals and departures.">
 <center style="font-size: 0.8em; margin-bottom: 32px;"><i>When employees still take the same time to prepare beigels, but there are twice as many employees, the average queue length is also shorter.</i></center>
 
 In this scenario, similarly to the previous one, there is barely anyone in the queue at any given moment. Because more employees are working, the likelihood of an arriving customer finding all servers busy is also smaller.
