@@ -14,7 +14,7 @@ This is [Beigel Bake](https://bricklanebeigel.co.uk), in Brick Lane, London.
 
 Beigel Bake is notorious for its salt beef [beigels](https://www.mashed.com/265131/whats-the-difference-between-beigels-and-bagels/) and humongous queues.
 
-In this blog post, I'll use Beigel Bake to explain how queues behave and illustrate their impact. For that, I've written a few simple simulations to demonstrate how queues evolve over time and how capacity utilisation influences a queue's growth.
+In this blog post, I'll use Beigel Bake to explain how capacity utilisation impacts queues and illustrate how queues hurt a team's performance. For that, I've written a few simple simulations to demonstrate how queues evolve over time and how capacity utilisation influences a queue's growth.
 
 Then, I'll compare the beigel shop's queue to software development queues and expound on the similarities and differences between the two examples.
 
