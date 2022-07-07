@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Beigels, software, and why you should control queues instead of cycle times"
+title: "How high capacity utilisation hurts a team's performance"
 author: Lucas Fernandes da Costa
 place: London, United Kingdom
 flag: 🇬🇧
