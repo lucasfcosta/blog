@@ -126,8 +126,8 @@ To diminish the time it takes for customers to be served, the beigel shop needs 
 
 For that, they must either:
 
-1. Hire more servers
-2. Increase the rate at which employees serve beigels
+1. Increase the rate at which employees serve beigels
+2. Hire more servers
 3. Do both
 
 Let's simulate option one and see what happens when we halve the time it takes for each employee to prepare a beigel.
