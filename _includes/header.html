@@ -1,8 +1,8 @@
 <nav class="navbar">
     <div class="header-left">
         <a class="navItem" href="mailto:{{ site.email }}">Email</a>
-        <a class="navItem" href="https://twitter.com/{{ site.twitter_username }}">Twitter</a>
-        <a class="navItem" href="https://github.com/{{ site.github_username }}">Github</a>
+        <a class="navItem" onclick="sa_event('header_twitter_follow')" href="https://twitter.com/{{ site.twitter_username }}">Twitter</a>
+        <a class="navItem" onclick="sa_event('header_github_follow')" href="https://github.com/{{ site.github_username }}">Github</a>
     </div>
     <div class="header-center">
         <h1 class="title">
@@ -38,8 +38,8 @@
             <a class="drawer-item" href="/talks">Talks</a>
             <a class="drawer-item" href="/about">About Me</a>
             <a class="drawer-item" href="mailto:{{ site.email }}">Email</a>
-            <a class="drawer-item" href="https://twitter.com/{{ site.twitter_username }}">Twitter</a>
-            <a class="drawer-item" href="https://github.com/{{ site.github_username }}">Github</a>
+            <a class="drawer-item" onclick="sa_event('drawer_twitter_follow')" href="https://twitter.com/{{ site.twitter_username }}">Twitter</a>
+            <a class="drawer-item" onclick="sa_event('drawer_github_follow')" href="https://github.com/{{ site.github_username }}">Github</a>
         </div>
     </div>
 </nav>
