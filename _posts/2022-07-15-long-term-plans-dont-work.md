@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "To build succesful software, don't make the plan better. Make it shorter."
+title: "To build successful software, don't make the plan better. Make it shorter."
 author: Lucas Fernandes da Costa
 place: London, United Kingdom
 flag: 🇬🇧
