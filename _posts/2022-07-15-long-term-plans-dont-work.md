@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Don't make the plan better. Make it shorter."
+title: "Why long-term plans don't work and how to fix them"
 author: Lucas Fernandes da Costa
 place: London, United Kingdom
 flag: 🇬🇧
