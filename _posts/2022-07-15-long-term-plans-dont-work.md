@@ -138,7 +138,7 @@ The whole point of Agile was to run into walls as quickly as you could, just so 
 
 Notice I'm _not_ telling you to break your long-term plan into smaller increments. A long-term plan broken down into sprints is still a long-term plan!
 
-Instead, I'm telling you to either scrape your long-term plan altogether or avoid adding detail to longer-term goals. Moreover, I'm telling you to be open to changing those long-term goals as new pieces of information arise, either good or bad.
+Instead, I'm telling you to either scrap your long-term plan altogether or avoid adding detail to longer-term goals. Moreover, I'm telling you to be open to changing those long-term goals as new pieces of information arise, either good or bad.
 
 As your planning horizons diminish, your risks do too.
 
