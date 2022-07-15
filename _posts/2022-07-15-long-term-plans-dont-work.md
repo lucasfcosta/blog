@@ -41,8 +41,12 @@ The problem with this first assumption is that it's impossible to write bug-free
 
 Whenever a bug appears, someone will either have to delay the next task or stop their current task to fix it. In other words, each bug will inevitably delay the schedule.
 
+<br>
+
 <img style="margin-bottom: -18px;" src="/assets/long-term-plans/bugs.png" alt="">
 <center style="font-size: 0.8em; margin-bottom: 32px;"><i>Whenever bugs happen, they push other tasks forward</i></center>
+
+<br>
 
 Consequently, to make up for these delays, teams are pressured to deliver the next feature in less time than they originally estimated.
 
@@ -142,15 +146,23 @@ Think about buying 3-digit lottery tickets, for example. As Reinertsen explains,
 
 If you have to buy all three digits at once, the likelihood of guessing all three is only 1%, and each attempt costs you $3.
 
+<br>
+
 <img style="margin-bottom: -18px;" src="/assets/long-term-plans/lottery-3-digits.png" alt="">
 <center style="font-size: 0.8em; margin-bottom: 32px;"><i>When paying for all digits at once, each attempt always costs $3 and there's only a 1% chance of success</i></center>
+
+<br>
 
 On the other hand, if you pay $1 per digit, you can decide whether to continue as soon as the first number is drawn. If you get it right, you can pay for the next; if not, you can give up sooner and lose less money.
 
 In this case, there's only a 10% chance you'll buy the second number and a 1% chance you'll buy the third. Therefore, each failed attempt will cost you less, but the overall likelihood of winning is still the same.
 
+<br>
+
 <img style="margin-bottom: -18px;" src="/assets/long-term-plans/lottery-1-digit.png" alt="">
 <center style="font-size: 0.8em; margin-bottom: 32px;"><i>When paying for one digit at a time, there's only a 10% chance you'll buy the second digit, and a 1% chance you'll buy the third.</i></center>
+
+<br>
 
 In addition to reducing costs and risks, short-term plans also expose how pointless it is to estimate stories.
 
@@ -179,6 +191,7 @@ Instead, if I were running an agency, I'd bill by the hour and make sure to prov
 
 With this approach, I'd reap two benefits. First, I'd de-risk my agency business as I wouldn't have to commit to a particular timeline. Second, I'd increase my customer's chance of succeeding with their product, which, in turn, leads them to hire me again, for longer, at higher prices.
 
+<br>
 
 # A summary on making plans shorter, not "better"
 
