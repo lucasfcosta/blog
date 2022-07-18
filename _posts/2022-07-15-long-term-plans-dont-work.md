@@ -18,7 +18,7 @@ Regardless of the sub-genre, _long-term plans simply don't work_.
 
 <br>
 
-## Why are long-term plans pernicious why do they fail?
+## Why are long-term plans pernicious?
 
 The fundamental problem with a long-term plan is that it misaligns incentives. Instead of rewarding teams for delivering useful, profitable features, companies which worship conformance to plan reward developers for features on time and within budget; it doesn't matter how useless or broken those features are.
 
