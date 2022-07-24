@@ -3,21 +3,26 @@ jobs:
   build:
     context: bundle
     docker:
-       - image: circleci/ruby:2.4.1-node-browsers
+      - image: cimg/ruby:2.6.8-browsers
+    environment:
+      BUNDLER_VERSION: 1.17.2
     working_directory: ~/lucasfcosta.github.io
     steps:
       - checkout
       - restore_cache:
           keys:
-          - v1-dependencies-{{ checksum "Gemfile.lock" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
+            - v1-dependencies-{{ checksum "Gemfile.lock" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
+      - run:
+          name: install bundler
+          command: gem install bundler:$BUNDLER_VERSION
       - run:
           name: install dependencies
           command: bundle install --jobs=4 --retry=3 --path vendor/bundle
       - run:
           name: build _site
-          command: jekyll build
+          command: bundle exec jekyll build
       - save_cache:
           paths:
             - ./vendor/bundle
