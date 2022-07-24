@@ -31,7 +31,7 @@ When I'm the only person at the burger shop, it's not a challenge for its cooks 
 
 Here's what happens when I'm the only person in the shop.
 
-<a target="_blank" class="image-link" href="/assets/finish-what-you-start/one-burger-flow.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/one-burger-flow.png" alt=""></a>
+<a target="_blank" class="image-link" href="/assets/finish-what-you-start/one-burger-flow.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/one-burger-flow.png" alt="The production process of a single burger."></a>
 <center style="font-size: 0.8em; margin-bottom: 32px;"><i>The production process of a single burger.</i></center>
 
 In this case, considering each burger demands four steps of preparation, and each step takes one minute, my burger gets to me in four minutes.
@@ -42,22 +42,22 @@ To illustrate these approaches, I'll assume there's a single cook and that they 
 
 First, let's see what happens when the cook prepares one burger at a time.
 
-<a target="_blank" class="image-link" href="/assets/finish-what-you-start/two-burger-flow-sequential.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/two-burger-flow-sequential.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i></i></center>
+<a target="_blank" class="image-link" href="/assets/finish-what-you-start/two-burger-flow-sequential.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/two-burger-flow-sequential.png" alt="Preparing burgers in series causes both their cycle-times to be the same."></a>
+<center style="font-size: 0.8em; margin-bottom: 32px;"><i>Preparing burgers in series causes both their cycle-times to be the same.</i></center>
 
 Assuming I ordered only a bit before you, my burger still takes four minutes. Yours, however, takes eight.
 
 Now, let's compare the serial to the concurrent approach. In the image below, you'll see what happens when the cook tries to prepare our burgers concurrently.
 
-<a target="_blank" class="image-link" href="/assets/finish-what-you-start/two-burger-flow-concurrent.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/two-burger-flow-concurrent.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i></i></center>
+<a target="_blank" class="image-link" href="/assets/finish-what-you-start/two-burger-flow-concurrent.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/two-burger-flow-concurrent.png" alt="Preparing burgers concurrently elongates the burgers' cycle times."></a>
+<center style="font-size: 0.8em; margin-bottom: 32px;"><i>Preparing burgers concurrently elongates the burgers' cycle times.</i></center>
 
 This time, you still had to wait the same amount of time for your burger, but I've had to wait almost twice as long for mine! Outrageous.
 
 To make matters worse, let me show what happens if a friend of yours comes in, places an order, and the cook decides to take the same shortsighted approach to burger-making.
 
-<a target="_blank" class="image-link" href="/assets/finish-what-you-start/three-burger-flow-concurrent.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/three-burger-flow-concurrent.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i></i></center>
+<a target="_blank" class="image-link" href="/assets/finish-what-you-start/three-burger-flow-concurrent.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/three-burger-flow-concurrent.png" alt="The more burgers the cook prepares concurrently, the longer cycle times become."></a>
+<center style="font-size: 0.8em; margin-bottom: 32px;"><i>The more burgers the cook prepares concurrently, the longer cycle times become.</i></center>
 
 In this scenario, I took ten minutes to taste my burger, and you took twelve. Thanks to your friend, I had to wait an extra six minutes, and you had to wait for an extra three.
 
@@ -65,12 +65,12 @@ Such a disappointing burger-preparing performance demands vigorous action to be 
 
 Personally, I'd prefer to educate the cook rather than kick you and your friend out of the shop because I believe every hard-working engineer deserves a succulent burger on a Friday night.
 
-Here's what we'll do. First, we'll illustrate what would've happened had the cook decided to prepare each of our burgers in series. Then, we'll enter the kitchen, hand them the schematics, and explain what the optimal approach is.
+Here's what we'll do. First, we'll illustrate what would've happened had the cook decided to prepare each of our burgers in series. Then, we'll enter the kitchen, hand them the schematics, and explain the optimal approach.
 
 Come join my table, grab a pen, and let's get drawing.
 
-<a target="_blank" class="image-link" href="/assets/finish-what-you-start/three-burger-flow-serial.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/three-burger-flow-serial.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i></i></center>
+<a target="_blank" class="image-link" href="/assets/finish-what-you-start/three-burger-flow-serial.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/three-burger-flow-serial.png" alt="Preparing three burgers in series ensures that all burgers' cycle times remain equal, and that the first two will be delivered earlier."></a>
+<center style="font-size: 0.8em; margin-bottom: 32px;"><i>Preparing three burgers in series ensures that all burgers' cycle times remain equal, and that the first two will be delivered earlier.</i></center>
 
 As our drawing shows, had the cook prepared our three burgers in series, you and I would have had to wait the same amount of time for our burgers as before — 4 and 8 minutes. Your friend's burger would still have taken twelve minutes, but that's what they deserve for being late for dinner.
 
@@ -82,13 +82,13 @@ If each feature takes three units of time to deliver, working on them in paralle
 
 Furthermore, working on these features concurrently demands B's specifications to be written earlier than they would have been otherwise.
 
-<a target="_blank" class="image-link" href="/assets/finish-what-you-start/features-concurrent.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/features-concurrent.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i></i></center>
+<a target="_blank" class="image-link" href="/assets/finish-what-you-start/features-concurrent.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/features-concurrent.png" alt="Working on features concurrently causes features to take longer."></a>
+<center style="font-size: 0.8em; margin-bottom: 32px;"><i>Working on features concurrently causes features to take longer.</i></center>
 
 On the other hand, if you finish A before starting B, you'll deliver A earlier, and you'll buy yourself more time to work on B's specifications. During that time, you can collect more information to boost B's chance of success.
 
-<a target="_blank" class="image-link" href="/assets/finish-what-you-start/features-in-series.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/features-in-series.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i></i></center>
+<a target="_blank" class="image-link" href="/assets/finish-what-you-start/features-in-series.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/features-in-series.png" alt="Working on features in series shortens each feature's cycle time, and allows the first to be delivered earlier."></a>
+<center style="font-size: 0.8em; margin-bottom: 32px;"><i>Working on features in series shortens each feature's cycle time, and allows the first to be delivered earlier.</i></center>
 
 As you can see, **in the software industry, both tasks take longer to deliver whenever you start a new feature before finishing the first. Moreover, the first task will be delivered later than it could have been.**
 
@@ -130,8 +130,8 @@ Working on tasks concurrently delays their cycle times not only because of the i
 
 Here's a more accurate representation of what happens when working on software development tasks concurrently:
 
-<a target="_blank" class="image-link" href="/assets/finish-what-you-start/features-concurrent-context-switch.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/features-concurrent-context-switch.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i></i></center>
+<a target="_blank" class="image-link" href="/assets/finish-what-you-start/features-concurrent-context-switch.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/features-concurrent-context-switch.png" alt="There's a cost for switching from working on a feature to working on another."></a>
+<center style="font-size: 0.8em; margin-bottom: 32px;"><i>There's a cost for switching from working on a feature to working on another.</i></center>
 
 <br>
 
@@ -156,8 +156,8 @@ Nevertheless, there's a lesson to be taught here — one about batch sizes and t
 
 Whenever it's expensive to move a work product, in this case, a patty, from one stage of the production process to the next, that transition will happen less often so that you can pay the transaction cost only once by moving multiple items at a time.
 
-<a target="_blank" class="image-link" href="/assets/finish-what-you-start/small-batches-vs-large-batches-patties.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/small-batches-vs-large-batches-patties.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i></i></center>
+<a target="_blank" class="image-link" href="/assets/finish-what-you-start/small-batches-vs-large-batches-patties.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/small-batches-vs-large-batches-patties.png" alt="When it's costly to move items from one stage to the next, items batch-up."></a>
+<center style="font-size: 0.8em; margin-bottom: 32px;"><i>When it's costly to move items from one stage to the next, items batch-up.</i></center>
 
 That's why you don't buy a single egg whenever you go to the supermarket. Going to the supermarket has a significant transaction cost, so you purchase eggs in larger batches. In fact, the farther from your home the supermarket is, the more likely it is for the batch of eggs you bring home to be larger.
 
@@ -204,15 +204,15 @@ To understand why those constraints help the cook, let's plot the burger shop's 
 
 First, let's plot a cumulative flow diagram illustrating what happens when the cook prepares many burgers at once — a large batch.
 
-<a target="_blank" class="image-link" href="/assets/finish-what-you-start/cfd-large-batches.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/cfd-large-batches.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i></i></center>
+<a target="_blank" class="image-link" href="/assets/finish-what-you-start/cfd-large-batches.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/cfd-large-batches.png" alt="With large batches, there's more variability in cycle times."></a>
+<center style="font-size: 0.8em; margin-bottom: 32px;"><i>With large batches, there's more variability in cycle times.</i></center>
 
 As the diagram shows, a customer who arrives early waits for a long time for their burger, while a customer who comes later waits much less. In other words, there's a significant amount of variability in the time customers have to wait until they get their burger — shown by the area in blue.
 
 Now, let's see what happens when the cook prepares fewer burgers at a time.
 
-<a target="_blank" class="image-link" href="/assets/finish-what-you-start/cfd-small-batches.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/cfd-small-batches.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i></i></center>
+<a target="_blank" class="image-link" href="/assets/finish-what-you-start/cfd-small-batches.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/cfd-small-batches.png" alt="Smaller batches decrease cycle time variability."></a>
+<center style="font-size: 0.8em; margin-bottom: 32px;"><i>Smaller batches decrease cycle time variability.</i></center>
 
 This time, a customer who arrived early doesn't have to wait much longer than the customer who came later. As shown by the area in blue, there's less variability in the time it takes for customers to get burgers.
 
@@ -220,8 +220,8 @@ After looking at these two diagrams, we can conclude that the larger the batch s
 
 Additionally, if batch sizes vary, not only will the waiting time within a particular batch of customers be more variable, but also distinct batches of customers will see different waiting times. Customers who arrive earlier may see cycle times from 1 to 10 minutes, while customers who come later might see their burgers taking anywhere from 1 to 30 minutes, for example.
 
-<a target="_blank" class="image-link" href="/assets/finish-what-you-start/cfd-different-batch-sizes.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/cfd-different-batch-sizes.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i></i></center>
+<a target="_blank" class="image-link" href="/assets/finish-what-you-start/cfd-different-batch-sizes.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/cfd-different-batch-sizes.png" alt="If batch sizes also vary over time, distinct batches of customers see different variations of cycle time."></a>
+<center style="font-size: 0.8em; margin-bottom: 32px;"><i>If batch sizes also vary over time, distinct batches of customers see different variations of cycle time.</i></center>
 
 That's why the cook mentioned it's helpful to limit how many burgers they can fit on a grill: it makes batch sizes uniform.
 
@@ -244,8 +244,8 @@ const TEN_DAY_THROUGHPUT = [ 0, 0, 0, 0, 5, 0, 0, 0, 5, 0 ];
 
 If we go ahead and [use a Monte Carlo algorithm to simulate how many tasks this team can deliver](/2021/09/20/monte-carlo-forecasts.html) in 30 days, we'll obtain the following histogram.
 
-<a target="_blank" class="image-link" href="/assets/finish-what-you-start/histogram-concurrent-team.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/histogram-concurrent-team.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i></i></center>
+<a target="_blank" class="image-link" href="/assets/finish-what-you-start/histogram-concurrent-team.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/histogram-concurrent-team.png" alt="Teams that deliver many tasks at once are less predictable because there's a wider range of possible outcomes when simulating their performance."></a>
+<center style="font-size: 0.8em; margin-bottom: 32px;"><i>Teams that deliver many tasks at once are less predictable because there's a wider range of possible outcomes when simulating their performance.</i></center>
 
 In this histogram, you can see a significant number of possible outcomes for this team: they may deliver anywhere from 0 to 90 tasks. Furthermore, there are plenty of likely scenarios in this distribution.
 
@@ -260,8 +260,8 @@ Please notice that the team still delivered the same amount of tasks in those te
 
 Simulating such a team's performance yields the histogram below.
 
-<a target="_blank" class="image-link" href="/assets/finish-what-you-start/histogram-serial-team.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/histogram-serial-team.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i></i></center>
+<a target="_blank" class="image-link" href="/assets/finish-what-you-start/histogram-serial-team.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/histogram-serial-team.png" alt="Teams which consistently deliver a small number of tasks are more preditable because there's a smaller range of possible outcomes when simulating their performance."></a>
+<center style="font-size: 0.8em; margin-bottom: 32px;"><i>Teams which consistently deliver a small number of tasks are more preditable because there's a smaller range of possible outcomes when simulating their performance.</i></center>
 
 If you compare these two histograms, you'll see that the second histogram's distribution has fewer possible outcomes — 20 to 41 tasks instead of 0 to 90 —and results are more clustered towards the centre. In other words, its standard deviation is smaller.
 
@@ -274,8 +274,8 @@ const TEN_DAY_THROUGHPUT = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 
 Assuming our team will remain hyper-consistent, there's only one possible outcome in the next 30 days: they'll deliver 30 tasks.
 
-<a target="_blank" class="image-link" href="/assets/finish-what-you-start/histogram-uniform-team.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/histogram-uniform-team.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i></i></center>
+<a target="_blank" class="image-link" href="/assets/finish-what-you-start/histogram-uniform-team.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/histogram-uniform-team.png" alt="A team which always delivers the same number of tasks each day will yield a "deterministic" forecast (days * throughput)."></a>
+<center style="font-size: 0.8em; margin-bottom: 32px;"><i>A team which always delivers the same number of tasks each day will yield a "deterministic" forecast (days * throughput).</i></center>
 
 The comparison between those three histograms leads to the conclusion that teams which deliver tasks more uniformly are more predictable, even if they deliver the same number of tasks within the period we're using as the sample for our simulations.
 
