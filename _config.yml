@@ -5,9 +5,8 @@ email: lucas@lucasfcosta.com
 description: Software engineering, culture and life in general.
 subtitle: Human thoughts about exact sciences
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://lucasfcosta.com" # the base hostname & protocol for your site
-email: lucas@lucasfcosta.com
-github_username:  lucasfcosta
+url: "https://lucasfcosta.com" # the base hostname & protocol for your site
+github_username: lucasfcosta
 linkedin_username: lucasfdacosta
 twitter_username: thewizardlucas
 
