@@ -23,5 +23,7 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+katex:
+  js_path: "{{ Gem::lib_path }}/assets/js" # Path used to search for katex.min.js
 timezone: Europe/London
-plugins: [jekyll-paginate, jekyll-assets]
+plugins: [jekyll-paginate, jekyll-assets, jekyll-katex]
