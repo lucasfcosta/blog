@@ -237,7 +237,7 @@ Imagine, for example, that your team tends to work on many tasks concurrently. I
 
 Let's simulate such a team assuming that their throughput over ten days looks like the following:
 
-```
+```js
 // Each item represents the number of tasks delivered that day
 const TEN_DAY_THROUGHPUT = [ 0, 0, 0, 0, 5, 0, 0, 0, 5, 0 ];
 ```
@@ -251,7 +251,7 @@ In this histogram, you can see a significant number of possible outcomes for thi
 
 Now, let's change the throughput samples we used in our simulation. **This time, we'll consider the team working on one task at a time, delivering in more regular intervals**, instead of working on plenty of tasks in parallel and delivering them all on the same day.
 
-```
+```js
 // Each item represents the number of tasks delivered that day
 const TEN_DAY_THROUGHPUT = [1, 1, 1, 1, 1, 2, 0, 1, 1, 1];
 ```
@@ -267,7 +267,7 @@ If you compare these two histograms, you'll see that the second histogram's dist
 
 To make my point even more obvious, let's see what happens if we assume the team always delivers one task each day.
 
-```
+```js
 // Each item represents the number of tasks delivered that day
 const TEN_DAY_THROUGHPUT = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 ```
