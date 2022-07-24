@@ -260,8 +260,8 @@ Please notice that the team still delivered the same amount of tasks in those te
 
 Simulating such a team's performance yields the histogram below.
 
-<a target="_blank" class="image-link" href="/assets/finish-what-you-start/histogram-serial-team.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/histogram-serial-team.png" alt="Teams which consistently deliver a small number of tasks are more preditable because there's a smaller range of possible outcomes when simulating their performance."></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>Teams which consistently deliver a small number of tasks are more preditable because there's a smaller range of possible outcomes when simulating their performance.</i></center>
+<a target="_blank" class="image-link" href="/assets/finish-what-you-start/histogram-serial-team.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/histogram-concurrent-team.png" alt="Teams which consistently deliver a small number of tasks are more preditable because there's a smaller range of possible outcomes when simulating their performance."></a>
+<center style="font-size: 0.8em; margin-bottom: 32px;"><i>Teams that deliver many tasks at once are less predictable because there's a wider range of possible outcomes when simulating their performance.</i></center>
 
 If you compare these two histograms, you'll see that the second histogram's distribution has fewer possible outcomes — 20 to 41 tasks instead of 0 to 90 —and results are more clustered towards the centre. In other words, its standard deviation is smaller.
 
@@ -274,7 +274,7 @@ const TEN_DAY_THROUGHPUT = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 
 Assuming our team will remain hyper-consistent, there's only one possible outcome in the next 30 days: they'll deliver 30 tasks.
 
-<a target="_blank" class="image-link" href="/assets/finish-what-you-start/histogram-uniform-team.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/histogram-uniform-team.png" alt="A team which always delivers the same number of tasks each day will yield a "deterministic" forecast (days * throughput)."></a>
+<a target="_blank" class="image-link" href="/assets/finish-what-you-start/histogram-uniform-team.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/histogram-uniform-team.png" alt='A team which always delivers the same number of tasks each day will yield a "deterministic" forecast (days times throughput).'></a>
 <center style="font-size: 0.8em; margin-bottom: 32px;"><i>A team which always delivers the same number of tasks each day will yield a "deterministic" forecast (days * throughput).</i></center>
 
 The comparison between those three histograms leads to the conclusion that teams which deliver tasks more uniformly are more predictable, even if they deliver the same number of tasks within the period we're using as the sample for our simulations.
@@ -288,9 +288,11 @@ When you start a new task before finishing the previous, average cycle times wil
 
 Little Law illustrates this behaviour by establishing a clear relationship between cycle time, work in progress, and throughput.
 
+<center>
 {% katex %}
 {Avg.\ Cycle\ Time} = \cfrac{Avg.\ Work\ In\ Progress}{Avg.\ Throughput}
 {% endkatex %}
+</center>
 
 Additionally, there's a cost to context-switching when it comes to software development tasks.
 
