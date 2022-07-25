@@ -260,7 +260,7 @@ Please notice that the team still delivered the same amount of tasks in those te
 
 Simulating such a team's performance yields the histogram below.
 
-<a target="_blank" class="image-link" href="/assets/finish-what-you-start/histogram-serial-team.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/histogram-concurrent-team.png" alt="Teams which consistently deliver a small number of tasks are more preditable because there's a smaller range of possible outcomes when simulating their performance."></a>
+<a target="_blank" class="image-link" href="/assets/finish-what-you-start/histogram-serial-team.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/histogram-serial-team.png" alt="Teams which consistently deliver a small number of tasks are more preditable because there's a smaller range of possible outcomes when simulating their performance."></a>
 <center style="font-size: 0.8em; margin-bottom: 32px;"><i>Teams that deliver many tasks at once are less predictable because there's a wider range of possible outcomes when simulating their performance.</i></center>
 
 If you compare these two histograms, you'll see that the second histogram's distribution has fewer possible outcomes — 20 to 41 tasks instead of 0 to 90 —and results are more clustered towards the centre. In other words, its standard deviation is smaller.
