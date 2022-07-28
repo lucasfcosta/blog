@@ -206,3 +206,12 @@ Besides misaligning incentives, long-term plans are doomed to fail because of th
 Whenever each of these assumptions inevitably breaks, the plan will be delayed.
 
 The only way to avoid the damage caused by these plans is not to plan more carefully or have a larger margin of error. The way to prevent them is to shorten planning horizons so that you can give up on bad ideas earlier and de-risk the product by listening to feedback.
+
+
+<br>
+
+## Wanna talk?
+
+**If you're a CEO, CTO, or manage software development teams, I'm interested to hear about the tools you use, the problems you face, and how you solve them.** For that, I've opened plenty of 25-minute slots to chat with my readers. To book a slot, <a onclick="sa_event('calendly-long-term-plans')" target="_blank" href="https://calendly.com/lucasfcosta/1-1-with-lucas">you can click here</a>.
+
+Alternatively, you can [send me a tweet or DM @thewizardlucas](https://twitter.com/thewizardlucas) or [an email at lucas@lucasfcosta.com](mailto:lucasfcosta.com).

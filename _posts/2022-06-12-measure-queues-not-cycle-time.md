@@ -312,3 +312,11 @@ If I were to summarise this whole blog post's content in one piece of advice, th
 * [FAU Lectures on Queueing Theory](https://www.youtube.com/watch?v=AsTuNP0N7DU) — [Prof. Robert B. Cooper](https://www.cse.fau.edu/~bob/)
 * [Server utilization: Joel on queueing](https://www.johndcook.com/blog/2009/01/30/server-utilization-joel-on-queuing/) — [John D. Cook](https://www.johndcook.com/)
 * [Queues, Schedulers and the Multicore Wall](http://perfdynamics.blogspot.com/2009/05/queues-schedulers-and-multicore-wall.html) — [The Pith of Performance](http://perfdynamics.blogspot.com/) / [Neil Gunther](https://twitter.com/DrQz)
+
+<br>
+
+## Wanna talk?
+
+**If you're a CEO, CTO, or manage software development teams, I'm interested to hear about the tools you use, the problems you face, and how you solve them.** For that, I've opened plenty of 25-minute slots to chat with my readers. To book a slot, <a onclick="sa_event('calendly-measure-queues-not-cycle-time')" target="_blank" href="https://calendly.com/lucasfcosta/1-1-with-lucas">you can click here</a>.
+
+Alternatively, you can [send me a tweet or DM @thewizardlucas](https://twitter.com/thewizardlucas) or [an email at lucas@lucasfcosta.com](mailto:lucasfcosta.com).
