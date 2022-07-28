@@ -89,7 +89,7 @@ Given the comic's example, more perspicacious readers would perhaps not even nee
 
 Images like the one above serve as excellent concrete examples and give your readers a bit of a break from slow, dense pieces of text.
 
-Especially on the internet, where people's attention span is slower, images help to keep them engaged.
+Especially on the internet, where people's attention span is lower, images help to keep them engaged.
 
 Furthermore, when someone opens a link, they're more likely to stay if they see meaningful visual content. The same principle is valid for books. As I was writing my book, I was told by my publisher that when people browse a store's books, they're more likely to buy it if its content is visually pleasing and includes images.
 
