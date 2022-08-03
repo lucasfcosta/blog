@@ -9,7 +9,7 @@ tags: agile project-management ttyc
 
 In this post, I'll present a robust and disruptive Agile framework. It's called "talk to your customers" — or, in short, _TTYC_.
 
-Soon I'll be selling a 500-page book with enough diagrams to convince you it's a framework worth trying. If you are interested, you can also contact me for a $50,000 workshop in which I'll recite platitudes and sparrot all the necessary technical terms to make it "enterprise-ready".
+Soon I'll be selling a 500-page book with enough diagrams to convince you it's a framework worth trying. If you are interested, you can also contact me for a $50,000 workshop in which I'll recite platitudes and declaim all the necessary technical terms to make it "enterprise-ready".
 
 For now, bear with me. This blog post is all I've got.
 
@@ -22,7 +22,7 @@ The _Talk To Your Customers_ framework revolves around talking to your customers
 <a target="_blank" class="image-link" href="/assets/ttyc/core-concepts.png"><img style="margin-bottom: -18px;" src="/assets/ttyc/core-concepts.png" alt=""></a>
 <center style="font-size: 0.8em; margin-bottom: 32px;"><i>TTYC's core workflows.</i></center>
 
-As surprisingly as it may seem, part about talking to your customers is crucial for TTYC's success.
+As surprisingly as it may seem, the part about talking to your customers is crucial for TTYC's success.
 
 <br>
 
