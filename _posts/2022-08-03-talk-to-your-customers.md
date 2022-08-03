@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A new, more profitable, and robust Agile framework"
+title: "Talking to your customers: a disruptive concept"
 author: Lucas Fernandes da Costa
 place: London, United Kingdom
 flag: 🇬🇧
