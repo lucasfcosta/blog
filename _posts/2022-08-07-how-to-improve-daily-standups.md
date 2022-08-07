@@ -7,7 +7,7 @@ flag: 🇬🇧
 tags: agile process practices
 ---
 
-Daily stand-ups are a classical case of [learned helplessness](https://en.wikipedia.org/wiki/Learned_helplessness). We all know they're useless, but we tell ourselves "that's just how things are" and do nothing about it.
+Daily stand-ups are a classic example of [learned helplessness](https://en.wikipedia.org/wiki/Learned_helplessness). We all know they're useless, but we tell ourselves "that's just how things are" and do nothing about it.
 
 The software industry has been doing daily stand-ups for so long that it doesn't remember why they exist in the first place. At some point along the way, stand-ups went from a solution to a problem to a meaningless dogmatic ritual.
 
