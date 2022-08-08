@@ -9,21 +9,21 @@ tags: agile process practices
 
 Daily stand-ups are a classic example of [learned helplessness](https://en.wikipedia.org/wiki/Learned_helplessness). We all know they're useless, but we tell ourselves "that's just how things are" and do nothing about it.
 
-The software industry has been doing daily stand-ups for so long that it doesn't remember why they exist in the first place. At some point along the way, stand-ups went from a solution to a problem to a meaningless dogmatic ritual.
+These days, we do stand-ups because that's what we're told to, not because they solve any particular problems.
 
-These days, we do stand-ups because that's what we're told to do, not because they solve any particular problems.
+The software industry has been doing daily stand-ups for so long that it doesn't remember why they exist. At some point along the way, stand-ups went from a solution to a meaningless dogmatic ritual.
 
 Here are symptoms which indicate you're doing your stand-ups in the wrong way, for the wrong reasons:
 
 1. Stand-ups take more than 15-minutes
-2. People talk about their work instead of talking about tasks
+2. People talk about their work instead of talking about goals
 3. People stop showing up regularly
 4. People talk to their manager (or "scrum master") instead of talking to their peers
 5. If the manager or "scrum master" can't show up, the stand-up doesn't happen
 
 **If your team is experiencing three or more of these symptoms, the diagnostic is clear: your stand-ups are useless**.
 
-In this post, I'll explain the actual goal of a stand-up and why it's a productive meeting to have, providing teams to do it right. Furthermore, I'll explain what "right" means and the nuance involved in tailoring the stand-up meeting to suit your needs — as usual in Software Engineering, there's no such thing as "one size fits all".
+In this post, I'll explain the actual goal of a stand-up and why it's a productive meeting to have, providing teams to do it right. Furthermore, I'll explain what "right" means and the nuance involved in tailoring the stand-up meeting to suit your needs. As usual in Software Engineering, there's no such thing as "one size fits all".
 
 <br>
 
@@ -33,7 +33,7 @@ As it happened with every single tenet of the Agile manifesto, we turned a set o
 
 Why did we do that? We did it because it's easier to blindly follow a set of rules than to understand the principles behind them and tune them to _your_ goal.
 
-The daily stand-up is perhaps the best example of a solution to a problem turned into a pointless dogma. In fact, with daily stand-ups, we did even worse; we misunderstood the dogma!
+The daily stand-up is perhaps the best example of a solution with solid principles turned into a pointless dogma. In fact, with daily stand-ups, we did even worse; we misunderstood the dogma!
 
 Here's [what `Scrum.org` says the purpose of a daily stand-up is](https://www.scrum.org/resources/what-is-a-daily-scrum):
 
