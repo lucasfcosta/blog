@@ -224,3 +224,11 @@ For teams to improve their stand-ups and consequently achieve their goals, I rec
 4. Invite the entire team, including PMs and Designers.
 5. Move detailed discussions asynchronously.
 6. Incentivize self-management and instil psychological safety.
+
+<br>
+
+## Wanna talk?
+
+**If you have tech or management-related problems you'd like to chat about, <a onclick="sa_event('calendly-daily-standups')" target="_blank" href="https://calendly.com/lucasfcosta/1-1-with-lucas">you can book a slot with me here</a>**.
+
+Alternatively, you can [send me a tweet or DM @thewizardlucas](https://twitter.com/thewizardlucas) or [an email at lucas@lucasfcosta.com](mailto:lucasfcosta.com).
