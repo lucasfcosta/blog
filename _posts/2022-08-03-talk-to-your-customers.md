@@ -30,9 +30,9 @@ As surprisingly as it may seem, the part about talking to your customers is cruc
 
 TTYC has two roles: the customer and the product developer. The customer is responsible for having problems, and the product developer is responsible for delivering solutions to those problems. In exchange for the solution, the customer will provide the product developer with an artefact called "money".
 
-Different from other Agile frameworks, TTYC focuses on this "money" artefact instead of story points, cycle-time, and velocity.
+Besides building products people want, TTYC also values this "money" artefact instead of story points, cycle-time, and velocity, as other Agile frameworks do.
 
-My experience in the software industry tells me that many may see this abrupt focus shift as a disadvantage, and I understand such a complex metric may turn some folks off. Yet, I firmly believe in this thing called "money".
+My experience in the software industry tells me that many may see this abrupt focus shift as a disadvantage, and I understand such complex concepts may turn some folks off. Yet, I firmly believe in this thing called "money", which tends to be a result of shipping great products.
 
 For the folks who like graphs, here's an ideal plot of money over time.
 
@@ -42,6 +42,8 @@ For the folks who like graphs, here's an ideal plot of money over time.
 See? It's all very scientific.
 
 As time passes, money should go up, not down. The higher it goes, and the more quickly it goes up, the better.
+
+> TIP: If you build something people want, it will naturally go up — providing you can sell.
 
 <br>
 
