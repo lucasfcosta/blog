@@ -212,6 +212,6 @@ The only way to avoid the damage caused by these plans is not to plan more caref
 
 ## Wanna talk?
 
-**If you're a CEO, CTO, or manage software development teams, and have problems you'd like to chat about, <a onclick="sa_event('calendly-long-term-plans')" target="_blank" href="https://calendly.com/lucasfcosta/1-1-with-lucas">you can book a slot with me here</a>**.
+**If you have tech or management-related problems, or there's anything else you'd like to chat about, <a onclick="sa_event('calendly-long-term-plans')" target="_blank" href="https://calendly.com/lucasfcosta/1-1-with-lucas"> you can book a slot with me here</a>**.
 
 Alternatively, you can [send me a tweet or DM @thewizardlucas](https://twitter.com/thewizardlucas) or [an email at lucas@lucasfcosta.com](mailto:lucasfcosta.com).
