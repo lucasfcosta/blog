@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Deciding who decides what, and when"
+title: "How to decide who makes decisions"
 author: Lucas Fernandes da Costa
 place: London, United Kingdom
 flag: 🇬🇧
