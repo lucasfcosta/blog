@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to decide who makes decisions"
+title: "The dynamics of decision-making hierarchies and how to optimize them"
 author: Lucas Fernandes da Costa
 place: London, United Kingdom
 flag: 🇬🇧
