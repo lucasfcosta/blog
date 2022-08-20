@@ -116,6 +116,6 @@ The revolutionary aspect of TTYC is acknowledging that solving the customer's pr
 
 ## Wanna talk?
 
-**If you have tech or management-related problems you'd like to chat about, <a onclick="sa_event('calendly-talk-to-your-customers')" target="_blank" href="https://calendly.com/lucasfcosta/1-1-with-lucas">you can book a slot with me here</a>**.
+**If you'd like to have a chat, <a onclick="sa_event('calendly-talk-to-your-customers')" target="_blank" href="https://calendly.com/lucasfcosta/1-1-with-lucas">you can book a slot with me here</a>**.
 
 Alternatively, you can [send me a tweet or DM @thewizardlucas](https://twitter.com/thewizardlucas) or [an email at lucas@lucasfcosta.com](mailto:lucasfcosta.com).

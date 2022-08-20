@@ -326,4 +326,6 @@ An organization's culture drives each employee's behaviour and allows them to ma
 
 # Wanna talk?
 
-You can [send me a tweet or DM @thewizardlucas](https://twitter.com/thewizardlucas) or [an email at lucas@lucasfcosta.com](mailto:lucasfcosta.com).
+**If you'd like to have a chat, <a onclick="sa_event('calendly-decision-hierarchies')" target="_blank" href="https://calendly.com/lucasfcosta/1-1-with-lucas">you can book a slot with me here</a>**.
+
+You can also [send me a tweet or DM @thewizardlucas](https://twitter.com/thewizardlucas) or [an email at lucas@lucasfcosta.com](mailto:lucasfcosta.com).
