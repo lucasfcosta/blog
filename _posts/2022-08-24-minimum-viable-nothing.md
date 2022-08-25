@@ -118,7 +118,7 @@ If you haven't found a problem yet, you're better off just [talking to customers
 
 ### 2. The mechanical Turk
 
-The [mechanical turk](https://en.wikipedia.org/wiki/Mechanical_Turk) is, in a way, an evolution of the "vaporware" approach. The difference is that instead of pretending your product does something, you make it _do_ something, but not through a piece of software. Instead, you use human labour.
+The [mechanical Turk](https://en.wikipedia.org/wiki/Mechanical_Turk) is, in a way, an evolution of the "vaporware" approach. The difference is that instead of pretending your product does something, you make it _do_ something, but not through a piece of software. Instead, you use human labour.
 
 <a target="_blank" class="image-link" href="/assets/mvn/mechanical-turk.jpg"><img style="margin-bottom: -18px;" src="/assets/mvn/mechanical-turk.jpg" alt=""></a>
 <center style="font-size: 0.8em; margin-bottom: 32px;"><i>The original mechanical Turk: a fraudulent chess-playing machine in which a human would control the "robotic" Turk against which people would play</i></center>
