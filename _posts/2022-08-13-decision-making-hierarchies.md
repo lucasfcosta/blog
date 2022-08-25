@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The dynamics of decision-making hierarchies and how to optimize them"
+title: "Why tall hierarchies slow organizations down and how to fix them"
 author: Lucas Fernandes da Costa
 place: London, United Kingdom
 flag: 🇬🇧
