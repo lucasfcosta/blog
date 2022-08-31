@@ -43,7 +43,7 @@ I went on to learn the basics of Perl. Just enough so that I could continue to g
 
 Now, my bots would collect the cards, transfer them to merchants in different cities, and those merchants would create a shop (like the one in the image below) to sell the cards.
 
-<img style="margin-bottom: -18px;" src="/assets/merchant-shop.png" alt="A merchant with its shop in Ragnarok Online">
+<img style="margin-bottom: -18px;" src="/assets/ragnarok-online/merchant-shop.png" alt="A merchant with its shop in Ragnarok Online">
 <center><i>A merchant with its shop in Ragnarok Online</i></center>
 
 To collect my money, I just had to send a DM to one of the merchants with a particular keyword and location, and they'd bring the Zenys to me.
@@ -70,7 +70,7 @@ As the market for rare cards saturated and my profits narrowed, I decided to exp
 
 My first expansion was into the D2C consumables market. I programmed my bots so that they would buy potions and other consumables from the cheapest non-playable characters in distant cities and resell them in popular hunting areas where people actually needed them.
 
-<img style="margin-bottom: -18px;" src="/assets/white-potion.png" alt="A flask with a white liquid representing the white potion">
+<img style="margin-bottom: -18px;" src="/assets/ragnarok-online/white-potion.png" alt="A flask with a white liquid representing the white potion">
 <center><i>A white potion used for healing characters in Ragnarok Online</i></center>
 
 Differently from cards and pieces of equipment, these consumables could only be used once (as the name implies). Therefore, as long as players were hunting, they'd continue to buy from my in-game merchant characters.
@@ -83,7 +83,7 @@ Once again, I succeeded.
 
 In the following year, as a much more experienced 15-year-old, I was writing regular expressions better than I could write in Portuguese. By then, I could virtually retire and go live the rest of my online life hunting Porings and listening to bards' songs.
 
-<img style="margin-bottom: -18px;" src="/assets/bard.png" alt="A 2D character of a bard holding a guitar">
+<img style="margin-bottom: -18px;" src="/assets/ragnarok-online/bard.png" alt="A 2D character of a bard holding a guitar">
 <center><i>A bard playing a magical song</i></center>
 
 But, as billionaires do, I too couldn't retire that easily. Not without one last good deed.
@@ -96,7 +96,7 @@ These quest items were so expensive, and so many were needed for a single godly 
 
 Many people dreamed of having godly items. One of them was my friend Donald (pseudonym), a 30-something-year-old psychoanalist from northeast Brazil. His dream godly item was, more specifically, the Manteau of Asprika.
 
-<img style="margin-bottom: -18px;" src="/assets/asprika.png" alt="A 2D picture of the manteau of Asprika and its in-game description">
+<img style="margin-bottom: -18px;" src="/assets/ragnarok-online/asprika.png" alt="A 2D picture of the manteau of Asprika and its in-game description">
 <center><i>The Manteau of Asprika, a godly item in Ragnarok Online</i></center>
 
 I then decided I'd make Donald's dream come true and officially quit Ragnarok Online. It only took me a couple of days to have tens of bots collecting [Rose Quartz stones](https://ragnarok.fandom.com/wiki/Rose_Quartz) and the other items necessary for the manteau.
