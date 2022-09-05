@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Engineering metrics that matter and why velocity is not one of them "
+title: "Useful engineering metrics and why velocity is not one of them "
 author: Lucas Fernandes da Costa
 place: London, United Kingdom
 flag: 🇬🇧
