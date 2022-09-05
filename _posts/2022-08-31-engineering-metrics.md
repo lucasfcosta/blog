@@ -17,17 +17,17 @@ I consider velocity metrics as loathsome as the horoscope because neither provid
 
 Stop and think about it. Besides telling you that "velocity is low," what else does a burndown chart reveal about your team's bottlenecks, problems, and inefficiencies? _Nothing_.
 
-Low velocity, just like retrograde Mercury, can explain anything you want. Because velocity gives managers absolutely no insight into the problems in their processes and delivery systems, they can come up with whatever reasons they want to justify any unproductive decisions they already wanted to make, like adding resources to an inefficient system or telling folks to "work harder" or develop a greater "sense of urgency" — words as vague as today's horoscope.
+Low velocity, just like retrograde Mercury, can explain anything you want. Because velocity gives managers absolutely no insight into the problems in their processes and delivery systems, they can come up with whatever reason to justify any unproductive decisions they already had in mind, like adding resources to an inefficient system or telling folks to "work harder" and develop a greater "sense of urgency" — words as vague as today's horoscope.
 
 To summarise, low velocity is a terrible metric because it offers no predictive power and doesn't help you make decisions.
 
 **In this post, I'll expound on the metrics and visualizations you should use to help you improve your processes and make your team more productive and predictable**.
 
-For that, I'll start by modelling an engineering team as a queueing system. Then, I'll explain the four core metrics which impact the queueing system's behavior and how they relate to each other.
+I'll start by modeling an engineering team as a queueing system. Then, I'll explain the four core metrics which impact the queueing system's performance and how they relate to each other.
 
-To visualize those metrics over time, I'll create a few visualizations which make it easier to spot problems and demonstrate problematic patterns you should watch out for.
+Then, I'll turn those metrics into charts to demonstrate how you could monitor your system's performance over time and spot problematic patterns at a glance.
 
-The third section of this post covers a few other granular metrics that offer predictive power and help decision-makers lead their teams toward predictable and efficient deliveries.
+The third section of this post covers a few other granular metrics and visualizations that offer predictive power and help managers spot inefficiencies.
 
 At the end of this post, there's also a short warning to help folks avoid misusing these metrics and visualizations and a concise summary for you to share with your team on Slack (or Microsoft Teams *\*sigh\**).
 
@@ -35,14 +35,12 @@ At the end of this post, there's also a short warning to help folks avoid misusi
 
 ## The system and its metrics
 
-To understand which metrics best represent the performance of an engineering team, we'll model it as a queueing system. In this system, tasks come in on one end, and software comes out on the other. The team itself is the processing mechanism in the middle.
+The best way to understand which metrics best represent an engineering team's performance is to model it as a queueing system. In this system, tasks come in on one end, and software comes out on the other. The team itself is the processing mechanism in the middle.
 
 <a target="_blank" class="image-link" href="/assets/eng-metrics/eng-queue.png"><img style="margin-bottom: -18px;" src="/assets/eng-metrics/eng-queue.png" alt=""></a>
 <center style="font-size: 0.8em; margin-bottom: 32px;"><i>In an engineering system, tasks come out on one end and valuable software comes out on the other</i></center>
 
-To manage the performance of this system, we must attach metrics to its parts. That way, we'll understand how one part influences another.
-
-These metrics make teams predictable: they inform how the different parts of the system behave when one of them changes.
+To monitor the performance of this system, we must attach metrics to its parts. That way, we'll understand how each part performs and how they influence one another.
 
 Let's start by attaching metrics to the right and left sides.
 
@@ -51,30 +49,28 @@ On the left side, where tasks come in, we have the _arrival rate_, which represe
 <a target="_blank" class="image-link" href="/assets/eng-metrics/arrivals-and-departures"><img style="margin-bottom: -18px;" src="/assets/eng-metrics/arrivals-and-departures.png" alt=""></a>
 <center style="font-size: 0.8em; margin-bottom: 32px;"><i>The arrival rate determines how quickly tasks arrive on the left side, and the throughput determines how quickly tasks depart on the right side</i></center>
 
-When the arrival rate exceeds the system's departure rate, the number of items in the system — its WIP (work in progress) — increases. Therefore, queues form. When queues form, each item task takes increasingly longer to be done.
+Whenever the arrival rate exceeds the system's departure rate, the number of items in the system — its WIP (work in progress) — increases. Therefore, queues form. When queues form, each item task takes increasingly longer to be done.
 
 <a target="_blank" class="image-link" href="/assets/eng-metrics/queues-increase-cycle-times.png"><img style="margin-bottom: -18px;" src="/assets/eng-metrics/queues-increase-cycle-times.png" alt=""></a>
 <center style="font-size: 0.8em; margin-bottom: 32px;"><i>The larger a system's queue, the longer teams will take to get to the queue's end</i></center>
 
-In other words, work-in-progress increases whenever the system's arrival rate is greater than its departure rate. The greater the difference between the arrival and departure rates, the more dramatic the rise in WIP will be. Then, as WIP increases, cycle times will increase too.
+The greater the difference between the arrival and departure rates, the more dramatic the rise in WIP will be. Consequently, the rate at which cycle times increase will be greater too.
 
-Another way to visualize this phenomenon is through a cumulative flow diagram. Such a chart shows the cumulative number of tasks entering and leaving the system over time.
+Another way to visualize this phenomenon is through a cumulative flow diagram. This diagram shows the cumulative number of tasks entering and leaving the system over time.
 
-<a target="_blank" class="image-link" href="/assets/eng-metrics/cfd-0.png"><img style="margin-bottom: -18px;" src="/assets/eng-metrics/cfd-0.png" alt=""></a>
+<a target="_blank" class="image-link" href="/assets/eng-metrics/cfd-0"><img style="margin-bottom: -18px;" src="/assets/eng-metrics/cfd-0" alt=""></a>
 <center style="font-size: 0.8em; margin-bottom: 32px;"><i></i></center>
 
-The chart above reveals an enormous amount of information about the team's performance at a glance.
+The cumulative flow diagram is a helpful chart because it reveals an enormous amount of information about the team's performance at a glance.
 
 In that chart, the bottom slope represents the _average_ amount of tasks delivered over time (throughput), while the top slope represents the _average_ number of tasks entering the system over time (the arrival rate).
 
 As the _average_ arrival rate increases, the difference between the top and bottom slopes increases more drastically over time. Consequently, the amount of work-in-progress in the system, represented by the vertical distance between bands, grows faster. In turn, average cycle times, represented by the horizontal distance between bands, also increase more quickly.
 
-The chart below shows how these metrics change over time when the average arrival rate is greater than the average completion rate.
+The chart below shows how these metrics change over time when the average arrival rate exceeds the average completion rate.
 
 <a target="_blank" class="image-link" href="/assets/eng-metrics/cfd-arrivals-greater-than-departures.png"><img style="margin-bottom: -18px;" src="/assets/eng-metrics/cfd-arrivals-greater-than-departures.png" alt=""></a>
 <center style="font-size: 0.8em; margin-bottom: 32px;"><i>When arrival rates are greater than departure rates, WIP increases over time, increasing the average cycle-times</i></center>
-
-The greater the difference between the average arrival and departure rates, the more dramatic the change in WIP and cycle times over time.
 
 A manager who wishes to make their team's cycle times more uniform can try matching the rate at which tasks enter the system to the rate at which they leave.
 
@@ -83,7 +79,7 @@ A manager who wishes to make their team's cycle times more uniform can try match
 
 That way, WIP remains constant, and so do cycle times.
 
-By being aware of the relationship between these four metrics, managers know how their team will behave as the variables change.
+By being aware of the relationship between these four metrics, managers know how their team will behave as the variables change. That way, they know which variables to influence to obtain regular cycle times, making their teams predictable and productive.
 
 Another way to describe this behavior is by using [Little's Law](https://en.wikipedia.org/wiki/Little%27s_law), which establishes a clear relationship between these variables.
 
@@ -106,28 +102,30 @@ Once again, we can model that process as a queueing system. The difference is th
 <a target="_blank" class="image-link" href="/assets/eng-metrics/multi-queue-system.png"><img style="margin-bottom: -18px;" src="/assets/eng-metrics/multi-queue-system.png" alt=""></a>
 <center style="font-size: 0.8em; margin-bottom: 32px;"><i>An engineering system modeled as a system composed of multiple queues feeding one another</i></center>
 
-The advantage of modeling our engineering system as a multi-queue system is that we can still use a cumulative flow diagram to analyze its performance. The only difference between this diagram and the last is that we'll break down the "in progress" band into multiple other bands.
+The advantage of modeling our engineering system as a multi-queue system is that we can still use the same metrics to analyze its behavior. Furthermore, we can still use cumulative flow diagrams to monitor its performance.
+
+Let's go ahead and plot a cumulative flow diagram for a multi-queue system. This time we'll break down the "in progress" band into multiple other bands representing the various queues, which are the different parts of our process.
 
 <a target="_blank" class="image-link" href="/assets/eng-metrics/multi-queue-cfd.png"><img style="margin-bottom: -18px;" src="/assets/eng-metrics/multi-queue-cfd.png" alt=""></a>
 <center style="font-size: 0.8em; margin-bottom: 32px;"><i>A cumulative flow diagram for a multi-queue engineering system</i></center>
 
 Despite having broken down the cumulative flow diagram's bands, the same principles apply. This time, however, we have much more granular information about how the different parts of the system behave.
 
-If we want to know the number of items that need reviews, we can look at the vertical distance between the "development" and "review" bands, for example. Similarly, we can look at the horizontal distance between those bands to determine the average time items take to go from "development" to "review".
+If we want to know the number of items that need reviews, we can look at the vertical distance between the "development" and "review" bands, for example. Similarly, we can look at the horizontal distance between those bands to determine the approximate average time items take from "development" to "review."
 
 <a target="_blank" class="image-link" href="/assets/eng-metrics/multi-queue-cfd-annotated.png"><img style="margin-bottom: -18px;" src="/assets/eng-metrics/multi-queue-cfd-annotated.png" alt=""></a>
 <center style="font-size: 0.8em; margin-bottom: 32px;"><i>The cumulative flow diagram's properties remain the same in spite of us having broken it down into multiple bands</i></center>
 
-In addition to the visual representation of metrics remaining the same, the dynamics between them also persist.
+In addition to the visual representation of metrics remaining the same, the dynamics between them persist.
 
 Assume, for example, that the rate at which tasks enter the review stage is greater than the rate at which they are deployed to a staging environment. In that case, the diagram's red band will bulge, revealing an increase in work-in-progress and, consequently, in average cycle time.
 
 <a target="_blank" class="image-link" href="/assets/eng-metrics/bulging-review-band.png"><img style="margin-bottom: -18px;" src="/assets/eng-metrics/bulging-review-band.png" alt=""></a>
 <center style="font-size: 0.8em; margin-bottom: 32px;"><i>When tasks become ready for review more quickly than they are reviewed, WIP increases, and, consequently, cycle-times elongate</i></center>
 
-This dynamic between metrics once again reveals how important it is to match arrival and departure rates. That should be done both for the system as a whole and its different parts.
+This dynamic between metrics once again reveals how important it is to match arrival and departure rates. This practice applies both to the system as a whole and its different parts.
 
-This rate-matching is the precise reason why Kanban worked so well for the Japanese manufacturers during their "economic miracle."
+This rate-matching is the precise reason why Kanban worked so well for Japanese manufacturers during their "economic miracle."
 
 [Contrary to popular belief, Kanban cards do _not_ refer to the cards (or post-its) on the Kanban board. Instead, they refer to cards that folks in one segment of the manufacturing process would send to the previous segment to indicate they're ready to receive more work](https://en.wikipedia.org/wiki/Kanban#Kanban_(cards)).
 
@@ -135,14 +133,14 @@ For example, a car manufacturer that uses Kanban would only send parts to the "p
 
 By sending these signals from the end of the queueing system to its beginning, the manufacturers could rate-match the different parts of their process, increasing their predictability and reducing WIP, which is particularly damaging when you have hundreds of pieces sitting on the factory floor.
 
-That's the theory behind Goldratt's [Theory of Constraints](https://en.wikipedia.org/wiki/Theory_of_constraints). A management paradigm focused on identifying and iteratively fixing these bottlenecks so that you're constantly improving a segment's departure rate to match its arrival rate.
+That's the theory behind Goldratt's [Theory of Constraints](https://en.wikipedia.org/wiki/Theory_of_constraints). A management paradigm focused on identifying and iteratively fixing these bottlenecks so that you're constantly adjusting segments' departure or arrival rates to match one another.
 
-In the software industry, sometimes, we have similar fixed bottlenecks. These may occur when a company relies on manual testing instead of automated testing. In that case, we can identify the bottleneck and fix it to increase our testing segment departure rate.
+In the software industry, sometimes, we have similar stationary bottlenecks. These may occur when a company relies on manual testing instead of automated testing. In that case, we can identify the bottleneck and fix it to increase our testing segment departure rate.
 
-Other times, our bottlenecks are temporary, because we're not reproducing the same work repeatedly. In fact, we're creating the _recipe_ for new workpieces, which implies variability.
-For that reason, engineers need to know how to test and operate their software. That way, we can dynamically allocate resources to fill bottlenecks.
+Other times, our bottlenecks are temporary because we're not reproducing the same work repeatedly. Instead, we're creating the _recipe_ for new workpieces, which implies variability.
+For that reason, besides knowing how to code, engineers need to understand how to test and operate their software. That way, we can dynamically allocate resources to fill bottlenecks at different process stages.
 
-Some teams may not be aware of those dynamics, but as humans, we are good at naturally finding ways to improve our processes. That's why we came up with a culture of automated testing and principles for developing a "DevOps" culture.
+Some teams may not be aware of those dynamics, but, as humans, we are good at naturally finding ways to improve our processes. That's why we came up with a culture of automated testing and principles for developing a "DevOps" culture.
 
 In any case, when managers are aware of the principles behind these metrics, they can more easily see where the bottlenecks are and come up with creative solutions to improve their processes rather than simply adopting automated tests or instilling a "DevOps culture," which may not apply to all cases.
 
@@ -160,16 +158,16 @@ In this section, I'll provide a few examples of problematic patterns, explain wh
 
 ### Flat lines
 
-Flat lines indicate periods of inactivity in a particular part of your process.
+Flat lines represent periods of inactivity in a particular part of your process.
 
 Imagine, for example, that your deployment scripts are broken. In that case, there will be zero departures from the "deployment" stage to the "done" stage, causing a flat line to appear in your cumulative flow diagram.
 
 <a target="_blank" class="image-link" href="/assets/eng-metrics/flat-line-cfd.png"><img style="margin-bottom: -18px;" src="/assets/eng-metrics/flat-line-cfd.png" alt=""></a>
 <center style="font-size: 0.8em; margin-bottom: 32px;"><i>Flat lines indicate long periods of inactivity in a particular part of the process</i></center>
 
-Such flat lines can help managers identify broken parts of their processes more quickly so that they can go after what's gone wrong.
+Such flat lines help managers identify broken parts of their processes more quickly and go after what's wrong.
 
-When flat lines occur recurrently, that indicates there's probably some part of your process which is painful or time-consuming. Therefore, it gets done less often. In turn, engineers end up transferring large batches of tasks at once.
+Besides helping managers spot broken processes, flat lines may indicate a part of your process that is too painful or time-consuming, causing it to happen less often. When that's the case, engineers transfer large batches of tasks at once to save themselves the effort of performing a painful task multiple times.
 
 Imagine, for example, that your deployment process is manual and time-consuming. In that case, there's a high _transaction cost_ of moving items from the "deployment" stage to the "done" stage.
 
@@ -191,19 +189,19 @@ Imagine, for example, that your team has various pieces of automation to aid rev
 <a target="_blank" class="image-link" href="/assets/eng-metrics/starving-reviews.png"><img style="margin-bottom: -18px;" src="/assets/eng-metrics/starving-reviews.png" alt=""></a>
 <center style="font-size: 0.8em; margin-bottom: 32px;"><i>Disappearing bands indicates a particular part of the process is starving</i></center>
 
-In this case, starvation itself is not problematic. Still, the fact that you can't get items into review indicates it may be advantageous to make the development stage more quickly by increasing reuse or refactoring complex parts of your software.
+In this case, starvation itself is not problematic. Still, the fact that you can't get items into review indicates it may be advantageous to make the development stage more quickly by increasing reuse or refactoring complex parts of your software. By doing that, you'd be trying to match the departure rates of the "development" and review stages.
 
-It may also indicate that the upstream segment (the development stage) is highly variable. Therefore, the "review" band's size keeps surging and disappearing.
+This pattern may also indicate that the upstream segment (the development stage) is highly variable, causing your team to be more unpredictable. Therefore, the "review" band's size keeps surging and disappearing.
 
 Starvation becomes more of a problem when there's a fixed amount of resources waiting to receive work, as in manufacturing. When resources are cross-trained to work in different parts of the process, we can dynamically redirect effort towards bottlenecks. That's why it's important to avoid silos.
 
-Finally, it's also essential to notice that a manager's goal is not necessarily to avoid starvation at all costs. Managers who prioritize efficiency (everyone being busy all the time) will increase the formation of queues. Therefore, they'll end up increasing WIP and cycle times, as I've explained [in another blog post](/2022/06/12/measure-queues-not-cycle-time.html).
+It's also essential to notice that **a manager's goal is not necessarily to avoid starvation at all costs**. Managers who prioritize efficiency (everyone being busy all the time) will increase the formation of queues. Therefore, they'll end up increasing WIP and cycle times, as I've explained [in another blog post](/2022/06/12/measure-queues-not-cycle-time.html).
 
 <br>
 
 ## Other helpful visualizations for spotting problems
 
-Sometimes, just because a Cumulative Flow Diagram looks impeccable, it doesn't mean your team's performance is as optimal as it could be.
+Sometimes, just because a Cumulative Flow Diagram looks impeccable, it doesn't mean your team's performance is as optimal.
 
 Imagine, for example, that your team consistently ships a significant amount of critical bugs. In that case, whenever someone discovers one of those bugs, the bugfix becomes the top priority and gets done quite quickly.
 
@@ -214,7 +212,9 @@ The diagram below, for example, could illustrate that scenario.
 <a target="_blank" class="image-link" href="/assets/eng-metrics/cfd-flow-debt.png"><img style="margin-bottom: -18px;" src="/assets/eng-metrics/cfd-flow-debt.png" alt=""></a>
 <center style="font-size: 0.8em; margin-bottom: 32px;"><i>A cumulative flow diagram doesn't specify which items get done, it specifies the quantities of items entering and leaving the system</i></center>
 
-In this situation, we say you're accumulating "flow debt." That means you're artificially aging one issue to expedite another. Another way to think of "flow debt" is to imagine you're borrowing cycle time from one task to another.
+In this situation, we say you're accumulating "flow debt." That means you're artificially aging one issue to expedite another.
+
+Another way to think of "flow debt" is to imagine you're borrowing cycle time from one task to another.
 
 Flow debt kills predictability because shifting priorities will cause other issues to age artificially. In this scenario, it will be difficult to predict when you'll finish something because you don't know whether something will take focus away from items in progress. That's why it's essential to [finish what you start](https://lucasfcosta.com/2022/07/19/finish-what-you-start.html).
 
