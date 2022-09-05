@@ -7,19 +7,19 @@ flag: 🇬🇧
 tags: agile process practices
 ---
 
-I'm a Taurus. Here's my horoscope for today:
+Here's my horoscope for today:
 
 > Things should improve for you as the day progresses, Taurus. You shouldn't depend on something that may not pan out the way you want.
 
 **As you can see, it's useless, just like your team's velocity metrics and burndown charts**.
 
-I consider velocity metrics as loathsome as the horoscope because neither provides any insight on _why_ something went wrong or how to fix it. Moreover, if only you squint your eyes hard enough, both burndown charts and the horoscope will show you whatever you want to see.
+Velocity metrics are as loathsome as the horoscope because neither provides any insight on _why_ something went wrong or how to fix it. Moreover, if only you squint your eyes hard enough, both burndown charts and the horoscope will show you whatever you want to see.
 
 Stop and think about it. Besides telling you that "velocity is low," what else does a burndown chart reveal about your team's bottlenecks, problems, and inefficiencies? _Nothing_.
 
-Low velocity, just like retrograde Mercury, can explain anything you want. Because velocity gives managers absolutely no insight into the problems in their processes and delivery systems, they can come up with whatever reason to justify any unproductive decisions they already had in mind, like adding resources to an inefficient system or telling folks to "work harder" and develop a greater "sense of urgency" — words as vague as today's horoscope.
+**Low velocity, just like retrograde Mercury, can explain anything you want**. Because velocity gives people absolutely no insight into the team's problems, managers can come up with whatever reason to justify any unproductive decisions they already had in mind, like adding resources to an inefficient system or telling folks to "work harder" and develop a greater "sense of urgency" — words as vague as today's horoscope.
 
-To summarise, low velocity is a terrible metric because it offers no predictive power and doesn't help you make decisions.
+To summarise, velocity is a _terrible_ metric because it offers no predictive power and doesn't help you make decisions.
 
 **In this post, I'll expound on the metrics and visualizations you should use to help you improve your processes and make your team more productive and predictable**.
 
@@ -29,7 +29,7 @@ Then, I'll turn those metrics into charts to demonstrate how you could monitor y
 
 The third section of this post covers a few other granular metrics and visualizations that offer predictive power and help managers spot inefficiencies.
 
-At the end of this post, there's also a short warning to help folks avoid misusing these metrics and visualizations and a concise summary for you to share with your team on Slack (or Microsoft Teams *\*sigh\**).
+At the end of this post, there's also a short warning to help folks avoid misusing these metrics and visualizations and a concise summary for you to share with your team.
 
 <br>
 
