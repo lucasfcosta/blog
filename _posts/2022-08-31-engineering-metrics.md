@@ -38,7 +38,7 @@ At the end of this post, there's also a short warning to help folks avoid misusi
 The best way to understand which metrics best represent an engineering team's performance is to model it as a queueing system. In this system, tasks come in on one end, and software comes out on the other. The team itself is the processing mechanism in the middle.
 
 <a target="_blank" class="image-link" href="/assets/eng-metrics/eng-queue.png"><img style="margin-bottom: -18px;" src="/assets/eng-metrics/eng-queue.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>In an engineering system, tasks come out on one end and valuable software comes out on the other</i></center>
+<center style="font-size: 0.8em; margin-bottom: 32px;"><i>In an engineering system, tasks come in on one end and valuable software comes out on the other</i></center>
 
 To monitor the performance of this system, we must attach metrics to its parts. That way, we'll understand how each part performs and how they influence one another.
 
@@ -236,7 +236,7 @@ For example, if a team's average flow efficiency is 50%, issues are blocked, on 
 
 ## Putting it all together.
 
-An engineering team can be modeled as a queueing system. In such a system, tasks come out on one end, and software comes out on the other.
+An engineering team can be modeled as a queueing system. In such a system, tasks come in on one end, and software comes out on the other.
 
 There are four metrics you can use to measure the performance of such a queueing system:
 
