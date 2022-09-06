@@ -58,7 +58,7 @@ The greater the difference between the arrival and departure rates, the more dra
 
 Another way to visualize this phenomenon is through a cumulative flow diagram. This diagram shows the cumulative number of tasks entering and leaving the system over time.
 
-<a target="_blank" class="image-link" href="/assets/eng-metrics/cfd-0"><img style="margin-bottom: -18px;" src="/assets/eng-metrics/cfd-0" alt=""></a>
+<a target="_blank" class="image-link" href="/assets/eng-metrics/cfd-0.png"><img style="margin-bottom: -18px;" src="/assets/eng-metrics/cfd-0.png" alt=""></a>
 <center style="font-size: 0.8em; margin-bottom: 32px;"><i></i></center>
 
 The cumulative flow diagram is a helpful chart because it reveals an enormous amount of information about the team's performance at a glance.
