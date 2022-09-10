@@ -36,7 +36,7 @@ Here are symptoms which indicate you're doing your stand-ups in the wrong way, f
 
 **If your team is experiencing three or more of these symptoms, the diagnostic is clear: your stand-ups are useless**.
 
-In this post, I'll explain the actual goal of a stand-up and why it's a productive meeting to have, providing teams to do it right. Furthermore, I'll explain what "right" means and the nuance involved in tailoring the stand-up meeting to suit your needs. As usual in Software Engineering, there's no such thing as "one size fits all".
+In this post, I'll explain the actual goal of a stand-up and why it's a productive meeting to have, providing teams it right. Furthermore, I'll explain what "right" means and the nuance involved in tailoring the stand-up meeting to suit your needs. As usual in Software Engineering, there's no such thing as "one size fits all".
 
 <br>
 
@@ -84,7 +84,7 @@ Finally, stand-ups help different functions align their schedules around a goal,
 Here's what I recommend teams do to improve their stand-ups:
 
 1. Stop rambling. Go through a Kanban board.
-2. Prioritize ageing issues.
+2. Prioritize aging issues.
 3. Focus on blockers.
 4. Invite the entire team, including PMs and Designers.
 5. Move detailed discussions asynchronously.
@@ -116,7 +116,7 @@ Just be careful not to manage by metrics exclusively! Metrics help detect anomal
 
 <br>
 
-### Prioritize ageing issues
+### Prioritize aging issues
 
 Take a moment to look at [the United States actuarial life table](https://www.ssa.gov/oact/STATS/table4c6.html). As you can see, as age increases, the size of the population that age obviously decreases.
 
@@ -128,9 +128,9 @@ An issue that has just started doesn't deserve as much attention because it's st
 
 Issues that live longer, on the other hand, are outliers. For them to have lived so long, it must mean there's something inherently difficult about them or one or more events preventing it from being completed.
 
-By focusing your stand-ups on ageing issues, you'll naturally stop wasting time on easy tasks and start investing time into solving the difficult ones.
+By focusing your stand-ups on aging issues, you'll naturally stop wasting time on easy tasks and start investing time into solving the difficult ones.
 
-That doesn't mean you shouldn't talk about issues which just started. It just means that ageing issues should raise an alert.
+That doesn't mean you shouldn't talk about issues which just started. It just means that aging issues should raise an alert.
 
 Once this alert is raised, the team should debate whether they need to clarify requirements, cut scope, or ask someone for the piece of input that's missing to complete the task.
 
@@ -142,13 +142,13 @@ It's also crucial for this to be a blameless process. If certain types of tasks 
 
 ### Focus on blockers
 
-Focusing on blockers has a similar effect as focusing on ageing issues. It directs time investment to issues that matter.
+Focusing on blockers has a similar effect as focusing on aging issues. It directs time investment to issues that matter.
 
 If an issue has just started, it may not be worth it for an engineer to report anything except for a blocker or the possibility of a blocker appearing soon.
 
 Once blockers are reported, the team should discuss what they must do to unblock the task. The longer a task remains blocked, the larger average cycle times get, and the less predictable teams become. Remember: [finishing what you start makes teams more productive and predictable](/2022/07/19/finish-what-you-start.html).
 
-In my experience, as soon as teams start focusing on blockers and ageing issues, their status updates go from [technobabble](https://en.wikipedia.org/wiki/Technobabble) like:
+In my experience, as soon as teams start focusing on blockers and aging issues, their status updates go from [technobabble](https://en.wikipedia.org/wiki/Technobabble) like:
 
 > I'm detecting nano wave frequency shift in the plasma gluon crystal. Today I'll re-invert the ion transporter and replace the torsional neogenic casing. I wonder whether there's a temporal anomaly in the dorsal bipolar thruster bracket. What does everyone think? _[insert long meaningless discussion here]_
 
@@ -232,7 +232,7 @@ When done right, stand-ups diminish the time it takes to get feedback, reduce co
 For teams to improve their stand-ups and consequently achieve their goals, I recommend that they:
 
 1. Stop rambling and go through a Kanban board instead.
-2. Prioritize ageing issues.
+2. Prioritize aging issues.
 3. Focus on blockers.
 4. Invite the entire team, including PMs and Designers.
 5. Move detailed discussions asynchronously.
