@@ -7,6 +7,19 @@ flag: 🇬🇧
 tags: agile process practices
 ---
 
+<div id="embed-iframe"></div>
+
+<script>
+window.onSpotifyIframeApiReady = (IFrameAPI) => {
+  let element = document.getElementById('embed-iframe');
+  let options = {
+      uri: 'spotify:episode:2rVlKyMDnz9Fe4gEd6hNix'
+    };
+  let callback = (EmbedController) => {};
+  IFrameAPI.createController(element, options, callback);
+};
+</script>
+
 Daily stand-ups are a classic example of [learned helplessness](https://en.wikipedia.org/wiki/Learned_helplessness). We all know they're useless, but we tell ourselves "that's just how things are" and do nothing about it.
 
 These days, we do stand-ups because that's what we're told to, not because they solve any particular problems.
