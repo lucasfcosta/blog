@@ -7,6 +7,19 @@ flag: 🇬🇧
 tags: agile project-management ttyc
 ---
 
+<div id="embed-iframe"></div>
+
+<script>
+window.onSpotifyIframeApiReady = (IFrameAPI) => {
+  let element = document.getElementById('embed-iframe');
+  let options = {
+      uri: 'spotify:episode:2onfcMlByTE3cjy94AiAca'
+    };
+  let callback = (EmbedController) => {};
+  IFrameAPI.createController(element, options, callback);
+};
+</script>
+
 In this post, I'll present a robust and disruptive Agile framework. It's called "talk to your customers" — or, in short, _TTYC_.
 
 Soon I'll be selling a 500-page book with enough diagrams to convince you it's a framework worth trying. If you are interested, you can also contact me for a $50,000 workshop in which I'll recite platitudes and declaim all the necessary technical terms to make it "enterprise-ready".
