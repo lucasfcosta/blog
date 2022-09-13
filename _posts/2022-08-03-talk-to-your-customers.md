@@ -13,7 +13,8 @@ tags: agile project-management ttyc
 window.onSpotifyIframeApiReady = (IFrameAPI) => {
   let element = document.getElementById('embed-iframe');
   let options = {
-      uri: 'spotify:episode:2onfcMlByTE3cjy94AiAca'
+      uri: 'spotify:episode:2onfcMlByTE3cjy94AiAca',
+      height: 100,
     };
   let callback = (EmbedController) => {};
   IFrameAPI.createController(element, options, callback);

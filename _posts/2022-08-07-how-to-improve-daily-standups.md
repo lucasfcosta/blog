@@ -13,7 +13,8 @@ tags: agile process practices
 window.onSpotifyIframeApiReady = (IFrameAPI) => {
   let element = document.getElementById('embed-iframe');
   let options = {
-      uri: 'spotify:episode:2rVlKyMDnz9Fe4gEd6hNix'
+      uri: 'spotify:episode:2rVlKyMDnz9Fe4gEd6hNix',
+      height: 100,
     };
   let callback = (EmbedController) => {};
   IFrameAPI.createController(element, options, callback);
