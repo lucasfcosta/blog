@@ -84,6 +84,11 @@ Additionally, if that team was already doing long hours to meet the deadline, th
 
 That unpredictability is often caused by setting deadlines. Due to them, teams will prioritize short-term gains over long-term consistency and continuous improvements.
 
+As Deming would put it:
+
+> Short-term profits are not a reliable indicator of performance of management. Anybody can pay dividends by deferring maintenance, cutting out research, or acquiring another company.
+> — Deming, W. Edwards. Out of the Crisis, reissue (p. 19). MIT Press. Kindle Edition.
+
 Now, compare that erratic team with a predictable team that continuously improves its performance but misses the $50,000 deadline.
 
 <a target="_blank" class="image-link" href="/assets/deadlines/consistent-sales-team.png"><img style="margin-bottom: -18px;" src="/assets/deadlines/consistent-sales-team.png" alt=""></a>
