@@ -84,7 +84,7 @@ Additionally, if that team was already doing long hours to meet the deadline, th
 
 That unpredictability is often caused by setting deadlines. Due to them, teams will prioritize short-term gains over long-term consistency and continuous improvements.
 
-As Deming would put it:
+As [W.E. Deming](https://en.wikipedia.org/wiki/W._Edwards_Deming) would put it:
 
 > Short-term profits are not a reliable indicator of performance of management. Anybody can pay dividends by deferring maintenance, cutting out research, or acquiring another company.
 > — Deming, W. Edwards. Out of the Crisis, reissue (p. 19). MIT Press. Kindle Edition.
