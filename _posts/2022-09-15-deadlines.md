@@ -31,18 +31,18 @@ At the root of deadlines' pointlessness is the fact that you can't control outco
 
 You can't simply start training today and run a half marathon tomorrow, for example. You can, however, create a system in which you consistently increase the number of miles you run.
 
-There will be days you won't want to get out of bed. In those days, you won't run as much. On other days, you'll wake up and run as if your life depended on it. There _will_ be variability. Still, as long as you consistently improve each week, you'll eventually run that marathon.
+There will be days you won't want to get out of bed. In those days, you won't run as much. On other days, you'll wake up and run as if your life depended on it. There _will_ be variability. Still, as long as you consistently improve each week, you'll eventually run a marathon.
 
 Once you've reached a stable rate of improvement, then you might be able to forecast whether you'll be able to run next year's marathon. Until then, any deadline is an uninformed guess.
 
 Sure, if you know when the marathon will be, you can time your carbohydrate intake and fine-tune your training routine so that you're ready to run on that particular day. Nonetheless, unless you're consistently improving and already capable of running a marathon significantly before its date, setting deadlines is a recipe for injury and overtraining. If you can't run a marathon on that date, then you can't.
 
-If you're going to take one thing away from this post, take this: long-term objectives demand consistent short-term action and predictable performance improvements, not one big mindless push.
+If you're going to take one thing away from this post, take this: **long-term objectives demand consistent short-term action and predictable performance improvements, not one big mindless push**.
 
-Besides the fact that you can't control outcomes, only the processes generating them, there are three other reasons which reveal the pointlessness of deadlines:
+Besides being pointless, deadlines are also harmful because:
 
 1. **Deadlines don't improve a team's performance**. Setting a goal doesn't cause the team to ship faster. It either causes them to ship less or work more.
-2. **Deadlines misalign incentives and disincentivize continuous improvement**. They incentivize teams to prioritize short-term gains to meet deadlines instead of long-term predictable and sustainable performance.
+2. **Deadlines misalign incentives and discourage long-term thinking**. They incentivize teams to prioritize short-term gains to meet deadlines instead of long-term predictable and sustainable performance.
 3. **Deadlines are not actionable**. By the time the team misses a deadline, it's too late to do anything productive about it.
 
 In this section, I'll explain each statement in more detail.
@@ -69,24 +69,24 @@ It's only through consistent and systematic improvements that teams can create a
 
 <br>
 
-### Deadlines misalign incentives and create unpredictable systems
+### Deadlines misalign incentives and discourage long-term thinking
 
 Imagine you have two sales teams. One produces unreproducible and unpredictable revenue spikes, while the other generates consistent and continuously improving results.
 
-In a system that awards bonuses to those who reach a $50,000 deadline, an erratic team that meets the deadline will receive rewards, regardless of whether they met the deadline by pure luck or extra hours.
+In a system that awards bonuses to those who reach a $50,000 deadline, an erratic team that meets the deadline will receive rewards, regardless of whether they met the deadline by pure luck or working extra hours.
 
 <a target="_blank" class="image-link" href="/assets/deadlines/erratic-sales-team.png"><img style="margin-bottom: -18px;" src="/assets/deadlines/erratic-sales-team.png" alt=""></a>
 <center style="font-size: 0.8em; margin-bottom: 32px;"><i>An erratic team which meets a $50,000 dollar deadline</i></center>
 
-Because that team hasn't set a consistent baseline for performance, you can't simply increase its sales targets quarter by quarter. Doing that would be a recipe for failure because you'd rely on luck to achieve your goals rather than building a predictable revenue machine.
+Because that team hasn't set a consistent baseline for performance, you can't simply increase its sales targets quarter by quarter. Doing that would be a recipe for failure. In that case, you'd rely on luck to achieve your goals because you don't have a predictable revenue machine.
 
 Additionally, if that team was already doing long hours to meet the deadline, they may not be able to work even longer, and some might quit.
 
-That unpredictability is often caused by setting deadlines. Due to them, teams will prioritize short-term gains over long-term consistency and continuous improvements.
+That inconsistency is often caused by setting deadlines. Due to them, teams will prioritize short-term gains over long-term consistency and continuous improvement.
 
 As [W.E. Deming](https://en.wikipedia.org/wiki/W._Edwards_Deming) would put it:
 
-> Short-term profits are not a reliable indicator of performance of management. Anybody can pay dividends by deferring maintenance, cutting out research, or acquiring another company.
+> Short-term profits are not a reliable indicator of the performance of management. Anybody can pay dividends by deferring maintenance, cutting out research, or acquiring another company.
 > — Deming, W. Edwards. Out of the Crisis, reissue (p. 19). MIT Press. Kindle Edition.
 
 Now, compare that erratic team with a predictable team that continuously improves its performance but misses the $50,000 deadline.
@@ -136,7 +136,7 @@ Now that I've gotten that out of the way, let me address Parkinson's Law, which 
 
 Whether the law holds true doesn't matter. It doesn't matter because it doesn't say that work expands infinitely if no deadlines are set.
 
-Furthermore, according to Parkinson's law, even adding a safety buffer to the deadline will cause the work to expand. Therefore, you'll exchange the possibility of being late for the certainty of being late.
+Furthermore, according to Parkinson's law, adding a safety buffer to the deadline will cause the work to expand. Therefore, you'll exchange the possibility of being late for the certainty of being late — maybe even later than you'd initially be if work expands slightly too much.
 
 That's not to mention the Stock-Sanford corollary to Parkinson's law:
 
@@ -150,7 +150,7 @@ Good software takes time.
 
 ## If not deadlines, then what?
 
-To operate without deadlines, teams must adopt preemption points and be mindful of their queueing discipline.
+To operate without deadlines, teams must adopt preemption points and be mindful of their queueing disciplines.
 
 The former helps teams create short and synchronous actionable feedback so they can correct course earlier. The latter allows the team to deliver the most valuable pieces of work early and with lower costs.
 
@@ -172,15 +172,31 @@ One way to do that is to use your task manager to highlight tasks with different
 
 Daily stand-ups are one way to introduce that synchronous preemptive feedback. During them, you can discuss the aforementioned approaches with the team.
 
-Preemption points are better than deadlines because:
+Preemption points work well because they help you correct deviation from the desired end-state by regularly bringing variation back to baseline — the desired end-state — instead of allowing variation to accumulate.
 
-1. They're actionable and predictable.
+Unless there are regular checks and interventions, the accumulation of these minor deviations over time will cause developers to ship changes entirely different from what they originally intended.
+
+<a target="_blank" class="image-link" href="/assets/deadlines/back-to-baseline.png"><img style="margin-bottom: -18px;" src="/assets/deadlines/back-to-baseline.png" alt=""></a>
+<center style="font-size: 0.8em; margin-bottom: 32px;"><i>Preemption points bring variation back to baseline regularly</i></center>
+
+One way to illustrate how these slight deviations accumulate over time is with a coin toss experiment, as Donald Reinertsen does in his book, Principles of Product development flow. In this experiment, you'll flip a coin plenty of times. For every toss, you'll add one to your total whenever heads come up and subtract one from it whenever tails come up.
+
+As you can see in the simulations below, which use increasingly greater numbers of tosses, the more tosses, the further above or below the zero axis the total will go — differently from what many people would expect.
+
+<a target="_blank" class="image-link" href="/assets/deadlines/coin-tosses-over-time.png"><img style="margin-bottom: -18px;" src="/assets/deadlines/coin-tosses-over-time.png" alt=""></a>
+<center style="font-size: 0.8em; margin-bottom: 32px;"><i>As the number of tosses increase, the total goes further and further from the baseline</i></center>
+
+Preemption points act as if you were breaking down the number of coin tosses into smaller series of tosses. After each series, you work to bring the accumulated deviation back to baseline forcefully.
+
+Deadlines, in comparison, often allow for too much variation to accumulate. That happens because we either check a task's status too late or too irregularly, making it more difficult and time-consuming to bring the current state back to the baseline.
+
+Besides their greater effectiveness in handling variability, preemption points are better than deadlines because:
+
+1. They’re actionable and predictable.
 2. They eliminate the need for estimations.
 3. They incentivize continuous improvement over short-term gains.
 
-Preemption points are actionable and predictable because regularly checking tasks' statuses ensures you'll detect problems early enough to course-correct.
-
-If you're checking on tasks daily, you'll be at most one day late to take action.
+Preemption points are actionable and predictable because regularly checking tasks’ statuses ensures you’ll detect problems early enough to course-correct. If you're checking on tasks daily, you'll be at most one day late to take action.
 
 Preemption points also eliminate the need for estimations because you shift your focus from getting something done at a particular date to delivering small incremental pieces of value as soon as possible, regardless of when "as soon as possible" is.
 
@@ -250,7 +266,7 @@ Instead of setting deadlines, managers should take two actions: introduce preemp
 
 Preemption points are regular time intervals at which the team will review a task's progress and decide whether they should cut scope, change their strategy, or drop the task and cut losses altogether.
 
-Preemption points are better than deadlines because they're actionable, predictable, and incentivize long-term continuous improvement.
+Preemption points are better than deadlines because they're actionable, predictable, better at handling variability, and incentivize long-term continuous improvement.
 
 Finally, when it comes to queueing disciplines, FIFO — first in, first out — is rarely the best queueing discipline to use in an engineering system. Instead, we must ensure the system is always processing the shortest, most valuable items.
 
@@ -262,6 +278,8 @@ That way, even if we can't improve the system's processing rate, we can increase
 ## Wanna talk?
 
 **If you'd like to have a chat, <a onclick="sa_event('calendly-deadlines')" target="_blank" href="https://calendly.com/lucasfcosta/1-1-with-lucas">you can book a slot with me here</a>**.
+
+Alternatively, you can [send me a tweet or DM @thewizardlucas](https://twitter.com/thewizardlucas) or [an email at lucas@lucasfcosta.com](mailto:lucasfcosta.com).
 
 <br>
 
