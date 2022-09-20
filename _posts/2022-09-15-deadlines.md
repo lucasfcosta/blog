@@ -188,7 +188,7 @@ Daily stand-ups are one way to introduce that synchronous preemptive feedback. D
 
 Preemption points work well because they help you correct deviation from the desired end-state by regularly bringing variation back to baseline — the desired end-state — instead of allowing variation to accumulate.
 
-Unless there are regular checks and interventions, the accumulation of these minor deviations over time will cause developers to ship changes entirely different from what they originally intended.
+Unless there are regular checks and interventions, these minor deviations will accumulate. When that happens, features become entirely different from what they were initially intended to be. Therefore, you will either ship the wrong features or spend extra time correcting them.
 
 <a target="_blank" class="image-link" href="/assets/deadlines/back-to-baseline.png"><img style="margin-bottom: -18px;" src="/assets/deadlines/back-to-baseline.png" alt=""></a>
 <center style="font-size: 0.8em; margin-bottom: 32px;"><i>Preemption points bring variation back to baseline regularly</i></center>
