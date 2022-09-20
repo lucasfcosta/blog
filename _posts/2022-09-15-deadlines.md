@@ -110,7 +110,7 @@ Now, compare that erratic team with a predictable team that continuously improve
 
 Which team would you rather have in your organization?
 
-I'd definitely prefer the first. Even though it missed the deadline, that team demonstrated it can consistently improve its performance, allowing me to forecast sales with much more accuracy and without relying on luck. That way, I can make decisions upon solid foundations.
+I'd definitely prefer the second. Even though it missed the deadline, that team demonstrated it can consistently improve its performance, allowing me to forecast sales with much more accuracy and without relying on luck. That way, I can make decisions upon solid foundations.
 
 Furthermore, in the long run, the consistent team will eventually exceed the performance of the erratic one if it keeps applying continuous improvement principles.
 
