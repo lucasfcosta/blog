@@ -217,4 +217,4 @@ When selling to businesses or when you don't yet know exactly which problem you'
 
 **If you'd like to have a chat, <a onclick="sa_event('calendly-mvn')" target="_blank" href="https://calendly.com/lucasfcosta/1-1-with-lucas">you can book a slot with me here</a>**.
 
-You can also [send me a tweet or DM @thewizardlucas](https://twitter.com/thewizardlucas) or [an email at lucas@lucasfcosta.com](mailto:lucasfcosta.com).
+You can also [send me a tweet or DM @thewizardlucas](https://twitter.com/thewizardlucas) or [an email at lucas@lucasfcosta.com](mailto:lucas@lucasfcosta.com).
