@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Books about good practices are just books about someone's opinion"
+title: "Good practices don't exist"
 author: Lucas Fernandes da Costa
 place: London, United Kingdom
 flag: 🇬🇧
 tags: books reading good-practices
 ---
 
-Good practices don't exist. There are practices you agree with and practices you don't. Everything else is subjective.
+Good practices don't exist. There are practices you agree with and practices you don't. Everything else is subjective. Even books about good practices are just books about someone's opinion.
 
 Clean Code, for example, is not a book about clean code. It's a book about what the author considers to be clean code. Even Bob Martin himself acknowledges that.
 
