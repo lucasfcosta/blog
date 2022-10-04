@@ -23,7 +23,7 @@ Kanban, on the other hand, establishes principles. Once you understand these pri
 
 And, no, I'm not saying Scrum doesn't work. I'm saying the exact opposite. Scrum _does_ work, but it works for the same reasons Kanban does. The difference between them is that Scrum is slower and more prescriptive, and thus less adaptable (or "agile", whatever you wanna call it).
 
-Scrum becomes even more harmful when managers create their own flavour of Scrum. When that happens, managers turn an inefficient yet sound framework into an inefficient _and_ defective process. That's because they didn't pay attentions to the dynamics which made "by-the-book Scrum" work.
+Scrum becomes even more harmful when managers create their flavor of Scrum, trying to shoehorn prescriptive guidelines into a context in which they don't fit. When that happens, managers turn an inefficient yet sound framework into an inefficient _and_ defective process. That's because they ignored the Kanban dynamics which made "by-the-book Scrum" work.
 
 **In this post, I'll expound on the reasons I prefer Kanban over Scrum, and explain the ways in which Scrum hinders a team's performance**.
 
