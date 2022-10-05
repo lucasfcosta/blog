@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "You don't need Scrum. You just need to do Kanban right."
+title: "How to fix Scrum by using Kanban"
 author: Lucas Fernandes da Costa
 place: London, United Kingdom
 flag: 🇬🇧
