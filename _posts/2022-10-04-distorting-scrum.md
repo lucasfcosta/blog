@@ -153,7 +153,7 @@ The more you segregate responsibilities, the better.
 
 Information silos help make developers' lives worse by increasing the time it takes for them to make decisions and making them feel removed from the impact of their work. Therefore, they'll take longer to ship software, care less about code quality, produce more bugs, and burn out more quickly.
 
-Furthermore, it will eradicate any bit of ownership that's left in the team. Therefore, it will be easier for you to push your product development agenda, regardless of whether it's good for users.
+Furthermore, it will eradicate any bit of ownership that's left in the team. Consequently, it will be easier for you to push your product development agenda, regardless of whether it's good for users.
 
 In case you want to make information silos even more wasteful, you may also want to create new roles and ensure that no one from any other team talks to developers. If you do that, you can ensure that developers can't understand the problem and that everyone else can't understand the solutions.
 
