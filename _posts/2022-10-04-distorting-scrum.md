@@ -138,7 +138,7 @@ I won't spend too much time on this item because I've already discussed it in th
 In any case, here are a few extra tips for weaponizing useless metrics like velocity:
 
 1. Make sure you complain about it frequently — that way, you'll guarantee maximum pressure.
-2. Show burndown charts to the budget people, especially if they remain flat or show bad results — these charts are a great way to justify any decisions you already want to make. That's because burndown charts are not anchored to any other metrics
+2. Show burndown charts to the budget people, especially if they remain flat or show bad results — these charts are a great way to justify any decisions you already want to make. That's because burndown charts are not anchored to any other metrics.
 3. Don't ever perform qualitative assessments — if you talk to your team, you may realize you're doing everything wrong, preventing you from being creative and fulfilled in your product dictatorship role.
 
 <br>
