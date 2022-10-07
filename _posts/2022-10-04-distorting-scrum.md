@@ -79,7 +79,7 @@ It's also critical for the person with the highest hierarchical role to start th
 
 > TIP: This technique will be more impactful if you can successfully create an environment of psychological danger. If you do that, people will constantly be in fear and will feel discouraged from sharing their ideas unless they're sure their managers will agree with them.
 
-Finally, you must be adamant about committing an unbelievable amount of action points in every single retrospective. That way, you can ensure that nothing will change because you'll simultaneously divide time, effort, and attention into too many tasks.
+Finally, you must be adamant about committing to an unbelievable amount of action points in every single retrospective. That way, you can ensure that nothing will change because you'll simultaneously divide time, effort, and attention into too many tasks.
 
 <br>
 
