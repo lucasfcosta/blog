@@ -33,7 +33,7 @@ Before we get to maximizing its awful parts, let's start by putting a spoke in S
 
 There are two ways of ruining sprints.
 
-The first is to make [a year-long term plan](/2022/07/15/long-term-plans-dont-work.html) and break it down into sprints. That way, you'll be effectively doing waterfall, which allows you to completely [ignore customer feedback](/2022/08/03/talk-to-your-customers.html) and blindly follow whatever imaginative roadmap you and other executives have created.
+The first is to make [a year-long plan](/2022/07/15/long-term-plans-dont-work.html) and break it down into sprints. That way, you'll be effectively doing waterfall, which allows you to completely [ignore customer feedback](/2022/08/03/talk-to-your-customers.html) and blindly follow whatever imaginative roadmap you and other executives have created.
 
 Instead of adjusting your goals sprint-by-sprint depending on the market's needs, this "sprintified-waterfall" flavor of Scrum will help you build something _you_ want, regardless of whether it's useful.
 
