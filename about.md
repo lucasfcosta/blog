@@ -7,9 +7,9 @@ title: About Me
 permalink: /about/
 ---
 
-I’m a Brazilian software engineer living in London.
+I was born in an island in southern Brazil. The weather there was too nice, so I had to go live in London for five years. Now that I'm back, I miss the tea, the tube, and the drizzle.
 
-I write JavaScript most of the time, and I’m passionate about open-source. For the past few years, I have been a maintainer of [Chai.js](http://chaijs.com/) and [Sinon.js](http://sinonjs.org/). I’m very active on [GitHub](https://github.com/lucasfcosta) and have contributed to numerous projects, including [Jest](https://github.com/facebook/jest) and [NodeSchool](https://nodeschool.io/).
+Besides prose, I write JavaScript, TypeScript, and Rust most of the time, and I’m passionate about open-source. For the past few years, I have been a maintainer of [Chai.js](http://chaijs.com/) and [Sinon.js](http://sinonjs.org/). I’m very active on [GitHub](https://github.com/lucasfcosta) and have contributed to numerous projects, including [Jest](https://github.com/facebook/jest) and [NodeSchool](https://nodeschool.io/).
 
 As an author, I’ve written [_Testing JavaScript Applications_](https://www.manning.com/books/testing-javascript-applications), a book published by [Manning Publications](https://www.manning.com/).
 
