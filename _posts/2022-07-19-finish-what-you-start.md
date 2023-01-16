@@ -322,7 +322,7 @@ One last benefit of working on smaller batches of tasks at a time is that it mak
 
 If you have questions or comments, send me a tweet at [@thewizardlucas](https://twitter.com/thewizardlucas) or an email at [lucas@lucasfcosta.com](mailto:lucas@lucasfcosta.com).
 
-**If you have tech or management-related problems, or there's anything else you'd like to chat about, <a onclick="sa_event('calendly-finish-what-you-start')" target="_blank" href="https://calendly.com/lucasfcosta/1-1-with-lucas"> you can book a slot with me here</a>**.
+**I currently offer mentorship and consulting packages for individuals and startups wishing to ship more software in less time and with less stress. If you're interested in improving your processes and pipelines, <a onclick="sa_event('calendly-finish-what-you-start')" target="_blank" href="https://calendly.com/lucasfcosta/1-1-with-lucas">book a free introduction call here</a>**. I'd love to help you solve any problems you might be facing or answer any questions you might have.
 
 If you're in London and need a burger, go for [Honest Burgers' "Tribute"](https://www.honestburgers.co.uk/food/burgers/tribute/) (and don't forget the rosemary salted chips).
 

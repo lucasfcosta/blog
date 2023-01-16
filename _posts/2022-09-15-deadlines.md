@@ -291,7 +291,7 @@ That way, even if we can't improve the system's processing rate, we can increase
 
 ## Wanna talk?
 
-**If you'd like to have a chat, <a onclick="sa_event('calendly-deadlines')" target="_blank" href="https://calendly.com/lucasfcosta/1-1-with-lucas">you can book a slot with me here</a>**. I'd love to help you solve any problems you might be facing or answer any questions you might have.
+**I currently offer mentorship and consulting packages for individuals and startups wishing to ship more software in less time and with less stress. If you're interested in improving your processes and pipelines, <a onclick="sa_event('calendly-deadlines')" target="_blank" href="https://calendly.com/lucasfcosta/1-1-with-lucas">book a free introduction call here</a>**. I'd love to help you solve any problems you might be facing or answer any questions you might have.
 
 Alternatively, you can [send me a tweet or DM @thewizardlucas](https://twitter.com/thewizardlucas) or [an email at lucas@lucasfcosta.com](mailto:lucas@lucasfcosta.com).
 

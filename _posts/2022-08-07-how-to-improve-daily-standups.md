@@ -243,6 +243,6 @@ For teams to improve their stand-ups and consequently achieve their goals, I rec
 
 ## Wanna talk?
 
-**If you have tech or management-related problems, or there's anything else you'd like to chat about, <a onclick="sa_event('calendly-exploiting-uncertainty')" target="_blank" href="https://calendly.com/lucasfcosta/1-1-with-lucas">you can book a slot with me here</a>**.
+**I currently offer mentorship and consulting packages for individuals and startups wishing to ship more software in less time and with less stress. If you're interested in improving your processes and pipelines, <a onclick="sa_event('calendly-exploiting-uncertainty')" target="_blank" href="https://calendly.com/lucasfcosta/1-1-with-lucas">book a free introduction call here</a>**. I'd love to help you solve any problems you might be facing or answer any questions you might have.
 
 Alternatively, you can [send me a tweet or DM @thewizardlucas](https://twitter.com/thewizardlucas) or [an email at lucas@lucasfcosta.com](mailto:lucasfcosta.com).

@@ -317,6 +317,6 @@ If I were to summarise this whole blog post's content in one piece of advice, th
 
 ## Wanna talk?
 
-**If you have tech or management-related problems, or there's anything else you'd like to chat about, <a onclick="sa_event('calendly-measure-queues-not-cycle-time')" target="_blank" href="https://calendly.com/lucasfcosta/1-1-with-lucas"> you can book a slot with me here</a>**.
+**I currently offer mentorship and consulting packages for individuals and startups wishing to ship more software in less time and with less stress. If you're interested in improving your processes and pipelines, <a onclick="sa_event('calendly-measure-queues-not-cycle-time')" target="_blank" href="https://calendly.com/lucasfcosta/1-1-with-lucas">book a free introduction call here</a>**. I'd love to help you solve any problems you might be facing or answer any questions you might have.
 
 Alternatively, you can [send me a tweet or DM @thewizardlucas](https://twitter.com/thewizardlucas) or [an email at lucas@lucasfcosta.com](mailto:lucas@lucasfcosta.com).

@@ -161,6 +161,6 @@ In case you want to make information silos even more wasteful, you may also want
 
 ## Wanna talk?
 
-**If you'd like to have a chat and rant about Scrum, <a onclick="sa_event('calendly-distorting-scrum')" target="_blank" href="https://calendly.com/lucasfcosta/1-1-with-lucas">you can book a slot with me here</a>**. I'd love to help you solve any problems you might be facing or answer any questions you might have.
+**I currently offer mentorship and consulting packages for individuals and startups wishing to ship more software in less time and with less stress. If you're interested in improving your processes and pipelines, <a onclick="sa_event('calendly-distorting-scrum')" target="_blank" href="https://calendly.com/lucasfcosta/1-1-with-lucas">book a free introduction call here</a>**. I'd love to help you solve any problems you might be facing or answer any questions you might have.
 
 Alternatively, you can [send me a tweet or DM @thewizardlucas](https://twitter.com/thewizardlucas) or [an email at lucas@lucasfcosta.com](mailto:lucas@lucasfcosta.com).
