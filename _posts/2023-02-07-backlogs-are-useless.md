@@ -3,7 +3,7 @@ layout: post
 title: "Why backlogs are useless, why they never shrink, and what to do instead"
 author: Lucas Fernandes da Costa
 place: São Paulo, Brazil
-flag: 🇬🇧
+flag: 🇧🇷
 tags: agile process practices
 ---
 
