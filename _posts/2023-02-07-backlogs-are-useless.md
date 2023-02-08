@@ -17,7 +17,7 @@ The truth is, **we always know what task is most important, and we work on it un
 
 At [Ergomake](https://www.ergomake.dev), my co-founder and I do _not_ have a backlog, and we couldn't be happier.
 
-In this blog post, I'll elucidate why backlogs exist and why they never shrink. Then, I'll expound on why they're useless and harmful. Finally, I'll demonstrate how one can work without a roadmap and explain why it's much more productive to do so.
+In this blog post, I'll elucidate why backlogs exist and why they never shrink. Then, I'll expound on why they're useless and harmful. Finally, I'll demonstrate how one can work without a backlog and explain why it's much more productive to do so.
 
 <br>
 
