@@ -9,11 +9,11 @@ tags: agile process practices
 
 Do you remember your backlog ever shrinking? Of course you don't. Backlogs _never_ shrink.
 
-Backlogs never shrink because the list of things we'd _eventually_ like to do never shrinks, and **that's what a backlog is: a bunch of unimportant tasks that we'll _eventually_ get to, but not today.**
+Backlogs never shrink because the list of things we'd _eventually_ like to do never shrinks, and **that's what backlogs are: a bunch of unimportant tasks that we'll _eventually_ get to, but not today.**
 
 Important tasks never go into the backlog. We create them, we work on them, and we ship them. Don't believe me? Ask your product manager when was the last time they had to take something out of the backlog because they ran out of things to do. I'm sure the answer will be a resounding _"never"_.
 
-The truth is, we always know what task is most important, and we work on it until it's done. Everything else is fluff.
+The truth is, **we always know what task is most important, and we work on it until it's done**. If you or your team don't know what's the most important thing to do, a backlog will not solve the problem. Context-sharing and organization alignment will. Everything else is a grim theatre to signal you're working hard enough.
 
 At [Ergomake](https://www.ergomake.dev), my co-founder and I do _not_ have a backlog, and we couldn't be happier.
 
@@ -49,7 +49,27 @@ By the same token, a product manager creating more tasks than its engineers can 
 
 The only difference between the two is that the first type of waste is easy to see: there will be many rusting cars on the factory floor. On the other hand, the second type of waste is just bytes on a hard drive — or tasks on a backlog.
 
-Similarly to the rusting cars, those tasks also rot and will either create noise or demand a significant effort from the product team to be kept up-to-date. Either case is terrible when considering those tasks will never get done.
+<a target="_blank" class="image-link" href="/assets/backlogs/waste.png"><img style="margin-bottom: -18px;" src="/assets/backlogs/waste.png" alt=""></a>
+<center style="font-size: 0.8em; margin-bottom: 32px;"><i>Whenever the backlog's input rate is greater than its output rate, teams produce waste.</i></center>
+
+Similarly to the rusting cars, those tasks also rot. That's because the backlog will grow faster than the team can process it.
+
+Therefore, cycle-times will elongate. Then, by the time an engineer picks-up a task, it is more likely to be "rotten" unless a product manager spent a significant amount of time keeping it up-to-date until it gets picked up.
+
+<a target="_blank" class="image-link" href="/assets/backlogs/cycle-times.png"><img style="margin-bottom: -18px;" src="/assets/backlogs/cycle-times.png" alt=""></a>
+<center style="font-size: 0.8em; margin-bottom: 32px;"><i>As the backlog grows, cycle-times elongate, increasing the chance that an engineer will pick-up a "rotten" task unless a product manager has spent significant time keeping that task up-to-date.</i></center>
+
+Besides generating waste and demanding a significant effort from the product team to be kept up-to-date, a long backlog also creates noise and diminishes visibility. Either case is terrible when considering those tasks will never get done.
+
+Furthermore, maintaining a long backlog means exchanging quick and cheap processing for a slow and expensive one. When product is not doing their job of protecting the backlog, the team's input rate will be greater than its output rate, causing tasks to accumulate. That happens because it's more expensive to refine a task and implement it, than it is to refuse doing that task due to good prioritization and goal alignment.
+
+<a target="_blank" class="image-link" href="/assets/backlogs/backlogs-bad.png"><img style="margin-bottom: -18px;" src="/assets/backlogs/backlogs-bad.png" alt=""></a>
+<center style="font-size: 0.8em; margin-bottom: 32px;"><i>Whenever product allows any task to go into the backlog, they ensure engineering will be a bottleneck. Besides being an expensive resource, processing tasks at a lower level of abstraction is slower.</i></center>
+
+Conversely, when there's a prioritization buffer in front of the team's "task list", prioritization will happen at a higher-level of abstraction, and in a much quicker fashion. It's quicker to refuse tasks because they don't align with the business goals, than to allow them to enter the team's process and have an engineer implement them. That way, product teams can protect expensive resources which process tasks more slowly. Essentially, that's not but rate-matching two parts of the process so that the bottleneck is moved to where it's cheaper.
+
+<a target="_blank" class="image-link" href="/assets/backlogs/backlogs-good.png"><img style="margin-bottom: -18px;" src="/assets/backlogs/backlogs-good.png" alt=""></a>
+<center style="font-size: 0.8em; margin-bottom: 32px;"><i>By adding a buffer in front of the teams "task list", teams move the bottleneck to where it's cheaper. That's because refusing tasks at a higher level of abstraction is quicker and easier than implementing them.</i></center>
 
 The only way to make a backlog even more harmful is to require engineers to "refine" the tasks there. That way, you'll be wasting time from product managers _and_ engineers, ensuring everything comes to a grinding halt by increasing the system's input rate while decreasing its output rate.
 
