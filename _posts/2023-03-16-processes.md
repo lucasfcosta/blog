@@ -76,7 +76,7 @@ Furthermore, when you start making these small changes over time, you end up wit
 
 Finally, if you already have too many processes, revise them all. Tell people to be candid and ask them which processes they think you should discontinue. Use your good judgement to pick which ones to throw in the bin.
 
-It's very easy to fall into the trap of fixing process problems by creating more problems. Be careful with that.
+It's very easy to fall into the trap of fixing process problems by creating more processes. Be careful with that.
 
 <br>
 
