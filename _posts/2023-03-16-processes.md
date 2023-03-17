@@ -39,7 +39,7 @@ That's precisely what happens most of the time: the process outlives the people 
 
 <br>
 
-## Why processes must die and which
+## Why processes must die
 
 Processes are great when they work, but they rely on us humans, flawed creatures. Have you ever seen someone forget to put gas in their car? That's like a process breaking down because someone forgot a step.
 
