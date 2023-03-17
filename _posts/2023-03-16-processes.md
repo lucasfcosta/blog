@@ -15,7 +15,7 @@ In this blog post, I'll describe how processes are born, the reasons for which t
 
 ## How processes are born
 
-Every process you see in a company is like a little reminder of someone's mistake.
+Every process you see in a company is a little reminder of someone's mistake.
 
 Somebody messed up, and their boss was like, _"hey, we gotta make sure this doesn't happen again!"_. And that's how the process was born.
 
