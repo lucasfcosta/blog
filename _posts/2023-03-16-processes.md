@@ -27,7 +27,7 @@ And it's not just big failures that lead to new processes either. Sometimes it's
 
 For example, maybe someone forgot to reply to an important email, and it caused a delay in a project. So, the company decides to implement a new process where team members must acknowledge receipt of all important emails within a specific timeframe.
 
-**In cultures that are afraid of failure, heavy-weight processes are inevitable**. It's a never-ending cycle. As soon as one failure gets addressed, another one is bound to happen sooner or later, and a new process will have to be put in place.
+**In culture that's afraid of failure, heavy-weight processes are inevitable**. It's a never-ending cycle. As soon as one failure gets addressed, another one is bound to happen sooner or later, and a new process will have to be put in place.
 
 And there's something else that's funny about processes. After a few months or years, they can become so ingrained in our way of doing things that we start to forget why they even exist in the first place.
 
