@@ -1,21 +1,13 @@
 ---
 layout: post
-title: "How processes are born, why they can be damaging, and how to fix them"
+title: "The curious case of forgotten mistakes and pointless processes"
 author: Lucas Fernandes da Costa
 place: São Paulo, Brazil
 flag: 🇧🇷
 tags: estimations
 ---
 
-Process-heavy engineering cultures are like my grandfather's wallet. They're stuffed with so many layers of procedures and checklists that by the time you get to the end, you forget what you were trying to accomplish in the first place. It's like trying to find a single dollar bill in a wallet full of receipts from 1972.
-
-In this blog post, I'll describe how processes are born, the reasons for which they must die, and suggest more effective and less bureaucratic alternatives.
-
-<br>
-
-## How processes are born
-
-Every process you see in a company is a little reminder of someone's mistake.
+Every process is a little reminder of someone's mistake.
 
 Somebody messed up, and their boss was like, _"hey, we gotta make sure this doesn't happen again!"_. And that's how the process was born.
 
