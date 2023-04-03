@@ -19,6 +19,6 @@ I like opinionated books, beautiful code, well-engineered prose, command-line in
 
 Content that I _own_ is always up for grabs. Universities and online courses use some of these posts as reference material, and you can do the same if you want.
 
-I have been voluntarily translated into many languages, including Russian, Mandarin, French, Portuguese, and Spanish. If you wish to translate any of these posts, you *don’t* need to ask for permission.
+I have been voluntarily translated into many languages, including German, Korean, Russian, Mandarin, French, Portuguese, and Spanish. If you wish to translate any of these posts, you *don’t* need to ask for permission.
 
 Everything I produce belongs to the internet. It has made me who I am, and, therefore, it deserves all I have.
