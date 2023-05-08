@@ -131,6 +131,6 @@ Most of Scrum's cadenced meetings, with the exception of the planning meeting ar
 
 ## Wanna talk?
 
-**If you'd like to have a chat, <a onclick="sa_event('calendly-scrum-vs-kanban')" target="_blank" href="https://calendly.com/lucasfcosta/1-1-with-lucas">you can book a slot with me here</a>**. I'd love to help you solve any problems you might be facing or answer any questions you might have.
+**If you'd like to have a chat, <a onclick="sa_event('calendly-scrum-vs-kanban')" target="_blank" href="https://calendly.com/lucasfcosta/1-1-with-lucas">you can book a slot with me here</a>**. I'd love to talk about ephemeral environments, what we're building at [Ergomake](https://www.ergomake.dev), or simply Agile in general.
 
 Alternatively, you can [send me a tweet or DM @thewizardlucas](https://twitter.com/thewizardlucas) or [an email at lucas@lucasfcosta.com](mailto:lucas@lucasfcosta.com).
