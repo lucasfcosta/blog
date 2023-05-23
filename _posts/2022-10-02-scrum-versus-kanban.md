@@ -51,7 +51,7 @@ Additionally, fewer people making decisions lead to fewer assumptions. Fewer ass
 
 ### Scrum makes estimation easier
 
-Scrum shortens planning horizons by limiting batch-sizes to two week sprints. These two-week long batches are better than year-long batches because it's there's less room for error when estimation fewer tasks. Furthermore, errors become less critical because you can course-correct earlier.
+Scrum shortens planning horizons by limiting batch-sizes to two week sprints. These two-week long batches are better than year-long batches because there's less room for error when estimating fewer tasks. Furthermore, errors become less critical because you can course-correct earlier.
 
 Still, because Scrum is a push-based system, it still requires you to do some form of estimation so that you know how large will be the batch you must push.
 
@@ -93,7 +93,7 @@ That way, you can dynamically adapt to problems that may happen temporarily at a
 
 ### Scrum creates cadenced meetings
 
-In Scrum, teams will usually have regular stand-ups, sprint planning meetings, and retrospective sessions. Except for the sprint planning meeting, those are all productive meetings to have. Still, you don't need to practice Scrum to be able to put regular meetings in everyone's calendar. Additioanlly, it may not be productive for these meetings to happen on a fixed cadence.
+In Scrum, teams will usually have regular stand-ups, sprint planning meetings, and retrospective sessions. Except for the sprint planning meeting, those are all productive meetings to have. Still, you don't need to practice Scrum to be able to put regular meetings in everyone's calendar. Additionally, it may not be productive for these meetings to happen on a fixed cadence.
 
 As I mentioned before, sprint planning meetings are unproductive because they lead to "designing by committee" and focus on getting estimations right, which is not only a waste of time, but also impossible to do in a stochastic process such as software development.
 
