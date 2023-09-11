@@ -17,7 +17,9 @@ Or someone in your company may have gone to too many AWS conferences and may wan
 
 As that happens, there will be a point of no return in which engineers can't run the whole system on their machines anymore — at least not in a reliable way.
 
-## The beginning of the end: pointing to staging
+<br />
+
+# The beginning of the end: pointing to staging
 
 First, engineers create huge Google Docs or Markdown files with complex instructions for running the software reliably.
 
@@ -41,11 +43,15 @@ Developers may even accidentally run migrations against the staging database in 
 
 That's when the CTO will step in to solve the problem and give each engineer their environment in the cloud. That's what companies like Shopify, Uber, and Stripe already do.
 
-## Cloud environments: the good, the bad, and the ugly
+<br />
+
+# Cloud environments: the good, the bad, and the ugly
 
 There are three ways to kill localhost: give engineers big virtual machines, use off-the-shelf solutions supporting some types of infra, or truly replicate production-like environments.
 
-### The ugly: big machines somewhere else
+<br />
+
+## The ugly: big machines somewhere else
 
 The worst way to replace `localhost` is by giving each engineer a large virtual machine in the cloud, like most solutions do.
 
@@ -61,8 +67,9 @@ These types of solutions will inevitably fail because bugs will continue to happ
 
 In any case, it's better to give engineers large machines somewhere else than to give them no alternative. Especially considering that these virtual machines are easy to set-up, they may be an _okay_ starting point, even if suboptimal.
 
+<br />
 
-### The bad: constrained remote infrastructure
+## The bad: constrained remote infrastructure
 
 Other types of solutions aim to give engineers a large namespace in a remote cluster to which they can sync local code.
 
@@ -77,8 +84,9 @@ Additionally, it's worth noting that many of these tools are illusory. They'll s
 In case you're using exclusively Kubernetes, and there aren't too many advanced features of the control plane you rely on, these solutions may also be good enough, even though their abstractions are limiting.
 
 
-### The good: production-like infrastructure
+<br />
 
+## The good: production-like infrastructure
 
 There's only one way to effectively kill `localhost` and live to tell the story: to provide a production-like staging for each engineer in the company's cloud.
 
@@ -94,7 +102,11 @@ The problem with using Terraform workspaces is that you'll have to replicate the
 
 For example, assume you will spin up a brand new EKS for each engineer. In that case, every development environment would take 15 to 20 minutes to come up, and each cluster would cost $72. In a team of 10 engineers, that's $720 and at least 2.5 hours completely wasted.
 
+<br />
+
 <img style="margin-bottom: -18px; max-height: 500px;" src="/assets/death-of-localhost/multi-cluster.png">
+
+<br />
 
 [Layerform](https://github.com/ergomake/layerform) solves this problem by allowing teams to build their own development infrastructure while reusing core infrastructure.
 
@@ -104,17 +116,25 @@ With Layerform, teams can quickly spin up their own isolated workspaces on top o
 
 Additionally, Layerform supports _all_ types of infrastructure, meaning you can run Lambdas, S3 buckets, and SQS queues for each engineer.
 
+<br />
+
 <img style="margin-bottom: -18px; max-height: 500px;" src="/assets/death-of-localhost/dev-environments.png">
+
+<br />
 
 Solutions like Layerform and Terraform workspaces may be more time-consuming to set-up, but they will spin up resources on _your_ cloud, meaning you get to take advantage of your savings plans and have infrastructure that's as close to production as you want.
 
-## Other uses for production-like remote environments
+<br />
+
+# Other uses for production-like remote environments
 
 Besides developing, engineers can use remote environments as targets for their end-to-end and load tests. Given these environments behave just like production, they'll have more confidence that their code will work when deployed.
 
 Creating remote production-like environments is also helpful for collaborating with others and doing manual tests. Whenever an engineer wants to show their work to a PM or ask QAs to run exploratory testing, the engineer could just run a command and share a link.
 
 GitOps fanatics could take things one step further and integrate production-like environments into their GitHub actions to get a new environment and preview link for every pull request.
+
+<br />
 
 <img style="margin-bottom: -18px; max-height: 500px;" src="/assets/death-of-localhost/preview-link-layerform.png">
 
