@@ -9,7 +9,7 @@ permalink: /about/
 
 I was born in an island in southern Brazil. The weather there was too nice, so I had to go live in London for five years. Now that I'm back, I miss the tea, the tube, and the drizzle.
 
-These days, I'm the founder and CEO at Ergomake (a YC company in the S23 batch). At Ergomake, we're building [Layerform](https://github.com/ergomake/layerform). Layerform is the future of development infrastructure.
+Currently, I'm the founder and CEO at [Briefer](https://briefer.cloud) (a YC company in the S23 batch).
 
 Besides prose, I write JavaScript, TypeScript, and Rust most of the time, and I’m passionate about open-source. Previously, I have been a maintainer of [Chai.js](http://chaijs.com/) and [Sinon.js](http://sinonjs.org/). I’m very active on [GitHub](https://github.com/lucasfcosta) and have contributed to numerous projects, including [Jest](https://github.com/facebook/jest) and [NodeSchool](https://nodeschool.io/).
 
