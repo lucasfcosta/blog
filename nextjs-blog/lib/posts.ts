@@ -153,6 +153,11 @@ export function getAllTalks(): Talk[] {
   }
 }
 
+export function getTalkBySlug(slug: string): Talk | undefined {
+  const talks = getAllTalks();
+  return talks.find((talk) => talk.slug === slug);
+}
+
 // Format date exactly like Jekyll does
 export function formatDate(dateString: string): string {
   const date = new Date(dateString + 'T00:00:00');
