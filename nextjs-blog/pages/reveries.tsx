@@ -27,9 +27,9 @@ export default function Reveries({ reveries }: ReveriesProps) {
               </span>
 
               <h2 className="post-title">
-                <a className="post-link" href={`/reveries/${reverie.slug}`}>
+                <Link href={`/reveries/${reverie.slug}`} className="post-link">
                   {reverie.title}
-                </a>
+                </Link>
               </h2>
 
               <span className="post-author">
