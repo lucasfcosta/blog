@@ -26,7 +26,7 @@ The final part of this post summarises all the previous three.
 >
 > — Reinertsen, Donald G. The Principles of Product Development Flow: Second Generation Lean Product Development.
 
-<br>
+
 
 
 ## The impact of queues
@@ -94,7 +94,7 @@ Furthermore, in case your customers don't like the new feature, shorter queues w
 
 Now that you understand the damages caused by queues, let's look at how queues behave so that we can diminish their impact.
 
-<br>
+
 
 
 ## Understanding a queue's behaviour
@@ -182,7 +182,7 @@ The beigel shop would only benefit from having spare employees if they were desi
 
 In that case, those high-paying customers would be happier because they would face shorter cycle times, but that would be at the expense of longer cycle times for other customers.
 
-<br>
+
 
 
 ### Queues and variability
@@ -204,7 +204,7 @@ The problem with this approach is that most processes can't be made deterministi
 
 That's the exact problem with [Taylorism](https://en.wikipedia.org/wiki/Scientific_management): it worships efficiency and thus allows for no spare capacity. This lack of excess capacity causes queues to grow, and, in turn, cycle time increases too.
 
-<br>
+
 
 
 ## Queue sizes, capacity utilisation and software development
@@ -213,7 +213,7 @@ Making the perfect salt beef beigel is complicated. So is making software. These
 
 In this section, I'll compare both examples and offer alternatives for better managing queues in software development.
 
-<br>
+
 
 
 ### Eliminating variability
@@ -230,7 +230,7 @@ You can't eliminate variability in service times because software development is
 
 Eliminating variability in the rate at which tasks arrive is possible from a product perspective. In that case, you could simply create fewer tasks. You can't, however, write 100% bug-free software. Therefore, you'd have to assume that no one in your team will ever have to pick up an emergency or handle unforeseen events.
 
-<br>
+
 
 
 ### Adding excess capacity
@@ -252,7 +252,7 @@ For you to always have spare capacity, you'd have to allow a particular number o
 
 Please notice I'm not saying hiring more developers isn't helpful. Hiring more developers is beneficial because it allows you to ship more tasks. What I'm saying is that hiring more developers won't make your cycle times more predictable or diminish queues and their impact on your team's productivity.
 
-<br>
+
 
 
 ### Controlling queue sizes
@@ -270,7 +270,7 @@ On the other hand, teams that control queue sizes can operate at maximum capacit
 > Limiting queue sizes is one of the main reasons Kanban works so well. The work-in-process limits in a Kanban process ensure that items will only move from one stage to the next once the next stage has signalled it has enough capacity to pull in the next piece of work.
 
 
-<br>
+
 
 ## The differences between Beigels and Software
 
@@ -283,7 +283,7 @@ If you go study queueing theory, you'll see most people use Poisson arrivals and
 I've chosen not to do that in these examples for the sake of simplicity, as some of the same principles — the ones that matter for the topics I wanted to discuss — would still apply.
 
 
-<br>
+
 
 ## Putting it all together
 
@@ -302,7 +302,7 @@ If I were to summarise this whole blog post's content in one piece of advice, th
 <center style="font-size: 1.5em;"><b>Instead of trying to control cycle times and capacity utilisation, focus on controlling your queues as they're the biggest source of waste in software development processes.</b></center>
 
 
-<br>
+
 
 ## Related material
 
@@ -313,7 +313,7 @@ If I were to summarise this whole blog post's content in one piece of advice, th
 * [Server utilization: Joel on queueing](https://www.johndcook.com/blog/2009/01/30/server-utilization-joel-on-queuing/) — [John D. Cook](https://www.johndcook.com/)
 * [Queues, Schedulers and the Multicore Wall](http://perfdynamics.blogspot.com/2009/05/queues-schedulers-and-multicore-wall.html) — [The Pith of Performance](http://perfdynamics.blogspot.com/) / [Neil Gunther](https://twitter.com/DrQz)
 
-<br>
+
 
 ## Wanna talk?
 

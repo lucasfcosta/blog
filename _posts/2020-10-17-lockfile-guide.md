@@ -109,7 +109,7 @@ Running `npm install` in the afternoon can cause you to get different dependenci
 
 **Having different dependencies is a problem because it can cause the application to present inconsistent behaviour across different environments, which is yet another cause for headaches when you're trying to build reliable software**.
 
-<br>
+
 
 # Why the same `package.json` can cause `npm install` to download different dependencies
 
@@ -147,7 +147,7 @@ If you've specified Express' `4.0.0` version as a dependency, but Express itself
 
 Therefore, if the `send` package's maintainers release breaking changes and incorrectly tag them as `1.0.2`, your application could break even though you locked _your application's_ dependencies by avoiding `^` and `~`.
 
-<br>
+
 
 # How `package-lock.json` solves the unstable dependency problem
 
@@ -162,7 +162,7 @@ That's why, whenever running your builds in a [continuous integration server](ht
 
 **The reason `package-lock.json` may change automatically when you run `npm install` is because NPM is updating the `package-lock.json` file to accurately reflect all the dependencies it has downloaded since it may have gotten more up-to-date versions of some of them.** Once NPM updates the `package-lock.json` file, others can get those exact same versions by using `npm ci` if they want.
 
-<br>
+
 
 # Security and `npm ci`
 
@@ -172,7 +172,7 @@ It's enough for a single package in your entire dependency tree to be compromise
 
 Because `npm ci` will cause you to download the exact same packages every time, it will be less likely for you to install malicious code given you have taken the necessary security precautions.
 
-<br>
+
 
 # Why does `npm install` exist if we have `npm ci`?
 
@@ -186,7 +186,7 @@ An additional advantage of using `npm ci` is its quicker execution. The `npm ci`
 
 The fact that `install` doesn't by default use `package-lock.json`, is somewhat controversial, though. Some people would advocate that updating dependencies by default is significantly dangerous and that one should be very explicit when doing it.
 
-<br>
+
 
 # Should I use `npm install` or `npm ci`?
 
@@ -200,7 +200,7 @@ Additionally, I want machines' builds to be deterministic. Given the same commit
 
 In regards to pinning dependencies, I only pin those dependencies whose `minor` or `patch` version bumps cause my application not to work as it should. On other cases, I'm okay to get automatic updates and vet them myself.
 
-<br>
+
 
 # An analogy with analogue photography
 
@@ -213,7 +213,7 @@ Even though others may follow your instructions to the letter, their photos will
 
 In the same way, when others install dependencies using a `package.json` file, their dependency tree will be similar to yours, but not exactly the same.
 
-<br>
+
 
 # A note on `^` and `~`
 

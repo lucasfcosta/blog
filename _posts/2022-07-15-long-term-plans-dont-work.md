@@ -16,7 +16,7 @@ Regardless of the sub-genre, _long-term plans simply don't work_.
 **In this blog post, I'll explain why long-term plans are pernicious, how they cause products to fail and provide alternatives for producing useful, profitable products.**
 
 
-<br>
+
 
 ## Why are long-term plans pernicious?
 
@@ -33,7 +33,7 @@ Whenever each of these assumptions break — which they inevitably will — dela
 Now, I'll explain why each of these assumptions is flawed and how they wreak havoc upon your product.
 
 
-<br>
+
 
 ### Assuming nothing will go wrong
 
@@ -41,12 +41,12 @@ The problem with this first assumption is that it's impossible to write bug-free
 
 Whenever a bug appears, someone will either have to delay the next task or stop their current task to fix it. In other words, each bug will inevitably delay the schedule.
 
-<br>
+
 
 <img style="margin-bottom: -18px;" src="/assets/long-term-plans/bugs.png" alt="">
 <center style="font-size: 0.8em; margin-bottom: 32px;"><i>Whenever bugs happen, they push other tasks forward</i></center>
 
-<br>
+
 
 Consequently, to make up for these delays, teams are pressured to deliver the next feature in less time than they originally estimated.
 
@@ -59,7 +59,7 @@ A further problem with the assumption that nothing will go wrong is that it impl
 Besides bugs, there are also unforeseen events which affect an employee's productivity. Someone may get sick and not be able to work, for example. Once again, your plan goes down the drain.
 
 
-<br>
+
 
 ### Assuming you know exactly how long each task is going to take
 
@@ -88,7 +88,7 @@ In other words, a 1-week project which takes twice as long is an inconvenience; 
 Even if you are exclusively trying to deliver a product on time and on budget, no matter how useless and unprofitable that product is, this assumption will lead you the wrong way because you _will_ get estimates wrong.
 
 
-<br>
+
 
 ### Assuming you know exactly what to build
 
@@ -107,7 +107,7 @@ Just like winning the pot in a horse race, when the long-term plan succeeds, it'
 Products don't succeed because of carefully crafted long-term planning. They succeed _despite_ of it.
 
 
-<br>
+
 
 # The alternative to long-term plans
 
@@ -124,7 +124,7 @@ The second alternative, adding a larger margin of error, is only valid if your g
 
 When you add a larger margin of error, you're exchanging the possibility of being late for the certainty of being late just so that you can say you were "on time" and get a pat on the back. Sure, if you have a boss asking you for a date, it's better to underpromise and overdeliver. Yet, it's even better to have a boss who's more concerned about the company's bottom line than they are about empty promises of delivering something by a particular date.
 
-<br>
+
 
 ## The one valid alternative to a long-term plan
 
@@ -146,23 +146,23 @@ Think about buying 3-digit lottery tickets, for example. As Reinertsen explains,
 
 If you have to buy all three digits at once, the likelihood of guessing all three is only 1%, and each attempt costs you $3.
 
-<br>
+
 
 <img style="margin-bottom: -18px;" src="/assets/long-term-plans/lottery-3-digits.png" alt="">
 <center style="font-size: 0.8em; margin-bottom: 32px;"><i>When paying for all digits at once, each attempt always costs $3 and there's only a 1% chance of success</i></center>
 
-<br>
+
 
 On the other hand, if you pay $1 per digit, you can decide whether to continue as soon as the first number is drawn. If you get it right, you can pay for the next; if not, you can give up sooner and lose less money.
 
 In this case, there's only a 10% chance you'll buy the second number and a 1% chance you'll buy the third. Therefore, each failed attempt will cost you less, but the overall likelihood of winning is still the same.
 
-<br>
+
 
 <img style="margin-bottom: -18px;" src="/assets/long-term-plans/lottery-1-digit.png" alt="">
 <center style="font-size: 0.8em; margin-bottom: 32px;"><i>When paying for one digit at a time, there's only a 10% chance you'll buy the second digit, and a 1% chance you'll buy the third.</i></center>
 
-<br>
+
 
 In addition to reducing costs and risks, short-term plans also expose how pointless it is to estimate stories.
 
@@ -171,7 +171,7 @@ If you have a short planning horizon, you don't need to estimate because you'll 
 Furthermore, estimating stories doesn't change how long these stories take to be delivered. If anything, it makes them take longer because teams will spend hours playing planning poker instead of actually coding.
 
 
-<br>
+
 
 # Situations in which it's okay to have a long-term plan
 
@@ -191,7 +191,7 @@ Instead, if I were running an agency, I'd bill by the hour and make sure to prov
 
 With this approach, I'd reap two benefits. First, I'd de-risk my agency business as I wouldn't have to commit to a particular timeline. Second, I'd increase my customer's chance of succeeding with their product, which, in turn, leads them to hire me again, for longer, at higher prices.
 
-<br>
+
 
 # A summary on making plans shorter, not "better"
 
@@ -208,7 +208,7 @@ Whenever each of these assumptions inevitably breaks, the plan will be delayed.
 The only way to avoid the damage caused by these plans is not to plan more carefully or have a larger margin of error. The way to prevent them is to shorten planning horizons so that you can give up on bad ideas earlier and de-risk the product by listening to feedback.
 
 
-<br>
+
 
 ## Wanna talk?
 

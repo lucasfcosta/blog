@@ -17,7 +17,7 @@ In this post, I'll walk you through everything you need to start making your ter
 
 ![An image from my terminal showing three panes. My text editor (`vim`), htop and a blank pane.](/assets/terminal-demo.png)
 
-<br>
+
 
 # La Raison D'Être
 
@@ -41,7 +41,7 @@ All the effort invested into becoming a skilled terminal user will soon pay-off.
 Finally, being proficient with a terminal is a "learn-once-use-everywhere" — and "use-frequently" — skill. Not every machine has VSCode, Sublime or Atom installed, but every machine has a terminal.
 
 
-<br>
+
 
 # The Terminal Starter Pack
 
@@ -55,7 +55,7 @@ These are the main programs I use to make my terminal a complete development env
 At the end of this post you can find a list of other useful programs.
 
 
-<br>
+
 
 # `neovim`
 
@@ -75,7 +75,7 @@ alias vimdiff="nvim -d"
 ```
 
 
-<br>
+
 
 ## Learning `vim`
 
@@ -118,7 +118,7 @@ Ultimately, the best tip I can give to anyone using `vim` is to adopt an increme
 Dig deep, learn things properly and at a moderate pace. For that, I highly recommend [`vim Wikia`](http://vim.wikia.com).
 
 
-<br>
+
 
 ## Plugins I'm Currently Using
 
@@ -233,7 +233,7 @@ inoremap <expr> ycm_trigger_key pumvisible() ? "<C-j>" : ycm_trigger_key;
 My language-specific plugins are `rust.vim`, `vim-javascript` and `typescript-vim` since those are the languages I've been writing more frequently. I only add other language-specific plugins when I'm about to start writing in a new language. As you might have noticed, I'm a minimalist.
 
 
-<br>
+
 
 # `tmux`
 
@@ -362,7 +362,7 @@ Here is a list of plugins I'm currently using:
 * [`robhurring/tmux-spotify`](https://github.com/robhurring/tmux-spotify) → displays currently playing spotify songs
 
 
-<br>
+
 
 # `zsh`
 
@@ -412,7 +412,7 @@ export NVM_DIR="$HOME/.nvm"
 source $HOME/.cargo/env
 ```
 
-<br>
+
 
 ## `zsh` Plugins
 
@@ -439,7 +439,7 @@ plugins=(
 ```
 
 
-<br>
+
 
 ## `iTerm2`
 
@@ -458,7 +458,7 @@ My `iTerm2` uses [the `nord` iTerm colours](https://github.com/arcticicestudio/n
 I use `iTerm2` simply because it's more customizable than Mac OS's default terminal. I don't need its window control features and tabs since I already use `tmux`.
 
 
-<br>
+
 
 ## Other Useful Programs & Things to Know
 
@@ -481,7 +481,7 @@ Here is a list of other useful programs to incorporate to your workflow.
 Being a versed terminal user also requires knowledge about basic management commands, streams, UNIX permissions and shell scripting.
 
 
-<br>
+
 
 ## Other Recommended Resources
 
@@ -491,7 +491,7 @@ Being a versed terminal user also requires knowledge about basic management comm
 * [vim-wikia](http://vim.wikia.com)
 
 
-<br>
+
 
 ## Don't forget rule number one.
 

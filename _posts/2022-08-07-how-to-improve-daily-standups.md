@@ -39,7 +39,7 @@ Here are symptoms which indicate you're doing your stand-ups in the wrong way, f
 
 In this post, I'll explain the actual goal of a stand-up and why it's a productive meeting to have, providing teams it right. Furthermore, I'll explain what "right" means and the nuance involved in tailoring the stand-up meeting to suit your needs. As usual in Software Engineering, there's no such thing as "one size fits all".
 
-<br>
+
 
 ## How did we get here?
 
@@ -78,7 +78,7 @@ Furthermore, when a system produces synchronous preemptive feedback daily, probl
 
 Finally, stand-ups help different functions align their schedules around a goal, improve your metric's precision, and incentivize self-management.
 
-<br>
+
 
 ## How to make stand-ups work
 
@@ -95,7 +95,7 @@ Except for the last item, I don't consider the others mandatory. These are recom
 
 Now, I'll explain why each recommendation usually works and their caveats.
 
-<br>
+
 
 ### Stop rambling. Go through a Kanban board
 
@@ -115,7 +115,7 @@ Just be careful not to manage by metrics exclusively! Metrics help detect anomal
 
 > _Figures on productivity in the United States do not help to improve productivity in the United States. Measures of productivity are like statistics on accidents: they tell you all about the number of accidents in the home, on the road, and at the workplace, but they do not tell you how to reduce the frequency of accidents._ — Deming, W. Edwards. Out of the Crisis, reissue (p. 13). MIT Press. Kindle Edition.
 
-<br>
+
 
 ### Prioritize aging issues
 
@@ -139,7 +139,7 @@ It's also crucial for this to be a blameless process. If certain types of tasks 
 
 > TIP: JIRA and most other project management software allows you to highlight issues above a particular age. Take advantage of that feature to make your stand-up's Kanban board more intuitive.
 
-<br>
+
 
 ### Focus on blockers
 
@@ -161,7 +161,7 @@ How much better is that?
 
 When you focus on goals and impediments to those goals, everyone wastes less time proving they're productive and more time actually _being_ productive.
 
-<br>
+
 
 ### Invite the entire team, including PMs and Designers
 
@@ -181,7 +181,7 @@ Please notice that I'm not saying all these people should _always_ attend every 
 
 Not everyone has to say something either. Sometimes just listening is a huge benefit, especially given that you follow my previous advice, which will keep the meeting short and thus reduce its cost.
 
-<br>
+
 
 ### Move detailed discussions asynchronously
 
@@ -197,7 +197,7 @@ If something can be solved right on the spot, ideally in less than three or four
 
 Please notice I'm not saying you should exclude people from these discussions. In fact, it's quite the opposite. I'm just saying you should _not_ assume everyone is interested. Instead, you should assume they aren't interested but give everyone the chance to participate in the follow-up meeting.
 
-<br>
+
 
 ### Incentivize self-management and instil psychological safety
 
@@ -218,7 +218,7 @@ Psychological safety helps people focus on the goal at hand, which means they kn
 > The best architectures, requirements, and designs emerge from self-organizing teams. — The Agile Manifesto
 
 
-<br>
+
 
 ## Putting it all together
 
@@ -239,7 +239,7 @@ For teams to improve their stand-ups and consequently achieve their goals, I rec
 5. Move detailed discussions asynchronously.
 6. Incentivize self-management and instil psychological safety.
 
-<br>
+
 
 ## Wanna talk?
 

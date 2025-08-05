@@ -37,7 +37,7 @@ Useful and elegant software understands their users and is [built upon their lan
 
 All code needs a purpose.
 
-<br>
+
 
 # Postscriptum
 

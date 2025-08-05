@@ -37,7 +37,7 @@ After those first three sections, I’ll explain a few caveats and factors to wh
 
 At last, explain where we’ll go in the next blog posts and recommend further reading material.
 
-<br>
+
 
 # What is the Monte Carlo method?
 
@@ -92,7 +92,7 @@ Probability of rolling a seven: 16.64%
 
 Congratulations, you just did your first Monte Carlo simulation.
 
-<br>
+
 
 # Simulating when a project will be complete
 
@@ -102,7 +102,7 @@ Let’s imagine you’ve read a [Tim Ferris](https://en.wikipedia.org/wiki/Tim_F
 
 However, before you commit to this time-consuming endeavour, you want to know how likely you are to be able to write 60 or more posts in 365 days and, if not, what changes you could make to hit that mark. How can we do that?
 
-<br>
+
 
 ## A naive approach: uniformly distributed cycle-times
 
@@ -163,7 +163,7 @@ Probability of succeeding: 60.87%
 
 That’s a great first attempt, but let’s say it doesn’t feel quite right to you. What could you do to make your simulation more accurate?
 
-<br>
+
 
 ## An okay approach: weighted probabilities
 
@@ -260,7 +260,7 @@ If you had two or more people working in parallel, you’d have to record their 
 
 Not too difficult, but there is an easier way.
 
-<br>
+
 
 ## Sampling throughput
 
@@ -310,7 +310,7 @@ fn main() {
 
 You could use this approach to determine whether a software development team could finish a particular number of items within a specific period.
 
-<br>
+
 
 # Caveats to pay attention to when building Monte Carlo simulations
 
@@ -321,7 +321,7 @@ Before claiming that the simulation above is reliable, I must expose a few thing
 * The need to re-forecast.
 * The size of your work packages.
 
-<br>
+
 
 ## Quality of the inputs
 
@@ -337,7 +337,7 @@ Your team’s throughput between Christmas and New Year’s Eve, for example, wi
 
 As Daniel Vacanti explains in [When Will It Be Done?](https://www.amazon.co.uk/When-Will-Done-Lean-Agile-Forecasting-ebook/dp/B084WVMKLC), _ “the fundamental assumption that the Monte Carlo Simulation is making is that the future you’re trying to predict looks roughly like the past you have data for “_.
 
-<br>
+
 
 ## Consistency and predictability
 
@@ -349,7 +349,7 @@ In another blog post, I’ll explain what would have happened if I had used more
 
 Quantifying "predictability" and "consistency" is also a topic for another blog post.
 
-<br>
+
 
 ## Re-forecast!
 
@@ -371,7 +371,7 @@ In an agile context, as you re-run these simulations, you will be able to adapt 
 
 To summarise: the fewer days and items you have to simulate, the smaller the error margin.
 
-<br>
+
 
 ## Sizing work
 
@@ -383,7 +383,7 @@ Despite that claim, these statistical approaches still yield much better results
 
 Additionally, you won't need to waste time discussing whether something is worth two or three story points. Instead, you can always try to make stories as small as you can so that you have more revealing data.
 
-<br>
+
 
 # Using Monte Carlo Simulations in practice: confidence intervals
 
@@ -527,7 +527,7 @@ Percentile 95: 2021/11/13 (59527/1000000)
 
 As an exercise, I’d also recommend the reader to plot these percentiles in their histograms. This author would be interested in seeing your solution as he’s given up on doing that after an arduous battle with Plotters and the Rust compiler.
 
-<br>
+
 
 ## On forecasting based on your risk appetite
 
@@ -543,7 +543,7 @@ Now, because you know the possible payouts and the likelihood of the desired out
 
 If, for example, you desperately need an extra $2.50 to get the bus back home, you will probably want to bet $2.50 and roll four times so that you have a higher likelihood of winning. On the other hand, if you think it could be nice to make $10 and spoil yourself with great pizza, you may want to roll only once.
 
-<br>
+
 
 # Where do we go from here?
 
@@ -557,7 +557,7 @@ These are all questions that could be answered with simple statistics. For those
 
 Furthermore, I also plan to write a blog post about how Markov Chain Monte Carlo simulations could help make forecasts, especially for more unpredictable teams.
 
-<br>
+
 
 # References
 
@@ -567,7 +567,7 @@ Furthermore, I also plan to write a blog post about how Markov Chain Monte Carlo
 
 [3] I would typically _not_ recommend using stories at this stage of a project, especially if you're dealing with many of them. Doing so would require you to go into a massive effort to specify all requirements up-front, which isn't agile at all. Instead, I'd break down scope into epics, and focus on releasing early and often, and re-forecasting as you progress. Remember: I'm not saying you should use Monte Carlo simulations to attach more accurate dates to waterfall projects.
 
-<br>
+
 
 # Related Recommended Content
 

@@ -8,7 +8,7 @@ tags : regex regular expressions
 ---
 
 
-<br>
+
 
 Hello everyone! This is my second blog post about regular expressions in JavaScript, if you didn't read [the first one](/2016/12/17/Regular-Expressions-in-JavaScript-Part-One.html), make sure you do because we're gonna need that knowledge for this post. If you're already familiar with the basics of how to create simple regular expressions and the most common metacharacters feel free to skip that post.
 
@@ -16,7 +16,7 @@ In the second article of this series **we're going to talk about how grouping wo
 
 As I've done in the first post, I will once again recommend you to use [RegEx101.com](https://regex101.com) when reading this article. This amazing tool not only lets you test your regular expressions but it also shows every single rule in detail.
 
-<br>
+
 
 ## **How does grouping works?**
 
@@ -35,7 +35,7 @@ Groups can be used for a great variety of purposes, so let me give you some more
 * Whenever using `{min,max}` after a group it will be applied to it
     * `(Ha|He){2,5}`, for example, will match `Ha` or `He` two to five times
 
-<br>
+
 
 ## **Capturing Groups**
 
@@ -67,7 +67,7 @@ The regular expression mentioned above could be written as: [`(?:true|false) (\w
 
 As you can see above we created two groups, but since only the second one is capturing group we can reference it by using `\1` and not `\2`.
 
-<br>
+
 
 ## **Capturing Groups and the RegExp API**
 
@@ -176,7 +176,7 @@ while ((result = myRegex.exec(phrase)) !== null) {
 }
 ```
 
-<br>
+
 
 ## **Methods Which Use Regular Expressions**
 
@@ -233,7 +233,7 @@ console.log(result); // [ 'Pokémon Red', 'Pokémon Blue', 'Pokémon Yellow', 'P
 As demonstrated above, `match` returns the full match, not only what has been captured by the capture groups.
 
 
-<br>
+
 
 ## **Nested Groups**
 
@@ -266,7 +266,7 @@ The regular expression above does the following:
 
 In the following phrases, these will be the capture groups:
 
-<br>
+
 
 <h2>start var blabla end</h2>
 
@@ -277,7 +277,7 @@ In the following phrases, these will be the capture groups:
 | **Group 3:** |       |     |     | bla |     |
 | **Group 4:** |       |     |     |     | end |
 
-<br>
+
 
 <h2>start var blabla end</h2>
 
@@ -288,12 +288,12 @@ In the following phrases, these will be the capture groups:
 | **Group 3:** |       |         |     |
 | **Group 4:** |       |         | end |
 
-<br>
+
 
 As you can notice in the second example, the third capture group didn't match anything since it was nested into the second group and it could only match `bla` words if they have been preceded by "`var`".
 
 
-<br>
+
 
 ## **Exercises**
 
@@ -309,7 +309,7 @@ As we have done in the last chapter, let's do a few exercises in order to guaran
     * `start var myVar; // Captures "myVar"`
     * `start void; // Captures "void"`
 
-<br>
+
 
 ## Coming up soon...
 

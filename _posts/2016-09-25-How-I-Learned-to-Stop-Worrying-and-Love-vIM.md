@@ -18,13 +18,13 @@ And, before we start, I really can't talk about vIM without thanking [@vieiraluc
 
 
 
-<br>
+
 
 ## **Why you should use vIM**
 
 I have always heard many people saying that learning vIM is too complicated and it doesn't pay off due to many reasons, even I have thought this before, but now that I don't anymore, let me dissect some of the most commonly used arguments against this awesome tool and then I will start giving you some tips.
 
-<br>
+
 
 ### *Argument Number 1 - "vIM is Hard"*
 
@@ -42,7 +42,7 @@ Even if at first you find it tempting to switch to whatever other editor you wer
 
 ![vIM Efficiency Curve](/assets/vim-efficiency-curve.jpg)
 
-<br>
+
 
 ### Argument Number 2 - "All those hotkeys are useless, after all, most of the time you are not even writing code"
 
@@ -54,7 +54,7 @@ And let me tell you another thing, **it does not only make your work more effici
 
 So, if you think learning vIM does not pay off, rethink. Anything that makes your work more pleasurable or efficient should be considered as an option.
 
-<br>
+
 
 ### Argument Number 3 - "My IDE is better"
 
@@ -69,7 +69,7 @@ The simplicity of `vIM` is magical. Learn how to deal with it and it will improv
 
 This one is true. I can't deny.
 
-<br>
+
 
 ## **Configuring vIM**
 
@@ -81,7 +81,7 @@ This is what your vIM should look like after following my instructions:
 
 ![My beautiful vIM](/assets/my-vim-screen.png)
 
-<br>
+
 
 #### Step 1 - Unleashing Hell (also known as disabling arrow keys)
 
@@ -106,7 +106,7 @@ inoremap <Right> <NOP>
 
 PS: Especial thanks to [@vieiraIucas](https://twitter.com/vieiraIucas) for making me use this.
 
-<br>
+
 
 #### Step 2 - Syntax highlight and other almost mandatory settings
 
@@ -120,7 +120,7 @@ set fileencoding=utf-8  " The encoding written to file.
 syntax on " Enable syntax highlight
 ```
 
-<br>
+
 
 #### Step 3 - Enable copying and pasting to/from vIM and the Clipboard
 
@@ -140,7 +140,7 @@ set clipboard=unnamed
 
 If you want to learn more about how key mapping works (I recommend you to), please read [this article on `vIM wiki`](http://vim.wikia.com/wiki/Indenting_source_code) or [this StackOverflow answer](http://stackoverflow.com/questions/3776117/what-is-the-difference-between-the-remap-noremap-nnoremap-and-vnoremap-mapping) (if you want to learn the basics only).
 
-<br>
+
 
 #### Step 4 - Make useful information always visible
 
@@ -161,7 +161,7 @@ set list
 set listchars=tab:¦\ ,eol:¬,trail:⋅,extends:❯,precedes:❮
 ```
 
-<br>
+
 
 #### Step 5 - Configure Indentation
 
@@ -184,7 +184,7 @@ set ai "Auto indent
 set si "Smart indent
 ```
 
-<br>
+
 
 #### Step 6 - Enabling the Installation of Plugins
 
@@ -198,7 +198,7 @@ Installing it is really simple, all you've gotta do is [follow the instructions 
 
 **For now, don't worry about installing any plugins other than the ones in the step below, we will go through that in the next section.**
 
-<br>
+
 
 #### Step 7 - Getting a beautiful vIM
 
@@ -262,7 +262,7 @@ Also, you should check if your terminal emulator supports 256 colors to make sur
 
 
 
-<br>
+
 
 ## **Useful Plugins**
 
@@ -272,7 +272,7 @@ So, in this section, I will show you my favorite plugins and my settings for the
 
 Please remember to always run `:PluginInstall` after adding a plugin to your plugin list in order to install it.
 
-<br>
+
 
 #### [Ctrlp](https://github.com/kien/ctrlp.vim)
 
@@ -286,7 +286,7 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 
 Now all you've gotta do to find a file is press `CTRL+p` in visual mode and type its name, then you can press `Enter` to open it, `CTRL+v` to open it and split the screen vertically or `CTRL+x` to open it and split the screen horizontally.
 
-<br>
+
 
 #### [NerdTree](https://github.com/scrooloose/nerdtree)
 
@@ -309,7 +309,7 @@ You can open/close it using `CTRL+n`. To open files and split the screen vertica
 
 Just in case you want to refresh your current working directory you can use `SHIFT+r`.
 
-<br>
+
 
 #### [indentLine](https://github.com/Yggdroot/indentLine)
 
@@ -328,7 +328,7 @@ let g:indentLine_char = '¦'
 let g:indentLine_leadingSpaceChar = '⋅'
 ```
 
-<br>
+
 
 #### [autoPairs](https://github.com/jiangmiao/auto-pairs)
 
@@ -340,7 +340,7 @@ You can also use it to move to matching pairs and wrap things. For more informat
 
 
 
-<br>
+
 
 ## **Learning vIM**
 
@@ -355,7 +355,7 @@ Don't try to learn anything altogether, learn a new thing or two a day, your bra
 And at last, but not least, **strive to be lazy**, if you feel like you are using too many keystrokes to accomplish a certain task, there's certainly an easier way to do it, that is the purpose of using `vIM`.
 
 
-<br>
+
 
 #### Getting Started
 
@@ -369,7 +369,7 @@ When you are starting it's really important to know about `vIM` modes, so go ahe
 
 You should not move out of this phase until you can confortably edit any simple `.txt` file. You don't need to be efficient, you just need to know how to move through it and change some words and add some new paragraphs.
 
-<br>
+
 
 #### Getting Productive
 
@@ -385,7 +385,7 @@ You will want to avoid using visual mode whenever possible, so if you feel like 
 
 Also, **`CTRL+p`** does auto-completion. Take it on your journey and thank me later.
 
-<br>
+
 
 #### Getting More Efficient than You Were Before
 
@@ -395,7 +395,7 @@ Here you should also [learn how to manage open files](http://stackoverflow.com/q
 
 Finally, you can also start looking forward to create your own shortcuts and explore different settings for your `.vimrc`. Making your text editor more suitable to what you're doing is perhaps one of the greatest things `vIM` can offer you. It is highly customizable.
 
-<br>
+
 
 
 #### Getting Good

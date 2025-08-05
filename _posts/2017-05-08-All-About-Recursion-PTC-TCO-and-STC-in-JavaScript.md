@@ -7,7 +7,7 @@ flag: 🇧🇷
 tags : javascript tailcall tail call optimization recursion
 ---
 
-<br>
+
 
 Recently everyone seems to be really excited about functional programming and its concepts. However, many people don't talk about recursion and, especially, about proper tail calls, which is really important when it comes to writing clean and concise code without exploding the stack.
 
@@ -15,7 +15,7 @@ In this post, I'll give you **tips to better visualize and think about recursion
 
 I'll also be talking a lot about the call stack and stack traces, but I'll not get into too much detail, thus if you want to read more about it take a look at [this blog post I've made (which, by the way, is the most popular post in this website until now)](http://lucasfcosta.com/2017/02/17/JavaScript-Errors-and-Stack-Traces.html).
 
-<br>
+
 
 **Update - March, 5th - 2018**
 
@@ -27,7 +27,7 @@ I also recommend you to use NVM for installing and managing Node.js versions. It
 
 Now, let's proceed.
 
-<br>
+
 
 ## **Recursion in a Nutshell**
 
@@ -48,7 +48,7 @@ factorial(5) = 1 * 1 * 2 * 3 * 4 * 5
 
 In a nutshell, **when a function calls itself we can say we have recursion**.
 
-<br>
+
 
 ## **Thinking About Recursion Effectively**
 
@@ -100,7 +100,7 @@ After you have defined an exit condition it is easy to determine when a function
 
 If you want to read more about practical and fun applications of recursion, take a look at how trees and graph-related algorithms work.
 
-<br>
+
 
 ## **Recursion and the Call Stack**
 
@@ -228,7 +228,7 @@ Now you're probably seeing the problem we might face when having too much recurs
 
 If you want to calculate how many frames you can have in your stack depending on which environment you're running your JavaScript code into, I highly recommend you to try [this cool method posted by Dr. Axel Rauschmayer (a guy I'm a big fan of)](http://2ality.com/2014/04/call-stack-size.html).
 
-<br>
+
 
 ## **Proper Tail Calls (PTC)**
 
@@ -286,7 +286,7 @@ factorial(0, 24) // -> Returns the total (24) and also does not need the previou
 Now, instead of stacking `n` frames, we just need to stack 1, since the subsequent calls don't depend on the previous ones, which makes our new `factorial` function have a memory complexity of `O(1)` instead of `O(N)`.
 
 
-<br>
+
 
 ## **Using Proper Tail Calls on Node**
 
@@ -416,7 +416,7 @@ You should also keep in mind that **proper tail calls do not necessarily make yo
 
 However, **besides allowing you to use less memory to store your stack, when using proper tail calls you also get locally allocated objects and end up needing less memory to run your recursive functions too**, because since you don't need any variables inside the current frame for the next recursive call, you allow the garbage collector to collect every object allocated inside the current frame, while in "non-tail-recursive" functions you would need to do allocations each time the recursive function was called, due to the fact that all the frames would be kept into the stack until the last recursive call (the one that is the "base case") returns.
 
-<br>
+
 
 ## **Tail Call Optimization (TCO)**
 
@@ -456,7 +456,7 @@ function factorial(n, total = 1) {
 
 This means that **tail call optimization is not the same as having proper tail calls**!
 
-<br>
+
 
 ## **Disadvantages of Having Proper Tail Calls and Tail Call Optimization**
 
@@ -474,7 +474,7 @@ Finally, using a shadow stack still does not solve the problem of the `Error.sta
 
 If you're curious about that, take a look at [this excellent blog post by Michael Saboff](https://webkit.org/blog/6240/ecmascript-6-proper-tail-calls-in-webkit/) about how WebKit handles tail calls.
 
-<br>
+
 
 ## **Syntactic Tail Calls (STC)**
 
@@ -488,7 +488,7 @@ When it comes to the syntax there are some alternatives being studied and [you c
 
 Right now this is an [stage 0 proposal](https://github.com/tc39/proposals/blob/master/stage-0-proposals.md).
 
-<br>
+
 
 ## **Related Material**
 
@@ -499,7 +499,7 @@ Right now this is an [stage 0 proposal](https://github.com/tc39/proposals/blob/m
 * [Issue about Tail call Optimization (TCO) in ES6 & Node.js by Mr. Rod Vagg](https://github.com/nodejs/CTC/issues/3)
 * [ES6 tail calls controversy issue by Juriy Zaytsev](https://github.com/kangax/compat-table/issues/819)
 
-<br>
+
 
 ## **Get in touch!**
 

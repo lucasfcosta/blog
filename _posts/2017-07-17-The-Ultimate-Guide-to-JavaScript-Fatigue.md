@@ -7,7 +7,7 @@ flag: 🇧🇷
 tags: jsfatigue fatigue javascript software-engineering
 ---
 
-<br>
+
 
 **Complaining about JS Fatigue is just like complaining about the fact that humanity has created too many tools to solve the problems we have**, from email to airplanes and spaceships.
 
@@ -17,7 +17,7 @@ One of the things that has inspired me to write this blog post and that totally 
 
 This first section is gonna be a bit philosophical, but I swear it will be worth reading.
 
-<br>
+
 
 ## **Realities of Our Industry 101**
 
@@ -66,7 +66,7 @@ Solving one problem at a time also decreases [Analysis Paralysis](https://en.wik
 
 Have you ever thought about how easier it was to decide what you were going to watch when there were only a few TV channels available? Or how easier it was to decide which game you were going to play when you had only a few cartridges at home?
 
-<br>
+
 
 ## **But what about JavaScript?**
 
@@ -98,7 +98,7 @@ We can clearly see this happening in the JS testing environment, for example, wh
 
 The UNIX philosophy also states that we should write programs that work together. And this is exactly what we are doing! Take a look at Babel, Webpack and React, for example. They work very well together but we still do not need one to use the other. In the testing environment, for example, if we're using Mocha and Chai all of a sudden we can just install Karma and run those same tests in multiple environments.
 
-<br>
+
 
 ## **How to Deal With It**
 
@@ -148,11 +148,11 @@ In order to explain this, I'll use an example I love.
 
 This is the beautiful and awesome city of Barcelona:
 
-<img src="/assets/barcelona-city.jpeg" alt="The City of Barcelona" />
+img src="/assets/barcelona-city.jpeg" alt="The City of Barcelona">
 
 When we look at it this way and from this distance, it just looks like any other city in the world, but when we look at it from above, this is how Barcelona looks:
 
-<img src="/assets/barcelona-above.jpeg" alt="Barcelona from above" />
+img src="/assets/barcelona-above.jpeg" alt="Barcelona from above">
 
 As you can see, every block has the same size and all of them are very organized. If you've ever been to Barcelona you will also know how good it is to move through the city and how well it works.
 
@@ -192,7 +192,7 @@ Software is not a magic box, software is not poetry (unfortunately). It exists t
 
 **Now it's your time to go out there and solve problems**.
 
-<br>
+
 
 ## **Related/Recommended Material**
 
@@ -205,7 +205,7 @@ Software is not a magic box, software is not poetry (unfortunately). It exists t
 * [Building Microservices (Book) - Sam Newman](https://www.barnesandnoble.com/p/building-microservices-sam-newman/1119741399/2677517060476?st=PLA&sid=BNB_DRS_Marketplace+Shopping+Books_00000000&2sid=Google_&sourceId=PLGoP4760&k_clickid=3x4760)
 * [A Study Plan To Cure JavaScript Fatigue](https://medium.freecodecamp.org/a-study-plan-to-cure-javascript-fatigue-8ad3a54f2eb1)
 
-<br>
+
 
 ## **Translations**
 
@@ -213,7 +213,7 @@ If you want to translate this text into your own language that would be awesome!
 
 * [Усталость от JavaScript: реалии нашей отрасли (Russian) - by Vlad Brown](http://howtorecover.me/ustalost-javascript-realii-nasei-otrasli)
 
-<br>
+
 
 ## **Get in touch!**
 

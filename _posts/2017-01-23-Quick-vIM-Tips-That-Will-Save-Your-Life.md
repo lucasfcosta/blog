@@ -39,7 +39,7 @@ set number                     " Show current line number
 
 Please notice that **even if you use relative line numbers you can still go to a specific line by using `:` followed by the line number you want to jump to**. `:512`, for example, jumps to the line `512`.
 
-<br>
+
 
 ## **Interactive Search And Replace**
 
@@ -57,13 +57,13 @@ This will show you every occurrence of `foo`, one by one, and ask you if you wan
 
 It's important to notice that `c` also makes the search `case-insensitive`. In order to make it `case-sensitive` again you gotta use the `I` flag.
 
-<br>
+
 
 ## **Searching for Words Under The Cursor**
 
 Another extremely useful feature of vIM is being able to search for words under your cursor. To do that you just gotta use `*` or `#`.
 
-<br>
+
 
 ## **Scrolling Effectively**
 
@@ -84,7 +84,7 @@ To go back to a mark you need to type \`x. Again, `x` means the letter in which 
 
 Another interesting mark is \`., which goes to the position of the last change in the current buffer.
 
-<br>
+
 
 ## **Copying and Pasting like a King**
 
@@ -104,13 +104,13 @@ vIM has also got "numbered registers", which are the registers from `0` to `9`.
 
 Register `0` always contains the last yanked text and registers from `1` to `9` contain the most recent deleted text, `1` being the most recently deleted text, `2` is the text deleted before that and so on.
 
-<br>
+
 
 ## **Repeating the last command**
 
 This is really simple, but it is a lot useful. To repeat the very same command you used the last time you just gotta press `.`.
 
-<br>
+
 
 ## Let me know if you have any other useful tips!
 

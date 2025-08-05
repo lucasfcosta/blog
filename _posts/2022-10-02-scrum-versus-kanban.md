@@ -29,11 +29,11 @@ Scrum becomes even more harmful when managers create their flavor of Scrum, tryi
 
 Additionally, I'll also explain why each of the aforementioned benefits of adopting Scrum also apply to Kanban, and how Kanban amplifies those benefits.
 
-<br>
+
 
 ## How Kanban amplifies Scrum's benefits
 
-<br>
+
 
 ### Scrum makes teams more responsive
 
@@ -47,7 +47,7 @@ When that happens, instead of designing features by committee, which demands a s
 
 Additionally, fewer people making decisions lead to fewer assumptions. Fewer assumptions, in turn, lead to shipping smaller pieces of software more quickly, allowing teams to truncate bad paths earlier.
 
-<br>
+
 
 ### Scrum makes estimation easier
 
@@ -63,7 +63,7 @@ Kanban, on the other hand, is a pull-based system. In Kanban, processors pick ne
 
 Therefore, instead of having to estimate tasks, you simply focus on ensuring tasks come into the system at the same rate tasks come out. When that happens, all you need to do is prevent the system from starving, which is much easier to do than estimating tasks accurately.
 
-<br>
+
 
 ### Scrum makes work visible
 
@@ -75,7 +75,7 @@ In Kanban, practitioners use the board to visualise which tasks have been stuck 
 
 There's no particular structures in Scrum that incentivise that to happen because Scrum is an opaque framework. It hides from its practitioners the fact that the more items you have on the board, the longer average cycle times will be. It also offers no advice on how to handle those aging items.
 
-<br>
+
 
 ### Scrum reduces waste
 
@@ -89,7 +89,7 @@ In Kanban, instead of carefully measuring each part of the process and ensuring 
 
 That way, you can dynamically adapt to problems that may happen temporarily at any part of the process. If your deployment process breaks, for example, you'll be able to focus on fixing it instead of starting new tasks and causing everything to take longer on average, both because of the sheer amount of pending tasks and because of the cost of context switching.
 
-<br>
+
 
 ### Scrum creates cadenced meetings
 
@@ -105,7 +105,7 @@ Retrospective sessions are also fundamental for a team to continuously improve t
 
 In Kanban, there's nothing preventing teams from scheduling regular meetings. Yet, teams have the flexibility to schedule meetings whenever they're necessary.
 
-<br>
+
 
 ## Putting it all together
 
@@ -127,7 +127,7 @@ Finally, Kanban makes work visible as much as Scrum does because the Kanban boar
 
 Most of Scrum's cadenced meetings, with the exception of the planning meeting are also useful. Still, teams don't need Scrum to be able to schedule regular events such as daily stand-ups. In some cases, teams may not even want to have such regular events. Retrospectives, for example, may be useless if everything is working fantastically well, and the team needs to focus on shipping a particular feature instead of meeting to say everything is going great.
 
-<br>
+
 
 ## Wanna talk?
 

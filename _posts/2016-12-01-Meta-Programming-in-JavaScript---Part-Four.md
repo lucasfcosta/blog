@@ -7,14 +7,14 @@ flag: 🇧🇷
 tags: nodejs meta programming javascript coding metaobject protocol mop
 ---
 
-<br>
+
 
 Hello, everyone! So we finally got to the end of our Meta Programming series of blog posts (for now)! But there's much more to explore on this matter, so if you have any ideas related to what you'd like me to write about, get in touch!
 
 If you didn't read [the first](/2016/10/06/Meta-Programming-in-JavaScript-Part-One.html), [the second](/2016/10/22/Meta-Programming-in-JavaScript-Part-Two.html) or [the third](/2016/11/15/Meta-Programming-in-JavaScript-Part-Three.html) posts of this series I highly recommend you to do that since we're going to use some concepts we have learned before, especially property descriptors and inheritance!
 
 
-<br>
+
 
 ## **What is a Symbol?**
 
@@ -81,7 +81,7 @@ console.log(symObj.__proto__ === Symbol.prototype); // true
 ```
 
 
-<br>
+
 
 ## **Symbols and Their Behavior**
 
@@ -187,7 +187,7 @@ console.log(everySymbol); // [Symbol(sonSymbol), Symbol(fatherSymbol)];
 Even though non-enumerable symbols still can be found by using `Object.getOwnPropertySymbols`, making a property which has a `symbol` as its key `enumerable` or not can be useful because when using [`Object.assign`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign) (which copies the values of all non-inherited enumerable properties of an object ot another) we can avoid copying undesirable symbols.
 
 
-<br>
+
 
 ## **Using Symbols to solve Real World Problems™**
 
@@ -243,7 +243,7 @@ As we could see, using `symbols` to store metadata on objects is a great idea, e
 Symbols are also useful because of the so called "Well Known" symbols we will see in the next section, which allow us to reimplement how some of JavaScript's native operations work.
 
 
-<br>
+
 
 ## Well Known Symbols
 
@@ -255,7 +255,7 @@ This may sound a bit abstract at first, but take a look at how each of the "well
 
 I also need to highlight that these symbols are only taken into account by ES6 compliant engines. This means that some older browsers may not be able to run your code as you expect.
 
-<br>
+
 
 #### Symbol.hasInstance - `instanceof`
 
@@ -289,7 +289,7 @@ It's also important to notice that since the `Symbol.hasInstance` property is no
 
 And if you want to read more about `writable` properties and property descriptors in general I (again) highly recommend you to read [the first post of this series](/2016/10/06/Meta-Programming-in-JavaScript-Part-One.html).
 
-<br>
+
 
 #### Symbol.isConcatSpreadable - `Array.prototype.concat`
 
@@ -328,7 +328,7 @@ fakeArray[Symbol.isConcatSpreadable] = true;
 console.log(numbers.concat(fakeArray)); // [1, 2, 3, 'first', 'second', 'third' }]
 ```
 
-<br>
+
 
 #### Symbol.iterator - `for..of`
 
@@ -340,7 +340,7 @@ Since this depends on some previous knowledge about [generator functions](http:/
 
 **Stay tuned because I might write another blog post just to explain how ES6 iterators work! They deserve a whole post for them to make sure we will be able to cover all the important details we've got to.**
 
-<br>
+
 
 #### Symbol.match - `String.prototype.match`
 
@@ -372,7 +372,7 @@ console.log(myWord.match(new RepeatsThreeTimes('bla'))); // true
 
 Please notice that I defined the `Symbol.match` property on the constructor's prototype. I had to do this because I needed every instance of `RepeatsThreeTimes` to have this same method available (by inheritance in this case) in order for it to be called when `match` is invoked.
 
-<br>
+
 
 #### Symbol.replace - `String.prototype.replace`
 
@@ -405,7 +405,7 @@ console.log(replacedStr); // Something like: 'T6m6rr6w'
 
 In this case we also need to assign `RandomNumberReplacer.prototype[Symbol.replace]` instead of `RandomNumberReplacer[Symbol.replace]` because we need it to be available on every instance of `RandomNumberReplacer` in order for `String.prototype.replace` to call it.
 
-<br>
+
 
 #### Symbol.search - `String.prototype.search`
 
@@ -442,7 +442,7 @@ const names = ['Mark', 'Frank', 'Jack'];
 console.log('Is Jack traveling to Europe?'.search(new SearchForAny(names))); // 3
 ```
 
-<br>
+
 
 #### Symbol.species
 
@@ -486,7 +486,7 @@ console.log(mappedArr instanceof CustomArray); // false
 console.log(mappedArr instanceof Array); // true
 ```
 
-<br>
+
 
 #### Symbol.split - `String.prototype.split`
 
@@ -520,7 +520,7 @@ console.log(phrase.split(new PunctuationSplitter(punctuationSymbols))); // ['one
 
 Again we needed to implement this into the `prototype` of our `PunctuationSplitter` splitter because we needed this method to be available on every instance of it.
 
-<br>
+
 
 #### Symbol.toPrimitive
 
@@ -565,7 +565,7 @@ console.log('I am a ' + dangerousHacker); // 'haxxor'
 ```
 
 
-<br>
+
 
 #### Symbol.toStringTag - `Object.prototype.toString`
 
@@ -590,7 +590,7 @@ Object.defineProperty(Pirate.prototype, Symbol.toStringTag, {
 console.log(new Pirate('Jack Sparrow').toString()); // '[object Pirate]'
 ```
 
-<br>
+
 
 #### Symbol.unscopables - `with`
 
@@ -640,7 +640,7 @@ with (myObject) {
 }
 ```
 
-<br>
+
 
 ## We're done for now!
 

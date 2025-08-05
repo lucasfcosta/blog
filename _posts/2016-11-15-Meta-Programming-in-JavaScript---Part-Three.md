@@ -7,7 +7,7 @@ flag: 🇧🇷
 tags: nodejs meta programming javascript coding proxies reflect
 ---
 
-<br>
+
 
 In the third blog post of this series we will talk about two of the most interesting ES6 features: proxies and reflection (`Reflect`, to be specific). In it I will explore some intriguing ideas and show you how to unleash their power with creativity and in real world situations.
 
@@ -15,7 +15,7 @@ If you didn't read [the first](/2016/10/06/Meta-Programming-in-JavaScript-Part-O
 
 Also, just to make sure we're all on the same environment and that it does support proxies I've gotta tell you that I'll be using NodeJS v6.9.1 to run all the examples below and I expect you to do the same (or at least run them in any environment that does support proxies).
 
-<br>
+
 
 ## **What are proxies?**
 
@@ -33,7 +33,7 @@ const proxifiedObject = new Proxy(commonObject, myHandler);
 
 Proxies are totally transparent, this means **you cannot detect whether an object has been wrapped in a proxy or not and you cannot access its wrapped object or handler**, except if you keep an external reference to any of these elements, such as adding them to a `set`, `map` or just keeping a reference to them.
 
-<br>
+
 
 ## **Creating Proxies**
 
@@ -140,7 +140,7 @@ Even though I didn't put the whole list of traps here, these are some of the tra
 * The `delete` operation (`handler.deleteProperty`)
 * Assignments to properties (`handler.set`)
 
-<br>
+
 
 ## **Creating Temporary (Revocable) Proxies**
 
@@ -175,7 +175,7 @@ console.log(proxifiedDinosaur.name); // TypeError: Cannot perform 'get' on a pro
 console.log(proxifiedDinosaur.isDangerous); // TypeError: Cannot perform 'get' on a proxy that has been revoked
 ```
 
-<br>
+
 
 ## **Proxies and Prototypes**
 
@@ -202,7 +202,7 @@ anInstance.propThree;
 console.log('We had to check myProto ' + count + ' times.');
 ```
 
-<br>
+
 
 ## **Forwarding Operations**
 
@@ -249,7 +249,7 @@ const anObj = new Proxy({}, {
 
 The same applies for any other trap, if you have a trap called `x` and its callback function takes arguments `y` and `z`, you will have a globally available method called `Reflect.x` which also takes `y` and `z` as arguments.
 
-<br>
+
 
 ## Coming up soon...
 

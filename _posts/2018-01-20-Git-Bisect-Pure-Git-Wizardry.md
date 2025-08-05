@@ -11,7 +11,7 @@ tags : git wizardry bisect scm
 
 I don't use it that often, but whenever I do I ask myself how did I live without this for so long. Since many people I talk to are not aware that `git bisect` exists, maybe it would be cool to teach more engineers out there about this ~~time~~life-saving tool.
 
-<br>
+
 
 ## ***First things first, what is `git bisect`?***
 
@@ -23,7 +23,7 @@ Let's say you've added 7 commits on your `my-feature` branch and someone merged 
 
 Well, before reading this blog post maybe you would start investigating the tip of your current branch (which has all those changes) or try rolling back commits one-by-one and re-running tests manually. Fortunately, **your life has just changed and from now on you will use `git bisect`** (yes, I do like being hyperbolic). `bisect` will then efficiently help you finding which commit caused that.
 
-<br>
+
 
 ## ***Cool, but how do I actually use it?***
 
@@ -92,7 +92,7 @@ If Git automatically checked out a commit you don't want to test for some reason
 
 Once you have discovered which commit is the one that introduced the problem you were tracking down (or if you just want to end `bisect`) you can use `git bisect reset` to reset the `bisect` state and go back to the top of the branch you were (the original `HEAD`).
 
-<br>
+
 
 ## ***Automating Git Bisect***
 
@@ -116,7 +116,7 @@ $ git bisect run npm test
 
 Now go for a quick walk or go check [HackerNews](https://news.ycombinator.com/) and make sure the cryptocurrencies you own haven't made you a billionaire yet on [CoinMarketCap](coinmarketcap.com). When you come back to your terminal you will see which commit is the guilty one.
 
-<br>
+
 
 ## ***Git Bisect Behind the Scenes***
 
@@ -124,21 +124,21 @@ Now go for a quick walk or go check [HackerNews](https://news.ycombinator.com/) 
 
 Let's say you have flagged the commit on the top of your branch as `good` and then, 14 commits before it, you have flagged a commit as `bad`, which means you've got a range of 15 commits. This is what Git will do:
 
-<br>
+
 
 <img src="/assets/bisect-tree-1.png" alt="The first step Git bisect will do"/>
 
-<br>
+
 
 Then, when you flag the commit it has checked out as `good` or `bad`, it will be able to tell whether it should go forward or backward. If you flag a revision as `good` it means the bug must have happened sometime in the future. If you flag a revision as `bad` it means the bug might have already been present before this one.
 
 In this case, let's say that the 8th commit is already broken. This means that it's possible for the bug to have happened before, so Git will then checkout the commit in the middle of the range between the first and 8th commits: the 4th.
 
-<br>
+
 
 <img src="/assets/bisect-tree-2.png" alt="The first step Git bisect will do"/>
 
-<br>
+
 
 Now, telling git that the 4th commit is `good` is the same as telling it that the bug must have happened sometime in the future since all commits until this point in history will be considered `good` too. Git will then checkout the commit in the middle of the range between this `good` commit and the next `bad` one.
 
@@ -154,7 +154,7 @@ This will be the final state of the bisection we've just run. As you can see, by
 
 <img src="/assets/bisect-tree-5.png" alt="The first step Git bisect will do"/>
 
-<br>
+
 
 ## ***Finding Changes***
 
@@ -171,7 +171,7 @@ $ git bisect old # this revision does not contain the change
 $ git bisect good # this revision contains the change
 ```
 
-<br>
+
 
 ## ***Finding Anything***
 
@@ -192,7 +192,7 @@ $ git bisect yellow # This version has a yellow button
 $ git bisect cyan # This version has a cyan button
 ```
 
-<br>
+
 
 ## ***Further Reading***
 
@@ -201,7 +201,7 @@ This post is just an attempt to make `git bisect` more popular and accessible fo
 * [Git Bisect Docs](https://git-scm.com/docs/git-bisect)
 * [Fighting regressions with git bisect, git-blame](https://git-scm.com/docs/git-bisect-lk2009.html)
 
-<br>
+
 
 ## ***Wanna talk to me?***
 

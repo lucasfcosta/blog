@@ -11,7 +11,7 @@ This post aims to demystify bitwise operations in JavaScript, as they can be use
 
 Even though I will use JavaScript throughout the whole article, these are the absolute essentials for working with bit manipulation and will definitely be useful in whatever language you end up using.
 
-<br>
+
 
 ## Bits, Bytes, Words, and Base-X Systems
 
@@ -48,7 +48,7 @@ Our computers are this huge pile of [transistors](https://en.wikipedia.org/wiki/
 **To work with representations in different bases it is important to dissociate numbers from their representation and learn the general properties of those ways of representing numbers**, and this is what I'm gonna do in this post.
 
 
-<br>
+
 
 ## Representing Binaries, Octals, and Hexadecimals in JavaScript
 
@@ -76,7 +76,7 @@ parseInt('41', 8); // 33
 parseInt('21', 16); // 33
 ```
 
-<br>
+
 
 ### Bitwise Operators
 
@@ -89,7 +89,7 @@ This means that `124`, for example, instead of simply becoming `01111100`, becom
 It's important to keep this in mind so that you know what happens if the representations you are using at first have a different number of bits. In this case, they will be padded with `0` and the signal will be kept (at the leftmost bit, as usual). This guarantees the binary numbers you are operating with will always have the same number of bits.
 
 
-<br>
+
 
 #### AND → `&`
 
@@ -107,7 +107,7 @@ result.toString(2); // '10001'
 ```
 
 
-<br>
+
 
 #### OR → `|`
 
@@ -123,7 +123,7 @@ result.toString(2); // '10111'
 ```
 
 
-<br>
+
 
 #### XOR → `^`
 
@@ -141,7 +141,7 @@ result.toString(2); // '110'
 ```
 
 
-<br>
+
 
 #### NOT → `~`
 
@@ -154,7 +154,7 @@ Due to this, you may be lead to think that `0111`, when negated would simply bec
 The `NOT` operator is applied to each bit of a number individually. This means that `0111` would become `1000`. This is also known as **one's complement**.
 
 
-<br>
+
 
 #### Left Shift → `<<`
 
@@ -175,7 +175,7 @@ Remember that operands are always converted to 32-bit integers. This causes only
 ![Left Shift Example](/assets/left-shift.png)
 
 
-<br>
+
 
 #### Right Shift (Sign-Propagating) → `>>`
 
@@ -205,7 +205,7 @@ This is also known as an **arithmetic right shift**.
 ![Arithmetic Right Shift Example](/assets/arithmetic-right-shift.png)
 
 
-<br>
+
 
 #### Right Shift (Zero-Fill) → `>>>`
 
@@ -229,7 +229,7 @@ This is also known as a **logical right shift**.
 ![Logical Right Shift Example](/assets/logical-right-shift.png)
 
 
-<br>
+
 
 ## Addition, subtraction and Two's Complement
 
@@ -282,7 +282,7 @@ const twoComplement = (num) => (~num + 0b1)
 ```
 
 
-<br>
+
 
 ## Bitmasks
 
@@ -329,7 +329,7 @@ const getBit = (n, bitIndex) => {
 ```
 
 
-<br>
+
 
 ### Setting a specific bit
 
@@ -362,7 +362,7 @@ const setBit = (n, bitIndex) => {
 ```
 
 
-<br>
+
 
 ### Clearing a specific bit
 
@@ -400,7 +400,7 @@ const clearBit = (n, bitIndex) => {
 }
 ```
 
-<br>
+
 
 ### Further Reading
 

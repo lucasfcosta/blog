@@ -8,7 +8,7 @@ tags : assertions chai testing tdd
 ---
 
 
-<br>
+
 
 Hi, friends! Today I'm going to write about **assertions**.
 
@@ -22,7 +22,7 @@ Nowadays TDD and test automation in general are hot topics, but I'd like you to 
 
 So let's get down to business and talk about how to improve our testing skills by writing quality assertions.
 
-<br>
+
 
 ## **Assert on a single subject per test**
 
@@ -30,7 +30,7 @@ Whenever a test fails we want to know the cause of that failure as soon as possi
 
 By asserting on a single subject per test you will usually have more informative tests since you will be able to know exactly which requirements were met and which were not. If you want to know more about this I highly recommend you to do a Google search on [`BDD` (Behavior Driven Development)](https://dannorth.net/introducing-bdd/).
 
-<br>
+
 
 ## **Avoid loose assertions**
 
@@ -46,7 +46,7 @@ Whenever you can't predict the exact result of a test and you can't replace any 
 
 **Just keep in mind that you should be as strict as you can about your requirements and you will be fine**.
 
-<br>
+
 
 ## **Avoid allowing multiple outputs ("OR"s)**
 
@@ -113,7 +113,7 @@ And [this is the reason why `Chai` does not implement `either` and `or` assertio
 
 **When writing tests you will want to have assertions that will pass if the function under test does exactly what you want and not if it does one thing OR another**.
 
-<br>
+
 
 ## **Avoid using negated (`not`) assertions whenever you can**
 
@@ -134,7 +134,7 @@ When writing this post I tried to think of any exceptions to this rule but I cou
 
 **If you can determine the exact result of a test then you should assert the result you've got is exactly the same as you expected, there is no need to use "`not`". If you can't, then using "`not`" won't solve your problem, it will just make the tests pass.**
 
-<br>
+
 
 ## **Avoid asserting on implementation details**
 
@@ -152,7 +152,7 @@ If you have a function which must do an HTTP request to your server, for example
 
 **When writing assertions you are not concerned about how your function does something, you are concerned whether your function does something correctly or not.**
 
-<br>
+
 
 ## **Avoid circular assertions**
 
@@ -198,7 +198,7 @@ it("cloned cat has the same color as original cat after cloning", function () {
 **Make sure the variable/property/object/whatever you are expecting as the result really contains the correct result. To make sure of that, use literals whenever possible**.
 
 
-<br>
+
 
 ## **Special Thanks & Further Reading**
 
@@ -214,7 +214,7 @@ I would also like to thank all of the people that use Chai or contribute to it b
 
 My great friends [@meeber](https://github.com/meeber), [@keithamus](https://github.com/keithamus), [@shvaikalesh](https://github.com/shvaikalesh) and [@vieiralucas](https://github.com/vieiralucas/) also deserve my eternal gratitude for all the knowledge they have shared with me during this time! It's been great to work with all of you.
 
-<br>
+
 
 ## Get in touch!
 

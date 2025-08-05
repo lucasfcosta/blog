@@ -7,7 +7,7 @@ flag: 🇧🇷
 tags : javascript parallelism concurrency code workers shared memory
 ---
 
-<br>
+
 
 Hi, everyone!
 
@@ -17,7 +17,7 @@ If you are not yet familiar with the concepts of **parallelism and concurrency**
 
 Before we dive deep into how shared memory works, we must understand why it's important, so let's talk about problems first and let's see how we came to where we are now.
 
-<br>
+
 
 ## **The Problem With Concurrency in JavaScript**
 
@@ -60,7 +60,7 @@ Also, it does not support cloning `functions`, DOM nodes and `Error` objects and
 **When it comes to `transferable objects` we can think of it as passing objects by reference as in C or C++**, but in the case of using `transferable objects` we end up erasing the original reference and so it is no longer available in the original context.
 
 
-<br>
+
 
 ## **The Basics of Shared Memory**
 
@@ -171,7 +171,7 @@ worker.postMessage(sharedBuffer)
 
 And then we try to read it by doing `message.data`, we will get back `undefined`.
 
-<br>
+
 
 ## **Atomic Operations**
 
@@ -218,7 +218,7 @@ In order to avoid that kind of situation, we need a locking mechanism. **A locki
 
 **We call the part of our program in which we must deal with this kind of access to a shared resource a [critical section](https://en.wikipedia.org/wiki/Critical_section).**
 
-<br>
+
 
 ## **Using Atomic's Methods**
 
@@ -470,7 +470,7 @@ console.log(returnedValue) // 0
 console.log(newValue) // 1
 ```
 
-<br>
+
 
 Since we cannot share types of data other than Arrays of integers with up to 32 bits, we must find ways to encode other data as integers. [In his blog post about shared memory, Dr. Axel has come up with a few excellent suggestions](http://2ality.com/2017/01/shared-array-buffer.html#sharing-data-other-than-integers), so you might want to take a look at it.
 

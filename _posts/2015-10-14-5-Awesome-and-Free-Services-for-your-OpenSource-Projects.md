@@ -11,7 +11,7 @@ Code matters, but also does the infrastructure for your Open Source project. Aut
 
 In this post I'm gonna show you some of my favorite free services and explain everything you need to get them up and running for your project on [GitHub](https://github.com).
 
-<br>
+
 
 # **[1. Greenkeeper](greenkeeper.io)**
 
@@ -23,7 +23,7 @@ I highly recommend you to use it alongside a CI service like [Travis CI](https:/
 
 To start using Greenkeeper on your project the first thing you need to do is install it globally using `npm install -g greenkeeper`. After installing it you should run `greenkeeper login` on your terminal and your browser will open asking you to login to GitHub. After logging in you should navigate to your repository's folder using your terminal and type: `greenkeeper enable`. That's it. In a few seconds you should receive your first GreenKeeper pull request with some useful pieces of information.
 
-<br>
+
 
 # **[2. Travis CI](https://travis-ci.org/)**
 
@@ -46,7 +46,7 @@ If you're using Node.js I recommend you to create an specific command like `test
 
 For more information on what to put inside `.travis.yml` you can check out [this page](http://docs.travis-ci.com/user/getting-started/).
 
-<br>
+
 
 # **[3. Coveralls](https://coveralls.io/)**
 
@@ -63,7 +63,7 @@ What you will basically need to do to use it is upload your coverage `.lcov` fil
 
 [They also have pretty good documentation](http://support.coveralls.io/) and [there is a nice README made by nickmerwin on GitHub teaching you everything you've gotta do to get coveralls up and running](https://github.com/nickmerwin/node-coveralls).
 
-<br>
+
 
 # **[4. Codacy](https://www.codacy.com/)**
 
@@ -80,7 +80,7 @@ To start using Codacy you should login [on their website](https://www.codacy.com
 It may take a while until Codacy finishes evaluating your repository, but I guarantee it will be worth the wait. If you have any doubt they also have [this nice and complete docs page](
 http://docs.codacy.com/).
 
-<br>
+
 
 # **[5. David](https://david-dm.org/)**
 
@@ -94,7 +94,7 @@ Differently from the other services in this list, David's only way of telling yo
 
 To keep track of your dependencies status I recommend you to put this badge into the top of your README file, doing this you, and everyone, will be able to see your project's dependencies status.
 
-<br>
+
 
 # **[BADGES, BADGES AND MORE BADGES!](http://shields.io/)**
 

@@ -37,7 +37,7 @@ After covering preemption points, I'll also expound on queueing disciplines and 
 
 At the end of this blog post, there's a small summary to help convince your team to ditch deadlines and make work more pleasant for everyone, including those who used to think deadlines were helpful.
 
-<br>
+
 
 ## Why deadlines are pointless
 
@@ -61,7 +61,7 @@ Besides being pointless, deadlines are also harmful because:
 
 In this section, I'll explain each statement in more detail.
 
-<br>
+
 
 ### Deadlines don't improve performance
 
@@ -81,7 +81,7 @@ The only way a deadline may accelerate deliveries is by "overclocking" the team 
 
 It's only through consistent and systematic improvements that teams can create a baseline for performance, identify the levers they can pull, and continuously improve their results.
 
-<br>
+
 
 ### Deadlines misalign incentives and discourage long-term thinking
 
@@ -116,7 +116,7 @@ Furthermore, in the long run, the consistent team will eventually exceed the per
 
 > As a side note, that's the reason I don't like "snapshot metrics." Instead, I prefer metrics that look at a team's momentum and control for consistency and continuous improvement, as I've outlined [in this other post](/2022/08/31/engineering-metrics.html).
 
-<br>
+
 
 ### Deadlines are not actionable
 
@@ -136,7 +136,7 @@ The third action, cutting scope, reveals you were doing unnecessary work and tha
 
 Name whichever other actions you want. All of them are unproductive because they've been triggered too late.
 
-<br>
+
 
 ### "But Lucas, without deadlines, we wouldn't ship anything. Haven't you heard of Parkinson's Law?"
 
@@ -160,7 +160,7 @@ And, if it only takes a minute to do, you can imagine how fantastic the results 
 
 Good software takes time.
 
-<br>
+
 
 ## If not deadlines, then what?
 
@@ -170,7 +170,7 @@ The former helps teams create short and synchronous actionable feedback so they 
 
 In this section, I'll explain each of those strategies in detail.
 
-<br>
+
 
 ### Preemption points
 
@@ -226,7 +226,7 @@ Differently from deadlines, preemption points naturally create space for solutio
 
 Therefore, instead of cutting corners, developers and product managers agree on cutting scope and devise alternative strategies that won't hurt long-term predictability and performance.
 
-<br>
+
 
 ### Queueing disciplines
 
@@ -256,7 +256,7 @@ When managers adopt this heuristic, they stop worrying about delivering value at
 
 In other words, given a system will output as much as it can, regardless of whether a goal exists, the best use of the system's processing power is to feed it with the most valuable tasks possible.
 
-<br>
+
 
 ## Putting it all together
 
@@ -287,7 +287,7 @@ Finally, when it comes to queueing disciplines, FIFO — first in, first out —
 That way, even if we can't improve the system's processing rate, we can increase the value it delivers by feeding it with the best possible items at that given time.
 
 
-<br>
+
 
 ## Wanna talk?
 
@@ -295,7 +295,7 @@ That way, even if we can't improve the system's processing rate, we can increase
 
 Alternatively, you can [send me a tweet or DM @thewizardlucas](https://twitter.com/thewizardlucas) or [an email at lucas@lucasfcosta.com](mailto:lucas@lucasfcosta.com).
 
-<br>
+
 
 ## Related content
 

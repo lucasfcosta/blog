@@ -7,7 +7,7 @@ flag: 🇧🇷
 tags : nodejs meta programming javascript coding
 ---
 
-<br>
+
 
 In the second blog post of this series I will teach you how to deal with inheritance and also teach you how the `.freeze`, `.seal` and `.preventExtensions` methods work and a about how to deal with inheritance, both by making changes to the inheritance chain and by going through it to read properties.
 
@@ -15,7 +15,7 @@ If you didn't read [the first post of this series](/2016/10/06/Meta-Programming-
 
 Also, before messing with the inheritance chain we need to understand its basics, **if you want to learn about how inheritance works in JavaScript I highly recommend you to read [this article](https://alexsexton.com/blog/2013/04/understanding-javascript-inheritance/) by Alex Sexton** before continuing.
 
-<br>
+
 
 ## **Going through the prototype chain**
 
@@ -63,7 +63,7 @@ console.log(getAllPropertiesOf(tRex));
 
 Simple isn't it? Basically what we're doing is adding the properties we've got from an object using `Object.getOwnPropertyNames` to an array of properties (actually we're using `.concat` to create a new array on every iteration, but that doesn't matter in this case) and then going up the prototype chain using `Object.getPrototypeOf` and repeating this process for every object until we reach `Object.prototype`, which is the uppermost prototype.
 
-<br>
+
 
 ## **__proto__ and Prototype**
 
@@ -101,7 +101,7 @@ console.log(fred.__proto__ === dinosaur); // true because that's where JavaScrip
 
 Now you have been warned. Whenever in doubt use `Object.getPrototypeOf` and you will be fine.
 
-<br>
+
 
 ## **Redefining Prototypes**
 
@@ -149,13 +149,13 @@ const newInstance = changeProto(instance, newProto);
 console.log(instance.name); // newProto
 ```
 
-<br>
+
 
 ## **Freezing, Sealing and Preventing Extensions**
 
 These three are commonly misunderstood due to the similarity of their actions, but let's explain what each one of them does and hopefully we will be able to end this confusion once and for all.
 
-<br>
+
 
 ### Freezing
 
@@ -203,7 +203,7 @@ dinosaur.isExtinct = true;
 console.log(dinosaur.isExtinct); // undefined
 ```
 
-<br>
+
 
 ### Sealing
 
@@ -294,7 +294,7 @@ brazil.currency = 'BRL';
 console.log(brazil.currency); // BRL
 ```
 
-<br>
+
 
 ### Checking if an object is frozen, sealed or non-extensible
 
@@ -304,7 +304,7 @@ To check if an object has been frozen, sealed or if it's non-extensible you can 
 * `Object.isSealed`
 * `Object.isExtensible`
 
-<br>
+
 
 ### How to Remember Them
 
@@ -312,11 +312,11 @@ Now that you know what each one does, you might find it easier to remember what 
 
 As you can see, `Object.freeze` is the most restrictive one and also includes the same restrictions as `Object.seal` and `Object.preventExtensions`. `Object.seal` includes the same restrictions as `Object.preventExtensions`. Finally, `Object.preventExtensions` is the least restrictive one and does not include the same restrictions as any other `Object.*` method.
 
-<br>
+
 
 ![Venn Diagram with Freeze, Seal and PreventExtensions](/assets/freezeSealAndPreventExtensions.png)
 
-<br>
+
 
 ## Coming up soon...
 

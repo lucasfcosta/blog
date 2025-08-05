@@ -31,7 +31,7 @@ The third section of this post covers a few other granular metrics and visualiza
 
 At the end of this post, there's also a short warning to help folks avoid misusing these metrics and visualizations and a concise summary for you to share with your team.
 
-<br>
+
 
 ## The system and its metrics
 
@@ -83,15 +83,13 @@ By being aware of the relationship between these four metrics, managers know how
 
 Another way to describe this behavior is by using [Little's Law](https://en.wikipedia.org/wiki/Little%27s_law), which establishes a clear relationship between these variables.
 
-<center>
-{% katex %}
+$$
 {Avg.\ Cycle\ Time} = \cfrac{Avg.\ Work\ In\ Progress}{Avg.\ Throughput}
-{% endkatex %}
-</center>
+$$
 
 This simple formula summarises the behavior you've just seen in the cumulative flow diagram.
 
-<br>
+
 
 ## Breaking down the system into multiple sub-systems
 
@@ -144,7 +142,7 @@ Some teams may not be aware of those dynamics, but, as humans, we are good at na
 
 In any case, when managers are aware of the principles behind these metrics, they can more easily see where the bottlenecks are and come up with creative solutions to improve their processes rather than simply adopting automated tests or instilling a "DevOps culture," which may not apply to all cases.
 
-<br>
+
 
 ## Other problematic patterns on cumulative flow diagrams
 
@@ -154,7 +152,7 @@ Besides bulging bands, other patterns yield helpful information about problemati
 
 In this section, I'll provide a few examples of problematic patterns, explain what each one may indicate, and suggest possible interventions.
 
-<br>
+
 
 ### Flat lines
 
@@ -178,7 +176,7 @@ Such large batch transferrals will show up as "stair steps" in your cumulative f
 
 These large batch transferrals are why Martin Fowler and numerous other authors advocate for continuous delivery. When deployments happen frequently, besides reducing the change delta and the room for errors, it makes it easier to rate-match different parts of your engineering system.
 
-<br>
+
 
 ### Bands that disappear
 
@@ -197,7 +195,7 @@ Starvation becomes more of a problem when there's a fixed amount of resources wa
 
 It's also essential to notice that **a manager's goal is not necessarily to avoid starvation at all costs**. Managers who prioritize efficiency (everyone being busy all the time) will increase the formation of queues. Therefore, they'll end up increasing WIP and cycle times, as I've explained [in another blog post](/2022/06/12/measure-queues-not-cycle-time.html).
 
-<br>
+
 
 ## Other helpful visualizations for spotting problems
 
@@ -232,7 +230,7 @@ Finally, another way to identify flow debt is to look at your _"flow efficiency"
 
 For example, if a team's average flow efficiency is 50%, issues are blocked, on average, 50% of the time, causing them to age artificially. The lower a team's flow efficiency, the more inflated tail cycle times will be.
 
-<br>
+
 
 ## Putting it all together.
 
@@ -270,7 +268,7 @@ The cumulative flow diagram shows _quantities_ of items in different parts of th
 
 You can use a cycle-time scatterplot to detect _flow debt_and look for outliers. Alternatively, you could use a cycle time histogram and look for a bimodal distribution.
 
-<br>
+
 
 ## Notes on good metrics and a few words of caution
 
@@ -292,7 +290,7 @@ Managers must also be aware that **managing exclusively by metrics (management b
 
 The past will not necessarily resemble the future. Yet, spotting patterns in past behavior can help you adapt to the future and avoid making the same mistakes.
 
-<br>
+
 
 ## Further reading
 
@@ -306,7 +304,7 @@ If you wish to use any of the visualizations or metrics I mention in this post, 
 
 I have no affiliation with Actionable Agile, and this is not paid promotion.
 
-<br>
+
 
 ## Wanna talk?
 

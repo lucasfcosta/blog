@@ -43,7 +43,7 @@ The second part of this post contains three practical approaches to test hypothe
 
 Finally, at the end of this post, I've included a small summary to help you decide which strategy to use.
 
-<br>
+
 
 ## What is the "Minimum Viable Nothing"
 
@@ -63,7 +63,7 @@ In the startup world, the slide deck that could've been a demo is the meeting th
 
 Your Minimum Viable Nothing will depend on your product, what it does, and to whom you're selling. It's _your_ job to think through what your MVN will be. There's no formula for determining it. Still, there are helpful heuristics and prior art from which you can draw inspiration, as you'll notice in the next section.
 
-<br>
+
 
 ## Three ways to build an MVN
 
@@ -77,7 +77,7 @@ These options are ranked from least to most laborious and from least to most val
 
 Now, I'll explain how these approaches work and the circumstances in which you should consider or avoid them.
 
-<br>
+
 
 ### 1. The vaporware
 
@@ -106,7 +106,7 @@ You want to buy it already, don't you?
 
 > When following the vaporware approach, there's the danger of selling something you can't execute. That's why you need to be careful with the commitments you ask for and ensure you're being ethical and responsible about your delivery obligations.
 
-<br>
+
 
 #### When to use or not to use the "vaporware" strategy
 
@@ -114,7 +114,7 @@ I recommend following this strategy when you're already confident that you have 
 
 If you haven't found a problem yet, you're better off just [talking to customers](https://lucasfcosta.com/2022/08/03/talk-to-your-customers.html). That's cheaper, quicker, and more effective than building vaporware.
 
-<br>
+
 
 ### 2. The mechanical Turk
 
@@ -129,7 +129,7 @@ In that case, whenever someone uploads a file to your server, you send an email 
 
 That way, you can test hypotheses in a day, not in a few months. Given the service works, you can even start selling it straightaway to subsidize the R&D costs of the actual transcription software.
 
-<br>
+
 
 #### When to use or not to use the "mechanical Turk" strategy
 
@@ -141,7 +141,7 @@ The problem with this approach is that this strategy may not be profitable depen
 
 If the product you're selling is profitable despite the cost of human labour, this strategy is great for subsidizing further R&D because it brings revenue forward. That way, you can go "all-in" on sales and marketing as you develop the product.
 
-<br>
+
 
 ### 3. The automatable agency
 
@@ -157,7 +157,7 @@ Once you create a tool to provide customers with a similar service, you can then
 
 In that case, sales are easier because you already have a highly qualified lead whose problem you understand and have already solved, and to whom you have already provided a similar service.
 
-<br>
+
 
 #### When to use or not to use the "automatable agency" strategy
 
@@ -173,7 +173,7 @@ You should think twice about adopting this strategy if time-to-market is crucial
 
 Each of these engagements will consume a large amount of your time. Therefore, you may take too long to deliver a product if you don't have anyone with whom you can share the workload.
 
-<br>
+
 
 ## Putting it all together
 
@@ -211,7 +211,7 @@ If you've validated your problem and are confident in your solution, go for the 
 
 When selling to businesses or when you don't yet know exactly which problem you're solving, you can sell a productized service. Then, you can build software on the side to provide the same services as you do. Besides helping generate ideas, this approach generates highly qualified leads, prevents overfitting solutions, and, consequently, makes sales easier.
 
-<br>
+
 
 # Wanna talk?
 

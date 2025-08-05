@@ -7,7 +7,7 @@ flag: 🇧🇷
 tags : regex regular expressions
 ---
 
-<br>
+
 
 When I was just starting out with JavaScript and programming in general I always thought using Regular Expressions was just too complicated and then I resorted to many crazy combinations of String manipulation methods, which didn't always do the job the way I wanted it to be done.
 
@@ -24,7 +24,7 @@ I also highly recommend you to use [RegEx101.com](https://regex101.com) when rea
 **Disclaimer:** since this post is geared towards JavaScript developers I will not be talking about features which are not supported by JavaScript's RegEx engine.
 
 
-<br>
+
 
 ## **What is a regular expression?**
 
@@ -40,7 +40,7 @@ Regular expressions can be use for a wide variety of applications, from a simple
 
 To craft regular expressions there are specific syntax rules and characters we will explore later, for now just keep in mind what a RegEx is.
 
-<br>
+
 
 ## **Regular Expressions' Components**
 
@@ -109,7 +109,7 @@ In this section it's also important to talk about another kind of anchor metacha
 
 **There are lots of metacharacters, for now you don't need to know what each one of them does, just remember the difference between metacharacters and normal characters**. We will go through each one in detail on the next sections.
 
-<br>
+
 
 ## **Character Classes**
 
@@ -155,7 +155,7 @@ I have already said that character classes have their own special metacharacters
 Another interesting consideration we shall make, as Jeffrey Friedl brilliantly emphasized in his book, is that when using a negated character class, `[^0-5]` for example, it means "match a character that is not listed" and not "do not match what is listed". So if we had a regular expression which was something like `t[^a-c]` it would indicate a match in the word `site` but it would not indicate a match in the word `sit`. That happens because in the word `site` we match the `t` character and then we are able to match something that is not `a`, `b` or `c`, but in the word `sit` we only match `t` and then we cannot find anything that's not `a`, `b` or `c`.
 
 
-<br>
+
 
 ## **Meta Sequences**
 
@@ -206,7 +206,7 @@ There are lots of meta sequences and since they're really easy to understand, he
 For now just make sure you memorize those above, we will talk in depth about other meta sequences and unicode later.
 
 
-<br>
+
 
 ## **Quantifiers**
 
@@ -229,7 +229,7 @@ Another interesting quantifier is the "`*`" quantifier, which matches none or as
 At last, but not least we also need to talk about the interval quantifiers. **Interval quantifiers can be used to provide an specific minimum and maximum of times something should be matched**. **To create an interval quantifier we must follow the pattern: `{min,max}`**. If we wanted to match, for example, words that ended with a minimum of two and a maximum of four `e` characters, we could use the following regular expression: `e{2,4}$`. This would identify matches in the words `bee`, `beee` and `beeee`, but not in `be` or `beeeee` (which has 5 `e` characters by the way).
 
 
-<br>
+
 
 ## **Exercises**
 
@@ -268,7 +268,7 @@ Next to each task is the link to its solution at [RegEx101.com](https://regex101
     * `120.00 // NO MATCH!`
     * `$10.0010 // NO MATCH!`
 
-<br>
+
 
 ## Coming up soon...
 

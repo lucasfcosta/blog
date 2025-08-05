@@ -23,7 +23,7 @@ I've divided this post into two parts. The first describes the writing routine o
   <p><a href="/health-advice-disclaimer">Please see this website's health and medical disclaimer</a> before proceeding.</p>
 </div>
 
-<br>
+
 
 # My writing routine
 
@@ -44,7 +44,7 @@ In this section, I'll clarify what " discipline" means to me. I'll do that by ex
 
 For each of these rules or habits, I've written a section detailing it and explaining why it worked for me.
 
-<br>
+
 
 ## I write for _at least_ 45 minutes _every_ day
 
@@ -65,7 +65,7 @@ It's not worth it to force yourself to be productive when you don't have the cog
 
 In the past, my therapist used the term "efforting" to describe the act of spending long periods trying to be productive despite not obtaining any meaningful results. Efforting is precisely what you do _not_ want to do.
 
-<br>
+
 
 ## I always write at the same time
 
@@ -91,7 +91,7 @@ When I had to change my schedule, I noticed my productivity had dropped. It took
 
 That schedule change showed me that **my productivity didn't change depending on the time I wrote. I just had to always write at the same time**.
 
-<br>
+
 
 ## I keep my writing environment consistent
 
@@ -105,7 +105,7 @@ To put it simply, I turned myself into [a Pavlov dog](https://www.simplypsycholo
 
 Guess what, [behaviourism](https://en.wikipedia.org/wiki/Behaviorism) is quite applicable.
 
-<br>
+
 
 ## I set deadlines and hold myself accountable
 
@@ -134,7 +134,7 @@ I didn't allow myself to make up excuses. If I didn't write, I was lazy, and tha
 
 I try always to be honest with myself and hold my behaviour and work ethic to high standards. For that, one must remain realistic and stick to their self-discipline.
 
-<br>
+
 
 # Other helpful habits
 
@@ -151,7 +151,7 @@ In this section, I'll explain each of those seemingly unrelated habits.
   <p><a href="/health-advice-disclaimer">Please see this website's health and medical disclaimer</a> before proceeding.</p>
 </div>
 
-<br>
+
 
 ## Dieting and supplementation
 
@@ -182,7 +182,7 @@ When it comes to micros, I take 4125 IU of Vitamin D a day and multi-vitamins.
 
 I'm not that convinced about the effectiveness of multi-vitamins, especially at the dosages that most brands use, but, for me, I think it's worth just covering all bases.
 
-<br>
+
 
 ## Sleep
 
@@ -200,7 +200,7 @@ A few years ago, I _used to_ take 3mg of melatonin before bed. However, once I i
 
 For more information about how important it is to sleep well, I'd recommend [Matthew Walker's "Why We Sleep"](https://www.amazon.co.uk/Why-We-Sleep-Science-Dreams/dp/0141983760).
 
-<br>
+
 
 ## Exercising
 
@@ -216,7 +216,7 @@ Right after a cardio session, I also notice I can think more clearly. Therefore,
 
 **Exercising regularly has taught me that the best way to achieve your objectives is to take short-term action aiming at a long-term goal**. That's the place my writing rules come from, and I'm thankful for that.
 
-<br>
+
 
 ## Therapy
 
@@ -230,7 +230,7 @@ Moreover, therapy has made me a more emotionally stable person, which is also co
 
 I can't stress enough how vital therapy was for my overall health _and_ productivity.
 
-<br>
+
 
 ## Nootropics
 

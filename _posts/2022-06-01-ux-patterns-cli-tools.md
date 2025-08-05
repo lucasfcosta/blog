@@ -16,7 +16,7 @@ In this blog post, I'll cover good UX patterns for CLI applications.
 Furthermore, when applicable, I'll compare how these UX patterns help developers replicate the valuable characteristics of most good GUIs.
 
 
-<br>
+
 
 # The getting started experience
 
@@ -37,7 +37,7 @@ Not all "getting started" sections need to be as big as this one I've made. You 
 
 This section's takeaway is that you should use the CLI itself to deliver a smooth onboarding experience: one that doesn't involve ten pages of documentation.
 
-<br>
+
 
 # Interactive mode
 
@@ -74,7 +74,7 @@ Finally, another advantage of having an interactive mode is that it demonstrates
 > ⚠ Not all shells are interactive, so you must verify whether the user's shell will support the interactive command they're trying to execute.
 
 
-<br>
+
 
 # Input validation and assisted recovery
 
@@ -98,7 +98,7 @@ Implementing that kind of suggestion is such a low-hanging fruit; it astonishes 
 
 In case yours don't, you can go ahead and implement an algorithm to measure [the Damerau-Levenshtein distance](https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance) between two strings. This metric will tell you how many changes a string needs to equal another. You can then iterate through all available commands and suggest the one that's most similar to what the user typed.
 
-<br>
+
 
 ## Human understandable errors
 
@@ -139,7 +139,7 @@ npm ERR! /Users/lucasfcosta/.npm/_logs/2022-06-05T13_09_02_091Z-debug-0.log
 ```
 
 
-<br>
+
 
 # Colours, Emojis, and Layouting
 
@@ -173,7 +173,7 @@ In 2022, you can even have beautiful animated charts if you use libraries like G
 <center><i>A few of <code>termui</code>'s capabilities in display: animated charts and widgets in an organised layout.</i></center>
 
 
-<br>
+
 
 # Loading indicators
 
@@ -201,7 +201,7 @@ Now, it's not always possible to tell users exactly how much longer they'll have
 As a last resort, telling users precisely what you're doing and showing an entertaining spinner is enough.
 
 
-<br>
+
 
 # Context-awareness
 
@@ -223,7 +223,7 @@ Finally, there are two other nice context-awareness touches in NPM CLI:
     Using a project's binaries guarantees that users will be running tools compatible with the project's setup.
 
 
-<br>
+
 
 
 # Exit codes
@@ -241,7 +241,7 @@ Besides traditional Linux exit codes, I'd also like to include an honourable men
 These artificially created error codes can make it more practical for people to [DuckDuckGo](https://duckduckgo.com) for solutions. Furthermore, you can also have your documentation pages refer to these codes for more information on performing troubleshooting.
 
 
-<br>
+
 
 # Streams
 
@@ -283,7 +283,7 @@ In other words, by allowing users to pass data into your program through `stdin`
 Thanks to `stdin`, users can just use a `|` instead of interacting with prompts or saving data to a file and passing the filename through a flag.
 
 
-<br>
+
 
 # Consistent commands trees
 
@@ -305,7 +305,7 @@ The `get` is not the command I want to use because I don't want to _get_ a "log"
 
 Like having an interactive shell, having consistent sub-commands is excellent for discoverability. When you have a consistent command tree, users can _guess_ how to do things.
 
-<br>
+
 
 # Get in touch
 

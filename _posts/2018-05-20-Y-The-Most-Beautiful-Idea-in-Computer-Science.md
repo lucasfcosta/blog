@@ -32,7 +32,7 @@ Also, if you want to learn more about recursion [I've got a very popular post ab
 I guarantee you **this will be one of the most amazing journeys you will go through when it comes to functional programming**. The first time deriving the Y-Combinator is an indescribable joy, so get comfortable in your chair, bed, or whatever and let's get started.
 
 
-<br>
+
 
 ## **First things first: what on earth is a combinator?**
 
@@ -67,7 +67,7 @@ Getting back to combinators, we can now say that the following functions are all
 I could write an entire blog post about this, but for now, this basic knowledge will suffice. I highly recommend that you read more about [bound versus free variables](https://stackoverflow.com/questions/21855838/what-are-free-and-bound-variables) and [pass-by-context versus pass-by-name](https://stackoverflow.com/questions/838079/what-is-pass-by-name-and-how-does-it-work-exactly) though.
 
 
-<br>
+
 
 ## **Deriving Y**
 
@@ -340,7 +340,7 @@ const factorial = factorialGenerator(
 Another way to think about this is that what you want to happen is for the `f` inside `factorialGenerator` to always be the function returned by it. By doing this you guarantee that you will always call the inner function again.
 
 
-<br>
+
 
 ### Fixed Points
 
@@ -373,7 +373,7 @@ This looks familiar, doesn't it? Of course it does, it's exactly what we want! W
 This is why we want to find the Y combinator. The Y Combinator is the combinator that allows us to find the fixpoint of a function like `factorialGenerator` so that we can make it recursive!
 
 
-<br>
+
 
 ### Finding Y
 
@@ -504,7 +504,7 @@ console.log(factorial(5));
 As you might remember, in order for it to be a combinator we should not have any free variables in its body, but in this case, we've got an explicit call to `Y`.
 
 
-<br>
+
 
 ### Finding The Y Combinator
 
@@ -643,7 +643,7 @@ console.log(factorial(5)); // 120
 **This is the Y-Combinator!**
 
 
-<br>
+
 
 ## Applying it to other recursive functions
 
@@ -681,7 +681,7 @@ console.log(fibonacci(5)); // 8
 ```
 
 
-<br>
+
 
 ## The VC firm in Sillicon Valley
 
@@ -701,7 +701,7 @@ And as long as `accelerateStartups` doesn't reach its base case (either by runni
 
 Well done, Mr. Graham. I'm a huge fan.
 
-<br>
+
 
 ## Related Material and References
 
@@ -712,14 +712,14 @@ Well done, Mr. Graham. I'm a huge fan.
 * [thunks/thunks on Github](https://github.com/thunks/thunks) & [redux-thunk](https://github.com/reduxjs/redux-thunk) - More excellent resources to learn about thunks and how they can be useful
 
 
-<br>
+
 
 ## Special Thanks
 
 * I'd also like to thank my friend [Morgan Roderick](https://twitter.com/mrgnrdrck) for reviewing this blog post and for all the amazing work he's been doing on Sinon.js. Thanks, buddy :)
 
 
-<br>
+
 
 # Translations
 

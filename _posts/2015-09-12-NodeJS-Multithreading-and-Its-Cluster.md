@@ -9,7 +9,7 @@ tags : nodejs multithread javascript coding
 
 Hey folks, I'm sure you've heard about multithreading, but have you ever thought about doing it in JavaScript? Well, maybe not, since Node.js has non-blocking I/O operations you actually may never have thought about this. But don't get scaried, let me teach you a couple things.
 
-<br>
+
 
 # ***Hey, wait, what does this "non-blocking I/O" thing means?***
 
@@ -23,7 +23,7 @@ In a nutshell: **everything runs parallel, except your code**
 
 **Interesting Knowledge Tip:** If you want to learn about how your operating system deals with these kinds of problems you should read about how [time-sharing systems](https://en.wikipedia.org/wiki/Time-sharing) and [multiprogramming systems](http://ecomputernotes.com/fundamental/disk-operating-system/multiprogramming-operating-system) work. You will certainly like it if you are into this whole performance and multithreading thing.
 
-<br>
+
 
 # ***Ok cap'n, but can you tell me the pros and cons of this?***
 
@@ -40,7 +40,7 @@ Of course I can, fellow sailor of the internet sea.
 
 Of course using or not a non-blocking I/O solution depends on the problem you are trying to solve. If you are dealing with heavy loads of I/O you may bet your chips into Node.js, but you may not do it when it comes to heavy loads of CPU intensive operations.
 
-<br>
+
 
 # ***Enough talking, let's get to code***
 
@@ -70,7 +70,7 @@ if(cluster.isMaster) {
 
 All you need to do is use the `fork()` method to create new `process` instances. The `fork()` method returns a worker object and it also pushes the worker into the `cluster.workers` hash, this hash stores all the worker objects mapped by their `id` field.
 
-<br>
+
 
 # ***Whoa! Is that all I've gotta know?***
 
@@ -139,7 +139,7 @@ if (cluster.isMaster) {
 }
 {% endhighlight %}
 
-<br>
+
 
 # ***Can you give me a real world example?***
 
@@ -231,7 +231,7 @@ if (cluster.isMaster) {
 }
 {% endhighlight %}
 
-<br>
+
 
 # ***Okay, can you give some tips, please?***
 
@@ -246,7 +246,7 @@ Here they go:
   - [This question about Blocking Vs. Non-Blocking workers](http://programmers.stackexchange.com/questions/181397/many-blocking-vs-single-non-blocking-workers)
   - [This excellent article written by Mikito Takada](http://blog.mixu.net/2011/02/01/understanding-the-node-js-event-loop/)
 
-<br>
+
 
 **In this post you should've learned:**
 

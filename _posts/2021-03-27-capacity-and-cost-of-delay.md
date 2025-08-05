@@ -17,7 +17,7 @@ You look at the calendar on the wall, and it's February the 2nd, just like last 
 
 In this post, I'll explain the two main problems with the "code faster" approach. Then, I'll present a much healthier and logical alternative.
 
-<br />
+
 
 
 # The problems with the "code faster" approach
@@ -32,7 +32,7 @@ Because "code faster" managers can't quantify the value of each piece of work in
 
 These two problems, failing to quantify economics and thus neglecting the team's capacity, lie at the root of most inefficient management.
 
-<br />
+
 
 
 ## Failing to quantify economics
@@ -51,7 +51,7 @@ When managers lack a financial framework, every story in their infinitely long b
 
 In general, the scarcer the resources, the more critical it is to have a robust financial framework to drive prioritisation. Such a framework enables the team to use its finite capacity to produce the most positive net outcome.
 
-<br />
+
 
 
 ## Neglecting the team's capacity
@@ -76,7 +76,7 @@ In his book "Out of the Crisis", the American engineer and management consultant
 >
 > — Deming, W. Edwards. Out of the Crisis, reissue (p. 6). MIT Press.
 
-<br />
+
 
 
 # An alternative to the "code faster" approach
@@ -148,7 +148,7 @@ Consider, for example, that you've decided to work on feature two as per our pre
 
 Now, look at the calendar again. You still can't play the piano, but it's February the 3rd.
 
-<br />
+
 
 
 # Postscriptum

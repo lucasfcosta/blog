@@ -19,11 +19,11 @@ We can apply this methodology to many other areas of software engineering and, i
 
 If you want to build a car you should not start by assembling the wheels, then adding the chassis, the engine and the interior. Before building a car you need to know how to build a skate.
 
-<br>
+
 
 ![An image showing that building a car consists in fact of building a skate, then a scooter, then a bicycle, then a motorbike and finally getting to a car](/assets/iterative-development.jpg)
 
-<br>
+
 
 Many people don't understand this because they think that TDD is about writing tests first and code later. They just go on and write a full-blown test, see it failing and then struggle with an implementation for a long time until it passes that test. This is not wrong in all cases, but it is definitely not suitable for *every* case.
 

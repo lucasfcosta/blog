@@ -7,7 +7,7 @@ flag: 🇧🇷
 tags : computer-science big-o algorithms
 ---
 
-<br>
+
 
 In this blog post **I will prove you will never be able to write an algorithm that scales better than a pigeon** and also **teach you some basic concepts when it comes to Big O notation**.
 
@@ -22,7 +22,7 @@ After all, as the first of [Akin's Laws of Spacecraft Design](http://spacecraft.
 Let's ignore the hottest frameworks and tools for a while and dive deep into some good and old mathematics.
 
 
-<br>
+
 
 ## **What is Big O notation?**
 
@@ -98,7 +98,7 @@ And this is an awesome graph I've found in this StackOverflow question, which de
 ![Big O complexity graph](/assets/big-o-graph.png)
 
 
-<br>
+
 
 ## **Constants and Growth Rates**
 
@@ -146,7 +146,7 @@ In the real world, however, these constants do matter in terms of time, what I'm
 If you had an algorithm that took 100ms for each operation, you'd cut its overall running time by half if you went from `2N` to `N`, because then, for an input with 1000 items you'd be doing 1000 operations instead of 2000 and therefore your algorithm would run in ~1 second instead of ~2 seconds.
 
 
-<br>
+
 
 ## Why You Will Never Beat a Pigeon
 
@@ -158,7 +158,7 @@ This happens because it doesn't matter the size of the data you are dealing with
 
 This is a real experiment made by a South African company called "The Unlimited" and you can read more about in [this excellent Quora Answer by Gayle Laakmann McDowell](https://www.quora.com/Whats-the-best-way-to-explain-big-O-notation-in-laymens-terms/answer/Gayle-Laakmann-McDowell?srid=BNgz).
 
-<br>
+
 
 ## **Get in touch!**
 

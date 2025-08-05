@@ -7,7 +7,7 @@ flag: 🇧🇷
 tags : testing node nodejs javascript api integration tdd
 ---
 
-<br>
+
 
 Hello, everyone! Recently I've been working a lot with Node and I felt the urgent need to write a blog post about how to write good API tests. In those tests, all I do is send a request to an instance of my server and then I check its outputs (either in the database or in the returned response).
 
@@ -21,7 +21,7 @@ Before we get into technical stuff I must recommend you to read [this blog post 
 
 **Basic knowledge about [Promises](http://www.html5rocks.com/en/tutorials/es6/promises/) and [ES6](https://ponyfoo.com/articles/tagged/es6-in-depth) will be useful when reading this article.**
 
-<br>
+
 
 ## **Our Sample Application**
 
@@ -63,7 +63,7 @@ module.exports = app;
 
 To test this route manually, start your server by running `node app.js`, open your browser and go to `localhost:8080.`
 
-<br>
+
 
 ## **Our First Test**
 
@@ -235,7 +235,7 @@ describe('Hello World Route', () => {
 ```
 
 
-<br>
+
 
 ## **Testing and your database**
 
@@ -457,7 +457,7 @@ Some people argue that Mongo is just too heavy for us to rely on it on our testi
 
 If you still want to mock Mongo you can also use [Mockgoose](https://github.com/mockgoose/mockgoose) and make yourself happy with your new in memory storage.
 
-<br>
+
 
 ## **Stubbing and Spying Methods**
 
@@ -582,7 +582,7 @@ describe('Write File', () => {
 
 Sinon can deal with proxies, callbacks and many other uncommon situations and the Sinon team has been doing a great work with this library. Make sure you [give them a star on GitHub](https://github.com/sinonjs/sinon)!
 
-<br>
+
 
 ## **Stubs in the Real World**
 
@@ -802,7 +802,7 @@ sandbox.stub(jwt, 'verify').callsArgWith(2, null, {
 **Also, some people may argue that we should pass a valid authentication header instead of just stubbing the verify function, and they're not wrong. However, I think that by considering each route as a separate testing unit we will be able to detect what's failing with more precision and agility. If our authentication failed in this case, for example, all the tests for APIs that are restricted would fail and this could result in a lot more confusion to identify the piece which is causing the failure.** However, in order to guarantee our middleware is working I'd write separate tests for it and ensure it is protecting the routes it should.
 
 
-<br>
+
 
 ## **Your Homework**
 
@@ -812,7 +812,7 @@ Also, if you want to go even further, explore the new `stub.resolves` and `stub.
 
 Finally, you can look for Chai Plugins in [our official website](http://chaijs.com/plugins/). You might also want to use [`chai-as-promised`](https://github.com/domenic/chai-as-promised) alongside the other plugins mentioned here.
 
-<br>
+
 
 ## Get in touch!
 

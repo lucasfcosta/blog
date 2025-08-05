@@ -17,7 +17,7 @@ To teach you how to explain through writing, first, I'll cover the basic structu
 
 With this post, I expect to show you that explanatory writing can be entertaining and allow authors to explore novel formats. Beware: this blog post [is highly meta](https://www.dictionary.com/e/pop-culture/meta/).
 
-<br>
+
 
 # The basic structure of an explanatory text
 
@@ -47,7 +47,7 @@ As you can see in this post, I've started by telling you exactly what I'll write
 
 Also, remember that this structure applies to each sub-unit of your piece. As you write, you should use these three steps in your whole post and each of its sections and subsections, as I just did. Put another way, your pieces should have a fractal structure; the three-step pattern repeats itself within smaller parts of the text.
 
-<br>
+
 
 # From concrete stories to abstract facts
 
@@ -73,7 +73,7 @@ Great examples of this principle are [The Phoenix Project, by Gene Kim, George S
 
 As I've done in this section, use concrete examples to explain things. Then, once you've used examples, generalise the learnings from those examples, and present them in abstract form.
 
-<br>
+
 
 # Format, grammar, voice, and style
 
@@ -107,7 +107,7 @@ Now, it feels like I write just like I talk, [as Paul Graham would put it](http:
 
 As a summary for this last rather fragmentary section, just remember that you can use tools other than writing to keep readers engaged. Those tools are images and visual aids and your voice and style.
 
-<br>
+
 
 # Summarising
 

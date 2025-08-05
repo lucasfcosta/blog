@@ -8,7 +8,7 @@ tags : go golang dependency godep
 ---
 
 
-<br>
+
 
 Hi, everyone! As you may have noticed I'm really interested into Go and since I fell in love with this language I'd like to write about it more frequently.
 
@@ -16,7 +16,7 @@ If you don't know Go yet I really think you should learn it. [Go is awesome](htt
 
 Go is a relatively young language and when it comes to vendoring and dependency management it still isn't really mature yet. The Go community, however, has been adopting some practices and creating tools to supply this demand. This is what we are going to talk about today.
 
-<br>
+
 
 ## **Understanding The Go Ecosystem**
 
@@ -35,7 +35,7 @@ To achieve this goal, **the Go team favors conventions over configurations**. Th
 
 Now that we've said that, it is easy to understand why the `go get` command works the way it does.
 
-<br>
+
 
 ## **Understanding Go Tools' Commands**
 
@@ -43,7 +43,7 @@ Before we get into these commands let's understand what is the "[`$GOPATH`](http
 
 The `$GOPATH` is an environment variable that points to a directory which can be considered as a workspace directory. It will hold your source codes, compiled packages and runnable binaries.
 
-<br>
+
 
 ### `go get`
 
@@ -57,19 +57,19 @@ It also has a bunch of other flags available, such as `-u` which updates a packa
 
 Also, according to `go help gopath`, the `go get` command also updates submodules of the packages you're getting.
 
-<br>
+
 
 ### `go install`
 
 When running `go install` in a package's source directory it will compile the latest version of that package and all of its dependencies in the `pkg` directory.
 
-<br>
+
 
 ### `go build`
 
 Go build is responsible for compiling the packages and their dependencies, **but it does not install the results!**
 
-<br>
+
 
 ## **Understanding Vendoring**
 
@@ -189,7 +189,7 @@ $GOPATH
             one.go
 ```
 
-<br>
+
 
 ## **Understanding Dependency Management**
 
@@ -207,7 +207,7 @@ Another interesting command is `godep restore`, which will install the versions 
 
 In order to update a dependency all you've gotta do is update it using `go get -u` (as we've talked about earlier) and then run `godep save` in order for `godep` to update the `Godeps/Godeps.json` file and copy the needed files to the `vendor` directory.
 
-<br>
+
 
 ## **A Few Thoughts on the Way Go Handles Dependencies**
 
@@ -221,7 +221,7 @@ Considering Go's main goals this makes total sense and is a totally fair tradeof
 
 Of course, a few improvements could be made, such as using git tags to fetch specific versions of packages and allowing users to specify which versions their packages will use. It would also be cool to be able to fetch these dependencies instead of checking them out on source control. This would allow us to avoid dirty diffs containing only changes to code in the `vendor` directory and make the whole repository cleaner and more lightweight.
 
-<br>
+
 
 ## Get in touch!
 

@@ -18,7 +18,7 @@ You will also find, at the end of each post, a list of recommended resources to 
 Without further ado, let's talk about what matters to us here: [Lambda Calculus](https://en.wikipedia.org/wiki/Lambda_calculus).
 
 
-<br>
+
 
 
 ## What is Lambda Calculus?
@@ -30,7 +30,7 @@ Any of the computer programs we have ever written and any of the ones that are s
 As I've mentioned in the introduction to this post, I could write an entire blog post contextualizing this, but now that you know what Lambda Calculus is and what it does, let's get to the practical stuff.
 
 
-<br>
+
 
 
 ## Lambda Calculus' Syntax
@@ -71,7 +71,7 @@ a(b) // Application equivalent
 **Grouping exists for the sake of disambiguation**. We use these parentheses around the expressions we want to group to make it clear which ones of them we want to apply to each other. If this doesn't make much sense now don't worry, it will in a few paragraphs.
 
 
-<br>
+
 
 
 ## Bound and Free Variables
@@ -108,7 +108,7 @@ Now, the same examples above, but in using Lambda Calculus' syntax:
 4. `λx. λy. x(y)` - Both `x` and `y` are bound variables
 
 
-<br>
+
 
 
 ## Currying
@@ -157,7 +157,7 @@ Now, in a bit more conventional lambda calculus syntax:
 ```
 
 
-<br>
+
 
 
 ## Disambiguating
@@ -175,7 +175,7 @@ What about `abstractions`: does `λx. x y` mean `(λx. x)(y)` or `λx. x(y)`?
 For `λx. λy. x` we could write `λx. (λy. x)`: which means that the outermost lambda expression evaluates to `(λy. x)`.
 
 
-<br>
+
 
 ## References & Resources for the Curious
 

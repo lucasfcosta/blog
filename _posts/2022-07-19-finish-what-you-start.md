@@ -21,7 +21,7 @@ At the end of this post, I have included a small summary for you to paste on Sla
 
 > If you're reading on a phone, click images to expand them.
 
-<br>
+
 
 ## How finishing what you start increases productivity
 
@@ -100,15 +100,11 @@ This same effect happens when a critical bug appears. [As I've previously explai
 
 We can summarise this behaviour using [Little's Law](https://en.wikipedia.org/wiki/Little%27s_law), which, when expressed in terms of throughput (deliveries per unit of time), looks like this:
 
-<br>
-
-<center>
-{% katex %}
+$$
 {Avg.\ Cycle\ Time} = \cfrac{Avg.\ Work\ In\ Progress}{Avg.\ Throughput}
-{% endkatex %}
-</center>
+$$
 
-<br>
+
 
 As I've explained using the burger shop example, and as Little's Law dictates, cycle times elongate when work in progress increases and throughput remains the same. It's a straightforward mathematical fact. Nonetheless, many managers are unaware of it.
 
@@ -118,7 +114,7 @@ Despite the simple mathematics, when some managers see that work is taking longe
 
 You can argue with me, your team, or your manager as much as you want, but you can't argue with mathematics. **Limit work in progress**.
 
-<br>
+
 
 ### The cost of context switching
 
@@ -133,11 +129,11 @@ Here's a more accurate representation of what happens when working on software d
 <a target="_blank" class="image-link" href="/assets/finish-what-you-start/features-concurrent-context-switch.png"><img style="margin-bottom: -18px;" src="/assets/finish-what-you-start/features-concurrent-context-switch.png" alt="There's a cost for switching from working on a feature to working on another."></a>
 <center style="font-size: 0.8em; margin-bottom: 32px;"><i>There's a cost for switching from working on a feature to working on another.</i></center>
 
-<br>
+
 
 Enough talking. Let's bring our plan into the kitchen.
 
-<br>
+
 
 ## When to start without having finished
 
@@ -147,7 +143,7 @@ You and I delve into the kitchen with our drawing in our hands, the power of mat
 
 The cook seems abhorred and goes on to explain:
 
-> No matter how rare you like your patties, they all take significant time to prepare.<br>
+> No matter how rare you like your patties, they all take significant time to prepare.
 > It's quicker for me to prepare them in larger batches than to wait for one patty to be ready before I toss another on the grill.
 
 The cook has a point. Neither you nor I know anything about the craft of burger-making; how could we expect to be right?
@@ -192,7 +188,7 @@ Now that we understand the burger and the software variations of the problem, we
 That said, I'd be careful to avoid falling into a situation where "you're too busy draining the flood to be able to fix the leak". The earlier you decrease transaction costs, the earlier you'll be reaping the benefits from having done it.
 
 
-<br>
+
 
 ## How finishing what you start makes teams more predictable
 
@@ -280,7 +276,7 @@ Assuming our team will remain hyper-consistent, there's only one possible outcom
 The comparison between those three histograms leads to the conclusion that teams which deliver tasks more uniformly are more predictable, even if they deliver the same number of tasks within the period we're using as the sample for our simulations.
 
 
-<br>
+
 
 ## Putting it all together
 
@@ -288,11 +284,9 @@ When you start a new task before finishing the previous, average cycle times wil
 
 Little Law illustrates this behaviour by establishing a clear relationship between cycle time, work in progress, and throughput.
 
-<center>
-{% katex %}
+$$
 {Avg.\ Cycle\ Time} = \cfrac{Avg.\ Work\ In\ Progress}{Avg.\ Throughput}
-{% endkatex %}
-</center>
+$$
 
 Additionally, there's a cost to context-switching when it comes to software development tasks.
 
@@ -305,7 +299,7 @@ The problem with large batch transferrals in the software industry is that the c
 One last benefit of working on smaller batches of tasks at a time is that it makes teams more predictable. Delivering the same number of tasks uniformly is better than delivering multiple tasks at once because it makes cycle times uniform too. In turn, those uniform cycle times help you make better forecasts, as there will be fewer possible outcomes when simulating (or estimating) the team's performance.
 
 
-<br>
+
 
 ## Further reading
 
@@ -316,7 +310,7 @@ One last benefit of working on smaller batches of tasks at a time is that it mak
 * [Why long-term plans don't work and how to fix them](https://lucasfcosta.com/2022/07/15/long-term-plans-dont-work.html) — [Lucas da Costa](https://twitter.com/thewizardlucas)
 
 
-<br>
+
 
 ## I have questions, but I need a burger First
 

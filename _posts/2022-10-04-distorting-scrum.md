@@ -21,13 +21,13 @@ At that point, you can then deliver _another_ talk, explaining [why you don't us
 
 This post's structure is simple. First, I'll show you how to distort all the good parts of Scrum to the point they no longer work. Then, I'll tell you which pointless practices to keep and how to make them even worse.
 
-<br>
+
 
 ## Good principles to obliterate
 
 Before we get to maximizing its awful parts, let's start by putting a spoke in Scrum's wheels and eradicating [all the positive aspects it adopted from Kanban](/2022/10/02/scrum-versus-kanban.html).
 
-<br>
+
 
 ### Two-week sprints
 
@@ -51,7 +51,7 @@ That's not to mention all these meetings will take up so much time that teams wi
 
 Conversely, three-month-long sprints can be almost as damaging. Although they produce less waste, they require you to make more assumptions on behalf of your users, thus guaranteeing you'll be heading in the wrong direction for longer.
 
-<br>
+
 
 ### Daily Standups
 
@@ -65,7 +65,7 @@ After reaching that point, all the benefits of standups will be void because no 
 
 I know ruining standups may require effort, but I promise it will be worth it. Wasting only 30-minutes a day might not seem like a lot, but they add up quickly and help make your team grumpier.
 
-<br>
+
 
 ### Retrospectives
 
@@ -81,7 +81,7 @@ It's also critical for the person with the highest hierarchical role to start th
 
 Finally, you must be adamant about committing to an unbelievable amount of action points in every single retrospective. That way, you can ensure that nothing will change because you'll simultaneously divide time, effort, and attention into too many tasks.
 
-<br>
+
 
 ### Backlog Management
 
@@ -93,13 +93,13 @@ This strategy also guarantees your backlog will be filled with enough garbage to
 
 Besides helping prove you're busy and avoiding difficult conversations, a colossal backlog also prevents you from doing any actual prioritization and hard work. Instead, you can ask developers to keep "refining" the backlog's tasks they'll never get to so that you can prevent them from writing any code, bringing everything to a halt.
 
-<br>
+
 
 ## Pointless practices to keep and how to make them even worse
 
 Now let's get on with the greatest parts of Scrum: the ones which produce the most frustration and waste of time.
 
-<br>
+
 
 ### Estimations
 
@@ -115,7 +115,7 @@ Regardless of which arbitrary scale you pick, make sure it doesn't have any dire
 
 Finally, do not, by any means, calculate the correlation between your story points and the time tasks take to be done. If you do that, everyone will see that there's absolutely no correlation between estimations and actual time. If you do that, your tactic will fall to the ground.
 
-<br>
+
 
 ### Refinement Sessions
 
@@ -129,7 +129,7 @@ Another reason refinement helps people build dysfunctional products is that they
 
 In any case, I wouldn't recommend you spend time acting on that feedback. That would make your product actually successful.
 
-<br>
+
 
 ### Velocity and burndown charts
 
@@ -141,7 +141,7 @@ In any case, here are a few extra tips for weaponizing useless metrics like velo
 2. Show burndown charts to the budget people, especially if they remain flat or show bad results — these charts are a great way to justify any decisions you already want to make. That's because burndown charts are not anchored to any other metrics.
 3. Don't ever perform qualitative assessments — if you talk to your team, you may realize you're doing everything wrong, preventing you from being creative and fulfilled in your product dictatorship role.
 
-<br>
+
 
 ### Roles and information silos
 
@@ -157,7 +157,7 @@ Furthermore, it will eradicate any bit of ownership that's left in the team. Con
 
 In case you want to make information silos even more wasteful, you may also want to create new roles and ensure that no one from any other team talks to developers. If you do that, you can ensure that developers can't understand the problem and that everyone else can't understand the solutions.
 
-<br>
+
 
 ## Wanna talk?
 

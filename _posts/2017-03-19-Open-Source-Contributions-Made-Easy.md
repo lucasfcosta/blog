@@ -7,7 +7,7 @@ flag: 🇧🇷
 tags : opensource OSS GitHub contributing
 ---
 
-<br>
+
 
 Hi, friends! Sorry for taking too long to post something new, but I have come back from the UK recently, where I've had a great day with some friends at [Voxxed Days Bristol](https://voxxeddays.com/bristol/).
 
@@ -15,7 +15,7 @@ Recently, I have also been dealing with some rough situations in my life so I th
 
 In this blog post I will teach you **how to find projects to contribute to**, **how to find issues to solve**, **how to actually solve them** and finally I will also give you some **tips about open source etiquette**.
 
-<br>
+
 
 ## [**The Myth of the Genius Programmer**](https://www.youtube.com/watch?v=0SARbwvhupQ)
 
@@ -27,13 +27,13 @@ In order to contribute to an Open Source project you just need time and disposit
 
 **Don't worry, you are good enough!**
 
-<br>
+
 
 ## **Finding a Project to Contribute to**
 
 Obviously, the first thing we must do is find a cool project to contribute to. So here goes a few criteria I recommend you to take into account when choosing a project to contribute to.
 
-<br>
+
 
 #### 1. Choose something you already use
 
@@ -43,7 +43,7 @@ This helps you write tests, since all you gotta do is use the same API you alrea
 
 You will also be able to dive into the code with more confidence since you will be able to see how it does what you already know it does instead of trying to figure out why those methods, checks and special cases exist.
 
-<br>
+
 
 #### 2. Look for "easy-fix" or "good-for-beginners" labels
 
@@ -61,7 +61,7 @@ I also highly recommend you to take a look at this repository which has a catalo
 
 If you need help finding a project with these labels, take a look at [this Github repo](https://github.com/MunGell/awesome-for-beginners).
 
-<br>
+
 
 #### 3. Check if a project is active
 
@@ -71,13 +71,13 @@ In order to make sure a project is active, take a look at their issues and see t
 
 If you find a project that is not active but you want to contribute to the community anyway you can always fork that project and maintain a version of it by yourself.
 
-<br>
+
 
 ## **Writing Code**
 
 It is really hard to tell people how they should solve problems, especially because there's no such thing as a silver bullet. Every problem is different and every project has its own structure so I'll try to be as generic as possible in this section and give you tips that will probably be useful for every project you find.
 
-<br>
+
 
 #### 1. Read code from top down
 
@@ -135,7 +135,7 @@ You don't necessarily need to follow this order if you are already sure any part
 
 Also, in order to make sure `b` was working and then proceed from `c` you could add a `console.log` statement after it (or use a debugger) and make sure its output is correct.
 
-<br>
+
 
 #### 2. Read the stack trace
 
@@ -145,7 +145,7 @@ If you don't know how to read Stack Traces I highly recommend you to do read [my
 
 In order to get the stack trace until somewhere in the code, at least in JavaScript, all you need to do is use `console.trace`. If you are using an IDE you can also take a look at the stack it may display somewhere. Many people ignore this information but it is really useful.
 
-<br>
+
 
 #### 3. Don't try to understand it all at once
 
@@ -153,7 +153,7 @@ You will probably face a piece of code you do not understand when trying to solv
 
 If you can't understand something related to the problem you're solving, even after doing some research, try to see the values of variables and outputs produced throughout each part of that algorithm. Breaking a big problem into smaller problems almost always helps.
 
-<br>
+
 
 ### 4. Start by writing tests
 
@@ -163,7 +163,7 @@ I won't describe all the advantages of writing tests first in this blog post, bu
 
 **Writing tests is something most projects demand from their contributors and sometimes you will not get your Pull Request accepted if you don't write them.**.
 
-<br>
+
 
 #### 5. Read the contribution guidelines
 
@@ -171,11 +171,11 @@ Most projects (at least the big ones) have a file called `CONTRIBUTING.md` where
 
 Pay attention to this file because doubts may have their answers here. If `CONTRIBUTING.md` is not updated it is also another good opportunity for a Pull Request. It is very important to keep this file always up to date.
 
-<br>
+
 
 ## **Creating your Pull Request**
 
-<br>
+
 
 #### 1. Putting your changes online
 
@@ -183,7 +183,7 @@ After you're done with your changes you must commit them to [your own fork of th
 
 In order to create a new branch and do a checkout right after it, you can use the command: `git branch -b BRANCH_NAME`. Then commit it with `git commit -m "YOUR MESSAGE HERE"` and finally push it to your remote fork with `git push --set-upstream <REMOTE_NAME> <BRANCH_NAME>`. If you need help understanding how Git or GitHub works take a look at [these videos from their YouTube channel](https://www.youtube.com/watch?v=HwrPhOp6-aM&list=PL0lo9MOBetEHhfG9vJzVCTiDYcbhAiEqL).
 
-<br>
+
 
 #### 2. Writing the body of your Pull Request
 
@@ -199,7 +199,7 @@ I always consider it very important to thank the ones reading and reviewing your
 
 When explaining how your code works, make sure you add links to the lines of code you are referring to, this makes it easier for other people to see what you're talking about and this also speeds up the review process. To get the link to a line of code in your Pull Request you just need to click on its number and copy the address in your browser. When referring to code outside of your Pull Request you can do the same, but make sure that you press `y` before doing it. By pressing `y` you can make sure you will always be referring to a single commit and not the last commit in a branch (which will probably change as time goes by).
 
-<br>
+
 
 #### 3. Doing further changes
 
@@ -213,19 +213,19 @@ If you need to make changes that are related to a commit other than the last one
 
 If someone asks you to rebase your last commit into master (or any other branch) you just gotta get the latest version of the `master` branch, for example, checkout to your Pull Request's branch and then do a `git rebase master`. In order to fix conflicts, you can run `git status` to see conflicting files and edit them with your favorite text editor.
 
-<br>
+
 
 ## **Open Source Etiquette**
 
 Being polite is as important on the internet as it is in real life (even though many people don't think that way). So here go a few tips to avoid unnecessary conflicts and make everyone happier.
 
-<br>
+
 
 #### 1. When tackling an issue, let other people know
 
 If you plan on solving an issue, make sure you leave a comment in it to let everyone know you will be working on it. This avoids duplication of work, which means you will not make someone else's work useless by sending your contribution first and neither will they do the same to you.
 
-<br>
+
 
 #### 2. Don't "steal" issues
 
@@ -235,7 +235,7 @@ My first pull requests were very simple and I'd have felt very bad if everytime 
 
 If you feel like an issue is not moving forward or you don't know its status, just ask. Most times other people will just tell you they didn't have time to finish it yet and you will get your chance to tackle that issue.
 
-<br>
+
 
 #### 3. Ask before implementing something no one asked for
 
@@ -245,7 +245,7 @@ Sometimes that feature may have implications you didn't think about or it may be
 
 Even if maintainers don't want it merged into their project, you can always create your own fork of it.
 
-<br>
+
 
 ## Get in touch!
 

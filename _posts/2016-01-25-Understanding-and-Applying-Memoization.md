@@ -15,7 +15,7 @@ Before we start talking about how memoization works and when to use it, we shoul
 
 Thanks, Wikipedia, this seems like a great and simple explanation.
 
-<br>
+
 
 # ***When should I use memoization?***
 
@@ -29,7 +29,7 @@ You should be aware that my answer is very simplistic and there are other factor
 
 Enough talking, it's time we get to code. Open your favorite text editor and follow me!
 
-<br>
+
 
 # ***I'm ready, give me some memoization awesomeness!***
 
@@ -180,7 +180,7 @@ So, we've got the same algorithm applied both with and without memoization, let'
   - Memoized
     - Elapsed Time: 0ms.
     - Calculated fibonacci 21 times.
-<br>
+
 
 - **30th Fibonacci Number (Result: 832040)**
   - Without memoization
@@ -189,7 +189,7 @@ So, we've got the same algorithm applied both with and without memoization, let'
   - Memoized
     - Elapsed Time: 1ms.
     - Calculated fibonacci 31 times.
-<br>
+
 
 - **50th Fibonacci Number (Result: 12586269025)**
   - Without memoization
@@ -203,7 +203,7 @@ As the desired fibonacci index increases, so does the difference between memoize
 
 At this point you may be thinking if there is an easier way to create memoized functions. I think we both agree that doing what we just did for every single function we want to apply memoization on our code would be a pain. So, let me answer you: yes there is an elegant way for doing that.
 
-<br>
+
 
 # ***Show me the "Elegant Way"!***
 

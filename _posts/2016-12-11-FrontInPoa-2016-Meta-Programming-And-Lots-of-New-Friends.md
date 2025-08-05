@@ -9,7 +9,7 @@ tags : meta programming talk frontinpoa travel
 
 Hello everyone, how are you feeling today? I hope you feel great, because I do! I'm now on board of the plane which is gonna take me back home at Florianópolis. Since the two cities are really close I'll have only half an hour to finish writing this before my plane lands.
 
-<br>
+
 
 ## My Arrival at POA
 
@@ -24,7 +24,7 @@ I also bought a few bananas, but, believe it or not, I was able to pay it in Eur
 I've also hit the gym and took a little run on my way there and back to hotel.
 
 
-<br>
+
 
 ## Front In POA 2016
 
@@ -36,7 +36,7 @@ The venue was great: it had lots of comfortable seats, a big stage and high qual
 The coffee break was delicious and I made lots of new friends at [@FrontInPOA](https://twitter.com/frontinpoa).
 
 
-<br>
+
 
 ## The Talks
 
@@ -77,7 +77,7 @@ After my talk I was also interviewed by the organizers and we talked a little bi
 To close this awesome event we had another great talk by [@alezanela](https://twitter.com/alezanela), a journalist which showed us how important it is to have good communication skills and how it influences our careers on a daily basis.
 
 
-<br>
+
 
 ## After the event
 
@@ -90,7 +90,7 @@ We talked about the Google Developer Expert Program and our adventures in the am
 They were kind, interesting and full of talent, it was a great honor for me to be able to hang out with such nice people! You rock!
 
 
-<br>
+
 
 ## Special Thanks
 

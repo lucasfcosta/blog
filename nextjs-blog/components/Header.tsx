@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Link from 'next/link';
 import { siteConfig } from '../lib/config';
 
 export default function Header() {
@@ -34,16 +35,16 @@ export default function Header() {
         </div>
         <div className="header-center">
           <h1 className="title">
-            <a className="title-link" href={siteConfig.url}>
+            <Link className="title-link" href="/">
               Lucas F. Costa
               <span className="subtitle">{siteConfig.subtitle}</span>
-            </a>
+            </Link>
           </h1>
         </div>
         <div className="header-right">
-          <a className="navItem" href={siteConfig.url}>Blog</a>
-          <a className="navItem" href="/talks">Talks</a>
-          <a className="navItem" href="/about">About Me</a>
+          <Link className="navItem" href="/">Blog</Link>
+          <Link className="navItem" href="/talks">Talks</Link>
+          <Link className="navItem" href="/about">About Me</Link>
           <a 
             className="navItem" 
             onClick={() => {/* Analytics event can be added later */}} 
@@ -66,10 +67,10 @@ export default function Header() {
         >
           <div className="drawer-header">
             <h1 className="title">
-              <a className="title-link" href={siteConfig.url}>
+              <Link className="title-link" href="/">
                 Lucas F. Costa
                 <span className="subtitle">{siteConfig.subtitle}</span>
-              </a>
+              </Link>
             </h1>
             <span 
               id="menu-close" 
@@ -81,9 +82,9 @@ export default function Header() {
           </div>
 
           <div className="drawer-menu-items">
-            <a className="drawer-item" href={siteConfig.url}>Blog</a>
-            <a className="drawer-item" href="/talks">Talks</a>
-            <a className="drawer-item" href="/about">About Me</a>
+            <Link className="drawer-item" href="/">Blog</Link>
+            <Link className="drawer-item" href="/talks">Talks</Link>
+            <Link className="drawer-item" href="/about">About Me</Link>
             <a className="drawer-item" href={`mailto:${siteConfig.email}`}>Email</a>
             <a 
               className="drawer-item" 

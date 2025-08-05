@@ -699,7 +699,7 @@ And now, after 100 quotes about software engineering, I'll allow myself to add a
     Yes, Sam, what we are doing is very complicated.
 </p>
 
-<br>
+
 
 ## **Get in touch!**
 
@@ -707,7 +707,7 @@ If you disagree with anything I said or if you have anything you'd like to add o
 
 If you feel like submitting a PR to fix any possible typos or fix my grammar mistakes, you can also find me [on GitHub @lucasfcosta](https://github.com/lucasfcosta).
 
-<br>
+
 
 ## **More Amazing Quotes**
 

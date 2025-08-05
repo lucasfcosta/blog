@@ -59,11 +59,11 @@ I bet that cloud-native architectures will win.
 
 In the same way that we chose not to maintain data-centers instead of making it easier to manage them, we'll decide not to manage any servers instead of making it more efficient to do so.
 
-<br>
+
 
 -----
 
-<br>
+
 
 # Postscriptum
 

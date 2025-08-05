@@ -27,7 +27,7 @@ Soon I'll be selling a 500-page book with enough diagrams to convince you it's a
 
 For now, bear with me. This blog post is all I've got.
 
-<br>
+
 
 ## TTYC's core-workflows
 
@@ -38,7 +38,7 @@ The _Talk To Your Customers_ framework revolves around talking to your customers
 
 As surprisingly as it may seem, the part about talking to your customers is crucial for TTYC's success.
 
-<br>
+
 
 ## TTYC's roles and core-metrics
 
@@ -59,7 +59,7 @@ As time passes, money should go up, not down. The higher it goes, and the more q
 
 > TIP: If you build something people want, it will naturally go up — providing you can sell.
 
-<br>
+
 
 ## Putting TTYC into practice
 
@@ -73,7 +73,7 @@ If you've got a recording, incentivize other team members to listen to it. Yes, 
 
 Here's why the listening step is crucial: remember what I mentioned about that "money over time metric"? Customers are the ones giving you the money, and it _seems_ they're more likely to give it to you if the solutions you deliver actually solve their problems. Listening helps you understand the customer's problems and, in turn, solve them.
 
-<br>
+
 
 ### Implementing a solution
 
@@ -87,7 +87,7 @@ Once you've got a grasp of what the solution might be, you should go and build i
 
 Let me explain those two caveats in more detail.
 
-<br>
+
 
 #### Getting the solution right
 
@@ -102,7 +102,7 @@ In other words, if you're not sure, ship it, and ship it quickly.
 
 If something doesn't work, customers will let you know, providing you listen to them. If you follow this approach, you'll shorten the "time" metric (remember our "money vs time" graph).
 
-<br>
+
 
 #### Building it
 
@@ -116,7 +116,7 @@ From here on, you can now choose to scale your solution, improve it, or find oth
 
 To summarise: in TTYC, we advocate that building software which solves the customer's problems is better than building complex software. It may seem absurd, but problem-solving and money are highly correlated — much more highly correlated than money and Kubernetes.
 
-<br>
+
 
 ## Putting it all together
 
@@ -126,7 +126,7 @@ This framework has two roles: the product developer and the customer. The produc
 
 The revolutionary aspect of TTYC is acknowledging that solving the customer's problems is more important than building software or having meetings. Therefore, it advocates that product developers must talk to customers instead of spending hours discussing possible solutions. Furthermore, TTYC incentivizes product developers to ship their solution and ask customers whether it works instead of assuming it does.
 
-<br>
+
 
 ## Wanna talk?
 

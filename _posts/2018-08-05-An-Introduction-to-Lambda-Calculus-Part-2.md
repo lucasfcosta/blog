@@ -16,7 +16,7 @@ This will be perhaps the most practical post of this series and will serve as a 
 Now, let's continue our amazing adventure through the fascinating world of logic.
 
 
-<br>
+
 
 
 ## Alpha Equivalence 
@@ -50,7 +50,7 @@ Here are a few more examples:
 Being familiar with the concept of bound and free variables is essential for you to understand this post. If you still think you cannot identify each case easily, once again I'll recommend you to read [this section about types of variables in the previous post](/2018/07/29/An-Introduction-to-Lambda-Calculus-Part-1.html#bound-and-free-variables).
 
 
-<br>
+
 
 
 ## Renaming
@@ -102,7 +102,7 @@ If you perform an alpha reduction in `((λa. λb. a b) (λa. a)) (λa. a b)`, fo
 Notice that in the example above we would not have been able to rename the free variable `b` in `λa. a b` so I chose to rename the bound variable `b` in `λa. λb. a b` by `c`.
 
 
-<br>
+
 
 
 ## Substitution and Evaluation
@@ -181,7 +181,7 @@ In a more adequate example, let's do a substitution by applying an abstraction t
 (+ λx. x (+ y 1))
 ```
 
-<br>
+
 
 ## Beta-reductions, Beta-reduxes, and The Beta-normal Form
 
@@ -216,7 +216,7 @@ This is what just happened:
 a
 ```
 
-<br>
+
 
 ## Practicing all we've learned so far
 
@@ -234,7 +234,7 @@ Just remember to replace any `λ` symbols by the word `lambda` so that it can ev
 This interpreter will perform disambiguation (represented in the interpreter by the symbol ω), α-reduction (represented by α) and then β-reduction (represented by β) so that you can see in detail what happens when you evaluate a lambda expression.
 
 
-<br>
+
 
 
 ## Destroying Dreams
@@ -246,7 +246,7 @@ As I've also mentioned before, there was a bit of handwaving when considering ho
 Get ready to get your dreams crushed in the next post of this series.
 
 
-<br>
+
 
 
 ## References & Resources for the Curious

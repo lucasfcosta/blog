@@ -8,7 +8,7 @@ tags : tdd testing golang go
 ---
 
 
-<br>
+
 
 Hello, everyone! Today I'm gonna do something a little bit different from what I usually do. **I'm not going to write about JavaScript, I'm going to write about [Go](https://golang.org)!**
 
@@ -18,7 +18,7 @@ Recently I have been writing Go on a daily basis at work and I found it to be a 
 
 Also, if you want to read about how to write good assertions, take a look at [this previous blog post](/2017/01/02/How-to-Write-Assertions-Right.html).
 
-<br>
+
 
 ## **How Testing Works in Go**
 
@@ -32,7 +32,7 @@ Differently from what happens in other languages, such as JavaScript, **the `go`
 
 It's also important to notice that **these `_test.go` files will not be included when doing regular package builds**, they will only be included when running `go test`.
 
-<br>
+
 
 ## **Writing our First Test**
 
@@ -40,7 +40,7 @@ Since our main concern in this post is not to learn TDD but to learn how to test
 
 For this demonstration, I'll take a simple function from my `gobotto` package. This function takes any address and returns the expected `robots.txt` address for that website. This is its code:
 
-<br>
+
 
 #### **gobotto.go**
 ```go
@@ -55,13 +55,13 @@ func RobotsURL(address string) (string, error) {
 }
 ```
 
-<br>
+
 
 It's really simple, all it does is take out all the path and use `/robots.txt` instead.
 
 In order to write our first test, we will need to create a `gobotto_test.go` file and import the `testing` package:
 
-<br>
+
 
 #### **gobotto_test.go**
 ```go
@@ -70,13 +70,13 @@ package gobotto
 import "testing"
 ```
 
-<br>
+
 
 Now it's time for us to add some testing functions to the `gobotto_test.go` file. Remember they have to start with `Test` and they should take a `*testing.T` as an argument.
 
 Here is a test case which makes sure `RobotsURL` behaves correctly:
 
-<br>
+
 
 #### **gobotto_test.go**
 ```go
@@ -96,7 +96,7 @@ func TestRobotsURLSuccessful(t *testing.T) {
 }
 ```
 
-<br>
+
 
 As it happens in any other language, we're just calling the function being tested and comparing its result to the result we expected. However, as you may have noticed, we're not using any assertions here. Instead, we're just calling `t.Fatal` in order to stop the test immediately, marking it as a failure, and log something to the console.
 
@@ -104,7 +104,7 @@ In Go, there are no built-in assertions, but, fortunately, we've got the open so
 
 Now, let's rewrite the previous test by using testify's assertions package:
 
-<br>
+
 
 #### **gobotto_test.go**
 ```go
@@ -123,7 +123,7 @@ func TestRobotsURLSuccessful(t *testing.T) {
 }
 ```
 
-<br>
+
 
 Testify has got a lot of assertions available. All of them take the `*testing.T` argument passed to the testing function as an argument in order to be able to fail tests when needed. Their last argument is always a `string` to allow custom messages to be appended to the testing output.
 
@@ -131,7 +131,7 @@ If you want to see the full list of available assertions take a look at [testify
 
 Another interesting advantage of using `testify` are the diffs it produces, which make it a lot more easy to spot errors and inconsistencies.
 
-<br>
+
 
 ## **Running Multiple Tests**
 
@@ -297,7 +297,7 @@ If you're interested in using Go's native way of organizing tests, take a look a
 
 Also, `testify` seems to be having trouble when tests inside a `suite` are run in parallel by marking them with `suite.T().Parallel()`. Take a look at [this issue](https://github.com/stretchr/testify/issues/187) to see how to work around it and keep an eye on it until this has been solved (or maybe you can even send a Pull Request).
 
-<br>
+
 
 ## **Using Stubs**
 
@@ -378,7 +378,7 @@ Got it?
 
 If you are interested in reading more about this subject [Karl Matthias has got an awesome blog post for you](http://relistan.com/writing-testable-apps-in-go/). I highly recommend you to read that!
 
-<br>
+
 
 ## **Testing HTTP Calls**
 
@@ -544,7 +544,7 @@ This is what is happening in the example above:
 5. We calculate what should be the expected output based on the `RepeatHeader` and `word`
 6. We check the response sent to see if it matches what we expected
 
-<br>
+
 
 ## Get in touch!
 

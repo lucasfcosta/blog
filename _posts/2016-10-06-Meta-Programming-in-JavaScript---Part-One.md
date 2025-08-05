@@ -7,7 +7,7 @@ flag: 🇧🇷
 tags : nodejs meta programming javascript coding
 ---
 
-<br>
+
 
 This is the first blog post of a series in which I will teach you some meta programming techniques in JavaScript. Recently I have been seeing many posts about Proxies because they're a recent feature (and because they're awesome and people really should be talking about them anyway), but JavaScript has a lot more to offer on the grounds of meta programming, so I will try to explore the things people don't usually talk about.
 
@@ -17,7 +17,7 @@ First, let's start by defining "meta programming". According to Wikipedia, meta 
 
 Basically, anything that can act upon your program, modify it or use its own structure as data can be considered meta programming. Also, as [Dr. Axel Rauschmayer brilliantly noticed](http://www.2ality.com/2014/12/es6-proxies.html): "all of the `Object.*` methods can be considered meta programming functionality".
 
-<br>
+
 
 ## **Listing Properties of an Object**
 
@@ -56,7 +56,7 @@ console.log(getFruitsDescription(smallBasket)); // This basket has: strawberries
 
 You could also have used `for (let prop in obj)` for that. In that case `prop` would be the the name of each property and you could access `prop`'s value by using `obj[prop]`.
 
-<br>
+
 
 ## **Property Descriptors**
 
@@ -132,7 +132,7 @@ console.log(tropicalBasket.color); // 'green'
 console.log(tropicalBasket.owner); // 'Tarzan'
 ```
 
-<br>
+
 
 ## Using custom `getter` functions
 
@@ -185,7 +185,7 @@ Using custom `getter` functions can be fun, but you must take care when using th
 1. They will be called whenever you access a property, whether or not you're using it's value. This can be very dangerous if your getter functions have side-effects.
 2. If you're accessing it too often and doing heavy operations or recalculating things you may have a performance decrease, so you need to analyze each situation carefully. If you would need to redefine a property too often and would access it only a few times this will be a great choice since you will only calculate the property you would need to change everytime when you really want its value, as it happens on our fruits basket example. If we were adding and removing fruits all the time and resetting the `weight` property we would have a performance decrease, but since we want to be able to add and remove fruits frequently and retrieve the weight only a few times, it's better to get it "on-demand".
 
-<br>
+
 
 ## Using custom `setter` functions
 
@@ -240,7 +240,7 @@ console.log(tropicalBasket.secondIdentifier); // 'thing'
 
 Please notice that you cannot reassign to the property you are setting inside your own `setter` function, otherwise it will end up calling itself infinitely.
 
-<br>
+
 
 ## The Easy Way
 
@@ -271,7 +271,7 @@ console.log(fruitsBasket.firstIdentifier); // 'nice'
 console.log(fruitsBasket.secondIdentifier); // 'thing'
 ```
 
-<br>
+
 
 ## Some Cool Ideas
 
@@ -320,7 +320,7 @@ If you want to see the source code for how this is done inside the library you c
 
 Also, feel free to contribute!
 
-<br>
+
 
 ## Coming up soon...
 

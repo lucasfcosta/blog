@@ -7,7 +7,7 @@ flag: 🇧🇷
 tags : javascript errors stack traces
 ---
 
-<br>
+
 
 Hi, everyone! After a few weeks without writing about JavaScript, it's about time we talk about it again!
 
@@ -19,7 +19,7 @@ Manipulating stack traces lets you clean up unuseful data and focus on what matt
 
 **This blog post may seem too obvious in its beginning but when we get to start manipulating stack traces it gets pretty complicated, so make sure you have a good understanding of the previous content before moving to that section**.
 
-<br>
+
 
 ## **How The Call Stack Works**
 
@@ -135,7 +135,7 @@ Trace
 
 In a nutshell: you call things and they get pushed to the top of the stack. When they finish running they get popped out of it. Simple as that.
 
-<br>
+
 
 ## **The Error Object and Error Handling**
 
@@ -280,7 +280,7 @@ new Promise(function(resolve, reject) {
 });
 ```
 
-<br>
+
 
 ## **Manipulating Stack Traces**
 
@@ -375,7 +375,7 @@ When we passed `b` to the `Error.captureStackTraceFunction` it hid `b` itself an
 
 Now you may be asking yourself: "why is this useful?". This is useful because you can use it to hide internal implementation details that are not relevant to your users. In Chai, for example, we use it to avoid showing our users irrelevant details about the way we implement checks and assertions themselves.
 
-<br>
+
 
 ## **Stack Trace Manipulation in The Real World**
 
@@ -506,7 +506,7 @@ This may seem a bit complicated, so let's review what happens inside Chai we wan
 
 **I also highly recommend you to read [this comment by @meeber](https://github.com/chaijs/chai/pull/922/files#r100704209) in order to understand it.**
 
-<br>
+
 
 ## **Translations**
 

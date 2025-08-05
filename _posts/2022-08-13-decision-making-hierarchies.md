@@ -25,7 +25,7 @@ Finally, I'll advise on how to decentralize effectively. In this section, I'll i
 
 As usual, I've included a small summary at this post's end to ensure you've got it all right.
 
-<br>
+
 
 # The dynamics of decision-making
 
@@ -90,7 +90,7 @@ Furthermore, the greater the distance between the sensors and the decision-maker
 The same principles apply to product developers. If every product decision needs to be escalated all the way up to the CEO, the more likely it will be for the CEO to make decisions based on out-of-date information. Additionally, by the time the CEO's decision reaches the developers themselves, it may be that this decision is not optimal anymore.
 
 
-<br>
+
 
 ## Likelihood of corrupting information
 
@@ -110,7 +110,7 @@ As you add hops in human communication, the more likely it is for the receiver t
 By now, you're solving a problem you've created yourself by adding too many communication hops. Instead, it would be much better if you avoided unnecessary communication so that you don't have to add redundancy mechanisms.
 
 
-<br>
+
 
 # When to centralize and when to decentralize
 
@@ -123,7 +123,7 @@ There are three factors to consider when deciding whether to move decision-makin
 In this section, I'll cover each of them and use a few illustrative examples to demonstrate how to apply each of these heuristics.
 
 
-<br>
+
 
 ## 1. Response time
 
@@ -144,7 +144,7 @@ Similarly, a product developer's goals should align with the company goals set b
 In any case, it may be helpful to bring CEOs and other high-level executives closer to the customer more frequently. That way, they can collect precise and uncorrupted information about the product's performance and customer satisfaction and incorporate that into their high-level strategy. Stripe does this brilliantly, for example.
 
 
-<br>
+
 
 ## 2. Resource pricing
 
@@ -161,7 +161,7 @@ The larger the price of the requested resources, the further up top the request 
 Conversely, when a request is cheap, the team should be autonomous enough to buy it. Imagine, for example, having to send a business plan to your CEO to acquire an EC2 micro. Painful, isn't it?
 
 
-<br>
+
 
 ## 3. Demand variability
 
@@ -199,7 +199,7 @@ If you don't mind adding complexity, mixing both strategies is possible, althoug
 Conversely, when a resource's demand is frequent, it's worth bundling that resource into the team so that one can cut unnecessary communication channels and thus reduce response time. That's the principle behind multi-disciplinary teams.
 
 
-<br>
+
 
 
 # How to decentralize decision-making successfully
@@ -217,7 +217,7 @@ There's also a third control variable which must be consistent across all levels
 
 In this section, I'll cover these three control variables.
 
-<br>
+
 
 ## 1. Prescriptiveness
 
@@ -241,7 +241,7 @@ In a fintech, for example, the executives up-top don't need to know about every 
 > That's precisely how OKRs are supposed to work. Organizations which make good use of OKRs will ensure that the OKRs at the top will feed into the more granular and prescriptive OKRs at the bottom.
 > Although I'm not necessarily a big fan of prescriptive methods such as this, its principles are sound.
 
-<br>
+
 
 ## 2. Resource allocation
 
@@ -260,7 +260,7 @@ According to Reinertsen, because of a particular deal, Boeing aimed to reduce th
 <a target="_blank" class="image-link" href="/assets/decision-making/budget-hierarchy.png"><img style="margin-bottom: -18px;" src="/assets/decision-making/budget-hierarchy.png" alt=""></a>
 <center style="font-size: 0.8em; margin-bottom: 32px;"><i>How budgets change depending on a node's hierarchical position</i></center>
 
-<br>
+
 
 ## 3. Culture
 
@@ -275,7 +275,7 @@ It's also worth highlighting that culture is not only about how employees behave
 Organizations with a customer-centric culture, for example, will focus on their customer's feedback above all else. Therefore, they'll ship sooner, talk to their customers more often, and, consequently, will probably make more money.
 
 
-<br>
+
 
 # Putting it all together
 
@@ -313,7 +313,7 @@ The lower a node's hierarchical position, the fewer resources they receive. Such
 
 An organization's culture drives each employee's behaviour and allows them to make decisions aligned to the organization's strategy and predict how fellow employees will behave, enhancing collaboration. Organizations with a customer-centric culture, for example, will focus on their customer's feedback above all else. Therefore, they'll ship sooner, talk to their customers more often, and, consequently, will probably make more money.
 
-<br>
+
 
 # Recommended content
 
@@ -322,7 +322,7 @@ An organization's culture drives each employee's behaviour and allows them to ma
 * [Second Generation Lean Product Development Flow — Donald G. Reinertsen](https://www.youtube.com/watch?v=L6v6W7jkwok&ab_channel=AdventureswithAgile)
 * [How high capacity utilisation hurts a team's performance](https://lucasfcosta.com/2022/06/12/measure-queues-not-cycle-time.html) — [Lucas da Costa](https://twitter.com/thewizardlucas)
 
-<br>
+
 
 # Wanna talk?
 

@@ -16,7 +16,7 @@ GUIs are, of course, very useful for a great variety of applications and plain-t
 To mitigate this problem **GUIs tend to contain features that many of their users don't need**.
 
 > "Bloatware is software that has unnecessary features that use large amounts of memory and RAM. Software comes to be known as bloatware when it becomes so unwieldy that its functionality is drowned out by its useless features. This is also known as software bloat."
-> <br>— [Techopedia](https://www.techopedia.com/definition/4237/bloatware)
+> — [Techopedia](https://www.techopedia.com/definition/4237/bloatware)
 
 [On the other hand, the terminal encourages people to write programs that do one thing and do it well and programs that work together](https://homepage.cs.uri.edu/~thenry/resources/unix_art/ch01s06.html).
 

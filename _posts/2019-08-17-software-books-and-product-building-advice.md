@@ -36,7 +36,7 @@ Even in the publishing industry, the cost of failure is factored into the pricin
 In the realm of software engineering, there is one major practice which impacts your ability to deliver the right product in a reasonable amount of time: delivering early and delivering often. Enterprises call it Continous Delivery. I don't wear suits, so I call it *"ship it"*.
 
 
-<br>
+
 
 ## Delivering often de-risks projects
 
@@ -51,7 +51,7 @@ It may be the case that you only got about half of your decisions wrong, but eve
 Delivering early decreases risk because it allows you to make fewer assumptions at a time. When you build a product in small steps, you take less time to find out whether you were wrong. [When you fail, it happens faster and costs less](https://www.bloomberg.com/news/articles/2007-06-24/fail-fast-fail-cheap).
 
 
-<br>
+
 
 ## Delivering often generates more value
 
@@ -66,7 +66,7 @@ By delivering earlier, your code provides value for more time. Delivered code pr
 Anyone who thinks passive income is a great idea should also believe that delivering early is a great idea. Allowing your code to rot in a VCS is the same as letting your money [lose its value](https://www.independent.co.uk/news/business/news/pound-v-euro-dollar-live-sterling-low-brexit-a9053586.html) in your bank account. Your money can work for you while you sleep in the same way that your code can deliver value to your customers without you having to do anything other than deploying it.
 
 
-<br>
+
 
 ## Delivering often makes planning easier and better
 
@@ -79,7 +79,7 @@ Because you need to ensure tasks will be shippable when they're done, you are fo
 Smaller tasks have fewer hidden requirements, which makes programmers have to revisit work less often. When work is more streamlined, programmers become happier, and having happy programmers is important too. Happy programmers don't quit, so you won't have to spend money on hiring and training someone to replace them.
 
 
-<br>
+
 
 ## Delivering often makes deploys less risky
 
@@ -94,7 +94,7 @@ Smaller deliveries also reduce the context needed for deployments, which also re
 **Humans are not good at remembering things; humans are good at solving problems. Optimise for humans. Machines can't code yet.**
 
 
-<br>
+
 
 ## Delivering often makes you focus on what matters
 
@@ -107,7 +107,7 @@ Building less helps you prove that what you have made is valuable before spendin
 Don't be concerned about not having time to optimise or change a feature later. **If you didn't go back to it, it's because it didn't matter**. Every time you don't go back to improve something, you win. It's evidence that it would have been a waste of time to have it done in the first place.
 
 
-<br>
+
 
 ## If you are in the publishing business
 
