@@ -4,12 +4,25 @@ import path from 'path';
 
 const postsDirectory = path.join(process.cwd(), '..', '_posts');
 const reveriesDirectory = path.join(process.cwd(), '..', '_reveries');
+const talksDirectory = path.join(process.cwd(), '..', '_talks');
 
 export interface Post {
   slug: string;
   title: string;
   author: string;
   place: string;
+  flag: string;
+  date: string;
+  tags?: string;
+  content: string;
+  excerpt?: string;
+}
+
+export interface Talk {
+  slug: string;
+  title: string;
+  author: string;
+  event: string;
   flag: string;
   date: string;
   tags?: string;
@@ -95,6 +108,47 @@ export function getAllReveries(): Post[] {
     return allReveriesData.sort((a, b) => (a.date > b.date ? -1 : 1));
   } catch (error) {
     console.error('Error reading reveries:', error);
+    return [];
+  }
+}
+
+export function getAllTalks(): Talk[] {
+  try {
+    const fileNames = fs.readdirSync(talksDirectory);
+    const allTalksData = fileNames
+      .filter((name) => name.endsWith('.md') || name.endsWith('.markdown'))
+      .map((fileName) => {
+        // Extract slug from filename (remove date prefix and extension)
+        const slug = fileName.replace(/^\d{4}-\d{2}-\d{2}-/, '').replace(/\.(md|markdown)$/, '');
+        
+        // Read markdown file as string
+        const fullPath = path.join(talksDirectory, fileName);
+        const fileContents = fs.readFileSync(fullPath, 'utf8');
+        
+        // Use gray-matter to parse the post metadata section
+        const matterResult = matter(fileContents);
+        
+        // Extract date from filename
+        const dateMatch = fileName.match(/^(\d{4}-\d{2}-\d{2})-/);
+        const date = dateMatch ? dateMatch[1] : '';
+        
+        return {
+          slug,
+          date,
+          title: matterResult.data.title || '',
+          author: matterResult.data.author || '',
+          event: matterResult.data.event || '',
+          flag: matterResult.data.flag || '',
+          tags: matterResult.data.tags || '',
+          content: matterResult.content,
+          excerpt: matterResult.data.excerpt || '',
+        } as Talk;
+      });
+
+    // Sort talks by date (newest first)
+    return allTalksData.sort((a, b) => (a.date > b.date ? -1 : 1));
+  } catch (error) {
+    console.error('Error reading talks:', error);
     return [];
   }
 }
