@@ -10,10 +10,20 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   
-  // No experimental config needed for Pages Router
-  
   // Configure page extensions to include MDX
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
+  
+  // Webpack configuration to handle fs module
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        path: false,
+      };
+    }
+    return config;
+  },
 };
 
 export default nextConfig;
