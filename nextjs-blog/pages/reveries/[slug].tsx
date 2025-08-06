@@ -34,7 +34,7 @@ export default function ReveriePage({ reverie, mdxSource }: ReveriePageProps) {
   const reverieUrl = `${siteConfig.url}/reveries/${reverie.slug}`;
 
   return (
-    <Layout title={reverie.title} description={reverie.excerpt || ''}>
+    <Layout title={reverie.title} description={reverie.description || ''}>
       <div className="post">
         <h1 className="post-title">{reverie.title}</h1>
 

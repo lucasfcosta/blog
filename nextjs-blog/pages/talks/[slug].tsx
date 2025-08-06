@@ -33,7 +33,7 @@ export default function TalkPage({ talk, mdxSource }: TalkPageProps) {
   const talkUrl = `${siteConfig.url}/talks/${talk.slug}`;
 
   return (
-    <Layout title={talk.title} description={talk.excerpt}>
+    <Layout title={talk.title} description={talk.description}>
       <div className="post">
         <h1 className="post-title">{talk.title}</h1>
 

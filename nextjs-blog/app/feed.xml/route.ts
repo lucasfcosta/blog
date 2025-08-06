@@ -38,8 +38,8 @@ export async function GET() {
     // Convert YYYY-MM-DD date to proper Date object
     const postDate = new Date(post.date + 'T12:00:00.000Z');
     
-    // Create a clean description from excerpt or truncated content
-    let description = post.excerpt || '';
+    // Create a clean description from description or truncated content
+    let description = post.description || '';
     if (!description && post.content) {
       // Remove markdown and HTML, then truncate
       description = post.content

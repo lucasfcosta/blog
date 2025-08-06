@@ -33,7 +33,7 @@ export default function PostPage({ post, mdxSource }: PostPageProps) {
   const postUrl = `${siteConfig.url}/${post.slug}`;
 
   return (
-    <Layout title={post.title} description={post.excerpt}>
+    <Layout title={post.title} description={post.description}>
       <div className="post">
         <h1 className="post-title">{post.title}</h1>
 

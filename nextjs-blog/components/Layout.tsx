@@ -7,11 +7,21 @@ interface LayoutProps {
   children: React.ReactNode;
   title?: string;
   description?: string;
+  ogType?: string;
+  ogImage?: string;
 }
 
-export default function Layout({ children, title, description }: LayoutProps) {
+export default function Layout({ children, title, description, ogType, ogImage }: LayoutProps) {
+  // Note: ogImage is reserved for future image implementation
+  void ogImage; // Suppress unused variable warning
   const pageTitle = title ? `${title}` : siteConfig.title;
   const pageDescription = description || siteConfig.description;
+  const pageType = ogType || 'website';
+  
+  // Construct current page URL (for server-side rendering, we'll use a placeholder)
+  const currentUrl = typeof window !== 'undefined' ? 
+    `${siteConfig.url}${window.location.pathname}` : 
+    siteConfig.url;
 
   return (
     <>
@@ -23,7 +33,20 @@ export default function Layout({ children, title, description }: LayoutProps) {
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
         
-
+        {/* OpenGraph meta tags */}
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:type" content={pageType} />
+        <meta property="og:url" content={currentUrl} />
+        <meta property="og:site_name" content={siteConfig.title} />
+        <meta property="og:locale" content="en_US" />
+        
+        {/* Twitter Card meta tags */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content={`@${siteConfig.twitterUsername}`} />
+        <meta name="twitter:creator" content={`@${siteConfig.twitterUsername}`} />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
         
         {/* KaTeX for math */}
         <link 
@@ -33,7 +56,7 @@ export default function Layout({ children, title, description }: LayoutProps) {
           crossOrigin="anonymous" 
         />
         
-        <link rel="canonical" href={`${siteConfig.url}${typeof window !== 'undefined' ? window.location.pathname : ''}`} />
+        <link rel="canonical" href={currentUrl} />
         <link rel="alternate" type="application/rss+xml" title={siteConfig.title} href="/feed.xml" />
         
         {/* Favicons */}

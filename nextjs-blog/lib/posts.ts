@@ -15,7 +15,7 @@ export interface Post {
   date: string;
   tags?: string;
   content: string;
-  excerpt?: string;
+  description?: string;
 }
 
 export interface Talk {
@@ -27,7 +27,7 @@ export interface Talk {
   date: string;
   tags?: string;
   content: string;
-  excerpt?: string;
+  description?: string;
 }
 
 export function getAllPosts(): Post[] {
@@ -59,7 +59,7 @@ export function getAllPosts(): Post[] {
           flag: matterResult.data.flag || '',
           tags: matterResult.data.tags || '',
           content: matterResult.content,
-          excerpt: matterResult.data.excerpt || '',
+          description: matterResult.data.description || '',
         } as Post;
       });
 
@@ -100,7 +100,7 @@ export function getAllReveries(): Post[] {
           flag: matterResult.data.flag || '',
           tags: matterResult.data.tags || '',
           content: matterResult.content,
-          excerpt: matterResult.data.excerpt || '',
+          description: matterResult.data.description || '',
         } as Post;
       });
 
@@ -141,7 +141,7 @@ export function getAllTalks(): Talk[] {
           flag: matterResult.data.flag || '',
           tags: matterResult.data.tags || '',
           content: matterResult.content,
-          excerpt: matterResult.data.excerpt || '',
+          description: matterResult.data.description || '',
         } as Talk;
       });
 
