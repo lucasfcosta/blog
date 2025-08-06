@@ -1,3 +1,5 @@
+import Script from 'next/script';
+
 export default function Footer() {
   return (
     <>
@@ -7,6 +9,19 @@ export default function Footer() {
           <span className="copyleft-motto">The internet is free and so is my content.</span>
         </span>
       </div>
+
+      {/* Analytics Scripts */}
+      <Script
+        src="https://blogaudience.lucasfcosta.com/latest.js"
+        strategy="afterInteractive"
+      />
+      <Script
+        src="https://blogaudience.lucasfcosta.com/auto-events.js"
+        strategy="afterInteractive"
+      />
+      <noscript>
+        <img src="https://blogaudience.lucasfcosta.com/noscript.gif" alt="" />
+      </noscript>
     </>
   );
 }

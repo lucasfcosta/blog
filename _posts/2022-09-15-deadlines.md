@@ -7,20 +7,6 @@ flag: 🇬🇧
 tags: agile process practices
 ---
 
-<div id="embed-iframe"></div>
-
-<script>
-window.onSpotifyIframeApiReady = (IFrameAPI) => {
-  let element = document.getElementById('embed-iframe');
-  let options = {
-      uri: 'spotify:episode:4BO7T3x0riD98vKeEK3x6o',
-      height: 100,
-    };
-  let callback = (EmbedController) => {};
-  IFrameAPI.createController(element, options, callback);
-};
-</script>
-
 Deadlines are the bane of every software engineer's existence. We've all been there: the project is "due" in two weeks, and we're nowhere near done. So we pull all-nighters, do poor testing, and cut corners just to get it done. And what happens? The project is buggy, the customers are unhappy, and we're all exhausted.
 
 Sometimes, the software will be too buggy even for a software engineer's standard. When that happens, managers set a new deadline, revealing the first one shouldn't have existed in the first place. Now, guess what happens if you miss the second deadline? Exactly right, you get a new one. Don't you love deadlines?

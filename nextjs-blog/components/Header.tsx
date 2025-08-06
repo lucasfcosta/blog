@@ -2,6 +2,13 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { siteConfig } from '../lib/config';
 
+// Type for the analytics function
+declare global {
+  interface Window {
+    sa_event?: (eventName: string) => void;
+  }
+}
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -20,14 +27,22 @@ export default function Header() {
           <a className="navItem" href={`mailto:${siteConfig.email}`}>Email</a>
           <a 
             className="navItem" 
-            onClick={() => {/* Analytics event can be added later */}}
+            onClick={() => {
+              if (typeof window !== 'undefined' && window.sa_event) {
+                window.sa_event('header_twitter_follow');
+              }
+            }}
             href={`https://twitter.com/${siteConfig.twitterUsername}`}
           >
             Twitter
           </a>
           <a 
             className="navItem" 
-            onClick={() => {/* Analytics event can be added later */}}
+            onClick={() => {
+              if (typeof window !== 'undefined' && window.sa_event) {
+                window.sa_event('header_github_follow');
+              }
+            }}
             href={`https://github.com/${siteConfig.githubUsername}`}
           >
             Github
@@ -47,7 +62,11 @@ export default function Header() {
           <Link className="navItem" href="/about">About Me</Link>
           <a 
             className="navItem" 
-            onClick={() => {/* Analytics event can be added later */}} 
+            onClick={() => {
+              if (typeof window !== 'undefined' && window.sa_event) {
+                window.sa_event('header_rss');
+              }
+            }} 
             href="/feed.xml"
           >
             RSS
@@ -88,21 +107,33 @@ export default function Header() {
             <a className="drawer-item" href={`mailto:${siteConfig.email}`}>Email</a>
             <a 
               className="drawer-item" 
-              onClick={() => {/* Analytics event can be added later */}}
+              onClick={() => {
+                if (typeof window !== 'undefined' && window.sa_event) {
+                  window.sa_event('drawer_twitter_follow');
+                }
+              }}
               href={`https://twitter.com/${siteConfig.twitterUsername}`}
             >
               Twitter
             </a>
             <a 
               className="drawer-item" 
-              onClick={() => {/* Analytics event can be added later */}}
+              onClick={() => {
+                if (typeof window !== 'undefined' && window.sa_event) {
+                  window.sa_event('drawer_github_follow');
+                }
+              }}
               href={`https://github.com/${siteConfig.githubUsername}`}
             >
               Github
             </a>
             <a 
               className="drawer-item" 
-              onClick={() => {/* Analytics event can be added later */}} 
+              onClick={() => {
+                if (typeof window !== 'undefined' && window.sa_event) {
+                  window.sa_event('drawer_rss');
+                }
+              }} 
               href="/feed.xml"
             >
               RSS
