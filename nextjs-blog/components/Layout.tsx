@@ -9,14 +9,16 @@ interface LayoutProps {
   description?: string;
   ogType?: string;
   ogImage?: string;
+  author?: string;
 }
 
-export default function Layout({ children, title, description, ogType, ogImage }: LayoutProps) {
+export default function Layout({ children, title, description, ogType, ogImage, author }: LayoutProps) {
   // Note: ogImage is reserved for future image implementation
   void ogImage; // Suppress unused variable warning
   const pageTitle = title ? `${title}` : siteConfig.title;
   const pageDescription = description || siteConfig.description;
   const pageType = ogType || 'website';
+  const pageAuthor = author || siteConfig.fullName;
   
   // Construct current page URL (for server-side rendering, we'll use a placeholder)
   const currentUrl = typeof window !== 'undefined' ? 
@@ -32,6 +34,8 @@ export default function Layout({ children, title, description, ogType, ogImage }
         
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
+        <meta name="author" content={pageAuthor} />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         
         {/* OpenGraph meta tags */}
         <meta property="og:title" content={pageTitle} />
