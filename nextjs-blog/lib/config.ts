@@ -3,7 +3,7 @@ export const siteConfig = {
   title: 'Lucas F. Costa',
   fullName: 'Lucas F. Costa',
   email: 'lucas@lucasfcosta.com',
-  description: 'Software engineering, culture and life in general.',
+  description: 'Hot takes and cold truths on software, startups, and the lies we tell ourselves.',
   subtitle: 'Human thoughts about exact sciences',
   baseUrl: '',
   url: 'https://lucasfcosta.com',
