@@ -10,7 +10,7 @@ tags : opensource github
 Recently I've seen many people complaining on Twitter about Open Source development and I would like to talk about some of these complaints.
 Most of them are not healthy for the community and we should change that.
 
-<br>
+<br />
 
 ## People opening issues are just trying to help
 
@@ -22,7 +22,7 @@ In case you disagree let them know and explain why, that's the whole purpose of 
 
 Open source decreases the distance between the user and the developer and that should be used to improve the quality of our software, let's take advantage of that.
 
-<br>
+<br />
 
 ## Not anybody that opens an issue wants to solve it, and that is okay
 
@@ -36,7 +36,7 @@ The whole point of doing open source and free software is helping people and dem
 
 I remember when I was just starting out and I wanted to help a project and these kinds of comments helped me a lot! When you create a healthy environment for people to start contributing they will contribute more times, you will have less work to do alone and you will have more brains thinking on the project, which also increases its quality.
 
-<br>
+<br />
 
 ## People are not their code
 
@@ -54,7 +54,7 @@ One of my first PRs to a big project was sent to `NodeSchool` and I was asked to
 
 Let's help other people and share knowledge, open source is great and it's all about people.
 
-<br>
+<br />
 
 If you have any cool stories regarding open source projects, let me know on the comments or send me a tweet at [@lfernandescosta](https://twitter.com/lfernandescosta).
 

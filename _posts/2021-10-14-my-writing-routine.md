@@ -117,7 +117,7 @@ Every single day, I registered in the calendar what I had written that day. Addi
 
 Conversely, if there was a day I didn't write (which were few), I registered in the calendar that I was lazy that day.
 
-<BlogImage src="/assets/calendar-book.jpg" alt="A calendar for April 2020, where each square shows what I did that day." caption="This is my calendar for April 2020. In it, you can see what I did every single day. On the 10th of April, I couldn't get anything done and gave up, so I wrote \"lazy\" on that square." />
+<BlogImage src="/assets/calendar-book.jpg" alt="A calendar for April 2020, where each square shows what I did that day." caption={`This is my calendar for April 2020. In it, you can see what I did every single day. On the 10th of April, I couldn't get anything done and gave up, so I wrote "lazy" on that square.`} />
 
 I didn't allow myself to make up excuses. If I didn't write, I was lazy, and that was it. I had to accept my weakness and move on.
 

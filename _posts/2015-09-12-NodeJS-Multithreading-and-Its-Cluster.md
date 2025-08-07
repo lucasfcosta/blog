@@ -48,7 +48,7 @@ Of course using or not a non-blocking I/O solution depends on the problem you ar
 
 Let's start with a simple example: we're going to create 5 threads and get them to notify their own Process ID.
 
-{% highlight javascript %}
+```javascript
 var cluster = require('cluster');
 
 var threads = 5;
@@ -64,7 +64,7 @@ if(cluster.isMaster) {
   console.log('I am the thread: ' + process.pid);
   process.exit(1);
 }
-{% endhighlight %}
+```
 
 **Simple isn't it?**
 
@@ -81,7 +81,7 @@ Unfortunately (or not) no. I'm sorry but there are some details I really need to
 If you don't wan't this to happen you can use the `cluster.isMaster` and `cluster.isWorker` properties to differentiate between the two kinds of threads or you can create a new .js file an then use cluster's `setupMaster()` method to configure your workers to use it. Let's say you've got a `myWorkerCode.js` file and you want your worker threads to run it, you would write something like:
 
 #### threadCreator.js
-{% highlight javascript %}
+```javascript
 var cluster = require('cluster');
 
 var threads = 5;
@@ -93,13 +93,13 @@ cluster.setupMaster({
 for (var i = 0; i < threads; i++) {
   cluster.fork();
 }
-{% endhighlight %}
+```
 
 #### worker.js
-{% highlight javascript %}
+```javascript
 console.log('PID' + process.pid + ' says: I am running on a separate file');
 process.exit(1);
-{% endhighlight %}
+```
 
 Now when running `threadCreator.js` you will see '`PID XXXX says: I am running on a separate file`' printed five times on your console.
 
@@ -107,7 +107,7 @@ Now when running `threadCreator.js` you will see '`PID XXXX says: I am running o
 
 **The last but not least thing** you should know is that workers cannot directly see their masters, this means you won't be able to send direct messages from workers to their masters. How to overcome this? When creating worker threads you've gotta watch for the messages they send themselves, then you can use this into your current thread. Just like:
 
-{% highlight javascript %}
+```javascript
 var cluster = require('cluster');
 var threads = 5;
 
@@ -137,7 +137,7 @@ if (cluster.isMaster) {
   process.send('I am the thread: ' + process.pid);
   process.exit(1);
 }
-{% endhighlight %}
+```
 
 
 
@@ -147,7 +147,7 @@ Well, let's say we've got a CPU intensive operation like sorting a bunch of enor
 
 What we're gonna do is simple: we're going to create other threads and split the processing between them, when every thread has finished the master will print the elapsed time and kill itself. Do some changes to the code below and you will be able to notice the performance difference between using one or many threads.
 
-{% highlight javascript %}
+```javascript
 var Sorter = require('sugar-sorting');
 var cluster = require('cluster');
 
@@ -229,7 +229,7 @@ if (cluster.isMaster) {
     process.send(arraysIHave);
   });
 }
-{% endhighlight %}
+```
 
 
 

@@ -37,7 +37,7 @@ Let's have a humble start and use a common and easy to understand example: the *
 
 Our function will calculate the Nth Fibonnacci number recursively. Considering the starting numbers of the sequence as 0 and 1, this is the function we're going to use:
 
-{% highlight javascript %}
+```javascript
 // This calculates the Nth number of the fibonacci sequence (the index starts at 0)
 function fibonacci(n) {
   timesCalculated++;
@@ -47,11 +47,11 @@ function fibonacci(n) {
   else
     return fibonacci(n - 1) + fibonacci(n - 2);
 }
-{% endhighlight %}
+```
 
 Now that you've seen our raw function, let me show you the whole code we will execute so that you can see every meaningful data printed to the console:
 
-{% highlight javascript %}
+```javascript
 // Change the value below multiple times and test this code
 var fIndex = 20;
 
@@ -75,7 +75,7 @@ var endTime = Date.now();
 
 console.log('Elapsed Time: ' + (endTime - startTime) + 'ms.');
 console.log('Calculated fibonacci ' + timesCalculated + ' times.');
-{% endhighlight %}
+```
 
 Please notice that I've also created a counter in order to know how many times we've calculated the `fibonacci` value for that index. I also measured the elapsed time between the start and the end of the calculation so that we can compare the results before and after the use of the memoization technique.
 
@@ -92,7 +92,7 @@ Give it a chance and **run the code above** (preferrably on Node.js so that your
 
 We are now going to store the results for the operations happening inside our function on an outer function, which also contains our main `fibonacci` calculation algorithm. They key for caching each result will be the input number that was provided. Take a look at our new code:
 
-{% highlight javascript %}
+```javascript
 function fibonacci(n) {
   // We will store our results here
   var resultsCache = {};
@@ -119,7 +119,7 @@ function fibonacci(n) {
 
   return innerFibonacci(n);
 }
-{% endhighlight %}
+```
 
 Basically, it does the same thing as before, it is still recursive, but this time, instead of calling itself and calculating a new result for every number, it checks if that input has already been used and then, if it was, it retrieves the result for that. 
 
@@ -127,7 +127,7 @@ For this to work, I just had to create an object called `resultsCache` which has
 
 Well, now we've got our function let's add a little bit of code in order to measure it's performance:
 
-{% highlight javascript %}
+```javascript
 // Change the value below multiple times and test this code
 var fIndex = 20;
 
@@ -169,7 +169,7 @@ var endTime = Date.now();
 
 console.log('Elapsed Time: ' + (endTime - startTime) + 'ms.');
 console.log('Calculated fibonacci ' + timesCalculated + ' times.');
-{% endhighlight %}
+```
 
 So, we've got the same algorithm applied both with and without memoization, let's run both and compare the results:
 
@@ -210,7 +210,7 @@ At this point you may be thinking if there is an easier way to create memoized f
 Thanks to JavaScript awesome language design we are able to return functions from functions, so we will use this "feature" to return a function which has a cache property inside itself. The code I'm going to show you here was heavily inspired by [this article written by Addy Osmany](https://addyosmani.com/blog/faster-javascript-memoization/) in which he talks about memoization techniques and performance. This may not be the best implementation when it comes do performance, but I'm keeping it simple because I want readers to comprehend memoization and its benefits as a whole instead of implementing the faster available algorithm.
 
 
-{% highlight javascript %}
+```javascript
 function memoize(fun) {
   return function() {
     // We will use a hash made using arguments to map our results
@@ -235,11 +235,11 @@ function memoize(fun) {
     return fun.memoize[hash] = fun.apply(this, arguments);
   }
 }
-{% endhighlight %}
+```
 
 That's it! Now we're able to use the memoization technique on any function just by passing it to our `memoize` function. Just like:
 
-{% highlight javascript %}
+```javascript
   // This could be any function
   function add(a, b) {
     return a + b;
@@ -247,11 +247,11 @@ That's it! Now we're able to use the memoization technique on any function just 
 
   // `memoizedAdd` now does the same thing as `add`, but it is memoized
   var memoizedAdd = memoize(add);
-{% endhighlight %}
+```
 
 How about we use this technique with our old fibonacci function? Be careful, just assigning the memoized function to a new variable won't be enough, because it's a recursive function, what we've really got to do is replace itself with the new memoized function. The whole code would look like this:
 
-{% highlight javascript %}
+```javascript
 function fibonacci(n) {
  if (n < 2)
    return n;
@@ -281,7 +281,7 @@ fibonacci = memoize(fibonacci);
 
 // And now...
 console.log(fibonacci(90));
-{% endhighlight %}
+```
 
 And now we're finally done. I hope you have enjoyed this wild ride through the world of memoization. Before saying goodbye I would like to add some really useful links in which this article was based, they're all really cool and I'm sure you will learn something with them:
 

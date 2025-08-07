@@ -13,7 +13,7 @@ In this post I'm gonna teach you how to test your software using [Gulp](http://g
 
 You will also learn how to upload your code coverage to [coveralls.io](https://coveralls.io) so you can keep track of it and have a nice badge on your repository's README.md file.
 
-<br>
+<br />
 
 # ***LET'S START THIS, FAST***
 
@@ -27,18 +27,18 @@ Open your terminal and run `npm init`. Fill in all the requested information and
 
 Now we're going to run these commands in order to **install every module we need**:
 
-{% highlight console %}
+```console
 $ npm install -g gulp
 $ npm install --save-dev gulp
 $ npm install --save-dev gulp-mocha   
 $ npm install --save-dev gulp-istanbul
-{% endhighlight %}
+```
 
 At this time you may be wondering: "*why did I install Gulp two times?*".  You did it because we need to have gulp available at the command line so we can run commands such as `gulp test`. Then you installed it using the `--save-dev` flag, which installs Gulp locally and saves it into your module's `devDependencies`, this means everyone who runs `npm install` at your module's directory will have Gulp downloaded so they can run the tasks you've created.
 
 After installing Gulp itself we installed [gulp-mocha](https://www.npmjs.com/package/gulp-mocha) to run our tests and at last, but not least, we have also installed [gulp-istanbul](https://github.com/SBoudrias/gulp-istanbul) so we can check our code coverage data.
 
-<br>
+<br />
 
 # ***Hey, wait, what about the module?***
 
@@ -47,7 +47,7 @@ Well observed, sir, we do not have the module's code yet. For this tutorial we w
 This is our module's code:
 
 ##### **coolModule.js**
-{% highlight javascript %}
+```javascript
 var coolModule = {};
 
 coolModule.doSum = function(a, b) {
@@ -59,11 +59,11 @@ coolModule.doSubtraction = function(a, b) {
 }
 
 module.exports = coolModule;
-{% endhighlight %}
+```
 
 Put your `coolModule.js` file inside a folder called `src`.
 
-<br>
+<br />
 
 # ***Okay, but we still have no tests...***
 
@@ -72,7 +72,7 @@ Don't worry, we will have some very soon.
 As we will use gulp-mocha to run tests, we're going to write a test file using mocha's features, obviously. These are our tests:
 
 ##### **tests.js**
-{% highlight javascript %}
+```javascript
 var coolModule = require('./index.js');
 var assert = require('chai').assert;
 
@@ -87,11 +87,11 @@ describe('Cool Module', function() {
         assert.strictEqual(result, 1);
     });
 });
-{% endhighlight %}
+```
 
 Put this `tests.js` file inside a folder called `test`.
 
-<br>
+<br />
 
 # ***Can we finally go on to gulp?***
 
@@ -102,7 +102,7 @@ Now we've got our module and our tests ready to run we will create some gulp tas
 Before writing actual tasks we will need to `require` some modules.
 
 ##### **gulpfile.js**
-{% highlight javascript %}
+```javascript
 var gulp = require('gulp');
 
 // Mocha, our test framework
@@ -110,12 +110,12 @@ var mocha = require('gulp-mocha');
 
 // Istanbul, our code coverage tool
 var istanbul = require('gulp-instanbul');
-{% endhighlight %}
+```
 
 Okay, now let's create a task called "pre-test". This task will be responsible for piping our module's files into istanbul, by doing this we will be able to know which parts of our code were tested and which weren't.
 
 ##### **gulpfile.js**
-{% highlight javascript %}
+```javascript
 gulp.task('pre-test', function() {
     // This tells gulp which files you want to pipe
     // In our case we want to pipe every `.js` file inside any folders inside `test`
@@ -124,12 +124,12 @@ gulp.task('pre-test', function() {
       // This overwrites `require` so it returns covered files
       .pipe(istanbul.hookRequire());
 });
-{% endhighlight %}
+```
 
 All we've gotta do now is create a task (that depends on the `pre-test` task) to actually run our tests. This is it:
 
 ##### **gulpfile.js**
-{% highlight javascript %}
+```javascript
 gulp.task('test', ['pre-test'], function() {
     // Here we're piping our `.js` files inside the `lib` folder
     gulp.src('lib/**/*.js')
@@ -138,12 +138,12 @@ gulp.task('test', ['pre-test'], function() {
         // Here we will create report files using the test's results
         .pipe(istanbul.writeReports());
 });
-{% endhighlight %}
+```
 
 Feel free to run your tests running `gulp test` on your terminal.
 The results will be located at a folder called `coverage`.
 
-<br>
+<br />
 
 # ***That's nice! How can I upload this to coveralls.io?***
 
@@ -156,7 +156,7 @@ Select your desired repository and turn on the activation button. When clicking 
 The last thing we should do is to create a very simple task using [gulp-coveralls](https://www.npmjs.com/package/gulp-coveralls) so we can send the coverage report to [coveralls.io](https://coveralls.io).
 
 ##### **gulpfile.js**
-{% highlight javascript %}
+```javascript
 // Don't forget to add this line to the top of your gulpfile.js
 var coveralls = require('gulp-coveralls');
 
@@ -165,13 +165,13 @@ gulp.task('coveralls', ['test'], function() {
     return gulp.src(__dirname + '/coverage/lcov.info')
       .pipe(coveralls());
 });
-{% endhighlight %}
+```
 
 Aaaaaaaaaaand we're finally done! Run `gulp coveralls` and you will get your coverage data uploaded to coveralls.
 
 **Oh, and before I forget, here comes a nice tip:** if you want to upload your coverage results only when running the coveralls task from a CI service, like [travis-ci](http://travis-ci.org/), your `coveralls` task should be something like this:
 
-{% highlight javascript %}
+```javascript
 gulp.task('coveralls', ['test'], function() {
     // If not running on a CI environment it won't send lcov.info to coveralls
     if (!process.env.CI) {
@@ -181,9 +181,9 @@ gulp.task('coveralls', ['test'], function() {
     return gulp.src(path.join(__dirname, 'coverage/lcov.info'))
       .pipe(coveralls());
 });
-{% endhighlight %}
+```
 
-<br>
+<br />
 
 # ***What do these `branch`, `statement`, `function`, `line` criteria mean?***
 
@@ -192,7 +192,7 @@ gulp.task('coveralls', ['test'], function() {
 * **Statement Coverage** indicates how many statements in the program were executed
 * **Line Coverage** indicates how many lines were executed
 
-<br>
+<br />
 
 # ***Is there anything else I should be aware of?***
 
@@ -200,7 +200,7 @@ Yes, there actually is!
 Inside `coverage/lcov-report` there's a file called `index.html`, if you are having trouble getting 100% coverage on any possible criteria such as branches, functions or lines you should open this with your favorite browser and then you will be able to navigate through your project's files and see which parts aren't being tested.
 
 
-<br>
+<br />
 
 **In this post you should've learned:**
 

@@ -117,7 +117,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   }
 
   // Process content to handle modern MDX components while preserving legacy HTML
-  let processedContent = post.content;
+  const processedContent = post.content;
   
   // Keep BlogImage components as-is for MDX to handle them
 
