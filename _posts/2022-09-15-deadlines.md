@@ -75,8 +75,7 @@ Imagine you have two sales teams. One produces unreproducible and unpredictable 
 
 In a system that awards bonuses to those who reach a $50,000 deadline, an erratic team that meets the deadline will receive rewards, regardless of whether they met the deadline by pure luck or working extra hours.
 
-<a target="_blank" class="image-link" href="/assets/deadlines/erratic-sales-team.png"><img style="margin-bottom: -18px;" src="/assets/deadlines/erratic-sales-team.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>An erratic team which meets a $50,000 dollar deadline</i></center>
+<BlogImage src="/assets/deadlines/erratic-sales-team.png" alt="Chart showing an erratic team which meets a $50,000 dollar deadline" caption="An erratic team which meets a $50,000 dollar deadline" />
 
 Because that team hasn't set a consistent baseline for performance, you can't simply increase its sales targets quarter by quarter. Doing that would be a recipe for failure. In that case, you'd rely on luck to achieve your goals because you don't have a predictable revenue machine.
 
@@ -91,8 +90,7 @@ As [W.E. Deming](https://en.wikipedia.org/wiki/W._Edwards_Deming) would put it:
 
 Now, compare that erratic team with a predictable team that continuously improves its performance but misses the $50,000 deadline.
 
-<a target="_blank" class="image-link" href="/assets/deadlines/consistent-sales-team.png"><img style="margin-bottom: -18px;" src="/assets/deadlines/consistent-sales-team.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>A consistent and predictable team which doesn't meet the $50,000 dollar deadline</i></center>
+<BlogImage src="/assets/deadlines/consistent-sales-team.png" alt="Chart showing a consistent and predictable team which doesn't meet the $50,000 dollar deadline" caption="A consistent and predictable team which doesn't meet the $50,000 dollar deadline" />
 
 Which team would you rather have in your organization?
 
@@ -176,15 +174,13 @@ Preemption points work well because they help you correct deviation from the des
 
 Unless there are regular checks and interventions, these minor deviations will accumulate. When that happens, features become entirely different from what they were initially intended to be. Therefore, you will either ship the wrong features or spend extra time correcting them.
 
-<a target="_blank" class="image-link" href="/assets/deadlines/back-to-baseline.png"><img style="margin-bottom: -18px;" src="/assets/deadlines/back-to-baseline.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>Preemption points bring variation back to baseline regularly</i></center>
+<BlogImage src="/assets/deadlines/back-to-baseline.png" alt="Chart showing how preemption points bring variation back to baseline regularly" caption="Preemption points bring variation back to baseline regularly" />
 
 One way to illustrate how these slight deviations accumulate over time is with a coin toss experiment, as Donald Reinertsen does in his book, Principles of Product development flow. In this experiment, you'll flip a coin plenty of times. For every toss, you'll add one to your total whenever heads come up and subtract one from it whenever tails come up.
 
 As you can see in the simulations below, which use increasingly greater numbers of tosses, the more tosses, the further above or below the zero axis the total will go — differently from what many people would expect.
 
-<a target="_blank" class="image-link" href="/assets/deadlines/coin-tosses-over-time.png"><img style="margin-bottom: -18px;" src="/assets/deadlines/coin-tosses-over-time.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>As the number of tosses increase, the total goes further and further from the baseline</i></center>
+<BlogImage src="/assets/deadlines/coin-tosses-over-time.png" alt="Chart showing coin tosses over time" caption="As the number of tosses increase, the total goes further and further from the baseline" />
 
 Preemption points act as if you were breaking down the number of coin tosses into smaller series of tosses. After each series, you work to bring the accumulated deviation back to baseline forcefully.
 

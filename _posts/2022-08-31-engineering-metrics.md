@@ -37,8 +37,7 @@ At the end of this post, there's also a short warning to help folks avoid misusi
 
 The best way to understand which metrics best represent an engineering team's performance is to model it as a queueing system. In this system, tasks come in on one end, and software comes out on the other. The team itself is the processing mechanism in the middle.
 
-<a target="_blank" class="image-link" href="/assets/eng-metrics/eng-queue.png"><img style="margin-bottom: -18px;" src="/assets/eng-metrics/eng-queue.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>In an engineering system, tasks come in on one end and valuable software comes out on the other</i></center>
+<BlogImage src="/assets/eng-metrics/eng-queue.png" alt="Diagram showing engineering system as a queue" caption="In an engineering system, tasks come in on one end and valuable software comes out on the other" />
 
 To monitor the performance of this system, we must attach metrics to its parts. That way, we'll understand how each part performs and how they influence one another.
 
@@ -46,20 +45,17 @@ Let's start by attaching metrics to the right and left sides.
 
 On the left side, where tasks come in, we have the _arrival rate_, which represents arrivals over time. On the right side, where tasks come out, we have the _departure rate_ — also called _throughput_, — which represents departure over time.
 
-<a target="_blank" class="image-link" href="/assets/eng-metrics/arrivals-and-departures"><img style="margin-bottom: -18px;" src="/assets/eng-metrics/arrivals-and-departures.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>The arrival rate determines how quickly tasks arrive on the left side, and the throughput determines how quickly tasks depart on the right side</i></center>
+<BlogImage src="/assets/eng-metrics/arrivals-and-departures.png" alt="Diagram showing arrivals and departures in a system" caption="The arrival rate determines how quickly tasks arrive on the left side, and the throughput determines how quickly tasks depart on the right side" />
 
 Whenever the arrival rate exceeds the system's departure rate, the number of items in the system — its WIP (work in progress) — increases. Therefore, queues form. When queues form, each item task takes increasingly longer to be done.
 
-<a target="_blank" class="image-link" href="/assets/eng-metrics/queues-increase-cycle-times.png"><img style="margin-bottom: -18px;" src="/assets/eng-metrics/queues-increase-cycle-times.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>The larger a system's queue, the longer teams will take to get to the queue's end</i></center>
+<BlogImage src="/assets/eng-metrics/queues-increase-cycle-times.png" alt="Diagram showing how queues increase cycle times" caption="The larger a system's queue, the longer teams will take to get to the queue's end" />
 
 The greater the difference between the arrival and departure rates, the more dramatic the rise in WIP will be. Consequently, the rate at which cycle times increase will be greater too.
 
 Another way to visualize this phenomenon is through a cumulative flow diagram. This diagram shows the cumulative number of tasks entering and leaving the system over time.
 
-<a target="_blank" class="image-link" href="/assets/eng-metrics/cfd-0.png"><img style="margin-bottom: -18px;" src="/assets/eng-metrics/cfd-0.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i></i></center>
+<BlogImage src="/assets/eng-metrics/cfd-0.png" alt="Cumulative flow diagram baseline" />
 
 The cumulative flow diagram is a helpful chart because it reveals an enormous amount of information about the team's performance at a glance.
 
@@ -69,13 +65,11 @@ As the _average_ arrival rate increases, the difference between the top and bott
 
 The chart below shows how these metrics change over time when the average arrival rate exceeds the average completion rate.
 
-<a target="_blank" class="image-link" href="/assets/eng-metrics/cfd-arrivals-greater-than-departures.png"><img style="margin-bottom: -18px;" src="/assets/eng-metrics/cfd-arrivals-greater-than-departures.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>When arrival rates are greater than departure rates, WIP increases over time, increasing the average cycle-times</i></center>
+<BlogImage src="/assets/eng-metrics/cfd-arrivals-greater-than-departures.png" alt="CFD showing arrivals greater than departures" caption="When arrival rates are greater than departure rates, WIP increases over time, increasing the average cycle-times" />
 
 A manager who wishes to make their team's cycle times more uniform can try matching the rate at which tasks enter the system to the rate at which they leave.
 
-<a target="_blank" class="image-link" href="/assets/eng-metrics/cfd-arrivals-equal-than-departures.png"><img style="margin-bottom: -18px;" src="/assets/eng-metrics/cfd-arrivals-equal-than-departures.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>When the average arrival rate equals the average departure rate, WIP remains constant, and so do cycle times</i></center>
+<BlogImage src="/assets/eng-metrics/cfd-arrivals-equal-than-departures.png" alt="CFD showing arrivals equal to departures" caption="When the average arrival rate equals the average departure rate, WIP remains constant, and so do cycle times" />
 
 That way, WIP remains constant, and so do cycle times.
 
@@ -97,29 +91,25 @@ For an engineer to deliver a task, they don't simply type away a bunch of code a
 
 Once again, we can model that process as a queueing system. The difference is that we're now dealing with a queueing system composed of multiple queues feeding one another.
 
-<a target="_blank" class="image-link" href="/assets/eng-metrics/multi-queue-system.png"><img style="margin-bottom: -18px;" src="/assets/eng-metrics/multi-queue-system.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>An engineering system modeled as a system composed of multiple queues feeding one another</i></center>
+<BlogImage src="/assets/eng-metrics/multi-queue-system.png" alt="Diagram showing multi-queue engineering system" caption="An engineering system modeled as a system composed of multiple queues feeding one another" />
 
 The advantage of modeling our engineering system as a multi-queue system is that we can still use the same metrics to analyze its behavior. Furthermore, we can still use cumulative flow diagrams to monitor its performance.
 
 Let's go ahead and plot a cumulative flow diagram for a multi-queue system. This time we'll break down the "in progress" band into multiple other bands representing the various queues, which are the different parts of our process.
 
-<a target="_blank" class="image-link" href="/assets/eng-metrics/multi-queue-cfd.png"><img style="margin-bottom: -18px;" src="/assets/eng-metrics/multi-queue-cfd.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>A cumulative flow diagram for a multi-queue engineering system</i></center>
+<BlogImage src="/assets/eng-metrics/multi-queue-cfd.png" alt="Cumulative flow diagram for multi-queue engineering system" caption="A cumulative flow diagram for a multi-queue engineering system" />
 
 Despite having broken down the cumulative flow diagram's bands, the same principles apply. This time, however, we have much more granular information about how the different parts of the system behave.
 
 If we want to know the number of items that need reviews, we can look at the vertical distance between the "development" and "review" bands, for example. Similarly, we can look at the horizontal distance between those bands to determine the approximate average time items take from "development" to "review."
 
-<a target="_blank" class="image-link" href="/assets/eng-metrics/multi-queue-cfd-annotated.png"><img style="margin-bottom: -18px;" src="/assets/eng-metrics/multi-queue-cfd-annotated.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>The cumulative flow diagram's properties remain the same in spite of us having broken it down into multiple bands</i></center>
+<BlogImage src="/assets/eng-metrics/multi-queue-cfd-annotated.png" alt="Annotated cumulative flow diagram showing multiple bands" caption="The cumulative flow diagram's properties remain the same in spite of us having broken it down into multiple bands" />
 
 In addition to the visual representation of metrics remaining the same, the dynamics between them persist.
 
 Assume, for example, that the rate at which tasks enter the review stage is greater than the rate at which they are deployed to a staging environment. In that case, the diagram's red band will bulge, revealing an increase in work-in-progress and, consequently, in average cycle time.
 
-<a target="_blank" class="image-link" href="/assets/eng-metrics/bulging-review-band.png"><img style="margin-bottom: -18px;" src="/assets/eng-metrics/bulging-review-band.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>When tasks become ready for review more quickly than they are reviewed, WIP increases, and, consequently, cycle-times elongate</i></center>
+<BlogImage src="/assets/eng-metrics/bulging-review-band.png" alt="CFD showing bulging review band" caption="When tasks become ready for review more quickly than they are reviewed, WIP increases, and, consequently, cycle-times elongate" />
 
 This dynamic between metrics once again reveals how important it is to match arrival and departure rates. This practice applies both to the system as a whole and its different parts.
 
@@ -160,8 +150,7 @@ Flat lines represent periods of inactivity in a particular part of your process.
 
 Imagine, for example, that your deployment scripts are broken. In that case, there will be zero departures from the "deployment" stage to the "done" stage, causing a flat line to appear in your cumulative flow diagram.
 
-<a target="_blank" class="image-link" href="/assets/eng-metrics/flat-line-cfd.png"><img style="margin-bottom: -18px;" src="/assets/eng-metrics/flat-line-cfd.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>Flat lines indicate long periods of inactivity in a particular part of the process</i></center>
+<BlogImage src="/assets/eng-metrics/flat-line-cfd.png" alt="CFD showing flat lines" caption="Flat lines indicate long periods of inactivity in a particular part of the process" />
 
 Such flat lines help managers identify broken parts of their processes more quickly and go after what's wrong.
 
@@ -171,8 +160,7 @@ Imagine, for example, that your deployment process is manual and time-consuming.
 
 Such large batch transferrals will show up as "stair steps" in your cumulative flow diagram.
 
-<a target="_blank" class="image-link" href="/assets/eng-metrics/stair-steps-cfd.png"><img style="margin-bottom: -18px;" src="/assets/eng-metrics/stair-steps-cfd.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>Stair steps may indicate that a particular part of the process is slow or painful. Consequently, it happens less often and there are larger batch transferrals</i></center>
+<BlogImage src="/assets/eng-metrics/stair-steps-cfd.png" alt="CFD showing stair step patterns" caption="Stair steps may indicate that a particular part of the process is slow or painful. Consequently, it happens less often and there are larger batch transferrals" />
 
 These large batch transferrals are why Martin Fowler and numerous other authors advocate for continuous delivery. When deployments happen frequently, besides reducing the change delta and the room for errors, it makes it easier to rate-match different parts of your engineering system.
 
@@ -184,8 +172,7 @@ Whenever a band disappears, it signals that a particular part of the process is 
 
 Imagine, for example, that your team has various pieces of automation to aid reviews. In that case, reviews happen more quickly than development, causing the review process to starve.
 
-<a target="_blank" class="image-link" href="/assets/eng-metrics/starving-reviews.png"><img style="margin-bottom: -18px;" src="/assets/eng-metrics/starving-reviews.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>Disappearing bands indicates a particular part of the process is starving</i></center>
+<BlogImage src="/assets/eng-metrics/starving-reviews.png" alt="CFD showing starving reviews with disappearing bands" caption="Disappearing bands indicates a particular part of the process is starving" />
 
 In this case, starvation itself is not problematic. Still, the fact that you can't get items into review indicates it may be advantageous to make the development stage more quickly by increasing reuse or refactoring complex parts of your software. By doing that, you'd be trying to match the departure rates of the "development" and review stages.
 
@@ -207,8 +194,7 @@ When that happens, it may be the case that your cumulative flow diagram will sho
 
 The diagram below, for example, could illustrate that scenario.
 
-<a target="_blank" class="image-link" href="/assets/eng-metrics/cfd-flow-debt.png"><img style="margin-bottom: -18px;" src="/assets/eng-metrics/cfd-flow-debt.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>A cumulative flow diagram doesn't specify which items get done, it specifies the quantities of items entering and leaving the system</i></center>
+<BlogImage src="/assets/eng-metrics/cfd-flow-debt.png" alt="CFD showing flow debt concept" caption="A cumulative flow diagram doesn't specify which items get done, it specifies the quantities of items entering and leaving the system" />
 
 In this situation, we say you're accumulating "flow debt." That means you're artificially aging one issue to expedite another.
 
@@ -218,13 +204,11 @@ Flow debt kills predictability because shifting priorities will cause other issu
 
 To visualize flow debt, you can use a scatterplot with the item's ages on the Y axis and the process stages on the X axis. That way, you can visualize discrepancies in the age of each item throughout the different stages of your process.
 
-<a target="_blank" class="image-link" href="/assets/eng-metrics/scatterplot-stage-age.png"><img style="margin-bottom: -18px;" src="/assets/eng-metrics/scatterplot-stage-age.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>A scatterplot which illustrates the age of the different work items throughout your progress</i></center>
+<BlogImage src="/assets/eng-metrics/scatterplot-stage-age.png" alt="Scatterplot showing stage age of work items" caption="A scatterplot which illustrates the age of the different work items throughout your progress" />
 
 Alternatively, you can use a cycle-time histogram. When you have flow debt, such a graph will display a bimodal distribution in cycle times, meaning you'll probably see a peak on the left side, where cycle times are short, and another peak on the right side, where cycle times are large. The large cycle times on the right are the items incurring flow debt, while the short cycle times on the left represent the expedited items.
 
-<a target="_blank" class="image-link" href="/assets/eng-metrics/cycle-time-histogram.png"><img style="margin-bottom: -18px;" src="/assets/eng-metrics/cycle-time-histogram.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>A cycle time histogram showing a bimodal distribution indicating some items may be expedited while others artifically age</i></center>
+<BlogImage src="/assets/eng-metrics/cycle-time-histogram.png" alt="Cycle time histogram showing bimodal distribution" caption="A cycle time histogram showing a bimodal distribution indicating some items may be expedited while others artifically age" />
 
 Finally, another way to identify flow debt is to look at your _"flow efficiency"_. A team's flow efficiency measures the percentage of time items spend in a blocking state.
 

@@ -17,9 +17,9 @@ The problem with multiplying estimations by N is that you're simply exchanging c
 
 Unfortunately, **the only way to win at the estimation game is not to play it.**
 
-<div class="post-callout">
-<p>To learn more these types of problems, see <a href="https://en.wikipedia.org/wiki/Gordian_Knot">Gordian Knot</a> and <a href="https://lucasfcosta.com/2020/09/05/not-having-problems.html">The most efficient way to solve problems</a>.</p>
-</div>
+<Callout type="info">
+To learn more these types of problems, see [Gordian Knot](https://en.wikipedia.org/wiki/Gordian_Knot) and [The most efficient way to solve problems](https://lucasfcosta.com/2020/09/05/not-having-problems.html).
+</Callout>
 
 > “Estimation is a waste of time. Don’t do it.”
 >
@@ -446,14 +446,13 @@ Remember: we want to understand how likely each delivery date is to come true so
 
 After this change, we’ll write a function that uses [the `plotters` crate](https://crates.io/crates/plotters) to generate a histogram and save it to disk. This histogram will display possible delivery dates on its X-axis and the number of times each delivery date came out in the simulations.
 
-<div class="post-callout">
-  <p>The plotting function is reasonably long, and not really interesting for what we're doing here, so I'll omit it from this post. If you still wanna see it, have a look at <a href="https://github.com/lucasfcosta/agile-monte-carlo-demo">this post's related GitHub repository</a>.</p>
-</div>
+<Callout type="info">
+The plotting function is reasonably long, and not really interesting for what we're doing here, so I'll omit it from this post. If you still wanna see it, have a look at [this post's related GitHub repository](https://github.com/lucasfcosta/agile-monte-carlo-demo).
+</Callout>
 
 After running the simulation, your program should yield a histogram similar to the one below.
 
-<img style="margin-bottom: -18px;" src="/assets/mc-histogram-1.png" alt="A histogram showing that in most of the simulations the project took X days to deliver.">
-<center><i>Our project's estimated delivery dates follow a normal distribution, as the histogram shows.</i></center>
+<BlogImage src="/assets/mc-histogram-1.png" alt="A histogram showing that in most of the simulations the project took X days to deliver." caption="Our project's estimated delivery dates follow a normal distribution, as the histogram shows." />
 
 Looking at this histogram, you can clearly see that if we start working on the project’s 50 stories today (29th of September of 2021), the most likely date on which we’d finish it would be the 4th of November of 2021.
 

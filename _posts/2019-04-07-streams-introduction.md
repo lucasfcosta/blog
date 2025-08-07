@@ -91,8 +91,7 @@ You can see the output of `cowsay` in your screen because, by default, your term
 
 Data goes in through `stdout` and `stderr` and goes out in the other end: your monitor. Similarly, your keyboard input goes through `stdin` to a program.
 
-![An image showing that the monitor is attached to "stdout" and "stderr" and that the keyboard is attached to "stdin"](/assets/standard-streams-devices.png)
-<center><i>Source: <a href="https://en.wikipedia.org/wiki/Standard_streams">Wikipedia</a></i></center>
+<BlogImage src="/assets/standard-streams-devices.png" alt="An image showing that the monitor is attached to stdout and stderr and that the keyboard is attached to stdin" caption="Source: [Wikipedia](https://en.wikipedia.org/wiki/Standard_streams)" />
 
 The `cat` program, for example, uses the `stdin` to receive input from your keyboard and the `stdout` to send it out:
 
@@ -126,8 +125,7 @@ Many websites linked to the [last blog post I've written](https://lucasfcosta.co
 
 They were completely right in their *not-pedant-at-all* comment. However, here is a picture of me in 1978 — a bit before I was born — using an HP 2647A serial terminal:
 
-<img style="margin-bottom: -18px;" src="/assets/old-serial-terminal.jpg" alt="A picture of a man with glasses using an old terminal display from 1978">
-<center><i>Autopilot <a href="https://creativecommons.org/licenses/by-sa/3.0">[CC BY-SA 3.0]</a>, <a href="https://commons.wikimedia.org/wiki/File:HP_2647A_terminal.jpg">via Wikimedia Commons</a></i></center>
+<BlogImage src="/assets/old-serial-terminal.jpg" alt="A picture of a man with glasses using an old terminal display from 1978" caption="Autopilot [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0), [via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:HP_2647A_terminal.jpg)" />
 
 If you are not a hardcore time-traveller like me, **what you use is just a terminal *emulator***. Who could've guessed, right?
 

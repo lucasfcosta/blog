@@ -5,10 +5,13 @@ import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
 import rehypeHighlight from 'rehype-highlight';
 import rehypeKatex from 'rehype-katex';
-import rehypeRaw from 'rehype-raw';
+
 import Layout from '../../components/Layout';
 import BlogImage from '../../components/BlogImage';
 import Spacer from '../../components/Spacer';
+import Callout from '../../components/Callout';
+import BigText from '../../components/BigText';
+import YouTube from '../../components/YouTube';
 import { getAllTalks, getTalkBySlug, formatDate, Talk } from '../../lib/posts';
 import { siteConfig } from '../../lib/config';
 
@@ -21,12 +24,10 @@ interface TalkPageProps {
 const components = {
   BlogImage,
   Spacer,
-  // Preserve HTML img tags with their styling for legacy content
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  img: (props: any) => (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img {...props} alt={props.alt || ''} />
-  ),
+  Callout,
+  BigText,
+  YouTube,
+
 };
 
 export default function TalkPage({ talk, mdxSource }: TalkPageProps) {
@@ -151,11 +152,10 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     mdxOptions: {
       remarkPlugins: [remarkGfm, remarkMath],
       rehypePlugins: [
-        rehypeRaw, // Allows HTML tags in markdown for legacy content
         rehypeKatex, // KaTeX math rendering
         rehypeHighlight, // Syntax highlighting
       ],
-      format: 'md', // Use markdown format for better compatibility
+      format: 'mdx', // Use MDX format to support JSX components
     },
   });
 

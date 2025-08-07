@@ -695,7 +695,7 @@ Now that we know a bit about Y we can explore the meaning behind this name a bit
 
 By taking into account that YC accelerates startups we can say that:
 
-<center><p style="font-size: 22px; font-style: italic;">YC(accelerateStartups)(startup)</p></center>
+<BigText size="large" italic>YC(accelerateStartups)(startup)</BigText>
 
 And as long as `accelerateStartups` doesn't reach its base case (either by running out of money or motivation), we'll keep feeding it with more and more startups.
 

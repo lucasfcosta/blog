@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My productivity routine to write a 500-page book"
+title: "My book-writing routine"
 author: Lucas Fernandes da Costa
 place: London, United Kingdom
 flag: 🇬🇧
@@ -15,15 +15,13 @@ If you're thinking about writing a book or have already started, this blog post 
 
 I've divided this post into two parts. The first describes the writing routine or system itself. The second part describes other seemingly unrelated habits that I consider to have been crucial for writing.
 
-<img style="margin-bottom: -18px; max-height: 500px;" src="/assets/holding-testing-javascript-applications-book.jpg" alt="A picture of my hand holding the book I had written, called Testing JavaScript applications.">
-<center><i>The first time I saw my book, Testing JavaScript applications, in print.</i></center>
+<BlogImage src="/assets/holding-testing-javascript-applications-book.jpg" alt="A picture of my hand holding the book I had written, called Testing JavaScript applications." caption="The first time I saw my book, Testing JavaScript applications, in print." maxHeight={500} />
 
-<div class="post-callout">
-  <p>I'm not a doctor and this content should not be considered medical advice.</p>
-  <p><a href="/health-advice-disclaimer">Please see this website's health and medical disclaimer</a> before proceeding.</p>
-</div>
+<Callout type="warning">
+I'm not a doctor and this content should not be considered medical advice.
 
-
+[Please see this website's health and medical disclaimer](/health-advice-disclaimer) before proceeding.
+</Callout>
 
 # My writing routine
 
@@ -44,8 +42,6 @@ In this section, I'll clarify what " discipline" means to me. I'll do that by ex
 
 For each of these rules or habits, I've written a section detailing it and explaining why it worked for me.
 
-
-
 ## I write for _at least_ 45 minutes _every_ day
 
 From the day I started writing [Testing JavaScript Applications](https://www.manning.com/books/testing-javascript-applications), **I committed to writing every day for at least 45-minutes**.
@@ -65,13 +61,11 @@ It's not worth it to force yourself to be productive when you don't have the cog
 
 In the past, my therapist used the term "efforting" to describe the act of spending long periods trying to be productive despite not obtaining any meaningful results. Efforting is precisely what you do _not_ want to do.
 
-
-
 ## I always write at the same time
 
 Sticking to a fixed writing schedule helped me be more consistent. Having to write always at the same time has diminished the effort necessary to get started.
 
-All of a sudden, writing for 45 minutes didn't require any willpower. It was simply something I used to do every day at that particular time. I didn't have to "choose" writing; I _just did it_.  In other words, I eliminated the "option" of _not_ writing.
+All of a sudden, writing for 45 minutes didn't require any willpower. It was simply something I used to do every day at that particular time. I didn't have to "choose" writing; I _just did it_. In other words, I eliminated the "option" of _not_ writing.
 
 When I started writing my book in December 2019, I'd always write after work, just before going to bed.
 
@@ -91,8 +85,6 @@ When I had to change my schedule, I noticed my productivity had dropped. It took
 
 That schedule change showed me that **my productivity didn't change depending on the time I wrote. I just had to always write at the same time**.
 
-
-
 ## I keep my writing environment consistent
 
 Whenever I was about to start writing, I'd play some instrumental lo-fi hip-hop and prepare myself a cup of spiced chai with milk.
@@ -104,8 +96,6 @@ I never listened to instrumental lo-fi hip-hop or had spiced chai with milk if I
 To put it simply, I turned myself into [a Pavlov dog](https://www.simplypsychology.org/pavlov.html).
 
 Guess what, [behaviourism](https://en.wikipedia.org/wiki/Behaviorism) is quite applicable.
-
-
 
 ## I set deadlines and hold myself accountable
 
@@ -127,14 +117,11 @@ Every single day, I registered in the calendar what I had written that day. Addi
 
 Conversely, if there was a day I didn't write (which were few), I registered in the calendar that I was lazy that day.
 
-<img style="margin-bottom: -18px;" src="/assets/calendar-book.jpg" alt="A calendar for April 2020, where each square shows what I did that day.">
-<center><i>This is my calendar for April 2020. In it, you can see what I did every single day. On the 10th of April, I couldn't get anything done and gave up, so I wrote "lazy" on that square.</i></center>
+<BlogImage src="/assets/calendar-book.jpg" alt="A calendar for April 2020, where each square shows what I did that day." caption="This is my calendar for April 2020. In it, you can see what I did every single day. On the 10th of April, I couldn't get anything done and gave up, so I wrote \"lazy\" on that square." />
 
 I didn't allow myself to make up excuses. If I didn't write, I was lazy, and that was it. I had to accept my weakness and move on.
 
 I try always to be honest with myself and hold my behaviour and work ethic to high standards. For that, one must remain realistic and stick to their self-discipline.
-
-
 
 # Other helpful habits
 
@@ -146,12 +133,11 @@ Because your physical health seems to impact your psychological health and cogni
 
 In this section, I'll explain each of those seemingly unrelated habits.
 
-<div class="post-callout">
-  <p>Once again, it's worth reminding readers that I'm not a doctor and this content should not be considered medical advice.</p>
-  <p><a href="/health-advice-disclaimer">Please see this website's health and medical disclaimer</a> before proceeding.</p>
-</div>
+<Callout type="warning">
+Once again, it's worth reminding readers that I'm not a doctor and this content should not be considered medical advice.
 
-
+[Please see this website's health and medical disclaimer](/health-advice-disclaimer) before proceeding.
+</Callout>
 
 ## Dieting and supplementation
 
@@ -165,8 +151,7 @@ My dieting rules are simple yet effective: I track all my macronutrients, water,
 
 Furthermore, I prepare all my meals in advance. Therefore, I don't have to spend energy making any food choices throughout the week. Instead, I just grab a plastic container and eat at the scheduled time.
 
-<img style="margin-bottom: -18px; max-height: 600px;" src="/assets/meal-containers-book.jpg" alt="An open fridge with quite a few plastic containers full of food.">
-<center><i>These are a few of the meals I'd prepare every week. Even though it took me about two hours to prepare them, this practice saved me a lot of time during the week. Furthermore, as I enjoy cooking, I used that time to listen to podcasts and relax.</i></center>
+<BlogImage src="/assets/meal-containers-book.jpg" alt="An open fridge with quite a few plastic containers full of food." caption="These are a few of the meals I'd prepare every week. Even though it took me about two hours to prepare them, this practice saved me a lot of time during the week. Furthermore, as I enjoy cooking, I used that time to listen to podcasts and relax." maxHeight={600} />
 
 Within my "macronutrient budget", I do my best to have a diverse diet.
 
@@ -182,8 +167,6 @@ When it comes to micros, I take 4125 IU of Vitamin D a day and multi-vitamins.
 
 I'm not that convinced about the effectiveness of multi-vitamins, especially at the dosages that most brands use, but, for me, I think it's worth just covering all bases.
 
-
-
 ## Sleep
 
 I always sleep _at least_ 8 hours a night.
@@ -194,13 +177,11 @@ To me, sleeping is the best way to get through writers' block. It allows me to t
 
 A few years ago, I _used to_ take 3mg of melatonin before bed. However, once I improved my sleep hygiene and tried to cut melatonin, my energy levels throughout the day remained the same. Therefore, I stopped taking melatonin.
 
-<div class="post-callout">
-  <p>As I was doing that test, I used a placebo pill and was careful to do a self-blinded experiment (which was helpful despite _n_ being one given _n_ = myself).</p>
-</div>
+<Callout type="info">
+As I was doing that test, I used a placebo pill and was careful to do a self-blinded experiment (which was helpful despite _n_ being one given _n_ = myself).
+</Callout>
 
 For more information about how important it is to sleep well, I'd recommend [Matthew Walker's "Why We Sleep"](https://www.amazon.co.uk/Why-We-Sleep-Science-Dreams/dp/0141983760).
-
-
 
 ## Exercising
 
@@ -216,8 +197,6 @@ Right after a cardio session, I also notice I can think more clearly. Therefore,
 
 **Exercising regularly has taught me that the best way to achieve your objectives is to take short-term action aiming at a long-term goal**. That's the place my writing rules come from, and I'm thankful for that.
 
-
-
 ## Therapy
 
 I couldn't have written a 500-pages book without professional psychological support. In fact, I probably couldn't have done nearly as much in my career without the assistance of a qualified mental health professional.
@@ -229,8 +208,6 @@ Thanks to therapy, instead of blindly following productivity systems out there, 
 Moreover, therapy has made me a more emotionally stable person, which is also conducive to productivity.
 
 I can't stress enough how vital therapy was for my overall health _and_ productivity.
-
-
 
 ## Nootropics
 
@@ -249,10 +226,14 @@ For more information on the caffeine and l-theanine combo, studies like [this](h
 
 [Gwern's notes on nootropics](https://www.gwern.net/Nootropics) are also interesting.
 
-<div class="post-callout">
-  <p>Personally, I don't see fish-oil, vitamins, creatine, and Vitamin D as nootropics as their effect is not nearly as pronounced as caffeine and L-theanine.</p>
-  <p>Furthermore, given its impact in my cognitive performance, I believe I'd have to consider all of my nutrition as a nootropic if I were to include more substances in this category.</p>
-  <p>Again, it's worth reminding readers that I'm not a doctor or dietitian, and that this is not medical advice.</p>
-  <p>I also do not endorse and am not responsible for any of the other links included in this post.</p>
-  <p><a href="/health-advice-disclaimer">Please see this website's health and medical disclaimer</a>.</p>
-</div>
+<Callout type="warning">
+Personally, I don't see fish-oil, vitamins, creatine, and Vitamin D as nootropics as their effect is not nearly as pronounced as caffeine and L-theanine.
+
+Furthermore, given its impact in my cognitive performance, I believe I'd have to consider all of my nutrition as a nootropic if I were to include more substances in this category.
+
+Again, it's worth reminding readers that I'm not a doctor or dietitian, and that this is not medical advice.
+
+I also do not endorse and am not responsible for any of the other links included in this post.
+
+[Please see this website's health and medical disclaimer](/health-advice-disclaimer).
+</Callout>

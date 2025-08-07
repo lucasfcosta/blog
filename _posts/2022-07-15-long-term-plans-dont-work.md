@@ -43,8 +43,7 @@ Whenever a bug appears, someone will either have to delay the next task or stop 
 
 
 
-<img style="margin-bottom: -18px;" src="/assets/long-term-plans/bugs.png" alt="">
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>Whenever bugs happen, they push other tasks forward</i></center>
+<BlogImage src="/assets/long-term-plans/bugs.png" alt="Diagram showing how bugs push other tasks forward" caption="Whenever bugs happen, they push other tasks forward" />
 
 
 
@@ -148,8 +147,7 @@ If you have to buy all three digits at once, the likelihood of guessing all thre
 
 
 
-<img style="margin-bottom: -18px;" src="/assets/long-term-plans/lottery-3-digits.png" alt="">
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>When paying for all digits at once, each attempt always costs $3 and there's only a 1% chance of success</i></center>
+<BlogImage src="/assets/long-term-plans/lottery-3-digits.png" alt="Lottery diagram showing all digits at once" caption="When paying for all digits at once, each attempt always costs $3 and there's only a 1% chance of success" />
 
 
 
@@ -159,8 +157,7 @@ In this case, there's only a 10% chance you'll buy the second number and a 1% ch
 
 
 
-<img style="margin-bottom: -18px;" src="/assets/long-term-plans/lottery-1-digit.png" alt="">
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>When paying for one digit at a time, there's only a 10% chance you'll buy the second digit, and a 1% chance you'll buy the third.</i></center>
+<BlogImage src="/assets/long-term-plans/lottery-1-digit.png" alt="Lottery diagram showing one digit at a time" caption="When paying for one digit at a time, there's only a 10% chance you'll buy the second digit, and a 1% chance you'll buy the third." />
 
 
 

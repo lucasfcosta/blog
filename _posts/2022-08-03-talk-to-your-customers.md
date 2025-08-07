@@ -19,8 +19,7 @@ For now, bear with me. This blog post is all I've got.
 
 The _Talk To Your Customers_ framework revolves around talking to your customers, an arcane practice long forgotten in the software industry. Here's a flow chart to help you understand the core workflows of the TTYC framework.
 
-<a target="_blank" class="image-link" href="/assets/ttyc/core-concepts.png"><img style="margin-bottom: -18px;" src="/assets/ttyc/core-concepts.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>TTYC's core workflows.</i></center>
+<BlogImage src="/assets/ttyc/core-concepts.png" alt="TTYC's core workflows diagram" caption="TTYC's core workflows." />
 
 As surprisingly as it may seem, the part about talking to your customers is crucial for TTYC's success.
 
@@ -36,8 +35,7 @@ My experience in the software industry tells me that many may see this abrupt fo
 
 For the folks who like graphs, here's an ideal plot of money over time.
 
-<a target="_blank" class="image-link" href="/assets/ttyc/money-over-time.png"><img style="margin-bottom: -18px;" src="/assets/ttyc/money-over-time.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>The ideal relationship between the time and money variables</i></center>
+<BlogImage src="/assets/ttyc/money-over-time.png" alt="Graph showing the ideal relationship between time and money variables" caption="The ideal relationship between the time and money variables" />
 
 See? It's all very scientific.
 
@@ -83,8 +81,7 @@ Over my many years as a TTYC devotee, I've noticed that, for some reason, it's u
 
 In other words, if you're not sure, ship it, and ship it quickly.
 
-<a target="_blank" class="image-link" href="/assets/ttyc/cost-of-analysis.png"><img style="margin-bottom: -18px;" src="/assets/ttyc/cost-of-analysis.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>An <a href="https://xkcd.com/">XKCD</a> graph illustrating TTYC's approach</i></center>
+<BlogImage src="/assets/ttyc/cost-of-analysis.png" alt="XKCD graph illustrating TTYC's approach" caption="An [XKCD](https://xkcd.com/) graph illustrating TTYC's approach" />
 
 If something doesn't work, customers will let you know, providing you listen to them. If you follow this approach, you'll shorten the "time" metric (remember our "money vs time" graph).
 

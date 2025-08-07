@@ -18,7 +18,7 @@ As you may know, I've been one of Chai core maintainers (alongside other awesome
 
 Nowadays TDD and test automation in general are hot topics, but I'd like you to remember that:
 
-<center><h3><a href="http://rbcs-us.com/documents/Why-Most-Unit-Testing-is-Waste.pdf">Automated crap is still crap</a></h3></center>
+<BigText size="large" bold>[Automated crap is still crap](http://rbcs-us.com/documents/Why-Most-Unit-Testing-is-Waste.pdf)</BigText>
 
 So let's get down to business and talk about how to improve our testing skills by writing quality assertions.
 

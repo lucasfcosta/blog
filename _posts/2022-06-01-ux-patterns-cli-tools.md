@@ -30,8 +30,7 @@ Imagine, for example, that you're building a tool to scaffold and manage NPM pac
 
 Instead of showing a complex manual page with lots of options, start with an example. Show users what's the command they're most likely to use first.
 
-<img style="margin-bottom: -18px; max-height: 500px;" src="/assets/cli-ux/getting-started.gif" alt="a gif of a good getting started screenn">
-<center><i>That's what an instructive onboarding experience looks like.</i></center>
+<BlogImage src="/assets/cli-ux/getting-started.gif" alt="a gif of a good getting started screenn" caption="That's what an instructive onboarding experience looks like." maxHeight={500} />
 
 Not all "getting started" sections need to be as big as this one I've made. You could highlight useful first commands in many other ways. I'm _not_ making a point about a particular look here.
 
@@ -45,8 +44,7 @@ To discover _all_ the actions you can perform using a particular GUI, you merely
 
 To figure out how to cut a video in QuickTime, for example, you either click "help" and type "cut", look for helpful icons, or click through menus and read the options.
 
-<img style="margin-bottom: -18px; max-height: 500px;" src="/assets/cli-ux/discoverability-gui.png" alt="how to cut a video in quicktime">
-<center><i>Good GUIs help you discover where features are.</i></center>
+<BlogImage src="/assets/cli-ux/discoverability-gui.png" alt="how to cut a video in quicktime" caption="Good GUIs help you discover where features are." maxHeight={500} />
 
 Once you've selected what you'd like to do, most GUIs make the path to success look obvious by telling you precisely the next steps to get to a result.
 
@@ -60,8 +58,7 @@ You can, however, replicate these same characteristics in CLIs by implementing i
 
 Interactive usage modes will prompt the user for the necessary input instead of expecting people to provide them all at once through a bunch of flags.
 
-<img style="margin-bottom: -18px; max-height: 500px;" src="/assets/cli-ux/interactive-mode.gif" alt="Implementing an interactive mode for a NPM package management tool">
-<center><i>Implementing an interactive mode for a NPM package management tool.</i></center>
+<BlogImage src="/assets/cli-ux/interactive-mode.gif" alt="Implementing an interactive mode for a NPM package management tool" caption="Implementing an interactive mode for a NPM package management tool." maxHeight={500} />
 
 When combined with a good "getting started" experience, implementing an interactive mode for your CLI tools will help diminish your time to value.
 
@@ -84,13 +81,11 @@ Good forms validate input as you type, and if you make any mistakes, GUIs will t
 
 Adding input validation to your interactive mode prompts is a must. It prevents users from putting in a ton of effort only to find out they'll have to redo the whole process because a particular field didn't accept whitespaces, for example.
 
-<img style="margin-bottom: -18px; max-height: 500px;" src="/assets/cli-ux/validation.gif" alt="An interactive CLI showing errors as soon as users make them.">
-<center><i>Validate user input as soon as you can, and display useful error messages.</i></center>
+<BlogImage src="/assets/cli-ux/validation.gif" alt="An interactive CLI showing errors as soon as users make them." caption="Validate user input as soon as you can, and display useful error messages." maxHeight={500} />
 
 The same principle applies to non-interactive commands. Take a look at what happens when I make a typo when trying to `git commit` a few files, for example.
 
-<img style="margin-bottom: -18px; max-height: 500px;" src="/assets/cli-ux/git-recovery.png" alt="Git showing an alternative command when you make a mistake">
-<center><i>If your command has a typo, Git will suggest similar commands.</i></center>
+<BlogImage src="/assets/cli-ux/git-recovery.png" alt="Git showing an alternative command when you make a mistake" caption="If your command has a typo, Git will suggest similar commands." maxHeight={500} />
 
 Instead of just yelling at me for trying an invalid command, `git` politely suggests a similar command.
 
@@ -110,8 +105,7 @@ NPM excels at this particular criteria. It may not always have helpful advice on
 
 Look at what happens when you try to run `npm install` — the command which installs a project's dependencies — outside of an NPM project.
 
-<img style="margin-bottom: -18px; max-height: 500px;" src="/assets/cli-ux/npm-human-understandable.png" alt="NPM telling you that you have tried to run npm install in a folder which does not contain a package.json">
-<center><i>That's what happens when you try to run <code>npm install</code> in a folder without a <code>package.json</code> file.</i></center>
+<BlogImage src="/assets/cli-ux/npm-human-understandable.png" alt="NPM telling you that you have tried to run npm install in a folder which does not contain a package.json" caption="That's what happens when you try to run `npm install` in a folder without a `package.json` file." maxHeight={500} />
 
 When you try to do that, NPM will tell you it couldn't find a `package.json`, and, right below, it will tell you that "this is related to npm not being able to find a file". Furthermore, NPM will even give you a complete log file to which you can refer when asking for help elsewhere if you have to.
 
@@ -149,8 +143,7 @@ Most people these days use terminals which support a significant number of colou
 
 Yarn, for example, does a brilliant job at highlighting the different parts of its output according to their semantics.
 
-<img style="margin-bottom: -18px; max-height: 500px;" src="/assets/cli-ux/colours-and-emojis.gif" alt="Yarn's output, showing info, warnings, success, and progress messages with different colours and emojis.">
-<center><i>Yarn's output when initiating a project.</i></center>
+<BlogImage src="/assets/cli-ux/colours-and-emojis.gif" alt="Yarn's output, showing info, warnings, success, and progress messages with different colours and emojis." caption="Yarn's output when initiating a project." maxHeight={500} />
 
 When the output is displayed this way, users can absorb much more information at a glance. If they look at the top and see a yellow message saying "warning", they immediately understand something unexpected is going on. On the other hand, when they look at the bottom, and there's a green message followed by a "sparkles" emoji, it's pretty clear everything went okay despite the warning.
 
@@ -169,8 +162,7 @@ If there's a lot of information to display, it's also probably worth it spending
 
 In 2022, you can even have beautiful animated charts if you use libraries like Go's [`termui`](https://github.com/gizak/termui). What a wonderful world.
 
-<img style="margin-bottom: -18px; max-height: 500px;" src="/assets/cli-ux/termui-go.gif" alt="Go's termui library showing a bunch of animated charts, and a beautiful organised layout.">
-<center><i>A few of <code>termui</code>'s capabilities in display: animated charts and widgets in an organised layout.</i></center>
+<BlogImage src="/assets/cli-ux/termui-go.gif" alt="Go's termui library showing a bunch of animated charts, and a beautiful organised layout." caption="A few of `termui`'s capabilities in display: animated charts and widgets in an organised layout." maxHeight={500} />
 
 
 
@@ -189,8 +181,7 @@ Good loading indicators have the following characteristics:
 
 One of my favourite progress indicators is Docker's.
 
-<img style="margin-bottom: -18px; max-height: 500px;" src="/assets/cli-ux/loading-indicators.gif" alt="Docker's loading indicator when pulling an image. It shows which layers it's pulling, extracting, and how far along the process it is.">
-<center><i>Docker's loading indicator when pulling an image. It shows which layers it's pulling, extracting, and how far along the process it is.</i></center>
+<BlogImage src="/assets/cli-ux/loading-indicators.gif" alt="Docker's loading indicator when pulling an image. It shows which layers it's pulling, extracting, and how far along the process it is." caption="Docker's loading indicator when pulling an image. It shows which layers it's pulling, extracting, and how far along the process it is." maxHeight={500} />
 
 It tells me exactly what it's doing at a granular level. I know which layers it's downloading and how far from completion each download process is. Because downloading images is usually a long process, even when users have fast internet connections, these loading indicators make people more likely to keep waiting.
 

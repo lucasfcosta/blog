@@ -23,7 +23,7 @@ This first section is gonna be a bit philosophical, but I swear it will be worth
 
 Just like Patrick has done in [his post](http://www.kalzumeus.com/2011/10/28/dont-call-yourself-a-programmer/), let's start with the most basic and essential truth about our industry:
 
-<p style="font-size: 1.6em; text-align: center;">Software solves business problems</p>
+<BigText size="large">Software solves business problems</BigText>
 
 This is it. **Software does not exist to please us as programmers** and let us write beautiful code. Neither it exists to create jobs for people in the tech industry. **Actually, it exists to kill as many jobs as possible, including ours**, and this is why basic income will become much more important in the next few years, but that's a whole other subject.
 
@@ -33,7 +33,7 @@ I'm sorry to say that, but the reason things are that way is that there are only
 
 **The more you decrease cost and increase revenue, the more valuable you are**, and one of the most common ways of decreasing cost and increasing revenue is replacing human beings by machines, which are more effective and usually cost less in the long run.
 
-<p style="font-size: 1.6em; text-align: center;">You are not paid to write code</p>
+<BigText size="large">You are not paid to write code</BigText>
 
 **Technology is not a goal.** Nobody cares about which programming language you are using, nobody cares about which frameworks your team has chosen, nobody cares about how elegant your data structures are and nobody cares about how good is your code. **The only thing that somebody cares about is how much does your software cost and how much revenue it generates**.
 
@@ -56,7 +56,7 @@ The whole reason why Design and Requirements exist is that they define what prob
 
 This same principle also applies to the tools we've got available in the JavaScript ecosystem. Babel, webpack, react, Redux, Mocha, Chai, Typescript, all of them exist to solve a problem and we gotta understand which problem they are trying to solve, we need to think carefully about when most of them are needed, otherwise, we will end up having JS Fatigue because:
 
-<p style="line-height: 1.2; font-size: 2.6em; text-align: center;">JS Fatigue happens when people use tools they don't need to solve problems they don't have.</p>
+<BigText size="xlarge">JS Fatigue happens when people use tools they don't need to solve problems they don't have.</BigText>
 
 As Donald Knuth once said: "Premature optimization is the root of all evil". Remember that software only exists to solve business problems and most software out there is just boring, it does not have any high scalability or high-performance constraints. Focus on solving business problems, focus on decreasing cost and generating revenue because this is all that matters. Optimize when you need, otherwise you will probably be adding unnecessary complexity to your software, which increases cost, and not generating enough revenue to justify that.
 
@@ -186,7 +186,7 @@ Especially in our area we like to think that Google and StackOverflow can answer
 
 But if I needed to sum this whole post in a single advice, it would be:
 
-<p style="font-size: 3.6em; text-align: center;">Solve problems.</p>
+<BigText size="huge">Solve problems.</BigText>
 
 Software is not a magic box, software is not poetry (unfortunately). It exists to solve problems and improves peoples' lives. Software exists to push the world forward.
 

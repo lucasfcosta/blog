@@ -31,8 +31,7 @@ As usual, I've included a small summary at this post's end to ensure you've got 
 
 Here's an F16 fighter jet. Grab your helmet and take the pilot's seat. To explain the dynamics of decision-making, you'll have to join the fleet. Welcome, captain.
 
-<a target="_blank" class="image-link" href="/assets/decision-making/f16.jpeg"><img style="margin-bottom: -18px;" src="/assets/decision-making/f16.jpeg" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>A Royal Norwegian Air Force F-16 fighter jet</i></center>
+<BlogImage src="/assets/decision-making/f16.jpeg" alt="A Royal Norwegian Air Force F-16 fighter jet" caption="A Royal Norwegian Air Force F-16 fighter jet" />
 
 When you and your fleet engage in aerial warfare, you must locate your target and bring it down. Hopefully, you'll never have to do that, and neither will anyone, but for the sake of this example, we'll go with that analogy.
 
@@ -40,15 +39,13 @@ As you fly, your plane is equipped with sensors to detect an enemy's position so
 
 In aerial warfare, reaction times are crucial. The quickest you can locate your target, make a decision, and act, the greater your chances of success. That's not me saying it. I have zero practical military experience. That's an observation made by colonel John Boyd, which created [the OODA loop](https://en.wikipedia.org/wiki/OODA_loop).
 
-<a target="_blank" class="image-link" href="/assets/decision-making/ooda-loop.png"><img style="margin-bottom: -18px;" src="/assets/decision-making/ooda-loop.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>The four parts of the OODA loop</i></center>
+<BlogImage src="/assets/decision-making/ooda-loop.png" alt="Diagram showing the four parts of the OODA loop" caption="The four parts of the OODA loop" />
 
 According to him, the quickest you can close OODA loops, the greater your advantage. That's because the enemy will have less time to move from the observed position, and you will have made your decision with fresh information about the battlefield.
 
 As the diagram below shows, when the fleet acts autonomously, they can sense the enemy and act almost immediately. That's because information goes through only one processing layer.
 
-<a target="_blank" class="image-link" href="/assets/decision-making/one-level-decision-plane.png"><img style="margin-bottom: -18px;" src="/assets/decision-making/one-level-decision-plane.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>Because it acts autonomously, there's only a small delay between collecting information and acting on it</i></center>
+<BlogImage src="/assets/decision-making/one-level-decision-plane.png" alt="Diagram showing autonomous decision making with one level" caption="Because it acts autonomously, there's only a small delay between collecting information and acting on it" />
 
 When developing software, the same principle applies. Software development teams must collect information about the customers to which they cater, decide what to deliver, and deliver it as quickly as possible to gather feedback. Once they collect feedback, they should restart the loop and incorporate that feedback into the product.
 
@@ -62,8 +59,7 @@ Furthermore, by the time your commander receives the battlefield's information, 
 
 We can represent such a communication structure using a tree of command, which represents the airforce hierarchy.
 
-<a target="_blank" class="image-link" href="/assets/decision-making/two-levels-decision-plane.png"><img style="margin-bottom: -18px;" src="/assets/decision-making/two-levels-decision-plane.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>When the fleet must report to the commander and wait for its response before they act, more time passes between collecting the information and acting on it</i></center>
+<BlogImage src="/assets/decision-making/two-levels-decision-plane.png" alt="Diagram showing two-level decision hierarchy" caption="When the fleet must report to the commander and wait for its response before they act, more time passes between collecting the information and acting on it" />
 
 In the graph above, each arrow increases the delay between collecting information and acting on it. That's because every time communication needs to happen, in whichever direction it is, it takes time.
 
@@ -71,13 +67,11 @@ To ensure these first principles will land smoothly, let me take it [a knot](htt
 
 This time, we'll illustrate what happens if the commander needs to talk to their boss, the sergeant, before they tell the fleet what to do. In that case, there will be one extra hop, delaying response time even further.
 
-<a target="_blank" class="image-link" href="/assets/decision-making/three-levels-decision-plane.png"><img style="margin-bottom: -18px;" src="/assets/decision-making/three-levels-decision-plane.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>Adding yet a third level of hierarchy to decision-making increases the fleet's response time</i></center>
+<BlogImage src="/assets/decision-making/three-levels-decision-plane.png" alt="Diagram showing three-level decision hierarchy" caption="Adding yet a third level of hierarchy to decision-making increases the fleet's response time" />
 
 Want to make things even worse? Just think about what would happen if, before making a decision, the sergeant had to contact the slowest decision-making structure in the world: a committee.
 
-<a target="_blank" class="image-link" href="/assets/decision-making/four-levels-decision-plane.png"><img style="margin-bottom: -18px;" src="/assets/decision-making/four-levels-decision-plane.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>A fourth hop, the committee, increases the fleet's response time even further</i></center>
+<BlogImage src="/assets/decision-making/four-levels-decision-plane.png" alt="Diagram showing four-level decision hierarchy" caption="A fourth hop, the committee, increases the fleet's response time even further" />
 
 At this point, by the time the fleet receives a response, the enemy might as well be on a whole different continent.
 
@@ -104,8 +98,7 @@ Unfortunately — or fortunately, depending on your point of view — our human 
 
 As you add hops in human communication, the more likely it is for the receiver to either misunderstand the information or receive incomplete information. To fix this, you'd have to add more redundancy mechanisms, which would add to the response time.
 
-<a target="_blank" class="image-link" href="/assets/decision-making/redundancy-decision-plane.png"><img style="margin-bottom: -18px;" src="/assets/decision-making/redundancy-decision-plane.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>Each communication hop adds latency. Therefore, extra hops for redundancy create even more latency.</i></center>
+<BlogImage src="/assets/decision-making/redundancy-decision-plane.png" alt="Diagram showing redundancy in decision hierarchy creating latency" caption="Each communication hop adds latency. Therefore, extra hops for redundancy create even more latency." />
 
 By now, you're solving a problem you've created yourself by adding too many communication hops. Instead, it would be much better if you avoided unnecessary communication so that you don't have to add redundancy mechanisms.
 
@@ -173,8 +166,7 @@ Because requests occur infrequently and may come from different places, the dema
 
 In that way, the company will create a pool of lawyers who can be assigned different tasks as demand comes in.
 
-<a target="_blank" class="image-link" href="/assets/decision-making/variable-demand-resource.png"><img style="margin-bottom: -18px;" src="/assets/decision-making/variable-demand-resource.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>A fourth hop, the committee, increases the fleet's response time even further</i></center>
+<BlogImage src="/assets/decision-making/variable-demand-resource.png" alt="Diagram showing variable demand resource allocation" caption="A fourth hop, the committee, increases the fleet's response time even further" />
 
 I like to call this model of collaboration "X-as-a-service", as Matthew Skelton and Manuel Pais do when describing certain types of teams in their brilliant book ["Team Topologies"](https://teamtopologies.com/).
 
@@ -191,8 +183,7 @@ Two alternatives are:
 
 If you don't mind adding complexity, mixing both strategies is possible, although I'd advise against adding this much complexity unless extremely necessary.
 
-<a target="_blank" class="image-link" href="/assets/decision-making/variable-demand-resource-multi-latency.png"><img style="margin-bottom: -18px;" src="/assets/decision-making/variable-demand-resource-multi-latency.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>A high-latency and a low-latency legal team which may receive requests with different priorities (classes of service)</i></center>
+<BlogImage src="/assets/decision-making/variable-demand-resource-multi-latency.png" alt="Diagram showing high-latency and low-latency legal teams" caption="A high-latency and a low-latency legal team which may receive requests with different priorities (classes of service)" />
 
 > To understand how capacity utilization impacts response times, read [_"How high capacity utilization hurts a team's performance"_](https://lucasfcosta.com/2022/06/12/measure-queues-not-cycle-time.html).
 
@@ -235,8 +226,7 @@ Successful organizations trust that people at their borders can respond adequate
 
 In a fintech, for example, the executives up-top don't need to know about every design decision, such as the colour of a particular button or how information is displayed. Instead, executives up top trust the product developers to make good product and design decisions. Still, these executives need to know whether those teams succeed at acquiring a large number of customers and generating revenue to drive the company's direction accordingly.
 
-<a target="_blank" class="image-link" href="/assets/decision-making/prescriptiveness-hierarchy.png"><img style="margin-bottom: -18px;" src="/assets/decision-making/prescriptiveness-hierarchy.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>How prescriptiveness and information detail resolution change depending on a node's hierarchical position</i></center>
+<BlogImage src="/assets/decision-making/prescriptiveness-hierarchy.png" alt="Diagram showing prescriptiveness hierarchy levels" caption="How prescriptiveness and information detail resolution change depending on a node's hierarchical position" />
 
 > That's precisely how OKRs are supposed to work. Organizations which make good use of OKRs will ensure that the OKRs at the top will feed into the more granular and prescriptive OKRs at the bottom.
 > Although I'm not necessarily a big fan of prescriptive methods such as this, its principles are sound.
@@ -257,8 +247,7 @@ One example from [a Reinertsen's talk I really like (_Decentralizing Control: Ho
 
 According to Reinertsen, because of a particular deal, Boeing aimed to reduce the plane's weight so that it could spend less fuel. For that, Boeing allowed the engineers at the extremities of the organization to make decisions that would reduce the plane's cost per pound without asking for permission as long as the cost of that decision was smaller than $300 dollars per pound. As the price of reducing the plane's weight increased, they needed to reach for someone of a higher hierarchy to get approval.
 
-<a target="_blank" class="image-link" href="/assets/decision-making/budget-hierarchy.png"><img style="margin-bottom: -18px;" src="/assets/decision-making/budget-hierarchy.png" alt=""></a>
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>How budgets change depending on a node's hierarchical position</i></center>
+<BlogImage src="/assets/decision-making/budget-hierarchy.png" alt="Diagram showing budget hierarchy levels" caption="How budgets change depending on a node's hierarchical position" />
 
 
 

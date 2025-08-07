@@ -5,10 +5,13 @@ import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
 import rehypeHighlight from 'rehype-highlight';
 import rehypeKatex from 'rehype-katex';
-import rehypeRaw from 'rehype-raw';
+
 import Layout from '../components/Layout';
 import BlogImage from '../components/BlogImage';
 import Spacer from '../components/Spacer';
+import Callout from '../components/Callout';
+import BigText from '../components/BigText';
+import YouTube from '../components/YouTube';
 import { getAllPosts, formatDate, Post } from '../lib/posts';
 import { siteConfig } from '../lib/config';
 
@@ -21,12 +24,10 @@ interface PostPageProps {
 const components = {
   BlogImage,
   Spacer,
-  // Preserve HTML img tags with their styling for legacy content
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  img: (props: any) => (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img {...props} alt={props.alt || ''} />
-  ),
+  Callout,
+  BigText,
+  YouTube,
+
 };
 
 export default function PostPage({ post, mdxSource }: PostPageProps) {
@@ -118,45 +119,17 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   // Process content to handle modern MDX components while preserving legacy HTML
   let processedContent = post.content;
   
-  // Convert BlogImage components to HTML for markdown processing
-  processedContent = processedContent.replace(
-    /<BlogImage\s+([^>]+)\s*\/>/g,
-    (match, props) => {
-      // Extract props from the BlogImage component
-      const srcMatch = props.match(/src="([^"]+)"/);
-      const altMatch = props.match(/alt="([^"]+)"/);
-      const hrefMatch = props.match(/href="([^"]+)"/);
-      const captionMatch = props.match(/caption="([^"]+)"/);
-      
-      const src = srcMatch ? srcMatch[1] : '';
-      const alt = altMatch ? altMatch[1] : '';
-      const href = hrefMatch ? hrefMatch[1] : '';
-      const caption = captionMatch ? captionMatch[1] : '';
-      
-      let imgTag = `<img style="margin-bottom: 8px;" src="${src}" alt="${alt}">`;
-      
-      if (href) {
-        imgTag = `<a target="_blank" class="image-link" href="${href}">${imgTag}</a>`;
-      }
-      
-      if (caption) {
-        imgTag += `\n<center style="font-size: 0.8em; margin-top: 4px; margin-bottom: 32px; position: relative; z-index: 10;"><i>${caption}</i></center>`;
-      }
-      
-      return imgTag;
-    }
-  );
+  // Keep BlogImage components as-is for MDX to handle them
 
   const mdxSource = await serialize(processedContent, {
     parseFrontmatter: false, // We already parsed it
     mdxOptions: {
       remarkPlugins: [remarkGfm, remarkMath],
       rehypePlugins: [
-        rehypeRaw, // Allows HTML tags in markdown for legacy content
         rehypeKatex, // KaTeX math rendering
         rehypeHighlight, // Syntax highlighting
       ],
-      format: 'md', // Use markdown format for better compatibility
+      format: 'mdx', // Use MDX format to support JSX components
     },
   });
 

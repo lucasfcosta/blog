@@ -9,8 +9,7 @@ tags: agile project-management queueing-theory queue-sizes statistics
 
 This is [Beigel Bake](https://bricklanebeigel.co.uk), in Brick Lane, London.
 
-<img style="margin-bottom: -18px;" src="/assets/queue-behaviour/beigel-bake.jpg" alt="Beigel Bake's store front, in Brick Lane, London.">
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i><a href="https://www.flickr.com/photos/schimonski/">Schimonski</a> <a href="https://creativecommons.org/licenses/by-nc/2.0/">[CC BY-NC 2.0]</a>, <a href="https://www.flickr.com/photos/schimonski/5863739374">via Flickr</a></i></center>
+<BlogImage src="/assets/queue-behaviour/beigel-bake.jpg" alt="Beigel Bake's store front, in Brick Lane, London." caption="[Schimonski](https://www.flickr.com/photos/schimonski/) [CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/), [via Flickr](https://www.flickr.com/photos/schimonski/5863739374)" />
 
 Beigel Bake is notorious for its salt beef [beigels](https://www.mashed.com/265131/whats-the-difference-between-beigels-and-bagels/) and humongous queues.
 
@@ -48,8 +47,7 @@ Someone that joined a 2-people long queue gets their beigel quite quickly. On th
 
 On the other hand, if you know twenty people are in front of you, and each beigel takes thirty seconds to prepare, you can estimate you'll take ten minutes to be served.
 
-<img style="margin-bottom: -18px;" src="/assets/queue-behaviour/cycle-time-queue-beigel.png" alt="A diagram showing that you take more time to be served the further back into the queue you are.">
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>If every beigel takes thirty seconds to prepare, every person in front of you adds at least 30 seconds to the time it will take you to be served.</i></center>
+<BlogImage src="/assets/queue-behaviour/cycle-time-queue-beigel.png" alt="A diagram showing that you take more time to be served the further back into the queue you are." caption="If every beigel takes thirty seconds to prepare, every person in front of you adds at least 30 seconds to the time it will take you to be served." />
 
 As you can see, **Beigel Bake's queue size is a leading indicator of cycle-time** — of how long it will take to get a beigel.
 
@@ -59,8 +57,7 @@ In the chart below, you can see that the rate of people arriving is greater than
 
 Besides the queue's growth, the chart below demonstrates how customers joining a larger queue take longer to be served because they take longer to get to the front of the queue.
 
-<img style="margin-bottom: -18px;" src="/assets/queue-behaviour/queue-time-vs-size.png" alt="An area chart showing arrivals and departures. As the distance between the two grows, cycle times increase.">
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>A queue grows when servers can't keep up with arrivals. Customers joining a longer queue then take longer to be served.</i></center>
+<BlogImage src="/assets/queue-behaviour/queue-time-vs-size.png" alt="An area chart showing arrivals and departures. As the distance between the two grows, cycle times increase." caption="A queue grows when servers can't keep up with arrivals. Customers joining a longer queue then take longer to be served." />
 
 > **This type of chart is known as a cumulative flow diagram, or, in short, CFD**.
 
@@ -114,13 +111,11 @@ After the simulation finishes, the program will plot an area chart. This chart s
 
 Here's the result for one run of the simulation.
 
-<img style="margin-bottom: -18px;" src="/assets/queue-behaviour/beigels-vs-arrivals.png" alt="An area chart showing arrivals and departures for the simulation. It shows the arrivals growing at a rate departures can't keep up with.">
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>When the employees can't serve beigels as quickly as customers arrive, a queue forms.</i></center>
+<BlogImage src="/assets/queue-behaviour/beigels-vs-arrivals.png" alt="An area chart showing arrivals and departures for the simulation. It shows the arrivals growing at a rate departures can't keep up with." caption="When the employees can't serve beigels as quickly as customers arrive, a queue forms." />
 
 Similarly to the arrivals and departures chart I showed before, the vertical distance between the two bands represents the queue's size, and the horizontal distance between them represents cycle time. Just like before, as the queue grows, cycle-time grows too.
 
-<img style="margin-bottom: -18px;" src="/assets/queue-behaviour/beigels-vs-arrivals-annotated.png" alt="The same arrivals and departures area graph, but this time annotated to show that the shorter the queue when a customer arrives, the less time they will take to get a beigel.">
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>The longer the queue, the longer will be the next customer's cycle time.</i></center>
+<BlogImage src="/assets/queue-behaviour/beigels-vs-arrivals-annotated.png" alt="The same arrivals and departures area graph, but this time annotated to show that the shorter the queue when a customer arrives, the less time they will take to get a beigel." caption="The longer the queue, the longer will be the next customer's cycle time." />
 
 To diminish the time it takes for customers to be served, the beigel shop needs to reduce the vertical distance between the two bands.
 
@@ -132,8 +127,7 @@ For that, they must either:
 
 Let's simulate option one and see what happens when we halve the time it takes for each employee to prepare a beigel.
 
-<img style="margin-bottom: -18px;" src="/assets/queue-behaviour/beigels-vs-arrivals-more-quickly.png" alt="An area graph of beigels served versus arrivals when servers are twice as fast. In this case, queues are smaller, as demonstrated by the small distance between arrivals and departures.">
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>When employees take half the time to prepare a beigel, the average queue size is smaller.</i></center>
+<BlogImage src="/assets/queue-behaviour/beigels-vs-arrivals-more-quickly.png" alt="An area graph of beigels served versus arrivals when servers are twice as fast. In this case, queues are smaller, as demonstrated by the small distance between arrivals and departures." caption="When employees take half the time to prepare a beigel, the average queue size is smaller." />
 
 In this scenario, customers are more likely to find a free employee when they arrive because servers prepare beigels more quickly and free themselves up sooner.
 
@@ -141,8 +135,7 @@ Consequently, customers are less likely to find all servers busy and thus less l
 
 Now, let's simulate the second option. This time employees won't be as quick, but there will be twice as many employees working.
 
-<img style="margin-bottom: -18px;" src="/assets/queue-behaviour/beigels-vs-arrivals-more-servers.png" alt="An area graph of beigels served versus arrivals when there are twice as many servers. In this case, queues are also smaller, as demonstrated by the small distance between arrivals and departures.">
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>When employees still take the same time to prepare beigels, but there are twice as many employees, the average queue length is also shorter.</i></center>
+<BlogImage src="/assets/queue-behaviour/beigels-vs-arrivals-more-servers.png" alt="An area graph of beigels served versus arrivals when there are twice as many servers. In this case, queues are also smaller, as demonstrated by the small distance between arrivals and departures." caption="When employees still take the same time to prepare beigels, but there are twice as many employees, the average queue length is also shorter." />
 
 In this scenario, similarly to the previous one, there is barely anyone in the queue at any given moment. Because more employees are working, the likelihood of an arriving customer finding all servers busy is also smaller.
 
@@ -162,8 +155,7 @@ To see how our simulation behaves at different capacity utilisation levels, let'
 
 After all the simulations run, we'll create a scatterplot correlating the average queue size and the average capacity utilisation for each simulation.
 
-<img style="margin-bottom: -18px;" src="/assets/queue-behaviour/cap-vs-queue-size-low-res.png" alt="A scatterplot for the average queue size of 100 simulations at different levels of capacity utilisation. As capacity utilisation approaches 100%, cycle times sky-rocket.">
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>As the average capacity utilisation approaches 100%, the more likely customers are to find all servers busy. Therefore, the average queue size increases.</i></center>
+<BlogImage src="/assets/queue-behaviour/cap-vs-queue-size-low-res.png" alt="A scatterplot for the average queue size of 100 simulations at different levels of capacity utilisation. As capacity utilisation approaches 100%, cycle times sky-rocket." caption="As the average capacity utilisation approaches 100%, the more likely customers are to find all servers busy. Therefore, the average queue size increases." />
 
 This scatterplot shows that the average queue size increases as the average capacity utilisation increases, just as we expected.
 
@@ -171,8 +163,7 @@ The effect of capacity utilisation in queue size can be even more apparent if we
 
 This time, we'll make eight to ten people join the queue every twenty seconds. That will diminish each server's impact on capacity utilisation, thus causing us to have more granular data at high utilisation levels.
 
-<img style="margin-bottom: -18px;" src="/assets/queue-behaviour/cap-vs-queue-size-high-res.png" alt="A scatterplot of average capacity utilisation versus queue size, this time with more granular results in the high-utilisation area. Now it's easier to see how cycle times increase at these high capacity utilisation levels.">
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>Causing every server to have less impact in capacity utilisation leads to more granular results in the higher ranges of utilisation. Now it's easier to see how capacity utilisation impacts the queue's size.</i></center>
+<BlogImage src="/assets/queue-behaviour/cap-vs-queue-size-high-res.png" alt="A scatterplot of average capacity utilisation versus queue size, this time with more granular results in the high-utilisation area. Now it's easier to see how cycle times increase at these high capacity utilisation levels." caption="Causing every server to have less impact in capacity utilisation leads to more granular results in the higher ranges of utilisation. Now it's easier to see how capacity utilisation impacts the queue's size." />
 
 There's yet a third lever the beigel shop could pull to diminish capacity utilisation: reduce the number of arrivals. However, that would not be a productive alternative in this case because it would decrease the shop's profit.
 
@@ -193,8 +184,7 @@ If the shop wanted to avoid having to have excess capacity, they'd only have one
 
 The cumulative flow diagram below illustrates what happens in a simulation where each customer arrives at a 30-second interval, and a single server always takes 30 seconds to prepare a beigel.
 
-<img style="margin-bottom: -18px;" src="/assets/queue-behaviour/cap-vs-queue-size-deterministic.png" alt="An area chart of arrivals and departures for a deterministic process with 100% capacity utilisation and deterministic processing and arrival times. In this case both rates are matched, so the distance between the two bars, which represents cycle times, remains constant.">
-<center style="font-size: 0.8em; margin-bottom: 32px;"><i>In a deterministic process in which the arrival rate is the same as the departure rate, cycle-times remain constant.</i></center>
+<BlogImage src="/assets/queue-behaviour/cap-vs-queue-size-deterministic.png" alt="An area chart of arrivals and departures for a deterministic process with 100% capacity utilisation and deterministic processing and arrival times. In this case both rates are matched, so the distance between the two bars, which represents cycle times, remains constant." caption="In a deterministic process in which the arrival rate is the same as the departure rate, cycle-times remain constant." />
 
 As the chart shows, when there's no variability and arrival rates match departure rates, there's no chance that the next customer will find all servers busy when they arrive.
 
@@ -299,7 +289,7 @@ Still, to deal with an inevitable surge in demand because of an emergency, there
 
 If I were to summarise this whole blog post's content in one piece of advice, that would be:
 
-<center style="font-size: 1.5em;"><b>Instead of trying to control cycle times and capacity utilisation, focus on controlling your queues as they're the biggest source of waste in software development processes.</b></center>
+<BigText size="large" bold>Instead of trying to control cycle times and capacity utilisation, focus on controlling your queues as they're the biggest source of waste in software development processes.</BigText>
 
 
 

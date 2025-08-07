@@ -17,7 +17,7 @@ It is really important for programmers to be able to design efficient algorithms
 
 After all, as the first of [Akin's Laws of Spacecraft Design](http://spacecraft.ssl.umd.edu/akins_laws.html) states:
 
-<p style="font-size: 28px;"><strong>Engineering is done with numbers. Analysis without numbers is only an opinion.</strong></p>
+<BigText size="large" bold>Engineering is done with numbers. Analysis without numbers is only an opinion.</BigText>
 
 Let's ignore the hottest frameworks and tools for a while and dive deep into some good and old mathematics.
 

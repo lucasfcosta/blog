@@ -695,9 +695,7 @@ And now, after 100 quotes about software engineering, I'll allow myself to add a
     <cite>Sam Altman</cite>
 </blockquote>
 
-<p style="text-align: center; font-size: 1.5em; font-weight: bold;">
-    Yes, Sam, what we are doing is very complicated.
-</p>
+<BigText size="large" bold>Yes, Sam, what we are doing is very complicated.</BigText>
 
 
 

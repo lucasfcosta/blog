@@ -24,23 +24,19 @@ If you're building a RESTful API using Express, for, example, your `package.json
 
 Whenever you ask others to clone and run your application, they need to install its dependencies using `npm install`. Doing so will cause them to download the version `4.0.0` of Express.
 
-<img style="margin-bottom: -18px;" src="/assets/package-lock1.png" alt="An image showing that your application points to the Express pacakge, meaning it depends on it.">
-<center><i>Your application's direct dependency on Express.</i></center>
+<BlogImage src="/assets/package-lock1.png" alt="An image showing that your application points to the Express pacakge, meaning it depends on it." caption="Your application's direct dependency on Express." />
 
 When installing Express, a package upon which your application depends, you will also download all of the packages upon which Express itself depends. Among the packages upon which Express depends, you can find, for example, [`send`](https://github.com/pillarjs/send), a package which provides a [static file server](https://stackoverflow.com/questions/28918845/what-exactly-does-serving-static-files-mean).
 
-<img style="margin-bottom: -18px;" src="/assets/package-lock2.png" alt="Your application points to the Express package, which in turn points to the send package.">
-<center><i>Express depends on `send`, which causes it to be downloaded when installing your application's dependencies.</i></center>
+<BlogImage src="/assets/package-lock2.png" alt="Your application points to the Express package, which in turn points to the send package." caption="Express depends on `send`, which causes it to be downloaded when installing your application's dependencies." />
 
 Additionally, when installing Express and, consequently, `send`, you will have to install the dependencies of `send`. Because `send` depends on [`mime-types`](https://github.com/jshttp/mime-types), , a utility package to handle [mime-types](https://en.wikipedia.org/wiki/Media_type), NPM will install also install `mime-types`.
 
-<img style="margin-bottom: -18px;" src="/assets/package-lock3.png" alt="Your application points to the Express package, which points to the send package, which then points to the mime-types package.">
-<center><i>The `send` package depends upon `mime-types`.</i></center>
+<BlogImage src="/assets/package-lock3.png" alt="Your application points to the Express package, which points to the send package, which then points to the mime-types package." caption="The `send` package depends upon `mime-types`." />
 
 Finally, when installing `mime-types`, NPM will notice that `mime-types` depends on [`mime-db`](https://github.com/jshttp/mime-db), and will install `mime-db` too.
 
-<img style="margin-bottom: -18px;" src="/assets/package-lock4.png" alt="The dependency chain pointing from your application to express, then to send, then to mime-types, and, finally, pointing to mime-db.">
-<center><i>NPM downloads the `mime-db` package when installing your application's dependencies because it's a dependency of other dependencies.</i></center>
+<BlogImage src="/assets/package-lock4.png" alt="The dependency chain pointing from your application to express, then to send, then to mime-types, and, finally, pointing to mime-db." caption="NPM downloads the `mime-db` package when installing your application's dependencies because it's a dependency of other dependencies." />
 
 The process of recursively downloads all of your packages' dependencies and the dependencies of those dependencies is what causes your `node_modules` folder to get heavy so quickly.
 
@@ -134,8 +130,7 @@ Similarly, when Express' maintainers release a new feature and bump their versio
 
 Most of the time, using `^` or `~` should _not_ cause problems, because, according to [semantic versioning](https://semver.org/), bumping `minor` — the middle version number — or `patch` — the rightmost version number — means that there are no breaking changes.
 
-<img style="margin-bottom: -18px;" src="/assets/package-lock5.png" alt="In a 4.1.2 version, 4 is the major version number, which indicates breaking changes, 1 is the minor version number, which indicates new features, and 2 is the patch version number, which indicates fixes.">
-<center><i>Bumping the leftmost version number indicates there have been breaking changes. The middle version number indicates a release contains new features. The rightmost number indicates fixes.</i></center>
+<BlogImage src="/assets/package-lock5.png" alt="In a 4.1.2 version, 4 is the major version number, which indicates breaking changes, 1 is the minor version number, which indicates new features, and 2 is the patch version number, which indicates fixes." caption="Bumping the leftmost version number indicates there have been breaking changes. The middle version number indicates a release contains new features. The rightmost number indicates fixes." />
 
 However, given enough time, all humans make mistakes. They may, for example, bump the `minor` or `patch` when there's a breaking change, causing builds to break like I once did when I incorrectly released breaking changes to [Chai](https://www.chaijs.com/) and [bumped the wrong version number](https://github.com/chaijs/chai/issues/862), causing millions of builds to break around the world.
 
