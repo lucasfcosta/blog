@@ -28,7 +28,7 @@ Streams are just that: streams. **In the same way that a river has a stream of w
 
 Streams can be used to pass data into programs and to get data out of them.
 
-![An arrow with "input stream" pointing to a box in which "program is written.](/assets/program-input-output-streams.png)
+<BlogImage src="/assets/program-input-output-streams.png" alt="An arrow with input stream pointing to a box in which program is written" />
 
 In UNIX, programs get some streams attached to them by default, both for input and output. We call these *standard streams*.
 
@@ -47,7 +47,7 @@ It is simplicity that is difficult to make
 
 When fortune ran, it got `stdin`, `stdout` and `stderr` attached to it. Since it didn't produce any errors and didn't get any external input, it just wrote its output to `stdout`.
 
-![A drawing showing a square in the middle with "fortune" written on it. On the left there is an arrow with "stdin" written on it. On the right there are two arrows, one with "stdout" written on it and the other with "stderr".](/assets/fortune-streams.png)
+<BlogImage src="/assets/fortune-streams.png" alt="A drawing showing a square in the middle with fortune written on it. On the left there is an arrow with stdin written on it. On the right there are two arrows, one with stdout written on it and the other with stderr" />
 
 `cowsay` is another program that writes to `stdout`. `cowsay` takes a string and shows a cow saying it.
 
@@ -85,7 +85,7 @@ $ fortune | cowsay
 
 **We use pipes for connecting the output stream of a program to the input stream of another**.
 
-![A drawing showing the three streams connected to both "fortune" and "cowsay", but this time showing the "stdout" arrow of "fortune" pointing to the "stdin" arrow that goes into the "cowsay" box.](/assets/fortune-and-cowsay-streams.png)
+<BlogImage src="/assets/fortune-and-cowsay-streams.png" alt="A drawing showing the three streams connected to both fortune and cowsay, but this time showing the stdout arrow of fortune pointing to the stdin arrow that goes into the cowsay box" />
 
 You can see the output of `cowsay` in your screen because, by default, your terminal gets the `stdin`, `stdout` and `stderr` standard streams attached to it.
 
@@ -103,7 +103,7 @@ Gets logged right after
 Gets logged right after
 ```
 
-![A flowchart showing the data coming in from the keyboard through "stdin" and going through "cat", "stdout", and "stderr" to a monitor](/assets/cat-keyboard-and-display.png)
+<BlogImage src="/assets/cat-keyboard-and-display.png" alt="A flowchart showing the data coming in from the keyboard through stdin and going through cat, stdout, and stderr to a monitor" />
 
 We can make it more elaborate by using [`sed`](https://linux.die.net/man/1/sed) to replace all occurrences of `I` by `We` every time we press `Enter`:
 
@@ -113,7 +113,7 @@ I think streams are quite cool.
 We think streams are quite cool.
 ```
 
-![A flowchart showing the data flowing from the keyboard through "stdin" to "cat" and coming out through "sed"'s "stdin", "sed" itself, and "sed"'s "stdout" to a monitor](/assets/sed-cat-and-keyboard-and-monitor.png)
+<BlogImage src="/assets/sed-cat-and-keyboard-and-monitor.png" alt="A flowchart showing the data flowing from the keyboard through stdin to cat and coming out through sed's stdin, sed itself, and sed's stdout to a monitor" />
 
 Also, in case you didn't know, `sed` stands for `stream editor`.
 
@@ -131,23 +131,23 @@ If you are not a hardcore time-traveller like me, **what you use is just a termi
 
 **Terminal emulators are software simulations of "real" terminals.** These emulators provide you with an interface to interact with the Linux TTY driver. **The TTY driver is responsible for handling the data to and from programs.**
 
-![A diagram showing that data flows from the keyboard through the terminal emulator and the TTY driver all the way to a program and can then flow back all the way from the program to a display](/assets/terminal-interaction-diagram.png).
+<BlogImage src="/assets/terminal-interaction-diagram.png" alt="A diagram showing that data flows from the keyboard through the terminal emulator and the TTY driver all the way to a program and can then flow back all the way from the program to a display" />
 
 Each TTY has its own `stdin`, `stdout`, and `stderr` streams connected to it. These are the streams provided to programs for them to read from (`stdin`) and write to (`stdout` and `stderr`).
 
 Here is a more accurate version of what happened when you ran `cat | sed -E "s/I/We/"` in the last example:
 
-![A diagram showing data flowing down from the keyboard to the emulator, then the TTY, then "cat", "sed" and finally flowing all the way back to a monitor.](/assets/tty-and-processes.png)
+<BlogImage src="/assets/tty-and-processes.png" alt="A diagram showing data flowing down from the keyboard to the emulator, then the TTY, then cat, sed and finally flowing all the way back to a monitor" />
 
 [Like everything in UNIX](https://en.wikipedia.org/wiki/Everything_is_a_file), the `tty` is a file. Each instance of a terminal emulator has a different `tty` file associated with it. Because each emulator reads from and writes to a different file, you don't see the output of the programs you run in all the windows you have open.
 
 To find out which `tty` is associated with a terminal window you can use the `tty` command.
 
-![Two terminal windows open and the result of the tty command in each one of them showing the path to two different files as the output.](/assets/multiple-terminals-multiple-ttys.png)
+<BlogImage src="/assets/multiple-terminals-multiple-ttys.png" alt="Two terminal windows open and the result of the tty command in each one of them showing the path to two different files as the output" />
 
 When you open a new terminal window, this is what its streams point to:
 
-![An image showing three boxes with "stdout", "stderr" and "stdin" and three arrows pointing to the right to three other boxes with "/dev/ttys/005 written on them](/assets/empty-terminal-streams.png)
+<BlogImage src="/assets/empty-terminal-streams.png" alt="An image showing three boxes with stdout, stderr and stdin and three arrows pointing to the right to three other boxes with /dev/ttys/005 written on them" />
 
 In the image above, the `/dev/ttys/005` is just an example. It could've been any other file as there will be a new one for each `tty` instance.
 
@@ -189,7 +189,7 @@ var
 
 Differently from what it would usually do if you had just used `ls /`, the `ls` command didn't write anything to your terminal. Instead of writing to the `/dev/tty` file that your terminal emulator reads from, it has written to `/tmp/content_list.txt`.
 
-![A drawing showing the before and after states of the streams when using `ls`. Initially the `stdout` would point to `/dev/tty` but after we do a redirection it points to the file path.](/assets/stream-redirecting-stdout-to-file.png)
+<BlogImage src="/assets/stream-redirecting-stdout-to-file.png" alt="A drawing showing the before and after states of the streams when using ls. Initially the stdout would point to /dev/tty but after we do a redirection it points to the file path" />
 
 We can achieve the same redirection effect by using `>` instead of `1>`.
 
@@ -201,7 +201,7 @@ Omitting the prefixed number works because the `1` in front of `>` indicates whi
 
 Since the `tty` is just a file, you can also redirect an `stdout` stream from one terminal to another.
 
-![A drawing showing the output of `cowsay` being transferred from one terminal to another by redirecting it to the other terminal's TTY file](/assets/cowsay-from-one-to-another.png)
+<BlogImage src="/assets/cowsay-from-one-to-another.png" alt="A drawing showing the output of cowsay being transferred from one terminal to another by redirecting it to the other terminal's TTY file" />
 
 If we wanted to redirect the `stderr` stream, we could prefix its file-descriptor — which is `2` — to `>`.
 
@@ -209,7 +209,7 @@ If we wanted to redirect the `stderr` stream, we could prefix its file-descripto
 $ cat /this/path/does/not/exist 2> /tmp/cat_error.txt
 ```
 
-![A drawing showing the before and after states of the streams when using `cat` with a redirection of the `stderr` stream. Initially, the `stderr` would point to `/dev/tty`, but after we do a redirection it points to the file path.](/assets/stream-redirecting-stderr-to-file.png)
+<BlogImage src="/assets/stream-redirecting-stderr-to-file.png" alt="A drawing showing the before and after states of the streams when using cat with a redirection of the stderr stream. Initially, the stderr would point to /dev/tty, but after we do a redirection it points to the file path" />
 
 Now the `/tmp/cat_error.txt` contains whatever `cat` has written to `stderr`.
 
@@ -250,7 +250,7 @@ usr
 var
 ```
 
-![A drawing showing that instead of `stdout` and `stderr` pointing to `/dev/tty` they point to the file path.](/assets/redirecting-stdout-and-stderr.png)
+<BlogImage src="/assets/redirecting-stdout-and-stderr.png" alt="A drawing showing that instead of stdout and stderr pointing to /dev/tty they point to the file path" />
 
 You must be careful when writing to a file with `>`. Using a single `>` overrides the contents of a file.
 
@@ -307,7 +307,7 @@ In the example below, we open `/usr/share/dict/words` for reading on the descrip
 $ exec 3< /usr/share/dict/words
 ```
 
-![The list of file-descriptors from 0 to 3 on the left. Above 0, 1, and 2 we can see `stdin`, `stdout`, and stderr` and they point to the tty file. The file descriptor 3 points to /usr/share/dict/words](/assets/extra-file-descriptor.png)
+<BlogImage src="/assets/extra-file-descriptor.png" alt="The list of file-descriptors from 0 to 3 on the left. Above 0, 1, and 2 we can see stdin, stdout, and stderr and they point to the tty file. The file descriptor 3 points to /usr/share/dict/words" />
 
 Now we can use this descriptor as the `stdin` for a program by using `<&`.
 
@@ -318,7 +318,7 @@ dactylic
 
 What the `<&` operator does in the above example is *duplicating* the file descriptor `3` and making `0` (`stdin`) a copy of it.
 
-![The list of file descriptors including the standard streams from 0 to 2 on the left and an extra descriptor (3) which points to /usr/share/dict/words. Descriptor 0 (`stdin`) points to the same file.](/assets/copying-extra-file-descriptor-to-stdin.png)
+<BlogImage src="/assets/copying-extra-file-descriptor-to-stdin.png" alt="The list of file descriptors including the standard streams from 0 to 2 on the left and an extra descriptor (3) which points to /usr/share/dict/words. Descriptor 0 (stdin) points to the same file" />
 
 **Once you have opened a file descriptor for reading, you can only "consume" it once**. Hence why trying to use `3` again won't work:
 
@@ -341,7 +341,7 @@ $ touch /tmp/output.txt
 $ exec 4>&/tmp/output.txt
 ```
 
-![On the left the list of file descriptors from 0 to 2 and an extra 4. Above 0, 1, and 2 we can see `stdin`, `stdout`, and stderr` and they point to the tty file. The file descriptor 4 points to /tmp/output.txt](/assets/extra-writing-descriptor.png)
+<BlogImage src="/assets/extra-writing-descriptor.png" alt="On the left the list of file descriptors from 0 to 2 and an extra 4. Above 0, 1, and 2 we can see stdin, stdout, and stderr and they point to the tty file. The file descriptor 4 points to /tmp/output.txt" />
 
 Now if we want `cowsay` to write to the `/tmp/output.txt` file, we can duplicate the file descriptor for `4` and copy it to `1` (`stdout`)
 
@@ -359,7 +359,7 @@ $ cat /tmp/output.txt
                 ||     ||
 ```
 
-![The list of file descriptors including the standard streams from 0 to 2 on the left and an extra descriptor (3) which points to /usr/share/dict/words. Descriptor 0 (`stdin`) points to the same file.](/assets/cowsay-writing-to-duplicate-descriptor.png)
+<BlogImage src="/assets/cowsay-writing-to-duplicate-descriptor.png" alt="The list of file descriptors including the standard streams from 0 to 2 on the left and an extra descriptor (3) which points to /usr/share/dict/words. Descriptor 0 (stdin) points to the same file" />
 
 Intuitively, to open a file for reading and writing you can use `<>`. First let's create a file called `/tmp/lines.txt`, open an `r/w` descriptor for it and copy it to `5`.
 
@@ -368,7 +368,7 @@ $ touch /tmp/lines.txt
 $ exec 5<> /tmp/lines.txt
 ```
 
-![On the left the list of file descriptors from 0 to 2 and an extra 5. Above 0, 1, and 2 we can see `stdin`, `stdout`, and stderr` and they point to the tty file. The file descriptor 5 points to /tmp/lines.txt](/assets/extra-read-and-write-descriptor.png)
+<BlogImage src="/assets/extra-read-and-write-descriptor.png" alt="On the left the list of file descriptors from 0 to 2 and an extra 5. Above 0, 1, and 2 we can see stdin, stdout, and stderr and they point to the tty file. The file descriptor 5 points to /tmp/lines.txt" />
 
 In the example below, we copy the first 3 lines of `/usr/share/dict/propernames` to `/tmp/lines.txt`.
 

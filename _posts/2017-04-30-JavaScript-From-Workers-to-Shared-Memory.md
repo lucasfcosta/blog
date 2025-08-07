@@ -27,7 +27,7 @@ Before we even had Web Workers, the way JavaScript runtime environments dealt wi
 
 In order to explain how the event loop works (and how JavaScript itself works) I've put together this small explanation:
 
-![The Event Loop](/assets/eventloop.png)
+<BlogImage src="/assets/eventloop.png" alt="The Event Loop" />
 
 The image above demonstrates what happens when you run your JavaScript code and how the Event Loop concurrency model works.
 
@@ -87,7 +87,7 @@ Now let's get to what really matters here, which is sharing memory between two t
 
 This image demonstrates an example of how a `TypedArray` works on top of a `SharedArrayBuffer`:
 
-![A Typed Array is a view on top of a shared memory area](/assets/shared-memory-typed-array.png)
+<BlogImage src="/assets/shared-memory-typed-array.png" alt="A Typed Array is a view on top of a shared memory area" />
 
 In the example below, we create an array with even numbers and share it with our worker. After five seconds we do a change in that shared array and after ten seconds we print that array in our worker to make sure it changed.
 

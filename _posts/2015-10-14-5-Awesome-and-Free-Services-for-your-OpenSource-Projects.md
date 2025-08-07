@@ -15,7 +15,7 @@ In this post I'm gonna show you some of my favorite free services and explain ev
 
 # **[1. Greenkeeper](greenkeeper.io)**
 
-![Greenkeeper Logo](/assets/greenkeeper.png)
+<BlogImage src="/assets/greenkeeper.png" alt="Greenkeeper Logo" />
 
 Greenkeeper is a service to keep your dependencies up to date automatically. It udates the dependencies on your `package.json` whenever there are updates available and then sends you a Pull Request.
 
@@ -27,13 +27,13 @@ To start using Greenkeeper on your project the first thing you need to do is ins
 
 # **[2. Travis CI](https://travis-ci.org/)**
 
-![Travis CI Interface](/assets/travis-ci.png)
+<BlogImage src="/assets/travis-ci.png" alt="Travis CI Interface" />
 
 Travis CI is one of the most widely used Continuous Integration services, it's my personal favorite CI system and, of course, it's free for Open Source projects.
 
 With Travis CI you will be able to get a build for every branch and Pull Request on your repository, which is awesome, because it means you will know right away if those commits are passing the tests and if the build is running with success. You won't even have to go to https://travis-ci.org to see it, your build status will appear inside GitHub just before the "Merge pull request" button, as you can see on the image below.
 
-![Build Status Into Pull Request](/assets/travis-demo.png)
+<BlogImage src="/assets/travis-demo.png" alt="Build Status Into Pull Request" />
 
 Travis also has [an awesome docs page](http://docs.travis-ci.com/) which teaches you everything you need to know about their service. Just in case you don't want to read their instructions, this is what you've gotta do to start using Travis on your project:
 
@@ -50,13 +50,13 @@ For more information on what to put inside `.travis.yml` you can check out [this
 
 # **[3. Coveralls](https://coveralls.io/)**
 
-![Coveralls Interface](/assets/coveralls.png)
+<BlogImage src="/assets/coveralls.png" alt="Coveralls Interface" />
 
 Coveralls is a code coverage service that tells you how many % of your code is getting tested and keeps a history of the code coverage as your project advances. You can also see what parts of code are getting tested and the ones that aren't, this means you will know exactly what your tests aren't covering.
 
 As it happens with Travis, Coveralls' status also gets showed just before the merge button for every built Pull Request. It indicates the current coverage and how much of it changed since last build.
 
-![Coveralls Into Pull Request](/assets/coveralls-pull-request.png)
+<BlogImage src="/assets/coveralls-pull-request.png" alt="Coveralls Into Pull Request" />
 
 What you will basically need to do to use it is upload your coverage `.lcov` file to Coveralls. If you want to learn how to do so you can check [this article I've made on how to get code coverage reports using gulp and mocha and then send them to coveralls](/2015/10/07/Code-Coverage-Made-Easy.html).
 
@@ -67,7 +67,7 @@ What you will basically need to do to use it is upload your coverage `.lcov` fil
 
 # **[4. Codacy](https://www.codacy.com/)**
 
-![Codacy Interface](/assets/codacy.png)
+<BlogImage src="/assets/codacy.png" alt="Codacy Interface" />
 
 [Codacy](https://www.codacy.com/) is mainly a code quality service.
 
@@ -84,13 +84,13 @@ http://docs.codacy.com/).
 
 # **[5. David](https://david-dm.org/)**
 
-![David's Logo](/assets/david.png)
+<BlogImage src="/assets/david.png" alt="David's Logo" />
 
 David simply gives you an overview of your project's dependencies, telling you if they're up to date or not.
 
 Differently from the other services in this list, David's only way of telling you the status of your project is using a badge image. To get a badge as the one below, just follow the pattern described on the image.
 
-![David Example Badge](/assets/david-example.png)
+<BlogImage src="/assets/david-example.png" alt="David Example Badge" />
 
 To keep track of your dependencies status I recommend you to put this badge into the top of your README file, doing this you, and everyone, will be able to see your project's dependencies status.
 
@@ -104,4 +104,4 @@ Shields.io let's you have awesome badges to display your project's current statu
 
 You can also create custom badges, such as the one below. See you next time!
 
-![This Post's Awesomeness](/assets/post-awesomeness.svg)
+<BlogImage src="/assets/post-awesomeness.svg" alt="This Post's Awesomeness" />

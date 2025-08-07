@@ -12,7 +12,7 @@ Well, I haven't been writing blog posts for a very long time, but today I got in
 
 Also, I'm not sure if you have this in your country too, but in Brazil we've got a cleaning product called "VIM", but don't worry, that's not what I'm going to be talking about.
 
-![A bottle of VIM](/assets/vimbottle.jpg)
+<BlogImage src="/assets/vimbottle.jpg" alt="A bottle of VIM" />
 
 And, before we start, I really can't talk about vIM without thanking [@vieiralucas](https://twitter.com/vieiraIucas) for putting me into the "vIM secret club". Thank you buddy!
 
@@ -28,7 +28,7 @@ I have always heard many people saying that learning vIM is too complicated and 
 
 ### *Argument Number 1 - "vIM is Hard"*
 
-![vIM Learning Curve](/assets/vim-learning-curve.jpg)
+<BlogImage src="/assets/vim-learning-curve.jpg" alt="vIM Learning Curve" />
 
 I have seen this image many times whenever someone talks about how hard they think it is to learn vIM. Well, I won't fool you, learning it is not really a piece of cake, but it's not as hard as fighting [Tarrasque](https://en.wikipedia.org/wiki/Tarrasque_(Dungeons_%26_Dragons)) with level 5 characters on Dungeons & Dragons.
 
@@ -40,7 +40,7 @@ In my opinion the hardest part is getting used to the basics, since vIM offers t
 
 Even if at first you find it tempting to switch to whatever other editor you were using, don't do it! You will only learn vIM if you force yourself to use it. If you need any motivation for it, forget the first chart and put this one on your mind:
 
-![vIM Efficiency Curve](/assets/vim-efficiency-curve.jpg)
+<BlogImage src="/assets/vim-efficiency-curve.jpg" alt="vIM Efficiency Curve" />
 
 
 
@@ -79,7 +79,7 @@ If you just want to get a complete configuration file with some extra tips and s
 
 This is what your vIM should look like after following my instructions:
 
-![My beautiful vIM](/assets/my-vim-screen.png)
+<BlogImage src="/assets/my-vim-screen.png" alt="My beautiful vIM" />
 
 
 

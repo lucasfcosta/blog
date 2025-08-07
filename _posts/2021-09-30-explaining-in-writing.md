@@ -81,7 +81,7 @@ Images and other visual aids, jokes, and tone will enrich your text so that it's
 
 Take some time to appreciate Randall Munroe's geniality in the classic story of little Bobby Tables, for example.
 
-![XKCD #327 - Exploits of a Mom](https://imgs.xkcd.com/comics/exploits_of_a_mom.png)
+<BlogImage src="https://imgs.xkcd.com/comics/exploits_of_a_mom.png" alt="XKCD #327 - Exploits of a Mom" />
 
 This is the perfect comic to illustrate a blog post about SQL injection. In four panels, Randall uses a concrete example to explain what SQL injection is and why it's important.
 

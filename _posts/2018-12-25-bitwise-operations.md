@@ -27,11 +27,11 @@ The reason why you see `A`, `B`, `C`, `D`, `E` and `F` being used in hexadecimal
 
 In the same way that you represent the number 15 in decimals, you could represent it in hexadecimals using only `F`. The number 33 in hexadecimals can be represented as `21` since the `2` in the second place represents 16 twice and the `1` in the first place represents just that: 1. This is why it is important to know which base you are using to deal with numbers otherwise, you could have thought `21` was a decimal number and therefore interpreted it wrong.
 
-![Base 16 representation example](/assets/hexadecimal-numbers-representation.png)
+<BlogImage src="/assets/hexadecimal-numbers-representation.png" alt="Base 16 representation example" />
 
 **Binary numbers are nothing but numbers represented on base-2** and they have the exact same properties of any other base-x systems. Every time a place in a binary number exceeds `2 - 1` it will then carry one over to the next place.
 
-![Base 2 representation example](/assets/binary-numbers-representation.png)
+<BlogImage src="/assets/binary-numbers-representation.png" alt="Base 2 representation example" />
 
 If you have the binary number `1` and try to increment it by 1 it will then carry one over to the next place and the result will be `10`, which represents 2. When you add `1` to that, since the first place is still smaller than `2`, you will get `11`, which represents 3. The binary number `100` is just another representation of `4`.
 
@@ -172,7 +172,7 @@ When shifting to the left just imagine that you have an infinite number of zeros
 
 Remember that operands are always converted to 32-bit integers. This causes only the 32nd bit (the leftmost bit) to be discarded when shifting.
 
-![Left Shift Example](/assets/left-shift.png)
+<BlogImage src="/assets/left-shift.png" alt="Left Shift Example" />
 
 
 
@@ -202,7 +202,7 @@ leftmostZero >> 2
 
 This is also known as an **arithmetic right shift**.
 
-![Arithmetic Right Shift Example](/assets/arithmetic-right-shift.png)
+<BlogImage src="/assets/arithmetic-right-shift.png" alt="Arithmetic Right Shift Example" />
 
 
 
@@ -226,7 +226,7 @@ leftmostZero >>> 2
 
 This is also known as a **logical right shift**.
 
-![Logical Right Shift Example](/assets/logical-right-shift.png)
+<BlogImage src="/assets/logical-right-shift.png" alt="Logical Right Shift Example" />
 
 
 
@@ -275,7 +275,7 @@ Notice that if you have any carries that overflow the word's length you can simp
 
 Another way of thinking about two's complement is imagining it as if the leftmost bit (the most significant bit) signed the corresponding value in that place as a negative value in such a way that if you had a 4-bit signed integer like `1011`, that would mean that the bit for `8` is actually `-8` since it has a `1` on it and then all the other bits are positive, resulting in `-8 + 2 + 1`, which is `-4`: the two's complement of `4` (`0100`).
 
-![Two's One Complement Example](/assets/twos-complement.png)
+<BlogImage src="/assets/twos-complement.png" alt="Two's One Complement Example" />
 
 ```js
 const twoComplement = (num) => (~num + 0b1)

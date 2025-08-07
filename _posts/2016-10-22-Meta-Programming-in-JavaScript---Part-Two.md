@@ -314,7 +314,7 @@ As you can see, `Object.freeze` is the most restrictive one and also includes th
 
 
 
-![Venn Diagram with Freeze, Seal and PreventExtensions](/assets/freezeSealAndPreventExtensions.png)
+<BlogImage src="/assets/freezeSealAndPreventExtensions.png" alt="Venn Diagram with Freeze, Seal and PreventExtensions" />
 
 
 

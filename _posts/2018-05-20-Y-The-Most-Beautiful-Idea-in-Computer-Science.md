@@ -86,7 +86,7 @@ console.log(factorial(5)); // 120
 
 This is how it works:
 
-[![Calls happening when you calculate the factorial of 5 recursively](/assets/factorial-calls.png)](/2017/05/08/All-About-Recursion-PTC-TCO-and-STC-in-JavaScript.html)
+<a href="/2017/05/08/All-About-Recursion-PTC-TCO-and-STC-in-JavaScript.html"><BlogImage src="/assets/factorial-calls.png" alt="Calls happening when you calculate the factorial of 5 recursively" /></a>
 
 As you might remember, **what we want is a way of calling `factorial` without referring to its own name, we want a function which does not have any free variables, but is still recursive**.
 

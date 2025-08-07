@@ -17,7 +17,7 @@ I left Florianópolis really early in the morning on Friday and I managed to get
 
 Since I had a lot of time to spend until I could check-in at the hotel I went for a walk at the heart of POA and took some pictures.
 
-![The Heart of Porto Alegre](/assets/FrontInPoa2016/IMG_4412.JPG)
+<BlogImage src="/assets/FrontInPoa2016/IMG_4412.JPG" alt="The Heart of Porto Alegre" />
 
 I also bought a few bananas, but, believe it or not, I was able to pay it in Euros. I had no money left on me because my wallet was in my bag, which I left at the hotel lobby, but I found a 1 euro coin in my pocket, which the guy selling bananas found to be really cool and said he would gladly take it in exchange for the bananas.
 
@@ -30,7 +30,7 @@ I've also hit the gym and took a little run on my way there and back to hotel.
 
 As soon as I got to Front In POA I received an awesome [@umbler](https://twitter.com/umbler) t-shirt from the organizers, which by the way were really cool and made me feel at home. Thanks [@jaydson](https://twitter.com/jaydson) and [@felipenmoura](https://twitter.com/felipenmoura)!
 
-![My Amazing Umbler t-shirt!](/assets/FrontInPoa2016/IMG_4512.JPG)
+<BlogImage src="/assets/FrontInPoa2016/IMG_4512.JPG" alt="My Amazing Umbler t-shirt!" />
 
 The venue was great: it had lots of comfortable seats, a big stage and high quality audio and recording equipment.
 The coffee break was delicious and I made lots of new friends at [@FrontInPOA](https://twitter.com/frontinpoa).
@@ -51,7 +51,7 @@ The last talk before lunch was given by a guy I also admire a lot: [@obetomuniz]
 Our lunch was delicious and was sponsored by [@toptal](https://twitter.com/toptal), a great company which has been supporting events and conferences all across Brazil. Thank you very much!
 
 
-![Our Delicious Lunch Sponsored by TopTal](/assets/FrontInPoa2016/IMG_4468.JPG)
+<BlogImage src="/assets/FrontInPoa2016/IMG_4468.JPG" alt="Our Delicious Lunch Sponsored by TopTal" />
 
 
 After lunch we had another great talk by [@abnersajr](https://twitter.com/abnersajr) teaching us how to do cool and effective animations with CSS.
@@ -64,13 +64,13 @@ The talk before mine was given by [@alinedecampos](https://twitter.com/alinedeca
 
 And then my big moment had come! I talked about Meta Programming in JavaScript and showed how the language works behind the scenes. I managed to put the most important content from each one of my blog posts about Meta Programming in a single talk. Since that was quite a lot of content, I couldn't add every single detail from the posts, but if you want to read them, these are the links for the [the first](/2016/10/06/Meta-Programming-in-JavaScript-Part-One.html), [the second](/2016/10/22/Meta-Programming-in-JavaScript-Part-Two.html), [the third](/2016/11/15/Meta-Programming-in-JavaScript-Part-Three.html) and [the fourth post](/2016/12/01/Meta-Programming-in-JavaScript-Part-Four.html) of the series.
 
-![Me talking about the Meta Object Protocol at FrontInPOA](/assets/FrontInPoa2016/IMG_4472.JPG)
+<BlogImage src="/assets/FrontInPoa2016/IMG_4472.JPG" alt="Me talking about the Meta Object Protocol at FrontInPOA" />
 
 My slides for that talk can be found at [this link](https://speakerdeck.com/lucasfcosta/nas-entranhas-do-javascript-meta-programacao#) and soon I'll be posting the full video, which has been recorded by the great team hired by the event's organizers.
 
 I also did some live coding and people seemed to be impressed by my vIM "mad skillz". Personally, I don't think I'm really good at vIM, but I think I managed to get pretty efficient at it already.
 
-![Me using vIM when doing Live Coding at FrontInPOA](/assets/FrontInPoa2016/IMG_4474.PNG)
+<BlogImage src="/assets/FrontInPoa2016/IMG_4474.PNG" alt="Me using vIM when doing Live Coding at FrontInPOA" />
 
 After my talk I was also interviewed by the organizers and we talked a little bit about why Meta Programming matters and how important it is. We even had time to leave a message by quoting one of my idols: [@BrendanEich](https://twitter.com/BrendanEich), which said: "always bet on JS". Soon I'll be posting a link for it too, stay tuned.
 
@@ -83,7 +83,7 @@ To close this awesome event we had another great talk by [@alezanela](https://tw
 
 After the event, me, [@obetomuniz](https://twitter.com/obetomuniz), [@olarclara](https://twitter.com/olarclara), [@abnersajr](https://twitter.com/abnersajr) and [@brunocleitee](https://twitter.com/brunocleitee) went for a beer and a traditional "xis", which is an hamburger with three times the size of a normal one.
 
-![Me and my friends from FrontInPOA 2016 eating a traditional "Xis"](/assets/FrontInPoa2016/IMG_4482.JPG)
+<BlogImage src="/assets/FrontInPoa2016/IMG_4482.JPG" alt="Me and my friends from FrontInPOA 2016 eating a traditional Xis" />
 
 We talked about the Google Developer Expert Program and our adventures in the amazing world of open source development and technology in general.
 
@@ -102,4 +102,4 @@ Finally, thank you people for coming and watching these talks and thank you spea
 
 Keep rocking POA!
 
-![POA seen from the airplane window](/assets/FrontInPoa2016/IMG_4489.JPG)
+<BlogImage src="/assets/FrontInPoa2016/IMG_4489.JPG" alt="POA seen from the airplane window" />

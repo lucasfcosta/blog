@@ -95,7 +95,7 @@ Here are some of the most well-known complexity descriptions:
 
 And this is an awesome graph I've found in this StackOverflow question, which demonstrates the complexity of the items above:
 
-![Big O complexity graph](/assets/big-o-graph.png)
+<BlogImage src="/assets/big-o-graph.png" alt="Big O complexity graph" />
 
 
 
@@ -150,7 +150,7 @@ If you had an algorithm that took 100ms for each operation, you'd cut its overal
 
 ## Why You Will Never Beat a Pigeon
 
-![Funny Pigeon GIF](https://media.giphy.com/media/Cwl1WYPYSmIus/giphy.gif)
+<BlogImage src="https://media.giphy.com/media/Cwl1WYPYSmIus/giphy.gif" alt="Funny Pigeon GIF" />
 
 If, instead of running an algorithm, you could simply ask a pigeon to go from point A to point B and bring a USB stick with the answer, it would be better or at least as efficient as any algorithm you will ever write.
 

@@ -15,7 +15,7 @@ GUIs are bloatware. [I've said it before](/2018/08/05/In-Praise-of-Plaintext.htm
 
 In this post, I'll walk you through everything you need to start making your terminal a complete development environment: how to edit text efficiently, configure its appearance, run and combine a myriad of programs, and dynamically create, resize and close tabs and windows.
 
-![An image from my terminal showing three panes. My text editor (`vim`), htop and a blank pane.](/assets/terminal-demo.png)
+<BlogImage src="/assets/terminal-demo.png" alt="An image from my terminal showing three panes. My text editor (vim), htop and a blank pane" />
 
 
 
@@ -426,7 +426,7 @@ I also use [the `git` plugin](https://github.com/robbyrussell/oh-my-zsh/tree/mas
 
 If you're in an early 2000's vibe, you can install the `chucknorris` plugin and use the `chuck` command to get jokes that used to be funny.
 
-![An ASCII drawing of a cow telling a Chuck Norris joke.](/assets/cowsay-chucknorris.png)
+<BlogImage src="/assets/cowsay-chucknorris.png" alt="An ASCII drawing of a cow telling a Chuck Norris joke" />
 
 
 ```
@@ -453,7 +453,7 @@ My `iTerm2` uses [the `nord` iTerm colours](https://github.com/arcticicestudio/n
 
 [Powerline Fonts](https://github.com/powerline/fonts) are also a neat thing to have. They include many characters used for text-based layouts such as the fill-blocks and triangles you can see in my `tmux` status-bar.
 
-![My tmux status bar, showing the song currently playing, the date and time, the CPU percentage, the battery and connectivity status in a linear text-based interface](/assets/tmux-status-bar.png)
+<BlogImage src="/assets/tmux-status-bar.png" alt="My tmux status bar, showing the song currently playing, the date and time, the CPU percentage, the battery and connectivity status in a linear text-based interface" />
 
 I use `iTerm2` simply because it's more customizable than Mac OS's default terminal. I don't need its window control features and tabs since I already use `tmux`.
 

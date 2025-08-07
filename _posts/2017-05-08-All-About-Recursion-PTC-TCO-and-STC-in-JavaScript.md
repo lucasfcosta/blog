@@ -58,7 +58,7 @@ In the previous factorial example, we can see that multiple calls derive from th
 
 If we had to represent the calls a `factorial` function does when it is invoked passing `5` as an argument, it would look like this:
 
-![Calls happening when you calculate the factorial of 5 recursively](/assets/factorial-calls.png)
+<BlogImage src="/assets/factorial-calls.png" alt="Calls happening when you calculate the factorial of 5 recursively" />
 
 By doing a parallel with compilers' theory, this looks very much like what happens when we use a [context-free grammar](https://en.wikipedia.org/wiki/Context-free_grammar) to derive sentences until we reach terminal values.
 
@@ -83,11 +83,11 @@ When we reach a number smaller than two we return this result so that we can fee
 
 As the image below clearly demonstrates, when calling `factorial(4)`, we end up deriving calls from it until we reach a "self-contained" definition (a "base case") which in this case are the first two numbers in the Fibonacci sequence: 1 (0th) and 1 (1st).
 
-![Deriving calls from our first Fibonacci function call](/assets/recursion-derivation.png)
+<BlogImage src="/assets/recursion-derivation.png" alt="Deriving calls from our first Fibonacci function call" />
 
 Since each recursive call depends on the result of another two recursive call (unless the value passed is smaller than 2 and therefore a "base case"), we start returning values from the leaves (`1`) and then summing them in order to feed the call above.
 
-![Bubbling up results in the Fibonacci function call hierarchy](/assets/recursion-bubble-up.png)
+<BlogImage src="/assets/recursion-bubble-up.png" alt="Bubbling up results in the Fibonacci function call hierarchy" />
 
 **As you could notice in the examples above, we can have linear recursion (when there is a single branch of recursive calls, such as in the factorial example) and branching recursion (when there is more than one branch of recursive calls, such as in the Fibonacci example)**.
 

@@ -21,7 +21,7 @@ If you want to build a car you should not start by assembling the wheels, then a
 
 
 
-![An image showing that building a car consists in fact of building a skate, then a scooter, then a bicycle, then a motorbike and finally getting to a car](/assets/iterative-development.jpg)
+<BlogImage src="/assets/iterative-development.jpg" alt="An image showing that building a car consists in fact of building a skate, then a scooter, then a bicycle, then a motorbike and finally getting to a car" />
 
 
 
