@@ -133,14 +133,14 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       const href = hrefMatch ? hrefMatch[1] : '';
       const caption = captionMatch ? captionMatch[1] : '';
       
-      let imgTag = `<img style="margin-bottom: -18px;" src="${src}" alt="${alt}">`;
+      let imgTag = `<img style="margin-bottom: 8px;" src="${src}" alt="${alt}">`;
       
       if (href) {
         imgTag = `<a target="_blank" class="image-link" href="${href}">${imgTag}</a>`;
       }
       
       if (caption) {
-        imgTag += `\n<center style="font-size: 0.8em; margin-bottom: 32px;"><i>${caption}</i></center>`;
+        imgTag += `\n<center style="font-size: 0.8em; margin-top: 4px; margin-bottom: 32px; position: relative; z-index: 10;"><i>${caption}</i></center>`;
       }
       
       return imgTag;

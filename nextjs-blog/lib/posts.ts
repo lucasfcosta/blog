@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 
 const postsDirectory = path.join(process.cwd(), '..', '_posts');
-const reveriesDirectory = path.join(process.cwd(), '..', '_reveries');
+
 const talksDirectory = path.join(process.cwd(), '..', '_talks');
 
 export interface Post {
@@ -67,47 +67,6 @@ export function getAllPosts(): Post[] {
     return allPostsData.sort((a, b) => (a.date > b.date ? -1 : 1));
   } catch (error) {
     console.error('Error reading posts:', error);
-    return [];
-  }
-}
-
-export function getAllReveries(): Post[] {
-  try {
-    const fileNames = fs.readdirSync(reveriesDirectory);
-    const allReveriesData = fileNames
-      .filter((name) => name.endsWith('.md') || name.endsWith('.markdown'))
-      .map((fileName) => {
-        // Extract slug from filename (remove date prefix and extension)
-        const slug = fileName.replace(/^\d{4}-\d{2}-\d{2}-/, '').replace(/\.(md|markdown)$/, '');
-        
-        // Read markdown file as string
-        const fullPath = path.join(reveriesDirectory, fileName);
-        const fileContents = fs.readFileSync(fullPath, 'utf8');
-        
-        // Use gray-matter to parse the post metadata section
-        const matterResult = matter(fileContents);
-        
-        // Extract date from filename
-        const dateMatch = fileName.match(/^(\d{4}-\d{2}-\d{2})-/);
-        const date = dateMatch ? dateMatch[1] : '';
-        
-        return {
-          slug,
-          date,
-          title: matterResult.data.title || '',
-          author: matterResult.data.author || '',
-          place: matterResult.data.place || '',
-          flag: matterResult.data.flag || '',
-          tags: matterResult.data.tags || '',
-          content: matterResult.content,
-          description: matterResult.data.description || '',
-        } as Post;
-      });
-
-    // Sort reveries by date (newest first)
-    return allReveriesData.sort((a, b) => (a.date > b.date ? -1 : 1));
-  } catch (error) {
-    console.error('Error reading reveries:', error);
     return [];
   }
 }

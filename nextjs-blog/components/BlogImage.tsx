@@ -14,7 +14,7 @@ export default function BlogImage({
   alt, 
   caption, 
   maxHeight, 
-  marginBottom = -18,
+  marginBottom = 8,
   href 
 }: BlogImageProps) {
   const imageStyle = {
@@ -55,9 +55,12 @@ export default function BlogImage({
       {caption && (
         <div style={{ 
           fontSize: '0.8em', 
+          marginTop: '4px',
           marginBottom: '32px', 
           textAlign: 'center',
-          fontStyle: 'italic'
+          fontStyle: 'italic',
+          position: 'relative',
+          zIndex: 10
         }}>
           {caption}
         </div>
