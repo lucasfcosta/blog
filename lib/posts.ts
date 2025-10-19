@@ -37,19 +37,21 @@ export function getAllPosts(): Post[] {
       .filter((name) => name.endsWith('.md') || name.endsWith('.markdown'))
       .map((fileName) => {
         // Extract slug from filename (remove date prefix and extension)
-        const slug = fileName.replace(/^\d{4}-\d{2}-\d{2}-/, '').replace(/\.(md|markdown)$/, '');
-        
+        const slug = fileName
+          .replace(/^\d{4}-\d{2}-\d{2}-/, '')
+          .replace(/\.(md|markdown)$/, '');
+
         // Read markdown file as string
         const fullPath = path.join(postsDirectory, fileName);
         const fileContents = fs.readFileSync(fullPath, 'utf8');
-        
+
         // Use gray-matter to parse the post metadata section
         const matterResult = matter(fileContents);
-        
+
         // Extract date from filename
         const dateMatch = fileName.match(/^(\d{4}-\d{2}-\d{2})-/);
         const date = dateMatch ? dateMatch[1] : '';
-        
+
         return {
           slug,
           date,
@@ -78,19 +80,21 @@ export function getAllTalks(): Talk[] {
       .filter((name) => name.endsWith('.md') || name.endsWith('.markdown'))
       .map((fileName) => {
         // Extract slug from filename (remove date prefix and extension)
-        const slug = fileName.replace(/^\d{4}-\d{2}-\d{2}-/, '').replace(/\.(md|markdown)$/, '');
-        
+        const slug = fileName
+          .replace(/^\d{4}-\d{2}-\d{2}-/, '')
+          .replace(/\.(md|markdown)$/, '');
+
         // Read markdown file as string
         const fullPath = path.join(talksDirectory, fileName);
         const fileContents = fs.readFileSync(fullPath, 'utf8');
-        
+
         // Use gray-matter to parse the post metadata section
         const matterResult = matter(fileContents);
-        
+
         // Extract date from filename
         const dateMatch = fileName.match(/^(\d{4}-\d{2}-\d{2})-/);
         const date = dateMatch ? dateMatch[1] : '';
-        
+
         return {
           slug,
           date,
@@ -123,12 +127,12 @@ export function formatDate(dateString: string): string {
   const day = date.getDate();
   const month = date.toLocaleDateString('en-US', { month: 'long' });
   const year = date.getFullYear();
-  
+
   // Add ordinal suffix (st, nd, rd, th)
   let suffix = 'th';
   if (day === 1 || day === 21 || day === 31) suffix = 'st';
   else if (day === 2 || day === 22) suffix = 'nd';
   else if (day === 3 || day === 23) suffix = 'rd';
-  
+
   return `${day}${suffix} of ${month}, ${year}`;
 }

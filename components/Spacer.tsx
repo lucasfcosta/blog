@@ -5,7 +5,7 @@ interface SpacerProps {
 
 export default function Spacer({ size = 'medium', height }: SpacerProps) {
   let spacingHeight = '1rem';
-  
+
   if (height) {
     spacingHeight = `${height}px`;
   } else {

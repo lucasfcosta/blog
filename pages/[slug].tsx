@@ -27,7 +27,6 @@ const components = {
   Callout,
   BigText,
   YouTube,
-
 };
 
 export default function PostPage({ post, mdxSource }: PostPageProps) {
@@ -40,9 +39,7 @@ export default function PostPage({ post, mdxSource }: PostPageProps) {
 
         <div className="post-headline">
           <span className="post-meta">
-            <span className="post-date">
-              {formatDate(post.date)}
-            </span>
+            <span className="post-date">{formatDate(post.date)}</span>
             <span className="post-separator"> — </span>
             <span className="post-author">
               {post.author} at {post.place}
@@ -51,34 +48,34 @@ export default function PostPage({ post, mdxSource }: PostPageProps) {
           </span>
 
           <span className="share-buttons">
-            <a 
+            <a
               href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(postUrl)}&via=${siteConfig.twitterUsername}&related=${siteConfig.twitterUsername}`}
-              rel="nofollow" 
-              target="_blank" 
+              rel="nofollow"
+              target="_blank"
               title="Share on Twitter"
             >
               <i className="fab fa-twitter fa-2x"></i>
             </a>
-            <a 
-              href={`https://facebook.com/sharer.php?u=${encodeURIComponent(postUrl)}`} 
-              rel="nofollow" 
+            <a
+              href={`https://facebook.com/sharer.php?u=${encodeURIComponent(postUrl)}`}
+              rel="nofollow"
               target="_blank"
               title="Share on Facebook"
             >
               <i className="fab fa-facebook-f fa-2x"></i>
             </a>
-            <a 
+            <a
               href={`http://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(postUrl)}&title=${encodeURIComponent(post.title)}&summary=${encodeURIComponent(siteConfig.url)}&source=${encodeURIComponent(siteConfig.url)}`}
-              rel="nofollow" 
-              target="_blank" 
+              rel="nofollow"
+              target="_blank"
               title="Share on LinkedIn"
             >
               <i className="fab fa-linkedin-in fa-2x"></i>
             </a>
-            <a 
+            <a
               href={`http://www.reddit.com/submit?url=${encodeURIComponent(postUrl)}&title=${encodeURIComponent(post.title)}`}
-              rel="nofollow" 
-              target="_blank" 
+              rel="nofollow"
+              target="_blank"
               title="Share on Reddit"
             >
               <i className="fab fa-reddit-alien fa-2x"></i>
@@ -118,7 +115,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
   // Process content to handle modern MDX components while preserving legacy HTML
   const processedContent = post.content;
-  
+
   // Keep BlogImage components as-is for MDX to handle them
 
   const mdxSource = await serialize(processedContent, {

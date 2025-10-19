@@ -13,9 +13,7 @@ export default function Home({ posts }: HomeProps) {
         <ul className="post-list">
           {posts.map((post) => (
             <li key={post.slug} className="post-item">
-              <span className="post-date">
-                {formatDate(post.date)}
-              </span>
+              <span className="post-date">{formatDate(post.date)}</span>
 
               <h2 className="post-title">
                 <a className="post-link" href={`/${post.slug}`}>

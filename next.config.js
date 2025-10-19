@@ -2,7 +2,7 @@
 const nextConfig = {
   // Configure page extensions to include MDX
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
-  
+
   // Webpack configuration to handle fs module
   webpack: (config, { isServer }) => {
     if (!isServer) {

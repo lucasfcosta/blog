@@ -6,12 +6,12 @@ interface YouTubeProps {
   title?: string;
 }
 
-export default function YouTube({ 
-  id, 
-  start, 
-  width = 560, 
+export default function YouTube({
+  id,
+  start,
+  width = 560,
   height = 315,
-  title = "YouTube video"
+  title = 'YouTube video',
 }: YouTubeProps) {
   const startParam = start ? `?start=${start}` : '';
   const src = `https://www.youtube.com/embed/${id}${startParam}`;
@@ -29,7 +29,7 @@ export default function YouTube({
         style={{
           maxWidth: '100%',
           height: 'auto',
-          aspectRatio: '16/9'
+          aspectRatio: '16/9',
         }}
       />
     </div>

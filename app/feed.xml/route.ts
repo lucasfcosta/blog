@@ -28,27 +28,28 @@ export async function GET() {
   });
 
   const posts = getAllPosts();
-  
+
   // Limit to the most recent 50 posts to keep feed size reasonable
   const recentPosts = posts.slice(0, 50);
 
   recentPosts.forEach((post) => {
     const postUrl = `${siteConfig.url}/${post.slug}/`;
-    
+
     // Convert YYYY-MM-DD date to proper Date object
     const postDate = new Date(post.date + 'T12:00:00.000Z');
-    
+
     // Create a clean description from description or truncated content
     let description = post.description || '';
     if (!description && post.content) {
       // Remove markdown and HTML, then truncate
-      description = post.content
-        .replace(/#{1,6}\s+/g, '') // Remove markdown headers
-        .replace(/\*\*([^*]+)\*\*/g, '$1') // Remove bold markdown
-        .replace(/\*([^*]+)\*/g, '$1') // Remove italic markdown
-        .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1') // Remove markdown links
-        .replace(/<[^>]*>/g, '') // Remove HTML tags
-        .slice(0, 200) + '...';
+      description =
+        post.content
+          .replace(/#{1,6}\s+/g, '') // Remove markdown headers
+          .replace(/\*\*([^*]+)\*\*/g, '$1') // Remove bold markdown
+          .replace(/\*([^*]+)\*/g, '$1') // Remove italic markdown
+          .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1') // Remove markdown links
+          .replace(/<[^>]*>/g, '') // Remove HTML tags
+          .slice(0, 200) + '...';
     }
 
     feed.addItem({
@@ -65,7 +66,9 @@ export async function GET() {
         },
       ],
       date: postDate,
-      category: post.tags ? post.tags.split(',').map(tag => ({ name: tag.trim() })) : [],
+      category: post.tags
+        ? post.tags.split(',').map((tag) => ({ name: tag.trim() }))
+        : [],
     });
   });
 

@@ -25,9 +25,9 @@ export default function About({ mdxSource, frontmatter }: AboutPageProps) {
   return (
     <Layout title={frontmatter.title} description={frontmatter.description}>
       <div className="about">
-        <Image 
-          className="profile-picture" 
-          src="/lucasfcosta.png" 
+        <Image
+          className="profile-picture"
+          src="/lucasfcosta.png"
           alt="Lucas F. Costa profile picture"
           width={200}
           height={200}
@@ -39,9 +39,11 @@ export default function About({ mdxSource, frontmatter }: AboutPageProps) {
         </h2>
 
         <span className="call-to-action">
-          <a 
+          <a
             href={`https://twitter.com/${siteConfig.twitterUsername}`}
-            onClick={() => {/* Analytics event can be added later */}}
+            onClick={() => {
+              /* Analytics event can be added later */
+            }}
           >
             follow me on twitter
           </a>
@@ -58,9 +60,9 @@ export default function About({ mdxSource, frontmatter }: AboutPageProps) {
 export const getStaticProps: GetStaticProps<AboutPageProps> = async () => {
   const aboutPath = path.join(process.cwd(), 'about.md');
   const source = fs.readFileSync(aboutPath, 'utf8');
-  
+
   const { content, data } = matter(source);
-  
+
   const mdxSource = await serialize(content, {
     mdxOptions: {
       remarkPlugins: [remarkGfm, remarkMath],

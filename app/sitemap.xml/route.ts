@@ -6,11 +6,11 @@ export const dynamic = 'force-static';
 
 export async function GET() {
   const baseUrl = siteConfig.url;
-  
+
   // Get all posts and talks
   const posts = getAllPosts();
   const talks = getAllTalks();
-  
+
   // Generate sitemap XML
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -31,20 +31,28 @@ export async function GET() {
   </url>
   
   <!-- Blog posts -->
-${posts.map((post) => `  <url>
+${posts
+  .map(
+    (post) => `  <url>
     <loc>${baseUrl}/${post.slug}/</loc>
     <lastmod>${new Date(post.date).toISOString()}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>`).join('\n')}
+  </url>`
+  )
+  .join('\n')}
   
   <!-- Talks -->
-${talks.map((talk) => `  <url>
+${talks
+  .map(
+    (talk) => `  <url>
     <loc>${baseUrl}/talks/${talk.slug}/</loc>
     <lastmod>${new Date(talk.date).toISOString()}</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
-  </url>`).join('\n')}
+  </url>`
+  )
+  .join('\n')}
 </urlset>`;
 
   return new Response(sitemap, {

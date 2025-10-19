@@ -24,9 +24,11 @@ export default function Header() {
     <>
       <nav className="navbar">
         <div className="header-left">
-          <a className="navItem" href={`mailto:${siteConfig.email}`}>Email</a>
-          <a 
-            className="navItem" 
+          <a className="navItem" href={`mailto:${siteConfig.email}`}>
+            Email
+          </a>
+          <a
+            className="navItem"
             onClick={() => {
               if (typeof window !== 'undefined' && window.sa_event) {
                 window.sa_event('header_twitter_follow');
@@ -36,8 +38,8 @@ export default function Header() {
           >
             Twitter
           </a>
-          <a 
-            className="navItem" 
+          <a
+            className="navItem"
             onClick={() => {
               if (typeof window !== 'undefined' && window.sa_event) {
                 window.sa_event('header_github_follow');
@@ -57,31 +59,37 @@ export default function Header() {
           </h1>
         </div>
         <div className="header-right">
-          <Link className="navItem" href="/">Blog</Link>
-          <Link className="navItem" href="/talks">Talks</Link>
-          <Link className="navItem" href="/about">About Me</Link>
-          <a 
-            className="navItem" 
+          <Link className="navItem" href="/">
+            Blog
+          </Link>
+          <Link className="navItem" href="/talks">
+            Talks
+          </Link>
+          <Link className="navItem" href="/about">
+            About Me
+          </Link>
+          <a
+            className="navItem"
             onClick={() => {
               if (typeof window !== 'undefined' && window.sa_event) {
                 window.sa_event('header_rss');
               }
-            }} 
+            }}
             href="/feed.xml"
           >
             RSS
           </a>
         </div>
 
-        <span 
-          id="menu-toggle" 
+        <span
+          id="menu-toggle"
           className="menu-toggle navItem"
           onClick={toggleMenu}
         >
           MENU
         </span>
-        <div 
-          id="menu-drawer" 
+        <div
+          id="menu-drawer"
           className={`menu-drawer ${isMenuOpen ? '' : 'menu-drawer-hidden'}`}
         >
           <div className="drawer-header">
@@ -91,8 +99,8 @@ export default function Header() {
                 <span className="subtitle">{siteConfig.subtitle}</span>
               </Link>
             </h1>
-            <span 
-              id="menu-close" 
+            <span
+              id="menu-close"
               className="menu-close-button"
               onClick={closeMenu}
             >
@@ -101,12 +109,20 @@ export default function Header() {
           </div>
 
           <div className="drawer-menu-items">
-            <Link className="drawer-item" href="/">Blog</Link>
-            <Link className="drawer-item" href="/talks">Talks</Link>
-            <Link className="drawer-item" href="/about">About Me</Link>
-            <a className="drawer-item" href={`mailto:${siteConfig.email}`}>Email</a>
-            <a 
-              className="drawer-item" 
+            <Link className="drawer-item" href="/">
+              Blog
+            </Link>
+            <Link className="drawer-item" href="/talks">
+              Talks
+            </Link>
+            <Link className="drawer-item" href="/about">
+              About Me
+            </Link>
+            <a className="drawer-item" href={`mailto:${siteConfig.email}`}>
+              Email
+            </a>
+            <a
+              className="drawer-item"
               onClick={() => {
                 if (typeof window !== 'undefined' && window.sa_event) {
                   window.sa_event('drawer_twitter_follow');
@@ -116,8 +132,8 @@ export default function Header() {
             >
               Twitter
             </a>
-            <a 
-              className="drawer-item" 
+            <a
+              className="drawer-item"
               onClick={() => {
                 if (typeof window !== 'undefined' && window.sa_event) {
                   window.sa_event('drawer_github_follow');
@@ -127,13 +143,13 @@ export default function Header() {
             >
               Github
             </a>
-            <a 
-              className="drawer-item" 
+            <a
+              className="drawer-item"
               onClick={() => {
                 if (typeof window !== 'undefined' && window.sa_event) {
                   window.sa_event('drawer_rss');
                 }
-              }} 
+              }}
               href="/feed.xml"
             >
               RSS

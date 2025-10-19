@@ -8,14 +8,15 @@ interface TalksProps {
 
 export default function Talks({ talks }: TalksProps) {
   return (
-    <Layout title="Talks" description="Conference talks and presentations by Lucas F. Costa">
+    <Layout
+      title="Talks"
+      description="Conference talks and presentations by Lucas F. Costa"
+    >
       <div className="blog">
         <ul className="post-list">
           {talks.map((talk) => (
             <li key={talk.slug} className="post-item">
-              <span className="post-date">
-                {formatDate(talk.date)}
-              </span>
+              <span className="post-date">{formatDate(talk.date)}</span>
 
               <h2 className="post-title">
                 <a className="post-link" href={`/talks/${talk.slug}`}>

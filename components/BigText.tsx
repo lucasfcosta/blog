@@ -6,17 +6,17 @@ interface BigTextProps {
   bold?: boolean;
 }
 
-export default function BigText({ 
-  children, 
-  size = 'large', 
-  center = true, 
+export default function BigText({
+  children,
+  size = 'large',
+  center = true,
   italic = false,
-  bold = false 
+  bold = false,
 }: BigTextProps) {
   const sizeStyles = {
     large: { fontSize: '1.6em' },
     xlarge: { fontSize: '2.6em', lineHeight: 1.2 },
-    huge: { fontSize: '3.6em' }
+    huge: { fontSize: '3.6em' },
   };
 
   const style = {
@@ -26,9 +26,5 @@ export default function BigText({
     ...(bold && { fontWeight: 'bold' }),
   };
 
-  return (
-    <p style={style}>
-      {children}
-    </p>
-  );
+  return <p style={style}>{children}</p>;
 }
