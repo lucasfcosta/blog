@@ -34,7 +34,6 @@ export default function BlogImage({
           maxHeight: `${maxHeight}px`,
           objectFit: 'contain',
         }}
-        unoptimized
       />
     </a>
   );

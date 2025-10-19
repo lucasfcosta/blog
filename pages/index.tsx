@@ -2,8 +2,10 @@ import { GetStaticProps } from 'next';
 import Layout from '../components/Layout';
 import { getAllPosts, formatDate, Post } from '../lib/posts';
 
+type PostPreview = Omit<Post, 'content'>;
+
 interface HomeProps {
-  posts: Post[];
+  posts: PostPreview[];
 }
 
 export default function Home({ posts }: HomeProps) {
@@ -36,9 +38,11 @@ export default function Home({ posts }: HomeProps) {
 export const getStaticProps: GetStaticProps = async () => {
   const posts = getAllPosts();
 
+  const postsWithoutContent = posts.map(({ content, ...post }) => post);
+
   return {
     props: {
-      posts,
+      posts: postsWithoutContent,
     },
   };
 };

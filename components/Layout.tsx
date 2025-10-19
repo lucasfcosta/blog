@@ -66,14 +66,6 @@ export default function Layout({
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDescription} />
 
-        {/* KaTeX for math */}
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
-          integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq"
-          crossOrigin="anonymous"
-        />
-
         <link rel="canonical" href={currentUrl} />
         <link
           rel="alternate"

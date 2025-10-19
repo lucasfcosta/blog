@@ -2,8 +2,10 @@ import { GetStaticProps } from 'next';
 import Layout from '../components/Layout';
 import { getAllTalks, formatDate, Talk } from '../lib/posts';
 
+type TalkPreview = Omit<Talk, 'content'>;
+
 interface TalksProps {
-  talks: Talk[];
+  talks: TalkPreview[];
 }
 
 export default function Talks({ talks }: TalksProps) {
@@ -39,9 +41,11 @@ export default function Talks({ talks }: TalksProps) {
 export const getStaticProps: GetStaticProps = async () => {
   const talks = getAllTalks();
 
+  const talksWithoutContent = talks.map(({ content, ...talk }) => talk);
+
   return {
     props: {
-      talks,
+      talks: talksWithoutContent,
     },
   };
 };
