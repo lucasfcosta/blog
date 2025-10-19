@@ -136,3 +136,29 @@ export function formatDate(dateString: string): string {
 
   return `${day}${suffix} of ${month}, ${year}`;
 }
+
+export const POSTS_PER_PAGE = 10;
+
+export function getPaginatedPosts(page: number = 1): Post[] {
+  const allPosts = getAllPosts();
+  const startIndex = (page - 1) * POSTS_PER_PAGE;
+  const endIndex = startIndex + POSTS_PER_PAGE;
+  return allPosts.slice(startIndex, endIndex);
+}
+
+export function getTotalPostPages(): number {
+  const allPosts = getAllPosts();
+  return Math.ceil(allPosts.length / POSTS_PER_PAGE);
+}
+
+export function getPaginatedTalks(page: number = 1): Talk[] {
+  const allTalks = getAllTalks();
+  const startIndex = (page - 1) * POSTS_PER_PAGE;
+  const endIndex = startIndex + POSTS_PER_PAGE;
+  return allTalks.slice(startIndex, endIndex);
+}
+
+export function getTotalTalkPages(): number {
+  const allTalks = getAllTalks();
+  return Math.ceil(allTalks.length / POSTS_PER_PAGE);
+}

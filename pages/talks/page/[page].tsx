@@ -1,22 +1,22 @@
-import { GetStaticProps } from 'next';
-import Layout from '../components/Layout';
-import Pagination from '../components/Pagination';
+import { GetStaticProps, GetStaticPaths } from 'next';
+import Layout from '../../../components/Layout';
+import Pagination from '../../../components/Pagination';
 import {
   getPaginatedTalks,
   getTotalTalkPages,
   formatDate,
   Talk,
-} from '../lib/posts';
+} from '../../../lib/posts';
 
 type TalkPreview = Omit<Talk, 'content'>;
 
-interface TalksProps {
+interface PageProps {
   talks: TalkPreview[];
   currentPage: number;
   totalPages: number;
 }
 
-export default function Talks({ talks, currentPage, totalPages }: TalksProps) {
+export default function Page({ talks, currentPage, totalPages }: PageProps) {
   return (
     <Layout
       title="Talks"
@@ -51,8 +51,21 @@ export default function Talks({ talks, currentPage, totalPages }: TalksProps) {
   );
 }
 
-export const getStaticProps: GetStaticProps = async () => {
-  const talks = getPaginatedTalks(1);
+export const getStaticPaths: GetStaticPaths = async () => {
+  const totalPages = getTotalTalkPages();
+  const paths = Array.from({ length: totalPages - 1 }, (_, i) => ({
+    params: { page: String(i + 2) },
+  }));
+
+  return {
+    paths,
+    fallback: false,
+  };
+};
+
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const page = Number(params?.page) || 1;
+  const talks = getPaginatedTalks(page);
   const totalPages = getTotalTalkPages();
 
   const talksWithoutContent = talks.map(({ content, ...talk }) => talk);
@@ -60,7 +73,7 @@ export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
       talks: talksWithoutContent,
-      currentPage: 1,
+      currentPage: page,
       totalPages,
     },
   };

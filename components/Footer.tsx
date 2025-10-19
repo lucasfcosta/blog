@@ -4,14 +4,19 @@ export default function Footer() {
   return (
     <>
       <div className="footer">
-        <span className="copyleft">
-          <span className="copyleft-brand">
-            Copyleft - All rights reversed.
+        <div className="footer-content">
+          <span className="copyleft">
+            <span className="copyleft-brand">
+              Copyleft - All rights reversed.
+            </span>
+            <span className="copyleft-motto">
+              The internet is free and so is my content.
+            </span>
           </span>
-          <span className="copyleft-motto">
-            The internet is free and so is my content.
-          </span>
-        </span>
+          <a href="/feed.xml" className="rss-link">
+            RSS
+          </a>
+        </div>
       </div>
 
       {/* Analytics Scripts */}

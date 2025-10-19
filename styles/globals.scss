@@ -210,19 +210,40 @@ body {
 }
 
 .footer {
+  width: 100%;
+  margin-top: 64px;
+  padding: 24px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.footer-content {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 48px;
-  width: 100%;
+  justify-content: space-between;
 }
 
 .copyleft {
-  font-family: $copyleft-font-family;
+  font-family: $base-font-family;
   font-size: $footer-font-size;
   line-height: 16px;
   opacity: 0.6;
-  font-style: italic;
+  display: flex;
+  gap: 4px;
+}
+
+.rss-link {
+  font-family: $base-font-family;
+  font-size: $footer-font-size;
+  opacity: 0.6;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.9;
+    border-bottom-color: rgba(0, 0, 0, 0.6);
+  }
 }
 
 // Post list styles
@@ -285,6 +306,69 @@ body {
     margin: 0 4px;
     opacity: 1;
     vertical-align: middle;
+  }
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 64px;
+  font-family: $base-font-family;
+}
+
+.pagination-button {
+  font-family: $base-font-family;
+  font-size: 14px;
+  background: none;
+  border: none;
+  color: #000;
+  opacity: 0.6;
+  cursor: pointer;
+  padding: 4px 8px;
+  text-decoration: none;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.pagination-numbers {
+  display: flex;
+  gap: 4px;
+}
+
+.pagination-number {
+  font-family: $menu-item-font-family;
+  font-size: 12px;
+  background: none;
+  border: 1px solid #e4ddde;
+  border-radius: 50%;
+  color: #000;
+  opacity: 0.7;
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover:not(.active) {
+    background-color: #f5f0f1;
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  &.active {
+    background-color: #e4ddde;
+    opacity: 1;
+    font-weight: bold;
+    cursor: default;
   }
 }
 
@@ -360,8 +444,22 @@ body {
     display: none;
   }
 
+  .footer {
+    margin-top: 0px;
+    padding-top: 32px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 16px;
+  }
+
   .copyleft > * {
     display: block;
+    text-align: center;
+  }
+
+  .rss-link {
     text-align: center;
   }
 
@@ -383,6 +481,21 @@ body {
     font-size: $drawer-item-font-size-small;
     line-height: 32px;
     margin-bottom: 24px;
+  }
+
+  .pagination {
+    margin-top: 48px;
+  }
+
+  .pagination-button {
+    font-size: 12px;
+    padding: 4px 6px;
+  }
+
+  .pagination-number {
+    font-size: 11px;
+    width: 28px;
+    height: 28px;
   }
 }
 
