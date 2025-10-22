@@ -445,18 +445,20 @@ body {
   }
 
   .footer {
-    margin-top: 0px;
+    margin-top: 32px;
     padding-top: 32px;
   }
 
   .footer-content {
     flex-direction: column;
-    gap: 16px;
+    align-items: center;
+    gap: 32px;
   }
 
-  .copyleft > * {
-    display: block;
-    text-align: center;
+  .copyleft {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
   }
 
   .rss-link {
