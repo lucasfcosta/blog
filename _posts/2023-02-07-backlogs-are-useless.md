@@ -15,7 +15,7 @@ Important tasks never go into the backlog. We create them, we work on them, and 
 
 The truth is, **we always know what task is most important, and we work on it until it's done**. If you or your team don't know what's the most important thing to do, a backlog will not solve the problem. Context-sharing and organization alignment will. Everything else is a grim theatre to signal you're working hard enough.
 
-At [Ergomake](https://www.ergomake.dev), my co-founder and I do _not_ have a backlog, and we couldn't be happier.
+At [Briefer](https://briefer.cloud), my co-founder and I do _not_ have a backlog, and we couldn't be happier.
 
 In this blog post, I'll elucidate why backlogs exist and why they never shrink. Then, I'll expound on why they're harmful. Finally, I'll demonstrate how one can work without a backlog and explain why it's much more productive to do so.
 
@@ -107,6 +107,6 @@ Finally, whenever an item in the backlog ages beyond a particular threshold, hav
 
 ## Wanna talk?
 
-**If you'd like to have a chat, <a onclick="sa_event('calendly-backlogs')" target="_blank" href="https://calendly.com/lucasfcosta/1-1-with-lucas">you can book a slot with me here</a>**. I'd love to talk about ephemeral environments, what we're building at [Ergomake](https://www.ergomake.dev), or simply Agile in general.
+**You can <a onclick="sa_event('calendly-backlogs')" target="_blank" href="https://calendly.com/lucasfcosta/1-1-with-lucas">book a call here</a>**. Really, that's it.
 
 Alternatively, you can [send me a tweet or DM @thewizardlucas](https://twitter.com/thewizardlucas) or [an email at lucas@lucasfcosta.com](mailto:lucas@lucasfcosta.com).

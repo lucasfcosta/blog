@@ -92,6 +92,6 @@ Also, this blog post is about _software_, not law or medicine.
 
 ## Wanna talk?
 
-**Especially if you're a founder, I'd love to chat. For that, <a onclick="sa_event('calendly-processes')" target="_blank" href="https://calendly.com/lucasfcosta/1-1-with-lucas">you can book a slot with me here</a>**. I'd love to talk about startups, agile, ephemeral environments, or what we're building at [Ergomake](https://www.ergomake.dev).
+**You can <a onclick="sa_event('calendly-processes')" target="_blank" href="https://calendly.com/lucasfcosta/1-1-with-lucas">book a call here</a>**. Really, that's it.
 
 Alternatively, you can [send me a tweet or DM @thewizardlucas](https://twitter.com/thewizardlucas) or [an email at lucas@lucasfcosta.com](mailto:lucas@lucasfcosta.com).
