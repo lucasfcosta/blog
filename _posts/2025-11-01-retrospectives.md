@@ -25,7 +25,7 @@ The Toyota Production System, TPS, is the origin of "continuous improvement", or
 
 Notice how I didn't say "the workers document the defect for future reference" or "the team investigates the issue when they have time". The problem is addressed immediately, and a fix is implemented before production resumes.
 
-Naturally, not every stop leads to a long problem-solving session on the spot. Depending on the severity, the team leader might come right away, assess whether production can keep going, and then trigger a structured root cause analysis later that same day. The key part is that the feedback loop is tight <NotGpt>— hours, not weeks —</NotGpt> and the people who spotted the problem are directly involved in fixing it.
+Naturally, not every stop leads to a long problem-solving session on the spot. Depending on the severity, the team leader might come right away, assess whether production can keep going, and then trigger a structured root cause analysis later that same day. The key part is that the feedback loop is tight — hours, not weeks — and the people who spotted the problem are directly involved in fixing it.
 
 Finally, it's worth noticing that the root cause analysis leads to concrete actions with deadlines and owners. Those actions are aimed at ensuring that it's _impossible_ for the same defect to happen again.
 
