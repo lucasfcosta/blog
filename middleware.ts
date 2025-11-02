@@ -64,6 +64,7 @@ export function middleware(request: NextRequest) {
     'about',
     'talks',
     'health-advice-disclaimer',
+    'confirm-subscription',
     'page',
     'blog',
     '_next',
