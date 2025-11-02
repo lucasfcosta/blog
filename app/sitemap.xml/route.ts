@@ -34,7 +34,7 @@ export async function GET() {
 ${posts
   .map(
     (post) => `  <url>
-    <loc>${baseUrl}/${post.slug}/</loc>
+    <loc>${baseUrl}/blog/${post.slug}/</loc>
     <lastmod>${new Date(post.date).toISOString()}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

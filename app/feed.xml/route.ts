@@ -33,7 +33,7 @@ export async function GET() {
   const recentPosts = posts.slice(0, 50);
 
   recentPosts.forEach((post) => {
-    const postUrl = `${siteConfig.url}/${post.slug}/`;
+    const postUrl = `${siteConfig.url}/blog/${post.slug}/`;
 
     // Convert YYYY-MM-DD date to proper Date object
     const postDate = new Date(post.date + 'T12:00:00.000Z');

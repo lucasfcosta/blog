@@ -26,7 +26,7 @@ export default function Page({ posts, currentPage, totalPages }: PageProps) {
               <span className="post-date">{formatDate(post.date)}</span>
 
               <h2 className="post-title">
-                <a className="post-link" href={`/${post.slug}`}>
+                <a className="post-link" href={`/blog/${post.slug}`}>
                   {post.title}
                 </a>
               </h2>
