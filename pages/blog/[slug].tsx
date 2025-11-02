@@ -12,6 +12,7 @@ import Spacer from '../../components/Spacer';
 import Callout from '../../components/Callout';
 import BigText from '../../components/BigText';
 import YouTube from '../../components/YouTube';
+import Subscribe from '../../components/Subscribe';
 import { getAllPosts, formatDate, Post } from '../../lib/posts';
 import { siteConfig } from '../../lib/config';
 
@@ -85,6 +86,8 @@ export default function PostPage({ post, mdxSource }: PostPageProps) {
         <article className="post-content">
           <MDXRemote {...mdxSource} components={components} />
         </article>
+
+        <Subscribe />
       </div>
     </Layout>
   );
@@ -118,10 +121,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     parseFrontmatter: false,
     mdxOptions: {
       remarkPlugins: [remarkGfm, remarkMath],
-      rehypePlugins: [
-        rehypeKatex,
-        rehypeHighlight,
-      ],
+      rehypePlugins: [rehypeKatex, rehypeHighlight],
       format: 'mdx',
     },
   });
@@ -133,4 +133,3 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     },
   };
 };
-
