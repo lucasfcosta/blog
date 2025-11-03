@@ -20,7 +20,7 @@ export default async function handler(
 
   const { token } = req.body;
 
-  if (!token || typeof token !== 'string') {
+  if (!token) {
     return res.status(400).json({ error: 'Invalid token' });
   }
 

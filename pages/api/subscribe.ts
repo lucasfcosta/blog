@@ -20,53 +20,48 @@ export default async function handler(
 
   const { email } = req.body;
 
-  if (!email || !email.includes('@')) {
+  if (!email || typeof email !== 'string' || !email.includes('@')) {
     return res.status(400).json({ error: 'Invalid email address' });
   }
 
+  const normalizedEmail = email.trim().toLowerCase();
+
   try {
-    const existingSubscriber = await prisma.subscriber.findUnique({
-      where: { email },
-    });
+    let subscriber;
 
-    if (existingSubscriber) {
-      if (existingSubscriber.confirmed) {
-        return res.status(200).json({ success: true });
-      }
-
-      const baseUrl = process.env.VERCEL_URL
-        ? `https://${process.env.VERCEL_URL}`
-        : 'http://localhost:3000';
-      const confirmUrl = `${baseUrl}/confirm-subscription?token=${existingSubscriber.token}`;
-
-      await resend.emails.send({
-        from: 'Lucas F. Costa <noreply@updates.lucasfcosta.com>',
-        to: email,
-        subject: 'Confirm your subscription',
-        html: `
-          <p>Thanks for wanting to subscribe.</p>
-          <p>Before I can send you emails when I publish posts, <strong>you must confirm your subscription by clicking the link below:</p>
-          <p><a href="${confirmUrl}">Confirm subscription</a></p>
-          <p>If you haven't requested this, please ignore this email.</p>
-        `,
+    try {
+      subscriber = await prisma.subscriber.create({
+        data: { email: normalizedEmail },
       });
+    } catch (createError: any) {
+      if (createError.code === 'P2002') {
+        subscriber = await prisma.subscriber.findUnique({
+          where: { email: normalizedEmail },
+        });
 
-      return res.status(200).json({ success: true });
+        if (!subscriber) {
+          throw new Error('Failed to retrieve existing subscriber');
+        }
+
+        if (subscriber.confirmed) {
+          return res.status(200).json({ success: true });
+        }
+      } else {
+        throw createError;
+      }
     }
 
-    const subscriber = await prisma.subscriber.create({
-      data: { email },
-    });
-
-    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+    const baseUrl = process.env.VERCEL_URL
+      ? `https://${process.env.VERCEL_URL}`
+      : 'http://localhost:3000';
     const confirmUrl = `${baseUrl}/confirm-subscription?token=${subscriber.token}`;
 
     await resend.emails.send({
       from: 'Lucas F. Costa <noreply@updates.lucasfcosta.com>',
-      to: email,
+      to: normalizedEmail,
       subject: 'Confirm your subscription',
       html: `
-        <p>Before I can start sending you emails when I publish new posts, please confirm your subscription by clicking the link below:</p>
+        <p>Please confirm your subscription by clicking the link below:</p>
         <p><a href="${confirmUrl}">Confirm subscription</a></p>
         <p>If you haven't requested this, please ignore this email.</p>
       `,
