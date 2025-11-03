@@ -33,8 +33,13 @@ export default async function handler(
       subscriber = await prisma.subscriber.create({
         data: { email: normalizedEmail },
       });
-    } catch (createError: any) {
-      if (createError.code === 'P2002') {
+    } catch (createError: unknown) {
+      if (
+        typeof createError === 'object' &&
+        createError !== null &&
+        'code' in createError &&
+        createError.code === 'P2002'
+      ) {
         subscriber = await prisma.subscriber.findUnique({
           where: { email: normalizedEmail },
         });
