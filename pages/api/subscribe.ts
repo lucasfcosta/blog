@@ -34,8 +34,9 @@ export default async function handler(
         return res.status(200).json({ success: true });
       }
 
-      const baseUrl =
-        process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+      const baseUrl = process.env.VERCEL_URL
+        ? `https://${process.env.VERCEL_URL}`
+        : 'http://localhost:3000';
       const confirmUrl = `${baseUrl}/confirm-subscription?token=${existingSubscriber.token}`;
 
       await resend.emails.send({
