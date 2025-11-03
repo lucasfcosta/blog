@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Retrospectives"
+title: "Why retrospectives suck and how to fix them"
 author: Lucas Fernandes da Costa
 place: São Paulo, Brazil
 flag: 🇧🇷
@@ -9,19 +9,21 @@ tags: agile devops retrospectives continuous-improvement
 
 Every team must believe in improvement, even when it no longer happens. That’s what retrospectives are for.
 
-Besides keeping people's hopes alive, most teams also use retrospectives for documenting problems that nobody has time to fix. That way, when the retrospective comes, they can all nod in agreement that yes, the problem is real, and yes, it should be fixed someday, but not today.
+Most teams also use retrospectives for documenting problems that nobody has time to fix. That way, when the retrospective comes, we can all nod in agreement that yes, the problem is real, and yes, it should be fixed someday, but not today.
 
-Sometimes, we even go as far as assigning someone to "investigate" the problem, just to show we care. But of course, that "investigation" never goes anywhere because we're not sure what do after that, and we have more important things to do right now.
+Sometimes, we even go as far as assigning someone to "investigate" the problem. Yet, that "investigation" never goes anywhere. Maybe it's because nobody really knows what "investigating" means, except that it definitely does not mean "fixing" the problem, otherwise we'd have written that down.
 
-But hey, we've got it all written down! Now there's also plausible deniability. If the problem ever blows up, we can all say "well, we documented it months ago! We even assigned someone to investigate it, we just didn't have time to fix it yet."
+But hey, we've got it all documented! Now there's also plausible deniability. If the problem ever blows up, we can just say that "we documented it months ago" but "we just didn't have time to fix it yet." Then, we take those statements at face value and keep doing whatever we were doing.
 
-It sounds dysfunctional, but that's exactly how most retrospectives work.
+It sounds dysfunctional, but that's exactly how most retrospectives work. They have nothing to do with continuous improvement; they're just a ritual to make us feel better about all the broken things teams keep ignoring.
 
 If that's your case, I hope this blog post can help clear up the confusion between what retrospectives are supposed to be and what they actually are.
 
+Believe it or not, retrospectives are fixable. I've experienced pretty good continous improvement cultures in the last few teams I worked at, including the current one. So I'll share a thing or two I learned along the way. At the end, I'll also share a few thoughts about how there will _always_ be something a little broken, and why that's okay.
+
 # Toyota
 
-The Toyota Production System, TPS, is the origin of "continuous improvement", or "kaizen" (_改善_) in Japanese. In TPS, workers can pull an [andon cord](https://en.wikipedia.org/wiki/Andon_(manufacturing)) to stop the production line when they see a broken windshield, for example. Then, they work together to find what caused the crack and implement a solution to prevent it from _ever happening again.
+The Toyota Production System, TPS, is the origin of "continuous improvement", or "kaizen" (改善) in Japanese. In TPS, workers can pull an [andon cord](https://en.wikipedia.org/wiki/Andon_(manufacturing)) to stop the production line when they see a broken windshield, for example. Then, they work together to find what caused the crack and implement a solution to prevent it from _ever happening again.
 
 Notice how I didn't say "the workers document the defect for future reference" or "the team investigates the issue when they have time". The problem is addressed immediately, and a fix is implemented before production resumes.
 
@@ -56,6 +58,8 @@ In addition to ensuring someone will fix the problem, this approach also helps d
 In terms of how long someone should be the fixer, I believe one week is a good balance between allowing enough time to fix problems and not burning out the person in charge.
 
 I've heard of teams randomly assigning someone to be "the fixer" each time a problem arises, but I don't like that approach. It creates a lot of context switching and makes it hard for the person to focus on solving the problem at hand, effectively defeating the purpose of having a dedicated fixer.
+
+Note that it does not mean that only the fixer can work on fixing problems. Other people can and should help. The key part is that there's always one person who's ultimately responsible for ensuring the problem gets fixed.
 
 Personally, I think whoever came up with this idea at Resend did a great job.
 
