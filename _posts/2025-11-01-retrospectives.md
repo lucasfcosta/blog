@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Why retrospectives suck and how to fix them"
+title: "Why your retrospectives don't work and how to fix them"
 author: Lucas Fernandes da Costa
 place: São Paulo, Brazil
 flag: 🇧🇷
