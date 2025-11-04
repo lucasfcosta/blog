@@ -49,6 +49,14 @@ export default function PostPage({ post, mdxSource }: PostPageProps) {
 
           <span className="share-buttons">
             <a
+              href={`https://news.ycombinator.com/submitlink?u=${encodeURIComponent(postUrl)}&t=${encodeURIComponent(post.title)}`}
+              rel="nofollow"
+              target="_blank"
+              title="Share on Hacker News"
+            >
+              <i className="fab fa-hacker-news fa-2x"></i>
+            </a>
+            <a
               href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(postUrl)}&via=${siteConfig.twitterUsername}&related=${siteConfig.twitterUsername}`}
               rel="nofollow"
               target="_blank"

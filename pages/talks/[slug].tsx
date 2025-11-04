@@ -49,6 +49,14 @@ export default function TalkPage({ talk, mdxSource }: TalkPageProps) {
 
           <span className="share-buttons">
             <a
+              href={`https://news.ycombinator.com/submitlink?u=${encodeURIComponent(talkUrl)}&t=${encodeURIComponent(talk.title)}`}
+              rel="nofollow"
+              target="_blank"
+              title="Share on Hacker News"
+            >
+              <i className="fab fa-hacker-news fa-2x"></i>
+            </a>
+            <a
               href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(talk.title)}&url=${encodeURIComponent(talkUrl)}&via=${siteConfig.twitterUsername}&related=${siteConfig.twitterUsername}`}
               rel="nofollow"
               target="_blank"
