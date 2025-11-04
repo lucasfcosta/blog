@@ -11,27 +11,27 @@ Every team must believe in improvement, even when it no longer happens. That’s
 
 Most teams also use retrospectives for documenting problems that nobody has time to fix. That way, when the retrospective comes, we can all nod in agreement that yes, the problem is real, and yes, it should be fixed someday, but not today.
 
-Sometimes, we even go as far as assigning someone to "investigate" the problem. Yet, that "investigation" never goes anywhere. Maybe it's because nobody really knows what "investigating" means, except that it definitely does not mean "fixing" the problem, otherwise we'd have written that down.
+Sometimes, we even go as far as assigning someone to "investigate" the problem. Yet, that "investigation" never goes anywhere. Maybe it's because nobody really knows what "investigating" means, except that it definitely does not mean "fixing" the problem. Otherwise, we'd have written that down.
 
 But hey, we've got it all documented! Now there's also plausible deniability. If the problem ever blows up, we can just say that "we documented it months ago" but "we just didn't have time to fix it yet." Then, we take those statements at face value and keep doing whatever we were doing.
 
-It sounds dysfunctional, but that's exactly how most retrospectives work. They have nothing to do with continuous improvement; they're just a ritual to make us feel better about all the broken things teams keep ignoring.
+It sounds dysfunctional, but that's exactly how many retrospectives work. They have nothing to do with continuous improvement; they're a ritual to make us feel better about all the broken things teams keep ignoring.
 
 If that's your case, I hope this blog post can help clear up the confusion between what retrospectives are supposed to be and what they actually are.
 
-Believe it or not, retrospectives are fixable. I've experienced pretty good continous improvement cultures in the last few teams I worked at, including the current one. So I'll share a thing or two I learned along the way. At the end, I'll also share a few thoughts about how there will _always_ be something a little broken, and why that's okay.
+Believe it or not, retrospectives are fixable. I've experienced pretty good continous improvement cultures in the last few teams I worked at, including the current one, which I'd judge as excellent. So I'll share a thing or two I learned along the way. At the end, I'll also share a few thoughts about how there will _always_ be something a little broken, and why that's okay.
 
 # Toyota
 
-The Toyota Production System, TPS, is the origin of "continuous improvement", or "kaizen" (改善) in Japanese. In TPS, workers can pull an [andon cord](https://en.wikipedia.org/wiki/Andon_(manufacturing)) to stop the production line when they see a broken windshield, for example. Then, they work together to find what caused the crack and implement a solution to prevent it from _ever happening again.
+The Toyota Production System, TPS, is the origin of "continuous improvement", or "kaizen" (改善) in Japanese. In TPS, workers can pull an [andon cord](https://en.wikipedia.org/wiki/Andon_(manufacturing)) to stop the production line when they see a broken windshield, for example. Then, they work together to find what caused the crack and implement a solution to prevent it from _ever_ happening again.
 
 Notice how I didn't say "the workers document the defect for future reference" or "the team investigates the issue when they have time". The problem is addressed immediately, and a fix is implemented before production resumes.
 
-Naturally, not every stop leads to a long problem-solving session on the spot. Depending on the severity, the team leader might come right away, assess whether production can keep going, and then trigger a structured root cause analysis later that same day. The key part is that the feedback loop is tight — hours, not weeks — and the people who spotted the problem are directly involved in fixing it.
+Naturally, not every stop leads to a long problem-solving session on the spot. Depending on the severity, the team leader might come right away, assess whether production can keep going, and then trigger a structured root cause analysis later that same day. The key part is that the feedback loop is tight — hours, not months — and the people who spotted the problem are directly involved in fixing it.
 
 Finally, it's worth noticing that the root cause analysis leads to concrete actions with deadlines and owners. Those actions are aimed at ensuring that it's _impossible_ for the same defect to happen again.
 
-Does that resemble your team's retrospectives? Probably not, for many reasons. Let's explore each reason and how to fix it.
+Now, let's explore all the reasons why Toyota's approach works and what we can learn from it in software development.
 
 ## Reason 1: The ability to stop the line
 
@@ -51,7 +51,7 @@ Personally, I love the way that [Resend](https://resend.com) does it.
 
 Every week, someone gets assigned to be ["The Fixer"](https://resend.com/handbook/engineering/who-is-the-fixer).
 
-If anything happens, everyone expects the fixer to take care of it, and the fixer knows that's exactly what they should do, regardless of whether it's a delayed SQS queue or a broken button on the dashboard.
+If anything happens, everyone expects the fixer to take care of it, and the fixer knows that's exactly what they should do, regardless of whether it's a delayed Kafka queue or a broken button on the website.
 
 In addition to ensuring someone will fix the problem, this approach also helps developers understand the infrastructure their product runs on. Another equally important effect is that it allows cloud engineers to understand the product their platform powers.
 
@@ -69,7 +69,7 @@ In TPS, when a defect is noticed, it's addressed immediately. In most teams, the
 
 The problem with that approach is that _"later"_ is never _"now"_. Right _now_, people are busy with features, and they know they'll get a chance to discuss the problem in the next retrospective.
 
-And that's how the retrospective is born: a meeting to discuss all the problems that were pushed down the list of priorities and shuffle them around again.
+And that's how an inneffective retrospective is born: a meeting to discuss all the problems that were pushed down the list of priorities and shuffle them around again.
 
 But what about tackling the priorities we just shuffled? Will we stop something that's already in progress to fix those problems? Of course not. That's not what the retrospective is for!
 
@@ -81,10 +81,11 @@ There's no one-size-fits-all answer in terms of how soon that postmortem should 
 
 Now that we have both clarity on who's responsible and a target SLA, we can avoid the common pitfall of pushing the problem down the list of priorities indefinitely.
 
+Note that you don't even have to cancel the recurring retrospective meeting. Instead, you can use that to discuss longer term improvements, get feedback on how well the postmortem process is working, and whether it needs to be adjusted. That's a good use of retrospectives.
 
 ## Reason 3: Concrete actions with owners and deadlines
 
-In TPS, the result's of the root cause analysis are concrete actions with deadlines and owners.
+In TPS, the results of the root cause analysis are concrete actions with deadlines and owners.
 
 In most teams, retrospectives lead to vague action items that start with verbs whose meaning is open to interpretation, like "investigate", "improve", or "document". Words matter.
 
@@ -131,15 +132,19 @@ It boils down to this:
 3. Ensure that the postmortem leads to concrete actions with owners and deadlines.
 4. Implement permanent fixes that prevent the same issues from ever happening again.
 
-Notice how I didn't mention anything about getting together for a recurring retrospective meeting. That's because recurring retrospectives are not necessary if the team is continuously improving.
+All of these actions can happen in parallel to a recurring retrospective meeting, but they don't depend on it.
 
-In fact, I often find that retrospectives are counterproductive because they create the illusion that there's a specific slot scheduled for improvement, and that improvement can't happen outside of it.
+In fact, doing all of these things consistently will likely improve the existing retrospectives because it'll allow you to focus on longer term improvements instead of rehashing the same problems over and over again.
 
-Retrospectives also make people believe that, if we have an hour other week to talk about improvement, then improvement will magically happen.
+Consequently, you may even be able to reduce the frequency of your retrospectives given that most of the actual improvement will be bundled into the day-to-day work, which is a much more sustainable and time-efficient approach.
 
-In reality, improvement should be happening all the time, ideally as soon as we notice a problem, as I've explained above.
+In fact, I often find that frequent retrospectives are counterproductive because they create the illusion that there's a specific slot scheduled for improvement, and that improvement can't happen outside of it.
 
-Now, note I'm not saying you should immediately cancel your recurring retrospectives. They can still be useful to reflect on how well the team is doing continuous improvement and whether the process needs to be adjusted. Still, you might want to consider doing them less frequently.
+Frequent retrospectives also make people believe that, if we have an hour every week to talk about improvement, then improvement will magically happen.
+
+On the other hand, if retrospectives are less frequent, people will naturally start to realize that improvement has to happen all the time, ideally as soon as we notice a problem.
+
+Finally, even though cancelling retrospectives altogether is not necessary, I've seen that happen a few times as teams matured their daily practices around continuous improvement. There's not a single right answer here; it all depends on your context.
 
 # There's always something broken
 
