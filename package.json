@@ -22,7 +22,7 @@
     "gray-matter": "^4.0.3",
     "highlight.js": "^11.11.1",
     "katex": "^0.16.22",
-    "next": "15.4.5",
+    "next": "15.4.10",
     "next-mdx-remote": "^5.0.0",
     "prisma": "^6.18.0",
     "react": "19.1.0",
