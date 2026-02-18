@@ -23,7 +23,7 @@
     "highlight.js": "^11.11.1",
     "katex": "^0.16.22",
     "next": "15.4.10",
-    "next-mdx-remote": "^5.0.0",
+    "next-mdx-remote": "^6.0.0",
     "prisma": "^6.18.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
