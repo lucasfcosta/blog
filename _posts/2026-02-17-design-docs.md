@@ -9,8 +9,6 @@ tags: agile rfcs design-docs continuous-improvement planning
 
 Somewhere in your company's Google Drive, there's a design doc from six months ago. It describes a system that doesn't exist. It was outdated by the second sprint and abandoned by the third. Fourteen people commented on it. Nobody updated it. It sits there, perfectly formatted, describing a parallel universe where the project went according to plan.
 
-That doc took a week to write, three rounds of comments to approve, and one day of coding to invalidate.
-
 We used to have a name for this: waterfall. We spent decades killing it. Then we put it in a Google Doc with a nicer template and called it "best practice."
 
 ## Why do design docs exist?
@@ -55,13 +53,13 @@ It's like spending two weeks reading restaurant reviews instead of just going to
 
 They do. And the comparison flatters your design doc.
 
-An IETF RFC coordinates strangers. Mozilla, Google, and some developer in the country-side of São Paulo need to implement HTTP independently and have their systems interoperate. Detailed upfront specification is the only way to make that work. **You can't iterate your way to compatibility between parties who will never share a codebase**.
+An IETF RFC coordinates strangers. Mozilla, Google, and some developer in Siberia need to implement HTTP independently and have their systems interoperate. Detailed upfront specification is the only way to make that work. **You can't iterate your way to compatibility between parties who will never share a codebase**.
 
-Your team shares a Slack channel and a monorepo. The coordination problem that justifies an RFC doesn't exist at your company. What exists is three engineers who could just talk to each other.
+Your team shares a Slack channel and a few repositories on GitHub. The coordination problem that justifies an RFC doesn't exist at your company. What exists is three engineers who could just talk to each other.
 
-If you genuinely have 50 teams shipping to a public API that external partners integrate against: sure, you might need something closer to an RFC. But you also probably have a 12-week release cycle and strong opinions about Microsoft Teams, so your problems are bigger than document format.
+If you genuinely have 50 teams shipping to a public API that external partners integrate against: sure, you might need something closer to an IETF RFC. But you also probably have a 12-week release cycle and strong opinions about Microsoft Teams, so your problems are bigger than document format.
 
-To be clear, my point here is pretty simple: most companies calling their docs "RFCs" do _not_ have that coordination problem. They have a team of eight sharing a deploy pipeline.
+To be clear, my point here is pretty simple: most companies writing long design docs do _not_ have that coordination problem. They have a team of eight sharing a deploy pipeline.
 
 So what *is* worth writing? There's a useful document buried under all the ceremony: a one-pager that captures intent and ontology. What are the nouns and verbs in this domain? What talks to what? "We're splitting the payments service because latency is killing us. We'll model transactions as events, not rows. Here are the three concepts the new service cares about and how they flow." That aligns people on *why* and *in what terms* without pretending you've already solved the problem. Which you haven't. You haven't even told Claude what to do yet.
 
