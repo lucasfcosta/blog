@@ -11,9 +11,11 @@ Somewhere in your company's Google Drive, there's a design doc from six months a
 
 We used to have a name for this: waterfall. We spent decades killing it. Then we put it in a Google Doc with a nicer template and called it "best practice."
 
+In this post, I'll explain why design docs exist, why they fail, and what to do instead.
+
 ## Why do design docs exist?
 
-Design docs don't exist because they make software better. They exist because they make organizations feel safer. I realize that sentence could appear in any AI-written LinkedIn post from the last five years, but that doesn't make it wrong.
+Design docs exist because they make organizations _feel_ safer.
 
 When a team writes a design doc, the implicit promise is: "we've thought about this carefully, so it will go according to plan." That promise is comforting for managers, directors, and VPs who need to report progress upward. It turns an inherently uncertain activity (writing software) into something that *looks* like a predictable manufacturing process.
 
@@ -25,12 +27,12 @@ Don't believe me? Ask yourself how many design docs at your company get updated 
 
 The fundamental problem with design docs is the same one that killed waterfall: **you have the least information at the beginning of a project, which is exactly when design docs ask you to make the most decisions.**
 
-This isn't a hot take. It's the entire intellectual foundation of iterative development. The reason we stopped writing 200-page requirements specs is that we discovered, through decades of painful experience, that you can't fully understand a problem until you start solving it.
+This is the entire intellectual foundation of iterative development. The reason we stopped writing 200-page requirements specs is that we discovered, through decades of painful experience, that you can't fully understand a problem until you start solving it.
 
 Writing a detailed design doc before coding is like writing a detailed travel itinerary before visiting a country you've never been to. You'll plan to spend three hours at a museum that turns out to be closed on Tuesdays. You'll allocate one day for a city that deserves a week. You'll miss the best restaurant in town because it's not in any guidebook.
 
-The itinerary wasn't useless because you're bad at planning. It was useless because the information you needed to plan well didn't exist until you arrived.
-
+The itinerary was useless because the information you needed to plan well didn't exist until you arrived. The quality of any plan is bounded by what you know, and at the start of something new, you know almost nothing.
+   
 That's exactly what happens with design docs. You specify the database schema before you understand the query patterns. You diagram the API before you know which calls are actually performance-critical. You enumerate edge cases before you've seen real data. Then you start coding and discover that reality disagrees with your document on every interesting dimension.
 
 At that point, one of two things happens. Either you update the doc (which nobody does) or you diverge from it silently. Doesn't matter. The doc did its real job weeks ago when it got someone to say "yes".
