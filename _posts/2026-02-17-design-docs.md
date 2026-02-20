@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Design docs are waterfall wearing a hoodie"
+title: "Design docs considered harmful"
 author: Lucas Fernandes da Costa
 place: São Paulo, Brazil
 flag: 🇧🇷
