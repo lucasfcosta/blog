@@ -17,10 +17,11 @@ This flood of PRs has the same shape as a problem we already know from streams, 
 
 In this post, I'll explain what backpressure is, how it already shows up in our work with LLMs, and how I've been building different types of backpressure into my workflow. At the end, I'll also mention a few approaches I've yet to explore. If you have any suggestions, email me at lucas[at]lucasfcosta[dot]com.
 
-> [THIS SHOULD BE A CALLOUT - CAN WE MAKE A DISCRETE INFO CALLOUT COMPONENT?]
-> You can install this post's backpressure skills by running `npx @lucasfcosta/backpressured` in your terminal. Then, use a `/goal` prompt to cause the skill to auto-trigger. Alternatively, you can try `/backpressured <goal description>` in Claude.
->
-> That skill will automatically iterate towards the goal while running the backpressure checks described in this post. You can also customize the checks and the iteration process by adding a `BACKPRESSURE.md` file to your project.
+<Callout type="info">
+You can install this post's backpressure skills by running `npx @lucasfcosta/backpressured` in your terminal. Then, use a `/goal` prompt to cause the skill to auto-trigger. Alternatively, you can try `/backpressured <goal description>` in Claude.
+
+That skill will automatically iterate towards the goal while running the backpressure checks described in this post. You can also customize the checks and the iteration process by adding a `BACKPRESSURE.md` file to your project with more specific instructions (in plain English).
+</Callout>
 
 ## What backpressure is and how it can help
 
@@ -32,11 +33,11 @@ In our work, backpressure usually takes the form of a machine refusing work the 
 
 ![]()
 
-In addition to automated testing and CI services, types can also be a powerful form of backpressure.
+In addition to automated testing, types can also be a powerful form of backpressure.
 
 Remember writing plain JavaScript, for example. Back on those days, it was easy to wire a component with the wrong prop shape and only find out much later, when someone clicked a button and got hit in the face with `props.onSubmit is not a function`.
 
-Before TypeScript, the only way to catch the bug earlier was for a careful human reviewer to follow the prop, follow the callback, check the caller, check the caller's caller, and hope the mismatch was visible in the diff.
+Before TypeScript, the only way to catch the bug before production was for a reviewer to follow the prop, follow the callback, check the caller, check the caller's caller, and hope the mismatch was visible in the diff.
 
 Some of us learned a lesson from these difficult times and started using types to [make impossible states impossible](https://www.youtube.com/watch?v=IcgmSRJHu_8). Others looked at the same lesson, nodded solemnly, and kept passing dictionaries around, but I guess that's a story for another day.
 

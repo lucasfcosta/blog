@@ -873,6 +873,36 @@ body {
   }
 }
 
+.post-callout[data-type='info'] {
+  display: block;
+  align-items: stretch;
+  text-align: left;
+  padding: 16px 20px;
+  border: 1px solid #ece6e7;
+  border-left: 3px solid #cabcbf;
+  border-radius: 4px;
+  background-color: rgba(228, 221, 222, 0.22);
+
+  &::before {
+    content: 'INFO';
+    display: block;
+    font-family: $base-font-family;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #a4969a;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-style: normal;
+    opacity: 1;
+    color: #333;
+    line-height: 1.6;
+  }
+}
+
 @include media-query($on-phone) {
   .post {
     padding: 64px 0 24px 0;
