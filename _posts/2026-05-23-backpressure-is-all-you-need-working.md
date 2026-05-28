@@ -387,6 +387,8 @@ The final backpressure loop looked like this:
 
 I have packaged this backpressure loop into a skill and made it **available at [`@lucasfcosta/backpressured`]()**. The source is publicly [available on GitHub]().
 
+<BlogImage maxHeight={500} src="/assets/backpressure-is-all-you-need/loop.png" alt="The flow the skill follows: from a goal, it writes a lightweight plan, gets reviewer approval, writes a patch, runs every check until green, verifies acceptance and quality criteria, runs the feature for real, opens the PR, and monitors it until it lands clean" caption="The flow the skill runs: from a goal all the way to a PR that lands clean, with backpressure gates at each step." />
+
 **You can install this skill in your terminal using `npx @lucasfcosta/backpressured`**.
 
 After installing it, **use a `/goal` prompt for the skill to auto-trigger**. Alternatively, you can also try entering `/backpressured <goal description>` into Claude.
