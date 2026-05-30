@@ -9,13 +9,9 @@ tags: ai claude-code codex openai anthropic backpressure testing software-engine
 
 [LLMs can write code faster than us, and often better than us](https://github.com/torvalds/AudioNoise/commit/93a72563cba609a414297b558cb46ddd3ce9d6b5). Consequently, the responsible attitude is to stop writing code ourselves and start building the machinery that makes faster code safe to ship.
 
-Humans still belong in the machinery’s loops. Just later. The naive loop is: model writes code, human reads code, human tells model what broke. This feels magical the first few times. Then, it becomes an extravagant way to move error messages from one machine to another, with a tired person in the middle.
+That machinery is what makes delegation possible, and the most important part of that machinery is backpressure.
 
-The mistake here is letting the first real "no" come from a person. They may start sharp, but then the day gets to them, and after the seventh suspicious diff they start negotiating with themselves because there are too many pull requests to keep up with, and they've gotta pick up the kids from school at six.
-
-This flood of PRs has the same shape as a problem we already know from streams, queues, and any system where the producer can outpace the consumer. The solution is called **backpressure**, and that's what this post is about.
-
-In this post, I'll explain what backpressure is, how it already shows up in our work with LLMs, and how I've been building different types of backpressure into my workflow. At the end, I'll also mention a few approaches I've yet to explore. If you have any suggestions, email me at lucas[at]lucasfcosta[dot]com.
+In this post, I'll explain what backpressure is, how it can help us delegate _more_ work to LLMs more safely, and how I've been building backpressure mechanisms into my work with LLMs. I'll also share how you can do the same and what promising approaches I've yet to explore.
 
 <Callout type="info">
 You can install this post's backpressure skills by running `npx @lucasfcosta/backpressured` in your terminal. Then, use a `/goal` prompt to cause the skill to auto-trigger. Alternatively, you can try `/backpressured <goal description>` in Claude.
@@ -29,9 +25,9 @@ That skill will automatically iterate towards the goal while running the backpre
 
 Whenever there's no backpressure, the producer is free to generate work at will, and the consumer is forced to absorb the mismatch. Then, the consumer either falls behind, breaks under the load, or speeds up by cutting corners.
 
-In our work, backpressure usually takes the form of a machine refusing work the producer hasn't cleaned up yet. The simplest version of that is a failing CI check: you don't usually submit a PR with code that doesn't compile or with tests that won't pass. Ideally, your colleagues shouldn't even review a PR until CI is green.
+In our work, backpressure usually takes the form of a machine refusing work the producer hasn't cleaned up yet. The simplest version of that is a an automated test: you don't usually submit a PR with failing tests. Ideally, your colleagues shouldn't even review a PR until all tests are green. In that case, the test suite is the backpressure mechanism for a human to clean up their code before asking for a review.
 
-![]()
+<BlogImage src="/assets/backpressure-is-all-you-need/tests-backpressure.png" alt="Sequence timeline where a developer writes code, automated tests run locally and give fast feedback in a loop, and only then does a reviewer do a manual review." caption="Automated tests are backpressure: the developer iterates against fast local test feedback, so the reviewer only ever sees code that's already green." />
 
 In addition to automated testing, types can also be a powerful form of backpressure.
 
@@ -43,19 +39,19 @@ Some of us learned a lesson from these difficult times and started using types t
 
 Anyway, the point here is that TypeScript added backpressure and made the producer confront the consumer's expectations before moving the code forward. Now, if a component needs a function, you can't casually hand it a string, an object, or nothing at all and hope the reviewer catches the bug. Instead, the machine will refuse the work at the boundary where you introduced the type mismatch, with no need for an expensive human review.
 
-// Image of now type layered with failing checks, same horizontal sequence diagram
-![]()
+<BlogImage src="/assets/backpressure-is-all-you-need/types-backpressure.png" alt="The same timeline with a TypeScript lane added before the tests: the type checker pushes back on the developer first, then automated tests, then a shorter manual review." caption="Types add another layer of backpressure ahead of the tests, refusing mismatches at the boundary and making the eventual human review shorter and safer." />
+
+As time passed, we kept adding more automated guardrails to the process, like linters, end-to-end tests, canary releases, and so on. We then bundled a bunch of those guardrails into CI pipelines. That way, we could stop reviewing code that wasn't even close to being ready, and we could focus our human attention on the things that machines can't check, like readability, complexity, and overall design.
 
 Today, this lesson is easy to recognize when we're talking about compilers, automated tests, CI, and, for the true believers among us, types. However, it seems much harder to recognize when the producer is an LLM writing code faster than anyone can read it.
 
-That's why, most of the time, **the LLM's backpressure is still us**. We look at the code in the editor, ask the model to fix the parts that smell wrong, open the PR, and then look at the same code again with a more serious face.
+That's why, most of the time, **the LLM's backpressure is still us**. We look at the code in the editor, ask the model to fix the parts that smell wrong (multiple times), open the PR, fix any failing checks, and then someone looks at the same code again with a more serious face.
 
-// Image of the human-ai backpressure loop
-![]()
+<BlogImage src="/assets/backpressure-is-all-you-need/human-backpressure.png" alt="Sequence timeline of a human and an agent: the human prompts the agent, the agent works and returns results, the human reviews and sends feedback, repeating each cycle." caption="With no automated backpressure, the human is the backpressure—manually reviewing the agent's output and feeding corrections back every cycle." />
 
 Often, for extra safety, we install a review bot to check the first AI's code. Then, we copy the bot's feedback back into the coding agent. That way, we have ironically promoted ourselves to an expensive clipboard doing the mechanical work between two machines.
 
-**The next step for AI-aided software development is to stop making humans the default backpressure in the AI loop**. We need tests that fail early, types that push back, benchmarks that catch regressions, and review agents that send bad patches back before they become a human's problem. That machinery is what makes delegation possible.
+**The next step for AI-aided software development is to stop making humans the default backpressure in the AI loop**. We need tests that fail early, types that push back, benchmarks that catch regressions, and review agents that send bad patches back before they become a human's problem. That machinery is what makes delegation possible, and frees up our time to focus on higher-level feedback and design decisions instead of low-level correctness and quality issues.
 
 Next, I'll explain how I've been building that machinery in my work, how you can do the same, and interesting approaches I've yet to explore.
 
@@ -116,8 +112,7 @@ Another important thing I discovered is that **it's extremely useful to ask the 
 
 Now, my prompt had the structure below.
 
-// Show [Feature [criteria 1] [criteria 2]] -> [each iteration [linting] [testing] [commit_check]]
-![]()
+<BlogImage src="/assets/backpressure-is-all-you-need/01-iteration.png" alt="A single Iteration phase containing Functional checks (requirement 1 and 2) and Quality checks (linting, testing, commit_check)." caption="The starting point: a single iteration phase where every patch must satisfy the functional requirements and pass the quality checks." />
 
 ### 2. Manual testing with `cURL` and an actual browser
 
@@ -154,8 +149,7 @@ Given manual testing is slower than automated testing, you can see that I told t
 
 Note that these changes change added a new phase to the process. Before, the model would just iterate on writing code and running automated checks until it thought it was done. Now, after that iteration phase, it has to run the application locally and test the new behavior manually before it can consider the task done.
 
-// Show [Feature [criteria 1] [criteria 2]] -> [each iteration [linting] [testing] [commit_check]] -> [post-iteration [cURL] [Playwright]]
-![]()
+<BlogImage src="/assets/backpressure-is-all-you-need/02-post-iteration.png" alt="An Iteration phase followed by a Post-iteration phase containing cURL and Playwright." caption="Manual testing with cURL and a real browser becomes a new post-iteration phase, run once the iteration loop settles." />
 
 ### 3. Benchmarking
 
@@ -198,8 +192,7 @@ If any of the above criteria are not met, you must inspect the failure, fix the 
 
 After this change, the process includes a new step within the iteration _and_ post-iteration phases.
 
-// Show [Feature [criteria 1] [criteria 2]] -> [each iteration [linting] [testing] [commit_check] [benchmarking]] -> [post-iteration [cURL] [Playwright] [benchmarking]]
-![]()
+<BlogImage src="/assets/backpressure-is-all-you-need/03-benchmarking.png" alt="Iteration and Post-iteration phases, both now including a benchmarking check." caption="Benchmarking joins both the iteration loop and the post-iteration phase for performance-sensitive applications." />
 
 ### 4. Review agents (functional, tests, types, brevity)
 
@@ -242,8 +235,7 @@ If any of the above criteria are not met, you must inspect the failure, fix the 
 
 This change added a new backpressure mechanism to both phases of the process, and significantly reduced the number of quality issues that slipped through to me.
 
-// Show [Feature [criteria 1] [criteria 2]] -> [each iteration [linting] [testing] [commit_check] [benchmarking] [review_agent]] -> [post-iteration [cURL] [Playwright] [benchmarking] [review_agent]]
-![]()
+<BlogImage src="/assets/backpressure-is-all-you-need/04-review-agents.png" alt="Iteration and Post-iteration phases, both now including a review_agent step." caption="Review agents run in every iteration, and once more over the whole changeset after iterating." />
 
 The next steps for this particular backpressure mechanism are to experiment with breaking down the review into multiple agents, each with a specific focus. I'm also not yet sure if it's best to ship this mechanism as a `SKILL.md` or an `/agents/reviewer_agent.md`.
 
@@ -286,8 +278,7 @@ If any of the above criteria are not met, you must inspect the failure, fix the 
 
 This change added an entirely new phase before the implementation even starts. Now, the model has to get its approach reviewed and approved before it writes a single line of code.
 
-// Show [planning [create plan] [review_agent]] -> [Feature [criteria 1] [criteria 2]] -> [each iteration [linting] [testing] [commit_check] [benchmarking] [review_agent]] -> [post-iteration [cURL] [Playwright] [benchmarking] [review_agent]]
-![]()
+<BlogImage src="/assets/backpressure-is-all-you-need/05-planning.png" alt="A Planning phase (create plan, review_agent) added before the Iteration and Post-iteration phases." caption="A planning phase is added up front: the approach is reviewed and approved before any code is written." />
 
 
 ### 6. Visual design reviews
@@ -332,8 +323,7 @@ If any of the above criteria are not met, you must inspect the failure, fix the 
 
 Again, this mechanism ended up as a new item in the iteration phase. I'm still not sure if it's worth the hassle, but I think it's an interesting experiment to run, especially for front-end work where the visual design is a critical aspect of the user experience.
 
-// Show [planning [create plan] [review_agent]] -> [Feature [criteria 1] [criteria 2]] -> [each iteration [linting] [testing] [commit_check] [benchmarking] [review_agent] [visual_review]] -> [post-iteration [cURL] [Playwright] [benchmarking] [review_agent]]
-![]()
+<BlogImage src="/assets/backpressure-is-all-you-need/06-visual-review.png" alt="Planning, Iteration (now including visual_review) and Post-iteration phases." caption="Visual design reviews join the iteration loop, mainly for front-end work." />
 
 ### 7. Pull-request monitoring
 
@@ -380,8 +370,7 @@ If any of the above criteria are not met, you must inspect the failure, fix the 
 
 The final backpressure loop looked like this:
 
-// Show [planning [create plan] [review_agent]] -> [Feature [criteria 1] [criteria 2]] -> [each iteration [linting] [testing] [commit_check] [benchmarking] [review_agent] [visual_review]] -> [post-iteration [cURL] [Playwright] [benchmarking] [review_agent]] -> [PR monitoring]
-![]()
+<BlogImage src="/assets/backpressure-is-all-you-need/07-full-loop.png" alt="The full loop: Planning, Iteration, Post-iteration and PR monitoring, each with its own backpressure checks." caption="The full backpressure loop: from a goal all the way to a PR that lands clean, with checks gating every phase." />
 
 
 ## How to try this backpressure loop yourself
