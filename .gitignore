@@ -44,3 +44,6 @@ next-env.d.ts
 _site/
 .sass-cache/
 /lib/generated/prisma
+
+# Local Claude Code skill symlinks
+.claude/skills/
