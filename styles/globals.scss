@@ -717,9 +717,37 @@ body {
 
     div.highlight,
     pre {
-      background-color: rgba(218, 218, 218, 0.3);
+      background-color: rgba(218, 218, 218, 0.22);
       padding: 12px 24px;
-      overflow-x: scroll;
+      border-radius: 6px;
+      white-space: pre-wrap; // wrap long lines instead of scrolling
+      overflow-wrap: anywhere;
+      overflow: hidden; // clip full-bleed diff rows to the rounded corners
+    }
+
+    pre code {
+      white-space: inherit;
+    }
+
+    // GitHub-style diff rendering for ```diff blocks (rendered by <DiffBlock />)
+    pre.diff-block code {
+      display: block;
+    }
+
+    .diff-line {
+      display: block;
+      margin: 0 -24px; // bleed past the <pre>'s horizontal padding
+      padding: 0 24px;
+    }
+
+    .diff-add {
+      background-color: rgba(46, 160, 67, 0.18);
+      box-shadow: inset 3px 0 0 #2da44e;
+    }
+
+    .diff-del {
+      background-color: rgba(207, 34, 46, 0.16);
+      box-shadow: inset 3px 0 0 #cf222e;
     }
 
     // Headers with proper spacing to replace <br /> tags
