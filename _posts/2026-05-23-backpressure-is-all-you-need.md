@@ -50,7 +50,7 @@ Often, for extra safety, we install a review bot to check the first AI's code. T
 Next, I'll explain how I've been building that machinery in my work, how you can do the same, and interesting approaches I've yet to explore.
 
 <Callout type="info">
-You can install this post's backpressure skills by running `npx @lucasfcosta/backpressured` in your terminal. Then, use a `/goal` prompt to cause the skill to auto-trigger. Alternatively, you can try `/backpressured <goal description>` in Claude.
+You can install this post's backpressure skills by running `npx @lucasfcosta/backpressured` in your terminal. Then, run `/backpressured <goal description>` in Claude — or explicitly ask Claude to use the backpressured skill — to kick off the loop.
 
 That skill will automatically iterate towards the goal while running the backpressure checks described in this post. You can also customize the checks and the iteration process by adding a `BACKPRESSURE.md` file to your project with more specific instructions (in plain English).
 </Callout>
@@ -381,9 +381,9 @@ I have packaged this backpressure loop into a skill and made it **available at [
 
 **You can install this skill in your terminal using `npx @lucasfcosta/backpressured`**.
 
-After installing it, **use a `/goal` prompt for the skill to auto-trigger**. Alternatively, you can also try entering `/backpressured <goal description>` into Claude.
+After installing it, **run `/backpressured <goal description>` in Claude** to start the loop — or just ask Claude to use the backpressured skill. The skill only runs when you invoke it explicitly; it won't auto-trigger on other prompts.
 
-Then, **the skill will automatically iterate towards the goal while running the backpressure checks described in this post**. You can also customize the checks and the iteration process by adding a `BACKPRESSURE.md` file to your project.
+Then, **the skill will iterate towards the goal on its own while running the backpressure checks described in this post**. You can also customize the checks and the iteration process by adding a `BACKPRESSURE.md` file to your project.
 
 ## What's next?
 
