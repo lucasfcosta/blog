@@ -729,25 +729,49 @@ body {
       white-space: inherit;
     }
 
-    // GitHub-style diff rendering for ```diff blocks (rendered by <DiffBlock />)
+    // GitHub-style diff rendering for ```diff blocks (built by lib/rehypeDiff)
     pre.diff-block code {
       display: block;
     }
 
     .diff-line {
-      display: block;
+      display: flex;
       margin: 0 -24px; // bleed past the <pre>'s horizontal padding
-      padding: 0 24px;
+      padding-right: 16px;
+    }
+
+    .diff-gutter {
+      flex: 0 0 26px;
+      text-align: center;
+      user-select: none;
+      opacity: 0.5;
+    }
+
+    .diff-text {
+      flex: 1 1 auto;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      min-width: 0; // let long tokens wrap inside the flex child
     }
 
     .diff-add {
-      background-color: rgba(46, 160, 67, 0.18);
+      background-color: rgba(46, 160, 67, 0.12);
       box-shadow: inset 3px 0 0 #2da44e;
+
+      .diff-gutter {
+        color: #1a7f37;
+        opacity: 1;
+      }
     }
 
     .diff-del {
-      background-color: rgba(207, 34, 46, 0.16);
+      background-color: rgba(207, 34, 46, 0.1);
       box-shadow: inset 3px 0 0 #cf222e;
+
+      .diff-gutter {
+        color: #b62324;
+        opacity: 1;
+      }
     }
 
     // Headers with proper spacing to replace <br /> tags

@@ -124,7 +124,7 @@ I used the [`obra/superpowers` builder](https://github.com/obra/superpowers/tree
 
 Then, I updated the prompt to make Claude use those skills for manual checks.
 
-```
+```diff
 /goal implement support for <brief feature description>. Here are the feature's acceptance criteria:
 
 1. <first criterion: i.e. the button X must be disabled while the form is submitting>
@@ -165,7 +165,7 @@ Writing that into the prompt was easy, but making the benchmarking suite easy to
 
 With that skill in place, I updated the prompt to make the model run benchmarks for any performance-sensitive applications.
 
-```
+```diff
 /goal implement support for <brief feature description>. Here are the feature's acceptance criteria:
 
 1. <first criterion: i.e. the button X must be disabled while the form is submitting>
@@ -206,7 +206,7 @@ Given that those issues are quite subjective, I built a review skill that includ
 
 Once I finished that skill, I updated the prompt to include it as another backpressure mechanism in the iteration loop.
 
-```
+```diff
 /goal implement support for <brief feature description>. Here are the feature's acceptance criteria:
 
 1. <first criterion: i.e. the button X must be disabled while the form is submitting>
@@ -247,7 +247,7 @@ I addressed that by adding a review step in the planning phase, right after the 
 
 I was also careful to mention that this should be a lightweight plan, focused mostly on the approach and the architecture, and _not_ on implementation details. That's because I wanted to defer implementation details to the implementation phase, where the model could ask reviewers for feedback and course-correct as it went along.
 
-```
+```diff
 /goal implement support for <brief feature description>. Here are the feature's acceptance criteria:
 
 1. <first criterion: i.e. the button X must be disabled while the form is submitting>
@@ -291,7 +291,7 @@ The way I built this check into the loop was by creating a skill that instructs 
 
 That skill also included a few heuristics to help the agent compare both images more reliably. These heuristics included a list of common issues to look for, like misaligned elements, inconsistent spacing, color contrast issues, and overall visual consistency. The skill further instructed the model to break down the review into smaller parts, like checking the header, then the main content, then the footer, and so on.
 
-```
+```diff
 /goal implement support for <brief feature description>. Here are the feature's acceptance criteria:
 
 1. <first criterion: i.e. the button X must be disabled while the form is submitting>
@@ -333,7 +333,7 @@ I added this mechanism after noticing that issues still slipped through even wit
 
 The way I built this mechanism was by creating a skill that monitors the PR for a certain amount of time after it's opened. During that time, the skill checks for any new comments, CI status changes, or merge conflicts. If it detects any of those issues, it sends a notification to the model and instructs it to address the issue before considering the task done.
 
-```
+```diff
 /goal implement support for <brief feature description>. Here are the feature's acceptance criteria:
 
 1. <first criterion: i.e. the button X must be disabled while the form is submitting>

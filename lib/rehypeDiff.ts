@@ -19,23 +19,41 @@ function classList(el: any): string[] {
   return [];
 }
 
-function lineKind(line: string): 'add' | 'del' | 'ctx' {
+function parseLine(line: string): { kind: 'add' | 'del' | 'ctx'; marker: string; text: string } {
   const ch = line.charAt(0);
-  if (ch === '+') return 'add';
-  if (ch === '-') return 'del';
-  return 'ctx';
+  if (ch === '+' || ch === '-') {
+    let rest = line.slice(1);
+    if (rest.startsWith(' ')) rest = rest.slice(1); // drop the marker's trailing space
+    return { kind: ch === '+' ? 'add' : 'del', marker: ch, text: rest };
+  }
+  return { kind: 'ctx', marker: '', text: line };
+}
+
+function span(className: string[], value: string) {
+  return {
+    type: 'element',
+    tagName: 'span',
+    properties: { className },
+    children: [{ type: 'text', value }],
+  };
 }
 
 function transformDiff(pre: any, code: any): void {
   const raw = nodeText(code).replace(/\n+$/, '');
   const lines = raw.split('\n');
   code.properties = { ...(code.properties || {}), className: ['diff-code'] };
-  code.children = lines.map((line) => ({
-    type: 'element',
-    tagName: 'span',
-    properties: { className: ['diff-line', `diff-${lineKind(line)}`] },
-    children: [{ type: 'text', value: line.length ? line : ' ' }],
-  }));
+  code.children = lines.map((line) => {
+    const { kind, marker, text } = parseLine(line);
+    return {
+      type: 'element',
+      tagName: 'span',
+      properties: { className: ['diff-line', `diff-${kind}`] },
+      children: [
+        span(['diff-gutter'], marker || ' '),
+        span(['diff-text'], text.length ? text : ' '),
+      ],
+    };
+  });
   pre.properties = {
     ...(pre.properties || {}),
     className: [...classList(pre), 'diff-block'],
