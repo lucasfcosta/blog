@@ -717,9 +717,61 @@ body {
 
     div.highlight,
     pre {
-      background-color: rgba(218, 218, 218, 0.3);
+      background-color: rgba(218, 218, 218, 0.22);
       padding: 12px 24px;
-      overflow-x: scroll;
+      border-radius: 6px;
+      white-space: pre-wrap; // wrap long lines instead of scrolling
+      overflow-wrap: anywhere;
+      overflow: hidden; // clip full-bleed diff rows to the rounded corners
+    }
+
+    pre code {
+      white-space: inherit;
+    }
+
+    // GitHub-style diff rendering for ```diff blocks (built by lib/rehypeDiff)
+    pre.diff-block code {
+      display: block;
+    }
+
+    .diff-line {
+      display: flex;
+      margin: 0 -24px; // bleed past the <pre>'s horizontal padding
+      padding-right: 16px;
+    }
+
+    .diff-gutter {
+      flex: 0 0 26px;
+      text-align: center;
+      user-select: none;
+      opacity: 0.5;
+    }
+
+    .diff-text {
+      flex: 1 1 auto;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      min-width: 0; // let long tokens wrap inside the flex child
+    }
+
+    .diff-add {
+      background-color: rgba(46, 160, 67, 0.12);
+      box-shadow: inset 3px 0 0 #2da44e;
+
+      .diff-gutter {
+        color: #1a7f37;
+        opacity: 1;
+      }
+    }
+
+    .diff-del {
+      background-color: rgba(207, 34, 46, 0.1);
+      box-shadow: inset 3px 0 0 #cf222e;
+
+      .diff-gutter {
+        color: #b62324;
+        opacity: 1;
+      }
     }
 
     // Headers with proper spacing to replace <br /> tags
@@ -870,6 +922,36 @@ body {
 
   p:not(:first-child) {
     margin-top: 1em;
+  }
+}
+
+.post-callout[data-type='info'] {
+  display: block;
+  align-items: stretch;
+  text-align: left;
+  padding: 16px 20px;
+  border: 1px solid #ece6e7;
+  border-left: 3px solid #cabcbf;
+  border-radius: 4px;
+  background-color: rgba(228, 221, 222, 0.22);
+
+  &::before {
+    content: 'INFO';
+    display: block;
+    font-family: $base-font-family;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #a4969a;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-style: normal;
+    opacity: 1;
+    color: #333;
+    line-height: 1.6;
   }
 }
 
