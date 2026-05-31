@@ -13,9 +13,11 @@ Requirements:
     Virgil/Cascadia fonts from excalidraw.com at render time).
 
 Usage:
-  python3 scripts/render_excalidraw.py <in.excalidraw> <out.png> [scale]
+  python3 scripts/render_excalidraw.py <in.excalidraw> <out.png> [scale] [bg]
 
   scale defaults to 2 (2x for crisp output).
+  bg defaults to "transparent" (alpha PNG); pass a CSS color (e.g. "#ffffff")
+  for a solid background.
 
 Example:
   python3 scripts/render_excalidraw.py \\
@@ -37,11 +39,15 @@ def main() -> int:
 
     in_path, out_path = sys.argv[1], sys.argv[2]
     scale = int(sys.argv[3]) if len(sys.argv) > 3 else 2
+    # 4th arg: background. "transparent" (default) exports a PNG with an alpha
+    # channel; otherwise pass a CSS color (e.g. "#ffffff") for a solid fill.
+    bg = sys.argv[4] if len(sys.argv) > 4 else "transparent"
+    transparent = bg == "transparent"
     scene = json.load(open(in_path))
 
-    html = """<!doctype html><html><head><meta charset="utf8"></head><body><script type="module">
-import EXC from "https://esm.sh/@excalidraw/excalidraw@%s";
-const scene = %s;
+    template = '''<!doctype html><html><head><meta charset="utf8"></head><body><script type="module">
+import EXC from "https://esm.sh/@excalidraw/excalidraw@__VERSION__";
+const scene = __SCENE__;
 (async () => {
   try {
     // esm.sh exposes only the default export, so reach exportToBlob through it.
@@ -62,9 +68,9 @@ const scene = %s;
     const blob = await exportToBlob({
       elements: scene.elements,
       files: scene.files || null,
-      appState: { ...(scene.appState||{}), exportBackground: true, viewBackgroundColor: (scene.appState && scene.appState.viewBackgroundColor) || "#ffffff", exportWithDarkMode: false, exportPadding: 24 },
+      appState: { ...(scene.appState||{}), exportBackground: __EXPORTBG__, viewBackgroundColor: "__VIEWBG__", exportWithDarkMode: false, exportPadding: 24 },
       mimeType: "image/png", quality: 1,
-      getDimensions: (w, h) => ({ width: w * %d, height: h * %d, scale: %d }),
+      getDimensions: (w, h) => ({ width: w * __SCALE__, height: h * __SCALE__, scale: __SCALE__ }),
     });
     const r = new FileReader();
     r.onload = () => { window.__png = r.result; window.__done = true; };
@@ -72,7 +78,15 @@ const scene = %s;
     r.readAsDataURL(blob);
   } catch (e) { window.__err = String(e && e.stack || e); window.__done = true; }
 })();
-</script></body></html>""" % (EXCALIDRAW_VERSION, json.dumps(scene), scale, scale, scale)
+</script></body></html>'''
+    html = (
+        template
+        .replace("__VERSION__", EXCALIDRAW_VERSION)
+        .replace("__EXPORTBG__", "false" if transparent else "true")
+        .replace("__VIEWBG__", "#ffffff" if transparent else bg)
+        .replace("__SCALE__", str(scale))
+        .replace("__SCENE__", json.dumps(scene))  # last: scene JSON has no tokens
+    )
 
     with sync_playwright() as p:
         browser = p.chromium.launch(channel="chrome", headless=True)
