@@ -7,9 +7,13 @@ flag: 🇧🇷
 tags: ai claude-code codex openai anthropic backpressure testing software-engineering
 ---
 
-[LLMs can write code faster than us, and often better than us](https://github.com/torvalds/AudioNoise/commit/93a72563cba609a414297b558cb46ddd3ce9d6b5). Consequently, the responsible attitude is to stop writing code ourselves and start building the machinery that makes faster code safe to ship.
+There are two *obvious* ways to use coding agents. Both are bad.
 
-That machinery is what makes delegation possible, and the most important part of that machinery is backpressure.
+The first is to let the LLM run unattended and hope the repository survives. This is fast, exciting, and stupid. It leads to bugs, confused changes, and a flood of PRs that humans cannot review quickly enough, at least not without eventually lowering their standards and merging things they do not really understand.
+
+The second approach is to treat the agent like glorified autocomplete and force a human to review every tiny step. This is safer, but slow enough to partially defeat the purpose of using an agent in the first place. If you still have to steer every minor decision, you have not delegated much.
+
+In this post, I’ll cover a third, not-so-obvious approach: building ways for the agent to validate more of its own work before a human has to step in. The goal to make longer unattended sessions safe enough to be useful without fully removing the human from the loop. It should also reduce the number of low-quality PRs your teammates have to review for details the agent should have caught itself.
 
 ## What backpressure is and how it can help
 
@@ -17,13 +21,13 @@ That machinery is what makes delegation possible, and the most important part of
 
 Whenever there's no backpressure, the producer is free to generate work at will, and the consumer is forced to absorb the mismatch. Then, the consumer either falls behind, breaks under the load, or speeds up by cutting corners.
 
-In our work, backpressure usually takes the form of a machine refusing work the producer hasn't cleaned up yet. The simplest version of that is a an automated test: you don't usually submit a PR with failing tests. Ideally, your colleagues shouldn't even review a PR until all tests are green. In that case, the test suite is the backpressure mechanism for a human to clean up their code before asking for a review.
+In our work, backpressure usually takes the form of a machine refusing work the producer hasn't cleaned up yet. The simplest version of that is an automated test: you don't usually submit a PR with failing tests. Ideally, your colleagues shouldn't even review a PR until all tests are green. In that case, the test suite is the backpressure mechanism for a human to clean up their code before asking for a review.
 
 <BlogImage src="/assets/backpressure-is-all-you-need/tests-backpressure.png" alt="Sequence timeline where a developer writes code, automated tests run locally and give fast feedback in a loop, and only then does a reviewer do a manual review." caption="Automated tests are backpressure: the developer iterates against fast local test feedback, so the reviewer only ever sees code that's already green." />
 
 In addition to automated testing, types can also be a powerful form of backpressure.
 
-Remember writing plain JavaScript, for example. Back on those days, it was easy to wire a component with the wrong prop shape and only find out much later, when someone clicked a button and got hit in the face with `props.onSubmit is not a function`.
+Remember writing plain JavaScript, for example. Back in those days, it was easy to wire a component with the wrong prop shape and only find out much later, when someone clicked a button and got hit in the face with `props.onSubmit is not a function`.
 
 Before TypeScript, the only way to catch the bug before production was for a reviewer to follow the prop, follow the callback, check the caller, check the caller's caller, and hope the mismatch was visible in the diff.
 
@@ -71,9 +75,9 @@ Initially, my `/goal` prompts looked something like this:
 
 The problem with this type of prompt is that it focused too much on the feature and not enough on the necessary tests, possible edge cases, and overall quality of the implementation. Essentially, there were no guardrails to prevent the model from declaring victory too early, so it often did. Then, it was up to me to review the code and handhold the model through the process of handling each edge case, adding tests, and refactoring the code until it was good enough to ship. That defeated the purpose of `/goal`, which was supposed to let me delegate the work and only get involved at the end to review the final product.
 
-That's when I noticed I was wasting my time as a slow backpressure mechanism instead of building automated backpressure into the loop. I was bottlenecking `/goal`.
+That's when I noticed I was wasting my time as a slow backpressure mechanism instead of building automated backpressure into the loop. I was bottlenecking `/goal`!
 
-That's when I started adding the following backpressure mechanisms into the `/goal` loop:
+After noticing that, I started adding the following backpressure mechanisms into the `/goal` loop:
 
 1. Linting, testing, and simple verification scripts
 2. Manual testing with `cURL` and an actual browser
@@ -83,13 +87,15 @@ That's when I started adding the following backpressure mechanisms into the `/go
 6. Visual design reviews
 7. Pull-request monitoring
 
+I'll cover each of these mechanisms in more detail below, but the general idea is that I kept adding more and more automated checks and reviews into the loop, so that the model would have to confront the consumer's expectations more frequently and catch issues on its own before they became my problem.
+
 ### 1. Linting, testing, and simple verification scripts
 
 These are the simplest and most obvious forms of backpressure. If your project already has a test suite and a linter, you can start using them as backpressure mechanisms right away.
 
 In fact, Claude already picks up tests most of the time, but as it goes along, it sometimes forgets to keep them green. Consequently, I decided to explicitly extend my prompt with checks for testing. Then, I also added other easy wins like linting and running other simple verification scripts, like a commit-message checker.
 
-Another important thing I discovered is that **it's extremely useful to ask the model to run the checks in _each_ iteration, not just at the end**. By running the checks in each iteration, I forced the model to confront the consumer's expectations more frequently, which made it more likely to catch issues early and fix them before moving on to the next step..
+Another important thing I discovered is that **it's extremely useful to ask the model to run the checks in _each_ iteration, not just at the end**. By running the checks in each iteration, I forced the model to confront the consumer's expectations more frequently, which made it more likely to catch issues early and fix them before moving on to the next step.
 
 ```diff
 /goal implement support for <brief feature description>. Here are the feature's acceptance criteria:
@@ -147,7 +153,7 @@ If any of the above criteria are not met, you must inspect the failure, fix the 
 
 Given manual testing is slower than automated testing, you can see that I told the model to use it sparingly. In practice, that usually means near the end of the task.
 
-Note that these changes change added a new phase to the process. Before, the model would just iterate on writing code and running automated checks until it thought it was done. Now, after that iteration phase, it has to run the application locally and test the new behavior manually before it can consider the task done.
+Note that these changes added a new phase to the process. Before, the model would just iterate on writing code and running automated checks until it thought it was done. Now, after that iteration phase, it has to run the application locally and test the new behavior manually before it can consider the task done.
 
 <BlogImage src="/assets/backpressure-is-all-you-need/02-post-iteration.png" alt="An Iteration phase followed by a Post-iteration phase containing cURL and Playwright." caption="Manual testing with cURL and a real browser becomes a new post-iteration phase, run once the iteration loop settles." />
 
@@ -331,7 +337,7 @@ Monitoring pull requests was probably the second most effective form of backpres
 
 I added this mechanism after noticing that issues still slipped through even with the review agent in place. They were usually conflicts, failing CI checks, or comments from another reviewer agent on the PR.
 
-The way I built this mechanism was by creating a skill that monitors the PR for a certain amount of time after it's opened. During that time, the skill checks for any new comments, CI status changes, or merge conflicts. If it detects any of those issues, it sends a notification to the model and instructs it to address the issue before considering the task done.
+I built this mechanism by creating a skill that monitors the PR for a certain amount of time after it's opened. During that time, the skill checks for any new comments, CI status changes, or merge conflicts. If it detects any of those issues, it sends a notification to the model and instructs it to address the issue before considering the task done.
 
 ```diff
 /goal implement support for <brief feature description>. Here are the feature's acceptance criteria:
