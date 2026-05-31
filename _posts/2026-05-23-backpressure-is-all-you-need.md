@@ -11,14 +11,6 @@ tags: ai claude-code codex openai anthropic backpressure testing software-engine
 
 That machinery is what makes delegation possible, and the most important part of that machinery is backpressure.
 
-In this post, I'll explain what backpressure is, how it can help us delegate _more_ work to LLMs more safely, and how I've been building backpressure mechanisms into my work with LLMs. I'll also share how you can do the same and what promising approaches I've yet to explore.
-
-<Callout type="info">
-You can install this post's backpressure skills by running `npx @lucasfcosta/backpressured` in your terminal. Then, use a `/goal` prompt to cause the skill to auto-trigger. Alternatively, you can try `/backpressured <goal description>` in Claude.
-
-That skill will automatically iterate towards the goal while running the backpressure checks described in this post. You can also customize the checks and the iteration process by adding a `BACKPRESSURE.md` file to your project with more specific instructions (in plain English).
-</Callout>
-
 ## What backpressure is and how it can help
 
 **In systems engineering, backpressure is the mechanism by which a downstream component signals upstream that it can't accept more work, forcing the producer to slow down, buffer, or shed load.**
@@ -53,7 +45,15 @@ Often, for extra safety, we install a review bot to check the first AI's code. T
 
 **The next step for AI-aided software development is to stop making humans the default backpressure in the AI loop**. We need tests that fail early, types that push back, benchmarks that catch regressions, and review agents that send bad patches back before they become a human's problem. That machinery is what makes delegation possible, and frees up our time to focus on higher-level feedback and design decisions instead of low-level correctness and quality issues.
 
+<BlogImage src="/assets/backpressure-is-all-you-need/agentic-backpressure.png" alt="Sequence timeline with three lanes—Human Reviewer, Agentic Backpressure, and Agent. The agent writes code that the backpressure layer pushes automated feedback back on, looping several times, and only at the end does the human reviewer do a manual review." caption="With automated backpressure in place, the agent iterates against fast automated feedback and the human only steps in for a final manual review." />
+
 Next, I'll explain how I've been building that machinery in my work, how you can do the same, and interesting approaches I've yet to explore.
+
+<Callout type="info">
+You can install this post's backpressure skills by running `npx @lucasfcosta/backpressured` in your terminal. Then, use a `/goal` prompt to cause the skill to auto-trigger. Alternatively, you can try `/backpressured <goal description>` in Claude.
+
+That skill will automatically iterate towards the goal while running the backpressure checks described in this post. You can also customize the checks and the iteration process by adding a `BACKPRESSURE.md` file to your project with more specific instructions (in plain English).
+</Callout>
 
 ## Creating backpressure in practice
 
