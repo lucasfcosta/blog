@@ -651,7 +651,6 @@ body {
     line-height: 41px;
     font-family: $post-title-font-family;
     font-size: $post-title-font-size;
-    font-style: italic;
     font-width: bold;
   }
 
@@ -952,6 +951,135 @@ body {
     opacity: 1;
     color: #333;
     line-height: 1.6;
+  }
+}
+
+.law {
+  margin: 48px 0;
+}
+
+.law-summary {
+  position: relative;
+  cursor: pointer;
+  list-style: none;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+
+  &:hover .law-title {
+    color: #000;
+  }
+
+  &:hover .law-toggle::before,
+  &:hover .law-toggle::after {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+.law-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  margin-right: 4px;
+  vertical-align: middle;
+  transform: translateY(-1.5px);
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fdfdfd;
+  font-size: 15px;
+}
+
+.law h2.law-title {
+  margin: 0;
+  padding-right: 32px;
+  font-family: $base-font-family;
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: normal;
+  -webkit-text-stroke: 0.3px currentColor;
+  color: rgba(0, 0, 0, 0.88);
+  transition: color 0.15s ease;
+}
+
+.law-toggle {
+  position: absolute;
+  top: 11px;
+  right: 4px;
+  width: 12px;
+  height: 12px;
+  transition: transform 0.2s ease;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: background-color 0.15s ease;
+  }
+
+  &::before {
+    top: 5px;
+    left: 0;
+    width: 12px;
+    height: 1.5px;
+  }
+
+  &::after {
+    top: 0;
+    left: 5px;
+    width: 1.5px;
+    height: 12px;
+  }
+}
+
+.law[open] .law-toggle {
+  transform: rotate(45deg);
+}
+
+.law-body {
+  margin-top: 14px;
+
+  p:first-child {
+    margin-top: 0;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.law[open] .law-body {
+  animation: law-expand 0.25s ease;
+}
+
+@keyframes law-expand {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .law[open] .law-body {
+    animation: none;
+  }
+
+  .law-toggle {
+    transition: none;
+  }
+}
+
+@include media-query($on-phone) {
+  .law h2.law-title {
+    font-size: 19px;
   }
 }
 

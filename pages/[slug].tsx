@@ -12,6 +12,7 @@ import Spacer from '../components/Spacer';
 import Callout from '../components/Callout';
 import BigText from '../components/BigText';
 import YouTube from '../components/YouTube';
+import Law from '../components/Law';
 import { getAllPosts, formatDate, Post } from '../lib/posts';
 import { siteConfig } from '../lib/config';
 
@@ -27,6 +28,7 @@ const components = {
   Callout,
   BigText,
   YouTube,
+  Law,
 };
 
 export default function PostPage({ post, mdxSource }: PostPageProps) {
