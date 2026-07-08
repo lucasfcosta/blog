@@ -11,17 +11,17 @@ tags: software engineering, project management, engineering management
 
 A project's goal rarely has anything to do with implementing a list of features. It is usually about solving a problem for users, the business, or both.
 
-The original specification is a guess about what will solve that problem. It is almost certainly wrong, and it will change as the team learns more about the problem and the solution, as explained in principle 2.
+The original specification is a guess about what will solve that problem. It is almost certainly wrong, and it will change as the team learns more about the problem and the solution, as explained in Law 2.
 
 Considering that the original specification is likely wrong, the only way to materially influence the outcome of a project is to understand the problem it is trying to solve so that you can adapt the solution as you uncover more information. If the team does not understand the problem, it cannot change the solution without risking failure.
 
-**Recommendation**: Make sure the team understands the problem before it starts working on the solution. Keep the problem in mind as the work progresses, and be willing to change the solution when new information is discovered.
+**Recommendation:** Make sure the team understands the problem before it starts working on the solution. Keep the problem in mind as the work progresses, and be willing to change the solution when new information is discovered.
 
 </Law>
 
 <Law num="2" title="Scope cannot be known before the work begins. It can only become less wrong as the work proceeds.">
 
-A project's initial scope is based on what the team knows _before_ it starts doing the work. That's when the team knows the least about the problem they are trying to solve. The initial scope is therefore a guess, and it is almost certainly wrong.
+A project's initial scope is based on what the team knows _before_ it starts doing the work. That's when the team knows the least about the problem it is trying to solve. The initial scope is therefore a guess, and it is almost certainly wrong.
 
 As the project progresses, the team will discover constraints, missing requirements, and incorrect assumptions. Some parts of the solution may be more expensive than expected, while others may turn out to be unnecessary.
 
@@ -73,9 +73,9 @@ These are not separate business problems. They are consequences of how the produ
 
 Engineering must therefore consider who will have to sell, support, and operate what it builds. A solution is only viable when the rest of the company can work with it.
 
-Principle 1 defines the user problem the project must solve. This principle adds another constraint: the solution must also work for the business responsible for bringing it to users.
+Law 1 defines the user problem the project must solve. This law adds another constraint: the solution must also work for the business responsible for bringing it to users.
 
-**Recommendation:** Have regular check-ins with the teams responsible for selling, supporting, and operating the product. On those check-ins, listen to their concerns (not necessarily to their solutions) and make sure the engineering decisions take them into account.
+**Recommendation:** Have regular check-ins with the teams responsible for selling, supporting, and operating the product. During those check-ins, listen to their concerns (not necessarily to their solutions) and make sure the engineering decisions take them into account.
 
 </Law>
 
@@ -89,9 +89,9 @@ This may require monitoring, alerts, documentation, administrative tools, or a w
 
 Otherwise, the project delivers something that works only while nothing goes wrong, which is rarely the scenario in the real world. The missing operational work is then discovered during incidents, when it is most expensive and difficult to complete.
 
-This is especially important when the product is delivered through successive working versions, as described in Principle 4. Those versions will be used before the project is complete, so the team must be able to monitor them and fix the problems it finds. Doing this at every step makes the final product better.
+This is especially important when the product is delivered through successive working versions, as described in Law 4. Those versions will be used before the project is complete, so the team must be able to monitor them and fix the problems it finds. Doing this at every step makes the final product better.
 
-**Recommendation:** Plan for operability from the start and make time for it. Ideally, observability should come in early so that the team fix issues surfaced by a small subset of alpha users.
+**Recommendation:** Plan for operability from the start and make time for it. Ideally, observability should come in early so that the team can fix issues surfaced by a small subset of alpha users.
 
 </Law>
 
@@ -113,7 +113,7 @@ If the project cannot be made viable, it can be stopped before more time and mon
 
 The backlog should contain enough work for the team to understand what is coming next, identify dependencies, and avoid running out of useful work.
 
-Planning much further ahead is usually wasteful. As explained in Principle 2, the scope will change as the team learns more. By the time distant tasks are reached, some will be unnecessary and others will need to be rewritten.
+Planning much further ahead is usually wasteful. As explained in Law 2, the scope will change as the team learns more. By the time distant tasks are reached, some will be unnecessary and others will need to be rewritten.
 
 A smaller backlog is also easier to keep accurate. Do not be afraid to change or delete items when they no longer reflect what the project needs. I delete items from the backlog all the time.
 
@@ -147,7 +147,7 @@ If you prefer something other than a Kanban board, that's fine too, as long as y
 
 The safest way to meet a deadline is to solve the problem before the deadline arrives.
 
-As explained in Principle 1, the project does not need to satisfy every requirement imagined at the start. It needs to produce a solution that works.
+As explained in Law 1, the project does not need to satisfy every requirement imagined at the start. It needs to produce a solution that works.
 
 The team should build that solution first. Once it exists, the project can already ship if the date moves forward or the remaining work takes longer than expected.
 
@@ -155,6 +155,6 @@ The rest of the time can then be spent improving the product: adding safeguards,
 
 If the plan is for the final piece of essential work to finish on the target date, any delay makes the project late. Finishing the essential work early turns the remaining schedule into time for improvement instead of time the project depends on to succeed.
 
-**Recommendation:** Start every proejct with the goal of producing a minimal viable solution as early as possible. Any iteration after that should be focused on improving the solution so that it's in the best possible state when the deadline comes.
+**Recommendation:** Start every project with the goal of producing a minimal viable solution as early as possible. Any iteration after that should be focused on improving the solution so that it's in the best possible state when the deadline comes.
 
 </Law>
